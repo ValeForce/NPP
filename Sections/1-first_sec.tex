@@ -68,3 +68,88 @@ Al solito valgono le formule relativistiche (uso unità naturali).
     \item Facciamo un esempio numerico. Supponiamo di avere un elettrone ($m=0.511 MeV$ con $v=0.99$. Quindi $\gamma = 7.089$. Allora $E=3.62 MeV$ e $p=3.58 MeV$, cioè sono molto vicini! Questo è dovuto al fatto che la massa è piccola rispetto all'energia. Questa approssimazione la facciamo \textbf{sempre}, cioè la massa la poniamo a zero perché trascurabile rispetto all'impulso che ha la particella. 
     \item Se invece $v=0.999$, l'energia e l'impulso erano ancora più vicini.
 \end{itemize}
+\subsection{Evoluzione post-Rutherford}
+\begin{itemize}
+    \item Allora l'atomo è neutro. Si suppose inizialmente che avesse semplicemente tanti protoni quanti elettroni e che il responsabile della massa dell'atomo fosse il nucleo.
+    \item Ma se fossi così, la massa non tornerebbe con le misure sperimentali. Deve esistere dunque altro. Deve essere neutro perché la carica è già a posto, e deve avere massa simile ai protoni perché la massa misurata era circa il doppio di quella prevista considerando solo protoni.
+    \item Con l'idea del neutrone nasce anche l'idea di una nuova interazione, quella forte che si aggiunge a quella gravitazionale e quella elettromagnetica. Infatti fino ad ora quella elettromagnetica era responsabile di tutto, ma non può invece spiegare come mai i neutroni sono legati.
+    \item Il problema era evidente considerando l'anomalia del $^{14}$N. \textbf{GUARDA QUADERNO RIZZO} Ma se l'atomo è composto da fermioni, allora nel sistema con 14 protoni e 7 elettroni, avendo 21 particelle avrò per forza spin semintero perché le accoppio a due a due, mentre si misura spin pari a 1. 
+    \item Se invece considero il neutrone, allora ho 7 protoni, 7 neutroni e 7 elettroni, quindi ho 28 particelle e quindi spin intero.
+\end{itemize}
+\subsection{Scoperta del neutrone di Chadwick}
+Non approfondiremo l'apparato sperimentale più di tanto, ma ci concentreremo su altre questioni.
+\begin{itemize}
+    \item L'esperimento per la scoperta del neutrone fu fatto già prima di Chadwick (1932) ma fu mal interpretato. Cerchiamo di capire perché.
+    \item La reazione coinvolta è $ \alpha + ^9_4Be \rightarrow ^{12}_6C + n$, che sappiamo essere quella corretta (interpretabile come scattering $\gamma + n \rightarrow \gamma + n$). Sul canale d'ingresso non abbiamo dubbi, perché le particelle $\alpha$ le forniamo noi dalla sorgente di polonio e il target di berilio lo abbiamo scelto noi. I problemi sorgono sul canale di uscita. 
+    \item Nella interpretazione scorretta della reazione, senza considerare il neutrone, si supponeva che la reazione fosse $ \alpha + ^9_4Be \rightarrow ^{13}_6C + \gamma$ (oppure $\gamma + p \rightarrow \gamma + p$). Infatti ai tempi si sapeva solo che ci fosse radiazione neutra molto penetrante. 
+    \item \textit{Quale è la differenza?} Se fosse davvero un $\gamma$, avrebbe energia molto elevata, che in realtà non ho a disposizione (50 MeV)
+\end{itemize}
+Vediamo l'apparato sperimentale. \textbf{METTI IMMAGINE SLIDE}
+\begin{itemize}
+    \item Se mandiamo un fascio di protoni contro un bersaglio, essi vengono rallentati e non penetrano più di tanto. Al contrario i neutroni è possibile che passino indisturbati (sono molto penetranti). Se i neutroni collidono con un nucleo, normalmente avviene una reazione di knock-out, ossia esce una particella, tipicamente il protone.
+    \item Quindi serve il vuoto nella camera dei neutroni, si mette polvere di polonio per generare particelle $\alpha$ e si mette un bersaglio di berillio.  Il neutrone penetra il bersaglio di berillio e arriva fino alla camera di ionizzazione. Inoltre si mette della paraffina tra bersaglio e camera a ionizzazione. La paraffina è ricca di protoni, faccio questo per massimizzare la sezione d'urto protone-neutrone, che è elevata perché hanno masse simili. Chiaramente nella camera a ionizzazione rivelo protoni e non neutroni.
+\end{itemize}
+Vediamo perché quella reazione è sbagliata.
+\begin{itemize}
+    \item La reazione sbagliata che hanno considerato i Curie sarebbe stata $ \alpha + ^9_4Be \rightarrow ^{13}_6C + \gamma$, che possiamo esprimerla come $\gamma + p \rightarrow \gamma + p$, cioè effetto Compton, ma con il protone.
+    \item Rivediamo velocemente l'effetto Compton.
+    %\begin{figure}[H]
+    %    \centering
+    %    \includegraphics[scale=0.5]{Compton.png}
+    %    \caption{Effetto Compton.}
+    %    \label{fig:Compton}
+    %\end{figure}[H]
+    \item Si ha dalla conservazione dell'impulso lungo le due direzioni
+\end{itemize}
+\begin{flalign*}
+    & \begin{aligned} & \begin{cases}
+        p_0=p_1\cos\vartheta+p\cos\varphi\\
+        0 = p_1\sin\vartheta-p\sin\varphi
+    \end{cases}\\
+    %\MoveEqLeft[-1]\text{}
+    \end{aligned}
+    & &
+    \begin{aligned}
+        & \begin{cases}
+        p_0^2+p_1^2\cos^2\vartheta-2p_0p_1\cos\vartheta=p^2\cos^2\varphi\\
+        p_1^2\sin^2\vartheta=p^2\sin^2\varphi
+      \end{cases} \\
+      %\MoveEqLeft[-1]\text{si pentru legea a II-a}
+    \end{aligned}
+    & &
+    \begin{aligned}
+        & \begin{cases}
+        p^2=p_0^2+p_1^2-2p_0p_1\cos\vartheta\\
+        p_1^2\sin^2\vartheta=p^2\sin^2\varphi
+      \end{cases} \\
+      %\MoveEqLeft[-1]\text{si pentru legea a II-a}
+    \end{aligned}
+  \end{flalign*}
+  \begin{itemize}
+  \item Invece dalla conservazione dell'energia
+  \begin{equation*}
+      E_0+m_ec^2=E_1+T+m_ec^2\Rightarrow E_0-E_1=T\Rightarrow c(p_0-p_1)=T
+  \end{equation*}
+  \item Vogliamo l'energia dell'elettrone: $E_{\text{TOT}}^{\text{elettrone}}=m_ec^2+T=(m_e^2+c^4+c^2p^2)^{\frac12}$ (usando la relazione di mass-shell) ed elevando al quadrato troviamo $\frac{T^2}{c^2}+2m_eT=p_0^2+p_1^2-2p_0p_1\cos\vartheta$ da cui usando la conservazione dell'energia troviamo
+  \begin{equation*}
+    \frac{p_0-p_1}{p_0p_1}=\frac1{m_ec}(1-\cos\vartheta)\Rightarrow \frac{E_0-E_1}{E_0E_1}=\frac1{m_ec^2}(1-\cos\vartheta)
+  \end{equation*}
+  dove $E_0$ è l'energia del fotone incidente e $E_1$ è l'energia del fotone diffuso. Possiamo ottenere 
+  \begin{equation*}
+    E_1 = \frac{E_0}{1+\frac{E_0}{m_ec^2}(1-\cos\vartheta)}
+  \end{equation*}
+Adesso possiamo trovare l'energia dell'elettrone da $E=E_0-E_1$. Otteniamo
+\begin{equation*}
+    E=\frac{\frac{E_0^2}{m_ec^2}(1-\cos\vartheta)}{1+\frac{E_0}{m_ec^2}(1-\cos\vartheta)}\Rightarrow E_{\text{MAX}}^{\text{elettrone}}=\frac{\frac{2E_0^2}{m_ec^2}}{1+2\frac{E_0}{m_ec^2}}=\frac{2E_0^2}{m_ec^2+2E_0}
+\end{equation*}
+    \item Tornando a Curie, al posto della massa dell'elettrone mettiamo la massa del protone. Dall'ultima relazione otteniamo l'equazione di secondo grado in $E_0$
+    \begin{equation*}
+        2E_0^2-2E_0E_p^{\text{MAX}}-m_pc^2E_p^{\text{MAX}}=0
+    \end{equation*}
+    Avendo misurato $E_p^{\text{MAX}}\approx 5.3$ MeV, si ottiene $E_0\approx 52.6$ MeV. Finora negli esperimenti erano abituati a qualche MeV di energia per i fotoni, quindi era una novità. Tuttavia, il problema non era questo. Con l'interpretazione di Curie avrebbero $E_\gamma=m(\alpha)+m\qty(^9_4Be)-m\qty(^{13}C)\approx 11$ MeV. Invece con Chadwick si ha $T_n=m(\alpha)+m\qty(^9_4Be)-m\qty(^{12}C)- m(n)=945.3 MeV - m(n)$.
+\item Dunque con Curie\footnote{Majorana nel frattempo li perculava dicendo che non sapevano di aver già scoperto il neutrone.} servirebbe un fotone di energia di circa $50$ MeV che è incompatibile con l'energia a disposizione di soli $11$ MeV. Invece se ho il neutrone, la sua energia cinetica sarà pari a $T_n\approx 945.3 MeV - m(n)$.
+\end{itemize}
+Ricaviamo la relazione che lega dati sperimentali con la massa del neutrone.
+\begin{itemize}
+    \item 
+\end{itemize}
