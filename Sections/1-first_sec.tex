@@ -188,5 +188,45 @@ Sappiamo che la perdita di energia $\dv{E}{x}\propto z^2\cdot \frac1{\beta^2}\cd
         R=\int_0^R\dd{x}=\int_{E_0}^{mc^2} \qty(\dv{E}{x})^{-1}\dd{E}= m\cdot F(v)
     \end{equation*}
     quindi il range è funzione della velocità iniziale della particella. A quei tempi il range si misurava dalle camere a nebbia manualmente con un righello! E così si ottenevano informazioni sulla velocità della particella.
-    \item Per le particelle neutre non abbiamo tracce, però possiamo guardare le cariche prodotte dalla collisione. Ad esempio se i prodotti sono $^{12}C+n$, mettiamo uno strato di paraffina così che dallo scattering $n-p$ riveliamo il protone 
+    \item Per le particelle neutre non abbiamo tracce, però possiamo guardare le cariche prodotte dalla collisione. Ad esempio se i prodotti sono $^{12}C+n$, mettiamo uno strato di paraffina così che dallo scattering $n-p$ riveliamo il protone (lascia una traccia nella camera a nebbia, da cui ricaviamo il range).
+\end{itemize}
+Deriviamo la formula di Bethe-Bloch.
+\begin{itemize}
+    \item Consideriamo un atomo con carica $Z$ e massa $A$ ed una particella incidente di carica $ze$ e massa $m$. Supponiamo che la massa sia tale che $m\gg m_e$ e che l'elettrone sia fermo rispetto alla particella incidente in quanto la velocità è elevata.
+    \item \textbf{Mettere immagien da slide altrimenti da npp 04}
+    \item La particella incidente vedrà gli elettroni del mezzo muoversi con velocità $-v$. Possiamo calcolare la quantità di impulso trasferito nell'urto. La forza è dovuta al campo elettrico, quindi $F=e\varepsilon_\perp$ (uguale in sistema di riferimento del laboratorio e della particella), dove la componente longitudinale si elimina per simmetria nell'integrale.
+    \begin{equation*}
+        \vec{p}_e'= \Delta \vec{p}_e=\int e \varepsilon_\perp \dd{t}=\int e\varepsilon_\perp \frac{\dd{x}}{v}=\frac e v \int \varepsilon_\perp \dd{x}
+    \end{equation*}
+    A questo punto applichiamo il teorema di Gauss, considerando superficie cilindrica di raggio $b$, parametro d'impatto. Otteniamo 
+    \begin{equation*}
+        \Phi(\vec\varepsilon)=\int_S\vec\varepsilon\cdot\hat n \dd{a}=2\pi b\int\varepsilon_\perp\dd{x}=\frac{ze}{\varepsilon_0}   
+    \end{equation*}
+    Dalle ultime due segue che
+    \begin{equation*}
+        p_e=\frac{ze^2}{2\pi\varepsilon_0 v}\frac1 b=\frac{ze^2}{4\pi\varepsilon_0 b^2}\frac{2b}{v}=\text{Forza di Coulomb}\cdot \text{tempo di urto}
+    \end{equation*}
+    \item Possiamo notare che l'impulso trasferito è invariante Infatti
+    \begin{equation*}
+        \begin{cases}
+            \varepsilon_\perp=\gamma \varepsilon_\perp'\\
+            \Delta t=\frac{\Delta t'}{\gamma}
+        \end{cases} 
+    \end{equation*}
+    Dunque $p_e\sim \Delta t\cdot\varepsilon_\perp\sim p_e'$ invariante.
+    \item Quindi assumendo $m\gg m_e$ e che considero elettrone fermo perché particella incidente molto veloce, possiamo scrivere 
+    \begin{equation*}
+        T_e=\frac{p^2}{2m_e}=\qty(\frac{ze^2}{4\pi\varepsilon_0 b})^2\frac2{m_ev^2}=2z^2\qty(\frac{e^2}{4\pi\varepsilon_0m_ec^2})^2\frac{\qty(m_ec^2)^2}{b^2m_ev^2}=2m_ec^2\frac{z^2}{\beta^2}\frac{r_e^2}{b^2}
+    \end{equation*}
+    con $r_e=\frac{e^2}{4\pi\varepsilon_0m_ec^2}$ raggio classico dell'elettrone. Questo valore di $T_e$ è l'energia persa dalla particella in un singolo urto! 
+    \item Per generalizzare ad $n$ urti, consideriamo la densità elettronica $n_e$ in un tratto $\dd{x}$ con parametro d'impatto tra $b$ e $b+\dd{b}$. Il numero di urti sarà $n=n_e2\pi b\dd{b}\dd{x}$. Quindi l'energia persa per numero di urti sarà
+    \begin{equation*}
+        \pdv{E}{b}{x}=n_er_e^2m_ec^2\frac{4\pi}{b}\frac{z^2}{\beta^2}\implies \dv{E}{x}=\int_{b\_{min}}^{b\_{max}} 4\pi n_er_e^2m_ec^2\frac{z^2}{\beta^2}\frac{\dd{b}}{b}\sim \ln \frac{{b\_{max}}}{{b\_{min}}}
+    \end{equation*}
+    \item $b\_{max}$ corrisponde al $\Delta t$ dell'urto, se esso è grande rispetto al tempo di rivoluzione degli elettroni allora non c'è trasferimento di energia.
+    \begin{equation*}
+        \frac b {v\gamma} > T_e\implies b\_{max}=v\gamma T_e   
+    \end{equation*}
+    \textbf{non capisco che cazzo è. spero nelle slide altrimenti consultare libri.}
+    \item Invece $b\_{min}$ non può essere inferiore alle dimensioni dell'elettrone \textit{56:48}
 \end{itemize}
