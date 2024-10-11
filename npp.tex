@@ -10,6 +10,7 @@
 
 
 
+
 % page formatting
 \usepackage{fancyhdr}
 \pagestyle{fancy}
@@ -30,6 +31,10 @@
 \setcounter{tocdepth}{2} % no subsubsections in ToC
 
 \begin{document}
+
+%pedici intelligenti con " \_ "
+\newcommand*\subtxt[1]{_{\textnormal{#1}}}
+\DeclareRobustCommand\_{\ifmmode\expandafter\subtxt\else\textunderscore\fi}
 
 % make title page
 \thispagestyle{empty}
@@ -61,6 +66,7 @@
 \appendix
 \section{Revoldiv}
 \begin{itemize}
-    \item Lezione 1 - sezione \ref{sec:intro}: \href{https://revoldiv.com/posts/3e690ced-59b5-4a12-afd3-b81f8b8bc33e/}{Parte 1} - \href{https://revoldiv.com/posts/c176a40e-37f7-42c6-8d04-7b0202a01a87/}{Parte 2}
+    \item Lezione 1 - \autoref{sec:intro}: \href{https://revoldiv.com/posts/3e690ced-59b5-4a12-afd3-b81f8b8bc33e/}{Parte 1} - \href{https://revoldiv.com/posts/c176a40e-37f7-42c6-8d04-7b0202a01a87/}{Parte 2}
+    \item Lezione 4 - \autoref{subsec:bethe-bloch}: \href{https://revoldiv.com/posts/c78e64f8-8da8-408d-a926-01382707eab4}{Parte 1} - \href{https://revoldiv.com/posts/0bc7cedb-0f13-49aa-94b2-363b8a6feb88}{Parte 2}
 \end{itemize}
 \end{document}

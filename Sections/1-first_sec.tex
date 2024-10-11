@@ -168,4 +168,25 @@ Ricaviamo la relazione che lega dati sperimentali con la massa del neutrone.
         \frac{u_p}{u_N}=\frac{m_N+m_n}{m_p+m_n}\Rightarrow m_n\approx m_p
     \end{equation*}
     Anche se in realtà la massa del neutrone è leggermente superiore di quella del protone. 
+    \item Abbiamo detto che si può misurare la velocità dal range della particella carica che attraversa il materiale. Questo è possibile grazie alla formula di Bethe-Bloch. 
+\end{itemize}
+\subsection{Derivazione formula di Bethe-Bloch}\label{subsec:bethe-bloch}
+L'interazione radiazione-materia è alla base della rivelazione di particelle. Consideriamo solo particelle cariche.
+\begin{itemize}
+    \item Interagiscono il campo della particella incidente con il campo del mezzo mediante ionizzazione ed eccitazione. Così costruisco diverse tipologie di rivelatori. 
+    \item Sono rilevanti il tipo di materiale, il tipo e la velocità della particella incidente. Anche se nel nostro caso non proviene da un fascio da ma una reazione. 
+    \item Se $b>R\_{atomico}$ eccito e/o ionizzo e vedo l'atomo come un blocco. Non c'è deflessione.
+    \item Se $b\approx R\_a$ uguale a prima ma l'elettrone atomico è come se fosse libero.
+    \item Se $R\_N<b<R\_a$ vedo il nucleo e c'è forte deflessione.
+    \item Le cariche possono: ionizzare, emettere luce di scintillazione, avere effetto Cherenkov o emettere radiazione di transizione. I $\gamma$ possono interagire con effetto fotoelettrico, effetto Compton o produzione di coppie. I neutroni urtano un nucleo che rincula. Infine i neutrini possono diffondersi solo per interazione debole, con $\sigma\approx10^{-41}$ cm$^2$ e quindi servono tonnellate di materiale per rivelarle. 
+\end{itemize}
+Sappiamo che la perdita di energia $\dv{E}{x}\propto z^2\cdot \frac1{\beta^2}\cdot \frac Z A$. 
+\begin{itemize}
+    \item Si usa di solito $\frac 1 \rho \dv{E}{x}$ per cui il \textit{MIP} (Minimum Ionizing Particle) è simile per tutti i materiali ed è circa $1-2\, \frac{\text{MeV g}}{\text{cm}^2}$.    
+    \item Da $\dv{E}{x}$ si può ricavare il range residuo della particella carica. Supponendo che  $E_0$ perda energia solo da ionizzazione/eccitazione, possiamo esprimere il range come
+    \begin{equation*}
+        R=\int_0^R\dd{x}=\int_{E_0}^{mc^2} \qty(\dv{E}{x})^{-1}\dd{E}= m\cdot F(v)
+    \end{equation*}
+    quindi il range è funzione della velocità iniziale della particella. A quei tempi il range si misurava dalle camere a nebbia manualmente con un righello! E così si ottenevano informazioni sulla velocità della particella.
+    \item Per le particelle neutre non abbiamo tracce, però possiamo guardare le cariche prodotte dalla collisione. Ad esempio se i prodotti sono $^{12}C+n$, mettiamo uno strato di paraffina così che dallo scattering $n-p$ riveliamo il protone 
 \end{itemize}
