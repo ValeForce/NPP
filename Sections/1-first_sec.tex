@@ -215,9 +215,9 @@ Deriviamo la formula di Bethe-Bloch.
     \end{equation*}
     Dunque $p_e\sim \Delta t\cdot\varepsilon_\perp\sim p_e'$ invariante.
     \item Quindi assumendo $m\gg m_e$ e che considero elettrone fermo perché particella incidente molto veloce, possiamo scrivere 
-    \begin{equation*}
+    \begin{equation}\label{eq:E_sing_urto}
         T_e=\frac{p^2}{2m_e}=\qty(\frac{ze^2}{4\pi\varepsilon_0 b})^2\frac2{m_ev^2}=2z^2\qty(\frac{e^2}{4\pi\varepsilon_0m_ec^2})^2\frac{\qty(m_ec^2)^2}{b^2m_ev^2}=2m_ec^2\frac{z^2}{\beta^2}\frac{r_e^2}{b^2}
-    \end{equation*}
+    \end{equation}
     con $r_e=\frac{e^2}{4\pi\varepsilon_0m_ec^2}$ raggio classico dell'elettrone. Questo valore di $T_e$ è l'energia persa dalla particella in un singolo urto! 
     \item Per generalizzare ad $n$ urti, consideriamo la densità elettronica $n_e$ in un tratto $\dd{x}$ con parametro d'impatto tra $b$ e $b+\dd{b}$. Il numero di urti sarà $n=n_e2\pi b\dd{b}\dd{x}$. Quindi l'energia persa per numero di urti sarà
     \begin{equation*}
@@ -228,5 +228,36 @@ Deriviamo la formula di Bethe-Bloch.
         \frac b {v\gamma} > T_e\implies b\_{max}=v\gamma T_e   
     \end{equation*}
     \textbf{non capisco che cazzo è. spero nelle slide altrimenti consultare libri.}
-    \item Invece $b\_{min}$ non può essere inferiore alle dimensioni dell'elettrone \textit{56:48}
+    \item Invece $b$ non può essere inferiore alle dimensioni dell'elettrone visto dalla particella incidente, quindi da $\slashed \lambda=\frac\hbar{p_e}=\frac\hbar {m_ec\beta\gamma}\implies b\_{min}=\frac{\hbar}{m_ec\beta\gamma}$. 
+    \item Se materiale ha proprietà $Z\,,A\,,\rho$ allora ho, considerando $n_e=\frac{N_aZ\rho}{A}$ e al posto di $\ln \frac{{b\_{max}}}{{b\_{min}}}$ metto el espressioni trovate:
+    \begin{equation*}
+        \dv{E}{x}= 4 \pi r_e^2 m_e c^2 \frac{N_aZ\rho}{A} \frac{z^2}{\beta^2} \ln\qty(\frac{m_ec^2\beta^2\gamma^2T_e}{\hbar\omega_e})  
+    \end{equation*}
+    chiamata \textit{formula di Bohr}, che è il predecessore della formula di Bethe-Bloch in quanto è semiclassica. Da notare che poi per $\hbar\omega_e$ si mette l'energia di legame dell'elettrone, cioè il potenziale medio di ionizzazione $I$.
+    \item Normalmente si passa da spessore $\dd x$ a $\rho\dd x$ così da avere quantità quasi indipendente dall'atomo. Infatti $\frac{\dd{E}}{\rho\dd{x}}\propto \frac Z A \ln \text{cost.}$ e si definisce $C=4\pi r_e^2 m_ec^2N_A=0.307$ MeV g$^{-1}$ cm$^{-2}$, in modo da poter scrivere la formula di Bohr come
+    \begin{equation*}
+        \frac{\dd{E}}{\rho\dd{x}}=C\frac{Z}{A}\frac{z^2}{\beta^2}\ln\qty(\frac{m_ec^2\beta^2\gamma^2}{\expval{I}})
+    \end{equation*}
+    \item Dalla \autoref{eq:E_sing_urto} abbiamo:
+    \begin{equation*}
+        b^2=2r_e^2\frac{z^2}{\beta^2}\frac{m_ec^2}{E_e}\implies \abs{2b\dd {b}}=2r_e^2\frac{z^2}{\beta^2}\frac{m_ec^2}{E_e^2}\dd{E_e}
+    \end{equation*}
+    e da questa possiamo ricavare la probabilità che percorrendo un tratto unitario la particella subisca una collisione con parametro urto tra $b$ e $b+\dd{b}$, risulta
+    \begin{equation*}
+        \dd{\sigma}=2\pi b\dd{b}n_e = \dots\implies \dv{\sigma}{E}=2\pi r_e^2m_ec^2n_e\frac{z^2}{\beta^2}\frac1{E_e^2}       
+    \end{equation*}
+    quindi ho dipendenza da $E_e^{-2}$ quindi collisioni con trasferimento di energia elevato sono rare!
+    \item Consideriamo l'urto con un nucleo piuttosto che con elettrone. Per fare ciò dobbiamo considerare $\frac{Z}{1840A}\sim 10^{-4}$ quindi un contributo totalmente trascurabile!
+    \item Le differenze con la formula di Bethe-Bloch sono i termini che tengono conto degli effetti di densità di carica e l'energia cinetica massima trasferita all'elettrone in un singolo urto.
+    \item Dobbiamo tenere conto di due cose quando passiamo da Bohr a Bethe-Bloch: se abbiamo a che fare con elettroni e positroni il termine nel $\ln$ va modificato perché le masse delle due particelle sono uguali, detto termine delle fore di scambio; anche $T\_{max}$ possiamo ricavare dalla cinematica. 
+    \item Saltando passaggi matematici (\textbf{vedi slide}) sostituendo $T\_{max}$ e alla fine abbiamo 
+    \begin{equation*}
+      \frac{\dd E}{\rho \dd{x}}\propto z^2\cdot \frac Z A \frac1{\beta^2}.  
+    \end{equation*}
+    Da qui possiamo comprendere che la traccia dell'azoto è piccola rispetto a quella del protone a parità di energia, proprio per il termine $z^2$. Inoltre visto che per la maggior parte dei materiali $\frac Z A\sim \frac12$ allora abbiamo che il \textit{MIP} $\sim1-2$ MeV g$^{-1}$ cm$^{-2}$ (solo per l'idrogeno il rapporto vale $1$).
+    \item Questa formula non funziona ad energie elevate ($>$ TeV) perché dovrei tenere conto di altri effetti relativistici, e non funziona neanche a basse energie cioè ad energie paragonabili a quelle degli elettroni atomici in quanto non posso più considerarli fermi. 
+    \item Quindi la perdita di energia è la stessa per tutti i materiali! Ad esempio un protone da $10$ MeV perde la stessa energia attraversando 1 $\frac g {cm^2}$ di rame, alluminio ecc. Per energie minori del MIP ogni particella perde energia in modo diverso, quindi posso identificare la particella.
+    \item Si può scrivere la legge di scala $-\dv{E_2}{x}(T_2)=-\frac{z_2^2}{z_1^2}\cdot \dv{E_1}{x}(T_2\frac{m_1}{m_2})$
+    \item Code di Landau\textbf{immagine da slide}: in generale qualunque rivelatore ha una granularità limitata. Misuro la perdita di energia in spessore finito. Se consideriamo uno spessore sottile (e bassa densità), si avranno mediamente poche collisioni e alcune saranno caratterizzate da grande energia trasferita. Se grafichiamo la distribuzione di energia trasferita sarà la distribuzione di Landau con una bella coda lunga. È importante perché di solito si prende il valor medio della distribuzione, ma funziona bene se è gaussiana o in generale simmetrica. In questo caso è asimmetrica ed ho grandi fluttuazioni per perdita di energia grande. Normalmente si tagliano le code iniziali e finali per minimizzare le fluttuazioni e si va il valor medio di quello che resta. Invece con grandi spessori abbiamo distribuzione simmetrica gaussiana, avendo molte collisioni.
 \end{itemize}
+Una volta che abbiamo la formula di Bethe-Bloch possiamo ricavare il range come già detto. Le fluttuazioni nella perdita di energia si riflettono nello straggling del range. Se volessimo ricavare range per mesoni $K^+$ \textbf{va be mi secco esempio numerico speriamo slide.}
