@@ -1,0 +1,25 @@
+Riprenderei appunti di Russo e basta. Riportiamo cmq quello che dice lei.
+Ci sono quattro principi base nella relatività.
+\begin{itemize}
+    \item Ogni legge fisica è invariante in ogni sistema di riferimento inerziale.
+    \item Energia, impulso, momento angolare in ogni sistema fisica isolato si conservano.
+    \item La velocità della luce è la stessa in ogni sistema di riferimento.
+    \item Il tempo non è invariante (assoluto).
+    \item I primi due sono legati alla meccanica classica, gli ultimi due alla relatività. Da ciò ne segue che le trasformazioni galileiane non valgono più, e al loro posto ci sono le trasformazioni di Lorentz. Nel limite $\beta\ll1$ le trasformazioni di Lorentz diventano quelle di Galileo.
+\end{itemize}
+\subsection{Trasformazioni di Lorentz}
+\begin{itemize}
+    \item Definiamo i quadrivettori come $A=(a_0,a_i)=(a_0,\vec a)$, con $a_0$ componente temporale e $a_i$ componente spaziale.
+    \item Definiamo il prodotto scalare tra quadrivettori come $\tilde A\tilde B =a_0b_0-a_ib_i$. Questo prodotto è invariante sotto trasformazioni di Lorentz.
+    \item Se consideriamo un sistema di riferimento $S$ e un altro $S'$, con $S'$ che si muove rispetto a $S$ con velocità $v$ lungo l'asse $x$, allora le trasformazioni di Lorentz sono date da:
+    \begin{equation*}
+        \mqty(a'_0 \\\xmat*{a'}{3}{1})= 
+        \underbrace{\begin{pmatrix}
+            \mqty{\gamma & -\beta\gamma & 0 & 0 \\ -\beta\gamma & \gamma &0&0 \\ 
+            0 & 0 & 1 & 0 \\ 
+            0 & 0 & 0 & 1 }
+        \end{pmatrix}}_{=L(\beta)}
+        \mqty(a_0 \\\xmat*{a}{3}{1})= 
+        \mqty(\gamma a_0-\beta\gamma a_1\\-\beta\gamma a_0+\gamma a_1\\a_2\\a_3)
+    \end{equation*}
+\end{itemize}
