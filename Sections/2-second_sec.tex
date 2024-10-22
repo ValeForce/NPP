@@ -53,7 +53,7 @@ Vediamo alcune conseguenze in high energy physics.
     \item La contrazione delle lunghezze. Consideriamo un oggetto di lunghezza $L$ che si muove con velocità $v$. Supponiamo che il sistema solidale ad esso sia $S'$ e la lunghezza misurata sia $d'=x_2'-x_1'$ che avviene simultaneamente quindi $t_2=t_1$. Se trasformiamo otteniamo $d'=x_2'-x_1'=\gamma(x_2-\beta ct_2)-\gamma(x_1-bct_1)=\gamma(x_2-x_1)-\gamma\beta c(t_2-t_1)=\gamma(x_2-x_1)=d\implies d'=\gamma d$. Ne segue che la lunghezza misurata da un osservatore in moto è contratta di un fattore $\gamma$, e la lunghezza propria, misurata nel sistema solidale all'oggetto è la massima possibile.
     \item La dilatazione temporale. Consideriamo due eventi che avvengono nello stesso punto nello spazio, ma in tempi diversi. Se trasformiamo otteniamo $c\Delta t=c(t_2-t_1)=\gamma c(t_2'-t_1')+\beta \gamma (x_2'-x_1')=\gamma c\Delta t'$. Ne segue che il tempo misurato da un osservatore in moto è dilatato di un fattore $\gamma$, e il tempo proprio, misurato nel sistema solidale all'oggetto è il minimo possibile. Da ciò si hanno varie conseguenze.
 \end{itemize}
-Slide su esperimento di Conversi, Pancini, Piccioni (CPP) sui pioni e muoni.
+\subsection{Esperimento CPP, muoni e pioni}
 \begin{itemize}
     \item Nel 1912 Hess scoprì i raggi cosmici. Nel 1932 Anderson scoprì i positroni, predetti da Dirac nel 1928 (già discussa).
     \item Nel 1935 Yukawa introdusse la teoria delle interazioni forti, predicendo una massa mediatrice di $\sim 100$ MeV. Il mesone di Yukawa doveva decadere in elettrone e netruino con tempo di decadimento di $\sim1\mu$s. Nel 1937 si scoprì il mesotrone (Anderson e Neddermeyer), con una massa di $110$ MeV, associata alla particella di Yukawa. Nel 1940 si studiò assorbimento e decadimento delle proprietà di assorbimento del mesone di Yukawa.
@@ -68,12 +68,12 @@ Slide su esperimento di Conversi, Pancini, Piccioni (CPP) sui pioni e muoni.
     \item Un altro tentativo fu fatto da Rasetti nel 1940, con un apparato più complicato (\autoref{fig:rasetti}).
     \begin{figure}[h]
         \centering
-        \includegraphics[width=0.6\textwidth]{immagini/fig_rasetti.png}
+        \includegraphics[width=0.4\textwidth]{immagini/fig_rasetti.png}
         \caption{Disposizione dei contatori, illustrando le connessioni con gli amplificatori.}
         \label{fig:rasetti}
       \end{figure}
     Nella procedura sperimentale si definisce un fascio di mestroni con la coincidenza ABCD. L'anticontatore G discrimina dagli sciami elettromagnetici. L'anticontatore F seleziona i mestroni che si sono fermati nell'assorbitore. Il contatore E rivela particelle emesse nell'assorbitore. Non si usarono coincidenze ritardate ma "immediate" con tempi di risoluzione diversi. Guardando le combinazioni dei tempi con cui il segnale arriva, hanno fatto un fit particolare ed estratto il tempo di decadimento. Ottennero $\tau=(1.5\pm0.3)\mu$s.
-    \item Sucessivamente l'esperimento fu riproposto da Conversi, Pancini e Piccioni con l'idea di effettuare una misura migliore (vedi \autoref{fig:cpp})
+    \item Successivamente l'esperimento fu riproposto da Conversi, Pancini e Piccioni con l'idea di effettuare una misura migliore (vedi \autoref{fig:cpp})
     \begin{figure}[h]
         \centering
         \includegraphics[width=0.4\textwidth]{immagini/fig_cpp.png}
@@ -82,15 +82,9 @@ Slide su esperimento di Conversi, Pancini, Piccioni (CPP) sui pioni e muoni.
       \end{figure}
     Un mesotrone si ferma nell'assorbitore (Fe) e poi decade. Si usano coincidenze ritardate tra i contatori sopra e sotto e le anticoincidenze (A). Gli elettroni si fermano nell'assorbitore di Pb. Le anticoincidenze servono a scartare l'evento. Misurarono $\tau=(2.33\pm0.15)\mu$s, meglio di Rasetti. 
 \end{itemize}
-Esercizi di cinematica relativistica.
-\begin{itemize}
-    \item $m_\mu=106$ MeV, $\tau_\mu=2.2\cdot10^{-6}$s, $p_\mu=10$ GeV, $l=10km$. Calcolare la probabilità di avere il muone sulla superficie nel riferimento del laboratorio e in quello solidale al muone. Si parte da $\dv{\probP}{t}=\frac1\tau e^{-t/\tau}\implies \frac1{\tau\beta c}e^{-x/\beta c\tau}$, con $t=\frac x{\beta c}$. Allora si ottiene  (ricordiamo $\beta\gamma c=\frac p m$)
-    \begin{equation*}
-    \probP=\int_0^{d/\gamma}\frac1{\tau\beta c}e^{-x/\beta c \tau}\dd{x}=\dots =0.85
-    \end{equation*}
-    85\% è la probabilità che il muone arrivi sulla superficie prima di decadere nel riferimento solidale. Classicamente non è possibile. Invece nel riferimento di laboratorio si fa lo stesso calcolo ma con tempo dilatato e lunghezza non contratta. Si ottiene esattamente lo stesso valore, questo è dovuto al fatto che la probabilità è indipendente dal sistema di riferimento.
-    \item Stesso principio dello scorso esercizio, si usa in fisica degli acceleratori quando serve trasportare per lunghe distanze i fasci prima di collidere contro il bersaglio. $m_\pi=140$ MeV, $\tau_\pi=2.56\cdot10^{-8}$s, $p_\pi=200$ GeV. Il limite galileiano $c\tau\approx 8$m, poco rispetto ai 300 m del nostro problema. La $\probP\_{classica}=e^{-\frac{ct}{c\tau}}\sim 10^{-17}$ bassissima. Invece per quella relativistica ricaviamo $\gamma=\frac E {m}=1429$. Ricaviamo il $\tau\_{lab}=\gamma \tau =3.71\cdot 10^{-5}$s e il tempo da attraversare $t=l=10^{-6}$s. Allora la probabilità vale $\probP\_{rel}=e^{-t/\tau\_{lab}}=0.97$. Se volessi la distanza $d=\beta \gamma \tau=11$km.
-    \item Torniamo ai quadrivettori. La matrice della metrica la conosciamo è $g^{\mu\nu}=\text{diag}(1,-1,-1,-1)$. Un quadrivettore importante è quello di impulso $P^\mu=(E,\vec p)$. Questo quadrivettore non è invariante ma il suo quadrato sì. Facendolo, scopriamo che vale $P^\mu P_\mu=m^2$ usando la relazione di mass-shell.
+    Torniamo ai quadrivettori. 
+    \begin{itemize}
+    \item La matrice della metrica la conosciamo è $g^{\mu\nu}=\text{diag}(1,-1,-1,-1)$. Un quadrivettore importante è quello di impulso $P^\mu=(E,\vec p)$. Questo quadrivettore non è invariante ma il suo quadrato sì. Facendolo, scopriamo che vale $P^\mu P_\mu=m^2$ usando la relazione di mass-shell.
     \item Alcune relazioni utili sono: $p=\gamma mv$, $E=\gamma m$, $T=mc^2(\gamma-1)$, $\beta=\frac p E$.
     \item Quando facciamo esperimento di fisica di particelle, ci mettiamo nel riferimento di laboratorio solidale all'osservatore e ai rivelatori. In questo riferimento tipicamente $v\_T=0$. Possiamo scrivere allora nel riferimento del laboratorio $P_1=(E_1,\vec {p}_1)$, $P_2 = (m\_T,0)$ (1 = proiettile, 2 = target). Allora $P\_{tot}=sP_1+P_2=(E_1+m\_T,\vec p_1)$. 
     \item Un altro sistema di riferimento utile è quello del centro di massa, in cui $\vec {p}\_{tot}=0$. Se consideriamo una particella incidente in un target, avremo $P_1^*=(E_1^*,\vec p)$ e $P_2^*=(E_2^*,-\vec p)$. Allora $P\_{tot}^*=(E_1^*+E_2^*,0)$. Poichè è un invariante, $P\_{tot}^2$ sarà uguale nel riferimento del centro di massa e in quell del laboratorio. Ne segue che $P\_{tot}^{*,2}=E^2\_{CM}=P\_{tot}^{\text{lab},2}=(E_1+m\_T)^2-p_1^2=E_1^2+m\_T^2+2E_1m\_T-p_1^2=m_1^2+2E_1m\_T+m\_T^2$. ('sta roba è inutile?)
@@ -101,5 +95,47 @@ Esercizi di cinematica relativistica.
     \begin{equation*}
     m\_X^2=E\_{cm}^2=(E_\mu+E_\nu)^2\implies m\_X=\sqrt{m_\mu^2+p_\mu^2}+p_\nu=\dots=138.9 \text{ MeV}
     \end{equation*}
-    
+    \item Il decadimento $\pi^-\to\mu^-+\bar\nu_\mu$ è dovuto alla forza debole, lo si capisce dal fatto che da quando avevo quark e antiquark, nei prodotti non li avrò più cioè non conservano il flavour. Un altro modo per capirlo è dai tempi di decadimento. 
+    \begin{enumerate}
+        \item Debole $10^{-8}-10^{-10}$ s.
+        \item Elettromagnetico (come $\pi^0\to \gamma+\gamma$) $10^{-17}-10^{-16}$ s.
+        \item Forti $10^{-22}-10^{-23}$ s.
+    \end{enumerate}
+\end{itemize}
+Parliamo di processi virtuali e reali. 
+\begin{itemize}
+    \item Supponiamo di avere $e^-\to\gamma+e^-$. Abbiamo inizialmente (nel riferimento solidale all'elettrone) $e^-(m_ec^2,\vec0)$, invece dopo l'interazione abbiamo $e^-(E_k,-\vec k)+\gamma(c\abs{\vec k},\vec k)$. Valutiamo $\Delta E= ck+\sqrt{(m_ec^2)^2+(ck)^2}-m_ec^2$ consderando i due casi limite:
+    \begin{enumerate}
+        \item $ck\ll m_ec^2\implies \Delta E \gtrapprox ck$
+        \item $ck\gg m_ec^2\implies \Delta E \lessapprox 2ck$
+    \end{enumerate}
+    Ne segue che 
+    \begin{equation*}
+        kc\leq\Delta E\leq2kc
+    \end{equation*}
+    ma ciò che importa è che $\Delta E\neq0$. Questo è un processo virtuale che non può avvenire da isolato. È possibile per un tempo compatibile con il principio di indeterminazione $t<\frac\hbar{\Delta E}$, a cui corrisponde uno spazio percorso $l=ct=\frac{c\hbar}{\Delta E}\propto(\Delta E)^{-1}$.
+    \item Consideriamo un generico processo di scambio $A+B\to A+B$ che avviene tramite $X$. Avremo inizialmente $A(m_Ac^2,\vec0)$, invece dopo $A(E_p,\vec p)+X(E_X,-\vec p)$ e uguale per B. Vediamo quanto vale $\Delta E= E_X+E_p-m_Ac^2$ e i due casi limite:
+    \begin{enumerate}
+        \item $p\to\infty\implies \Delta E=2pc$
+        \item $p\to0\implies\Delta E \geq m_Xc^2$
+    \end{enumerate}
+    ne segue che vale sempre $\Delta E\geq m_Xc^2$. Abbiamo detto che si può violare la conservazione dell'energia per $t\sim\frac\hbar{\Delta E}\implies l=\frac{c\hbar}{\Delta E}\approx\frac\hbar{m_X}$, dove $l$ è la massima distanza raggiungibile dal mediatore $X$ prima di essere ri-assorbito, e corrisponde esattamente al \textit{range della interazione}. 
+    \item Viceversa, se conosco il range della interazione posso trovare la massa del mediatore! La relazione dunque è $R=\frac\hbar{m_Xc}$. Cerchiamo la massa del mediatore della interazione forte, supponendo che abbia $R\approx 1.2$ fm. Abbiamo 
+    \begin{equation*}
+    m_X=\frac1R=140\text{ MeV}
+    \end{equation*}
+    che è il mesotrone di Yukawa, chiamato così perché aveva massa intermedia tra $p$ ed $e^-$ (uniche particelle note oltre a $n$).
+    \item Dunque se la massa del mediatore è nulla, il range dell'interazione è infinito (interazione elettromagnetica con fotoni). Se invece usiamo la massa del $W$, troviamo il range dell'interazione debole 
+    \begin{equation*}
+    R\_{debole}=\frac{\hbar c}{m_Wc^2}=\frac1{m_W}=\frac{200\text{ MeV}\cdot\text{fm}}{80\cdot 10^3\text{ MeV}}=2.5\cdot10^{-3}\text{ fm}
+    \end{equation*}
+    ben tre ordini di grandezza inferiori rispetto a quello nucleare.
+    \item In passato si aveva una visione errata del $\beta$-decay, ad esempio $n\to p+e^-+\bar\nu$. In realtà questo avviene con uno scambio di $W^-$, cioè il neutrone (in realtà è tra quark) emette un $W^-$ diventando un $p$, e contemporaneamente $W^-\to e^-+\bar\nu$. Tuttavia questo processo lo trascuriamo a basse energie (MeV) in quanto irrilevante. 
+\end{itemize}
+Torniamo alla parte storica e all'esperimento CPP.
+\begin{itemize}
+    \item Abbiamo detto che l'esperimento CPP è importante perché da una migliore misura di $\tau_\mu$, ma c'è un altro motivo per cui è importante.
+    \item Nel 1940 Tomonaga e Araki proposero una teoria, che fu accettata da tutti, sull'interazione forte. Il mesone di Yukawa interagisce con il nucleo mediante interazione forte. Secondo i calcoli, la cattura nucleare dipende leggermente dallo Z del materiale. I mesotroni positivi sono respinti dal nucleo, mentre quelli negativi possono essere catturati, ne segue che i mesotroni positivi possono soltanto decadere.
+    \item  Per testare questa teoria che prevedeva una asimmetria tra mesotroni positivi e negativi, si usò lo stesso apparato CPP. La differenza stava in assorbitori più sottili (0.6 cm di Fe invece di 5 cm) per migliorare la efficienza di rivelazione degli elettroni. Misurarono il rapporto di mesotroni che decadono dentro il ferro che era in accordo con il valore aspettato (da raggi cosmici si aspettavano un eccesso del 20\%).
+    \item Poi ripetettero l'esperimento con un apparato migliore utilizzando le lenti magnetiche per separare mesotroni positivi e negativi. Con un assorbitore ad alto Z (ferro) ci fu conferma della teoria, con uno a basso Z (carbonio), per completezza e per rivelare i fotoni emessi da cattura nucleare dei mesotroni negativi, invece ci fu disaccordo. 10533
 \end{itemize}
