@@ -53,7 +53,7 @@ Vediamo alcune conseguenze in high energy physics.
     \item La contrazione delle lunghezze. Consideriamo un oggetto di lunghezza $L$ che si muove con velocità $v$. Supponiamo che il sistema solidale ad esso sia $S'$ e la lunghezza misurata sia $d'=x_2'-x_1'$ che avviene simultaneamente quindi $t_2=t_1$. Se trasformiamo otteniamo $d'=x_2'-x_1'=\gamma(x_2-\beta ct_2)-\gamma(x_1-bct_1)=\gamma(x_2-x_1)-\gamma\beta c(t_2-t_1)=\gamma(x_2-x_1)=d\implies d'=\gamma d$. Ne segue che la lunghezza misurata da un osservatore in moto è contratta di un fattore $\gamma$, e la lunghezza propria, misurata nel sistema solidale all'oggetto è la massima possibile.
     \item La dilatazione temporale. Consideriamo due eventi che avvengono nello stesso punto nello spazio, ma in tempi diversi. Se trasformiamo otteniamo $c\Delta t=c(t_2-t_1)=\gamma c(t_2'-t_1')+\beta \gamma (x_2'-x_1')=\gamma c\Delta t'$. Ne segue che il tempo misurato da un osservatore in moto è dilatato di un fattore $\gamma$, e il tempo proprio, misurato nel sistema solidale all'oggetto è il minimo possibile. Da ciò si hanno varie conseguenze.
 \end{itemize}
-\subsection{Esperimento CPP, muoni e pioni}
+\subsection{Esperimento CPP, muoni, pioni e Yukawa}
 \begin{itemize}
     \item Nel 1912 Hess scoprì i raggi cosmici. Nel 1932 Anderson scoprì i positroni, predetti da Dirac nel 1928 (già discussa).
     \item Nel 1935 Yukawa introdusse la teoria delle interazioni forti, predicendo una massa mediatrice di $\sim 100$ MeV. Il mesone di Yukawa doveva decadere in elettrone e netruino con tempo di decadimento di $\sim1\mu$s. Nel 1937 si scoprì il mesotrone (Anderson e Neddermeyer), con una massa di $110$ MeV, associata alla particella di Yukawa. Nel 1940 si studiò assorbimento e decadimento delle proprietà di assorbimento del mesone di Yukawa.
@@ -137,5 +137,33 @@ Torniamo alla parte storica e all'esperimento CPP.
     \item Abbiamo detto che l'esperimento CPP è importante perché da una migliore misura di $\tau_\mu$, ma c'è un altro motivo per cui è importante.
     \item Nel 1940 Tomonaga e Araki proposero una teoria, che fu accettata da tutti, sull'interazione forte. Il mesone di Yukawa interagisce con il nucleo mediante interazione forte. Secondo i calcoli, la cattura nucleare dipende leggermente dallo Z del materiale. I mesotroni positivi sono respinti dal nucleo, mentre quelli negativi possono essere catturati, ne segue che i mesotroni positivi possono soltanto decadere.
     \item  Per testare questa teoria che prevedeva una asimmetria tra mesotroni positivi e negativi, si usò lo stesso apparato CPP. La differenza stava in assorbitori più sottili (0.6 cm di Fe invece di 5 cm) per migliorare la efficienza di rivelazione degli elettroni. Misurarono il rapporto di mesotroni che decadono dentro il ferro che era in accordo con il valore aspettato (da raggi cosmici si aspettavano un eccesso del 20\%).
-    \item Poi ripetettero l'esperimento con un apparato migliore utilizzando le lenti magnetiche per separare mesotroni positivi e negativi. Con un assorbitore ad alto Z (ferro) ci fu conferma della teoria, con uno a basso Z (carbonio), per completezza e per rivelare i fotoni emessi da cattura nucleare dei mesotroni negativi, invece ci fu disaccordo. 10533
+    \item Poi ripetettero l'esperimento con un apparato migliore utilizzando le lenti magnetiche per separare mesotroni positivi e negativi. Con un assorbitore ad alto Z (ferro) ci fu conferma della teoria, con uno a basso Z (carbonio), per completezza e per rivelare i fotoni emessi da cattura nucleare dei mesotroni negativi, invece ci fu disaccordo. Quindi la differenza è il campo magnetico che distingue i mesotroni positivi e negativi e utilizzo di assorbitori con alto e basso Z.
+    \item Attraverso assorbitori di 5 cm di Fe c'è accordo perché la frequenza di decadimento è maggiore per quelli positivi non catturati rispetto a quelli negativi, il cui risultato sperimentale è compatibile con zero (vengono catturati dai nuclei prima di decadere). Il problema nasce con assorbitori di grafite, perché si trova che il rate di decadimento delle particelle negative non solo è diverso da zero, ma molto simile a quelle positive. Allora i mesotroni non sono le particelle di Yukawa, quelle che interagiscono fortemente.
+    \item Fermi e altri discussero, e conclusero che ci sono circa 12 ordini di grandezza di differenza tra il tempo di cattura per una particella di Yukawa negativa e i risultati dell'esperimento. Quindi il mesotrone fu ribattezzato, come lo conosciamo oggi, mesone $\mu$, ed oggi sappiamo che il pione è la particella di Yukawa.
+    \item Quindi CPP è rivoluzionario perché scopre che il muone non è la particella di Yukawa, quindi è un altro leptone! Apre la strada alla seconda generazione di particelle, con cui si va oltre la materia ordinaria. Quindi è l'inizio della \textit{fisica delle particelle}.
+\end{itemize}
+Vediamo il potenziale di \textit{Yukawa}.
+\begin{itemize}
+    \item Consideriamo $A+B\to A+B$ con particella mediatrice $X$. Questa particella è un bosone, se in più la consideriamo relativistica allora obbedisce all'equazione di Klein-Gordon. Nel caso statico (stazionario) si riduce a
+    \begin{equation*}
+        \nabla^2\phi(\vec x)=\frac{m_X^2c^2}{\hbar^2}\phi(\vec x)
+    \end{equation*}
+    se la massa è nulla ritroviamo l'equazione di Laplace e quindi il mediatore è il fotone e la soluzione è il campo elettrostatico $V(r)=-\frac{e^2}{4\pi\varepsilon_0}\frac1r$. Se invece la massa non è nulla otteniamo $V(r)=-\frac{g^2}{4\pi}\frac{e^{-r/R}}{r}$ che è il \textit{potenziale di Yukawa} con il range $R=\frac{\hbar}{m_Xc}$. La forma del potenziale è simile a quello che si ottiene quando consideriamo effetti di schermaggio e vogliamo la carica effettiva subita dal sistema.
+    \item Ci sono delle ipotesi su cui si basa il modello di Yukawa.
+    \begin{enumerate}
+        \item I nucleoni sono le sorgenti del campo nucleare e l'interazione tra essi avviene tramite scambio di bosoni che quantizzano il campo nucleare (detti mesoni).
+        \item L'interazione è a corto range, con range legato alla massa della particella mediatrice.
+        \item L'interazione nucleare è indipendente dalla carica elettrica.
+        \item Il potenziale è a simmetria sferica e dipende anche dagli spin dei nucleoni (che abbiamo ignorato).
+    \end{enumerate}
+\end{itemize}
+Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
+\begin{itemize}
+    \item La distribuzione angolare di scattering protone-neutrone ha un andamento a parabola con picchi in 0 e 180 gradi (e minimo in mezzo da qualche parte). Senza il modello di Yukawa non è spiegabile.
+    \item Se lo scattering è elastico $\abs{\vec p_i}=\abs{\vec p_f}$. L'impulso trasferito varrà $\Delta p = \abs{\vec p_i-\vec p_f}=F\_{media}\Delta t$. Considerando il potenziale nucleare come una buca, avremo $F\_{media}=\frac{V_0}R$. La variazione di impulso è legata all'angolo soltanto visto che è elastico, quindi  (usando $\Delta t=R/v$)
+    \begin{equation*}
+        \Delta \vartheta\approx \frac{\Delta p} p=\frac{F\_m\Delta t}p=\frac{V_0}{vp}\implies \vartheta=\frac{V_0}{2E\_{cin}}
+    \end{equation*}
+    usando il valore tipico di $V_0=35$ MeV e $100$ MeV $\leq E\_{cin}\leq600$ MeV (usati sperimentalmente) otteniamo $\vartheta=10$ gradi, che è in accordo con i dati sperimentali. 
+    \item Quindi con la cinematica spieghiamo il picco ad angoli bassi, ma non quello ad angoli alti. Per spiegarlo dobbiamo considerare il modello di Yukawa, si scambiano un pione quindi esiste uno stato intermedio (non è puntuale, pensando a diagramma di Feynman senza mediatore).
 \end{itemize}
