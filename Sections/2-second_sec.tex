@@ -195,7 +195,29 @@ Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
     \item In questo particolare esperimento usarono rame come target, quindi il protone era confinato nel nucleo e si muove. Assumendo che in questa interazione interagiamo con quello della shell più esterna, questo avrà l'impulso di Fermi $p_F=0.24$ GeV. Questo complica il calcolo perché adesso c'è una certa distribuzione di energia in quanto questo impulso può essere orientato casualmente. Studiamo i casi limite in cui è parallelo e antiparallelo all'impulso della particella incidente.
     \item Nel riferimento del laboratorio abbiamo $P^\mu=(E_i+E_F,\vec p_i+\vec p_F)$, dunque
     \begin{equation*}
-    \text{Iniziale:} P^\mu P_\mu=(E_i+E_F)^2-(\vec p_i+\vec p_F)^2=E_i^2+E_F^2+2E_iE_F-p_i^2-p_F^2-2\vec p_i\cdot\vec p_F
+    \text{Iniziale: } P^\mu P_\mu=(E_i+E_F)^2-(\vec p_i+\vec p_F)^2=E_i^2+E_F^2+2E_iE_F-p_i^2-p_F^2-2\vec p_i\cdot\vec p_F
     \end{equation*}
-    Applichiamo la relazione di mass-shell $E_{i,F}^2-p_{i,F}^2=m_{i,T}^2$ e consideriamo $\vec p_i\cdot\vec p_F=\pm p_ip_F$.
+    Applichiamo la relazione di mass-shell $E_{i,F}^2-p_{i,F}^2=m_{i,T}^2$ e consideriamo $\vec p_i\cdot\vec p_F=\pm p_ip_F$, dove il caso antiparallelo corrisponde al segno meno, che diventa positivo, e quindi corrisponde ad energia di soglia maggiore. Risulta
+    \begin{equation*}
+        2m_p^2+2E_pE_F\pm2p_pp_F\geq 16m_p^2
+    \end{equation*}
+    \item Facciamo un paio di considerazioni.
+    \begin{enumerate}
+        \item $E_F=m_p+\frac{p_F^2}{2m_p}$, cioè un approccio classico dovuto al fatto che l'energia di Fermi è bassa.
+        \item $E_p\approx p_p$ che in realtà sarebbe $p=6$ GeV contro la massa del protone $m_p=1$ GeV ma approssimiamo lo stesso $p\gg m$. 
+    \end{enumerate}
+    Ne segue che 
+    \begin{equation*}
+        2m_p^2+2E_p\qty(m_p+\frac{p_F^2}{2m_p})\pm 2p_FE_p\geq 16m_p^2\implies\dots\implies
+    \end{equation*}
+    \begin{equation*}
+        \implies E_p\geq\frac{7m_p}{1+\frac{p_F^2}{2m_p^2}\pm\frac{p_F}{m_p}}
+    \end{equation*}
+    \item A questo punto l'energia cinetica la ricaviamo da $T_p=E_p-m_p$ ottenendo 
+    \begin{equation*}
+    4.2\text{ GeV }\leq T_p\leq 7.5\text{ GeV }
+    \end{equation*}
+    Sono importanti sia il minimo che il massimo: il minimo perché altrimenti non riusciamo a vedere quello che desideriamo, il massimo perché costruire acceleratori che raggiungono alte energie è costoso (se possibile tecnologicamente). Segrè e l'altro fecero questo esperimento a 6.2 GeV, quindi non prendevano proprio tutti i casi in quanto non avevano la massima energia possibile, ma è un esperimento di scoperta quindi basta una rivelazione.
+    \item Adesso che sappiamo che energia incidente serve, come riveliamo l'antiprotone? Tanto per cominciare dalla reazione $p+p$ possono succedere tante cose.
+    \item Come prima cosa distinguiamo il segno delle cariche usando un campo magnetico. Adesso serve distinguere i $\pi^-$ da i $\bar p$.  I pioni veloci si possono tagliare tramite un rivelatore Cherenkov che dà un trigger solo se si ha una certa velocità e si scartano le particelle che lo attivano. Resta il problema dei pioni lenti. Per risolvere questo problema si misura il tempo di volo. \textbf{Appunti di albergo non capisco} e conoscendo tempo di volo e massa si può identificare l'antiprotone.
 \end{itemize}
