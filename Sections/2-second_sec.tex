@@ -167,3 +167,35 @@ Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
     usando il valore tipico di $V_0=35$ MeV e $100$ MeV $\leq E\_{cin}\leq600$ MeV (usati sperimentalmente) otteniamo $\vartheta=10$ gradi, che è in accordo con i dati sperimentali. 
     \item Quindi con la cinematica spieghiamo il picco ad angoli bassi, ma non quello ad angoli alti. Per spiegarlo dobbiamo considerare il modello di Yukawa, si scambiano un pione quindi esiste uno stato intermedio (non è puntuale, pensando a diagramma di Feynman senza mediatore).
 \end{itemize}
+\subsection{Scoperta dell'antiprotone}
+\begin{itemize}
+    \item Gli antiprotoni sono più difficili da rivelare rispetto ai positroni perché avranno una massa pari a quella del protone e quindi sono più difficile da produrre. Ovviamente ce li aspettiamo con massa negativa.
+    \item Quindi come possiamo crearli? Da raggi cosmici non è possibile vederli. Serve un acceleratore e non deve essere collider. A quanta energia deve arrivare? Consideriamo la reazione $p+p\to p+p+\bar p+p$ e troviamo la energia di soglia.
+    \item Calcoliamo l'energia di soglia nel caso in cui abbiamo inizialmente un proiettile $i$ contro un target $T$ fermo e si hanno $N$ particelle finali.
+    \begin{equation*}
+    \text{Iniziale}:\,E^2=(E_i+m_T)^2-p_i^2=\dots=m_i^2+m_T^2+2m_TE_i
+    \end{equation*}
+    \begin{equation*}
+    \text{Finale}:\,E^2=\qty(\sum_{k=1}^N E_k+m_k)^2\geq\qty(\sum_km_k)^2
+    \end{equation*}
+    perché visto che voglio l'energia di soglia basta la loro "massa". Ne segue che 
+    \begin{equation*}
+    m_i^2+m_T^2+2m_TE_i\geq\qty(\sum_km_k)^2
+    \end{equation*}
+    Sostituendo $E_i=T_i+m_i$ risulta
+    \begin{equation*}
+    T_i\geq\frac{\qty(\sum_km_k)^2-(m_T+m_i)^2 } {2m_T}
+    \end{equation*}
+    Questa relazione ci da l'idea di quanta energia devo dare alla particella incidente per produrre una certa reazione.
+    \item Applichiamolo al nostro caso per produrre l'antiprotone.
+    \begin{equation*}
+    T_i\geq\frac{(4m_p)^2-(2m_p)^2}{2m_p}=5.6\text{ GeV}
+    \end{equation*}
+    Questo non va bene. Il problema è che abbiamo considerato il protone del target fermo, ma noi non abbiamo mai un protone libero.
+    \item In questo particolare esperimento usarono rame come target, quindi il protone era confinato nel nucleo e si muove. Assumendo che in questa interazione interagiamo con quello della shell più esterna, questo avrà l'impulso di Fermi $p_F=0.24$ GeV. Questo complica il calcolo perché adesso c'è una certa distribuzione di energia in quanto questo impulso può essere orientato casualmente. Studiamo i casi limite in cui è parallelo e antiparallelo all'impulso della particella incidente.
+    \item Nel riferimento del laboratorio abbiamo $P^\mu=(E_i+E_F,\vec p_i+\vec p_F)$, dunque
+    \begin{equation*}
+    \text{Iniziale:} P^\mu P_\mu=(E_i+E_F)^2-(\vec p_i+\vec p_F)^2=E_i^2+E_F^2+2E_iE_F-p_i^2-p_F^2-2\vec p_i\cdot\vec p_F
+    \end{equation*}
+    Applichiamo la relazione di mass-shell $E_{i,F}^2-p_{i,F}^2=m_{i,T}^2$ e consideriamo $\vec p_i\cdot\vec p_F=\pm p_ip_F$.
+\end{itemize}
