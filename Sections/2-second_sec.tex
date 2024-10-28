@@ -221,3 +221,88 @@ Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
     \item Adesso che sappiamo che energia incidente serve, come riveliamo l'antiprotone? Tanto per cominciare dalla reazione $p+p$ possono succedere tante cose.
     \item Come prima cosa distinguiamo il segno delle cariche usando un campo magnetico. Adesso serve distinguere i $\pi^-$ da i $\bar p$.  I pioni veloci si possono tagliare tramite un rivelatore Cherenkov che dà un trigger solo se si ha una certa velocità e si scartano le particelle che lo attivano. Resta il problema dei pioni lenti. Per risolvere questo problema si misura il tempo di volo. \textbf{Appunti di albergo non capisco} e conoscendo tempo di volo e massa si può identificare l'antiprotone.
 \end{itemize}
+\subsection{Differenza target fisso e collider}
+Bisogna fare attenzione a non confondere acceleratori circolari, in cui i ltarget è comunque fisso, con collider.
+\begin{itemize}
+    \item Nei collider di solito c'è particella contro antiparticella oppure particelle uguali. È Più efficiente produrre particelle in questo modo perché non spendo energia per spostare il centro di massa.
+    \item Consideriamo target fisso. Abbiamo $P^\mu_1=(E_1,\vec p_1)$ e $P^\mu_2=(m_2,0)$. Calcoliamo la massa invariante (sommando i quadri-impulsi)
+    \begin{equation*}
+        s^2=P^\mu P_\mu=\qty(E_1+m_2)^2-p_1^2=\dots=m_1^2+m_2^2+2E_1m_2 \underset{m_{1,2}\ll E_1}{\implies} \sqrt s=\sqrt{2E_1m_2}
+    \end{equation*}
+    \item Consideriamo collider. In generale $P^\mu_1=(E_1,\vec p_1)$ e $P^\mu_2=(E_2,\vec p_2)$ da cui (di solito $E_1=E_2$)
+    \begin{equation*}
+        s^2=(E_1+E_2)^2-(\vec p_1+\vec p_2)^2=\dots=m_1^2+m_2^2+2(E_1E_2-\vec p_1\cdot \vec p_2)\underset{
+            \begin{subarray}{c}
+                m_{1,2}\ll E_1\\
+                \abs{p_{1,2}}\approx E_{1,2}
+             \end{subarray}}{\implies}
+        s=2E^2(1-\cos\vartheta)
+    \end{equation*}
+    Da cui, visto che è un collider avremo $\vartheta=\pi\implies \sqrt s=2E$.
+    \item Dunque, ricordando che $E\_{cm}=\sqrt s$, si avrà che l'energia a disposizone per creare nuove particelle sarà maggiore, a parità di energia del fascio, per il collider piuttosto che target fisso. 
+    \item Possiamo fare un calcolo esplicito. Consideriamo un fascio di protoni a $E=100$ GeV. Nel caso di target fisso abbiamo
+    \begin{equation*}
+        \sqrt s=\sqrt{2E_1m_2}\approx 14\text{ GeV}
+    \end{equation*}
+    invece in un collider ho 
+    \begin{equation*}
+        \sqrt s=2E_1\approx 200\text{ GeV}
+    \end{equation*}
+    Quindi con un collider ho molta più energia a disposizione. Se volessi infatti avere a disposizione $200$ GeV a target fisso dovrei avere un fascio di energia
+    \begin{equation*}
+        200=\sqrt{2E}\implies E=2\cdot10^4\text{ GeV}
+    \end{equation*}
+    d'altra parte già dagli anni 70 si usano solo collider.
+\end{itemize}
+\subsection{Trasformazioni di Lorentz tra centro di massa e laboratorio}
+\begin{itemize}
+    \item Per un sistema di $n$ particelle abbiamo 
+    \begin{equation*}
+        P^\mu\_{lab}=\qty(\sum_kE_k,\sum_k\vec p_k)
+    \end{equation*}
+    \begin{equation*}
+        P^\mu\_{cm}=\qty(\sum_kE_k^{\text{cm}},0)=(\sqrt s,0)
+    \end{equation*}
+    Se trasformiamo con Lorentz abbiamo 
+    \begin{equation*}
+        \mqty(\frac{\sqrt s} c \\ \zmat{3}{1})= 
+        \begin{pmatrix}
+            \mqty{\gamma\_{cm} & -\beta\_{cm}\gamma\_{cm} & 0 & 0 \\ -\beta\_{cm}\gamma\_{cm} & \gamma\_{cm} &0&0 \\ 
+            0 & 0 & 1 & 0 \\ 
+            0 & 0 & 0 & 1 }
+        \end{pmatrix}
+        \mqty(\sum_k\frac{E_k}c \\ \sum_k\vec p_k \\ \zmat{2}{1})\implies 
+    \end{equation*}
+    \begin{equation*}
+        \implies 
+        \begin{cases}
+            \frac{\sqrt s}c=\gamma\_{cm}\sum_k\frac{E_k}c-\beta\_{cm}\gamma\_{cm}\sum_k\abs{\vec p_k}\\
+            0=-\beta\_{cm}\gamma\_{cm}\sum_k\frac{E_k}c +\gamma\_{cm}\sum_k\abs{\vec p _k}
+            \end{cases}
+    \end{equation*}
+    da cui $\beta\_{cm}=\frac{\abs{p\_{lab}^{\text{tot}}}}{E^{\text{tot}}\_{lab}}$ velocità del centro di massa, e $\gamma\_{cm}=\frac{E^{\text{tot}}\_{lab}}{\sqrt s}$ sempre del centro di massa.
+    \item Si può anche fare al contrario da sistema del centro di massa a sistea del laboratorio. Stavolta abbiamo 
+    \begin{equation*}
+        P^\mu\_{lab}=\qty(E_1+m_2,\vec p_1)
+    \end{equation*}
+    \begin{equation*}
+        P^\mu\_{cm}=\qty(\sum_kE_k^{\text{cm}},0)=(\sqrt s,0)
+    \end{equation*}
+    Se trasformiamo con Lorentz abbiamo 
+    \begin{equation*}
+        \mqty(E_1+m_2 \\ \zmat{2}{1}\\p_1)= 
+        \begin{pmatrix}VEDI STA MATRICE
+            \mqty{\gamma\_{cm} & 0 & 0 & \beta\_{cm} \\ -\beta\_{cm}\gamma\_{cm} & \gamma\_{cm} &0&0 \\ 
+            0 & 0 & 1 & 0 \\ 
+            0 & 0 & 0 & 1 }
+        \end{pmatrix}
+        \mqty(\sum_k\frac{E_k}c \\ \sum_k\vec p_k \\ \zmat{2}{1})\implies 
+    \end{equation*}
+    \begin{equation*}
+        \implies 
+        \begin{cases}
+            \frac{\sqrt s}c=\gamma\_{cm}\sum_k\frac{E_k}c-\beta\_{cm}\gamma\_{cm}\sum_k\abs{\vec p_k}\\
+            0=-\beta\_{cm}\gamma\_{cm}\sum_k\frac{E_k}c +\gamma\_{cm}\sum_k\abs{\vec p _k}
+            \end{cases}
+    \end{equation*}
+\end{itemize}
