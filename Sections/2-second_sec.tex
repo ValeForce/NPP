@@ -335,5 +335,84 @@ Normalmente nei collider si usano rivelatori a simmetria cilindrica o sferica. V
     \tan \vartheta=\frac{\sin\vartheta^*}{\gamma\frac\beta{\beta^*}+\cos\vartheta^*}
     \end{equation*}
     con $\beta^*=p^*/E^*$.
-    \item Vediamo adesso l'impulso trasverso. È definito come $p_\perp=p\sin\vartheta$. Dalla seconda e terza equazione otteniamo
+    \item L'impulso trasverso. È definito come $p_\perp=p\sin\vartheta$. Dalla seconda e terza equazione (facendo il quadrato e sommando) otteniamo che $p_\perp=p_\perp^*$, cioè l'impulso trasverso è invariante per trasformazioni di Lorentz. 
+    \item Che configurazioni possiamo avere? Dobbiamo guardare il denominatore di $\tan\vartheta$.
+    \begin{enumerate}
+        \item $\beta\_{cm}>\beta^*$ (velocità del centro di massa è maggiore della velocità nel centro di massa). In questo caso il denominatore è positivo per ogni valore di $\vartheta^*$. Da ciò ne segue che $0<\vartheta<\pi/2$ cioè nel riferimento del laboratorio è sempre in avanti. \textbf{Speriamo nelle slide non capisco bene.} La espressione si annulla per $\vartheta^*=0,\pi$ a cui corrisponde un valore nel laboratorio di massimo $\vartheta\_{max}$. Troviamolo facendo la derivata e ponendola pari a zero:
+        \begin{equation*}
+            \dv{\tan\vartheta}{\vartheta^*}=\dots=\frac{1+\frac\beta{\beta^*}\cos\vartheta^*}{\gamma\qty(\frac\beta{\beta^*}+\cos\vartheta^*)^2}=0\implies \cos\vartheta^*=-\frac\beta{\beta^*}\implies \tan\vartheta\_{max}=\frac{\beta^*}{\gamma\sqrt{\beta^2-\beta^{*,2}}}
+        \end{equation*}
+        E possiamo anche trovare che valore di energia corrisponde ad esso (ad un certo punto si usa $\beta^*=p^*/E^*$ e $E^*=\gamma^*m$)
+        \begin{equation*}
+        E(\vartheta\_{max})=\gamma(E^*+\beta p^*\cos\vartheta^*)=\dots=m\frac{\gamma}{\gamma^*}
+        \end{equation*}
+        \item $\beta\_{cm}<\beta^*$. In questo caso non ho valori massimi di $\vartheta$ perché la derivata è sempre positiva. La velocità della particella nel centro di massa può compensare (parzialmente) il boost del centro di massa, quindi posso anche avere backscattering.
+        \item $\beta\_{cm}=\beta^*$. In questo caso $\cos\vartheta^*=-1$ e quindi $\vartheta\_{max}=\pi/2$. La particella nel riferimento del centro di massa viaggia in verso opposto al moto del centro di massa, nel laboratorio il centro di massa è fermo.
+    \end{enumerate}
+\end{itemize}
+\subsection{Scattering elastico}
+Consideriamo elettrone contro un nucleo. Ricordiamo che le particelle prima e dopo non cambiano.
+\begin{itemize}
+    \item In scattering elastico si conserva il quadri-impulso (lo indico solo con P, e quando è accentato è post-collisione).
+    \begin{equation*}
+        P_e+P_N=P'_e+P'_N\text{ con }
+        \begin{cases}
+            P_e=\qty(E,\vec p)\\
+            P_N=\qty(m_N,0)
+        \end{cases}
+        \begin{cases}
+            P'_e=\qty(E',{\vec{p}\,}')\\
+            P'_N=\qty(E'_N,\vec p_N)
+        \end{cases}
+    \end{equation*}
+    Eleviamo al quadrato la relazione 
+    \begin{equation*}
+        P_e^2+P_N^2+2P_eP_N=P_e^{2\prime}+P_N^{2\prime}+2P'_eP'_N\underset{
+        \begin{subarray}{c}
+            P_e^2=m_e^2\\
+            P_N^2=m_N^2
+         \end{subarray}
+        }{\implies}P_eP_N=P'_eP'_N
+    \end{equation*}
+    poiché non accediamo all'energia del nucleo che rincula, la riscriviamo usando $P'_N=P_e+P_N-P'_e$, infatti noi accediamo all'energia dell'elettrone diffuso che è proprio ciò che riveliamo.
+    \begin{equation*}
+        P_eP_N=P'_e(P_e+P_N-P'_e)=P'_eP_e+P'_eP_N-\underbrace{P'^2_e}_{m_e^2}=P'_eP_e+P'_eP_N-m_e^2
+    \end{equation*}
+    Nel riferimento del laboratorio dunque abbiamo, sviluppando i prodotti tra tensore
+    \begin{equation*}
+        Em_N=EE'-\vec p\cdot{\vec{p}\,}'+E'm_N-m_e^2\underbrace{\approx}_{m_e\ll p}E'E-E'E\cos\vartheta+E'm_N\implies E'=\frac E{1+\frac E{m_N}\qty(1-\cos\vartheta)}
+    \end{equation*}
+    Dunque in generale $E\neq E'$. Coincidono se il nucleo sostanzialmente non prende energia. L'energia diffusa dell'elettrone dipende dall'angolo di scattering, a bersaglio fissato. L'energia di rinculo del nucleo $E-E'$ dipende dal rapporto $E/m_N$ e quindi aumenta con l'energia iniziale dell'elettrone (\textbf{slide}).
+\end{itemize}
+\subsection{Decadimenti}
+\subsubsection{Decadimenti a due corpi}
+Secondo la prof noi diamo per vero che lo spettro sia discreto senza sapere il perché. Non si ricorda che già abbiamo il titolo di "Dottore in Fisica".
+\begin{itemize}
+    \item Se abbiamo un decadimento ad $n$ corpi, si ha
+    \begin{equation*}
+        m=\sum_{i=1}^n=\sum_i\sqrt{p_i^2+m_i^2}\geq\sum_i m_i\implies m\geq\sum_i m_i
+    \end{equation*}
+    cioè la massa del nucleo originale è sempre maggiore o uguale alla somma di tutti i prodotti.
+    \item Se consideriamo un decadimento a due corpi, abbiamo nel riferimento del centro di massa
+    \begin{equation*}
+        \begin{cases}
+        m_a=E_b^*+E_c^*\\
+        0=\vec p_b^*+\vec p_c^*
+        \end{cases}\implies m_a=(p^{*2}_b+m_b^2)^{1/2}+(p^{*2}_c+m_c^2)^{1/2}\implies 
+    \end{equation*}
+    \begin{equation*}
+        \implies m_a=(p^{*2}+m_b^2)^{1/2}+(p^{*2}+m_c^2)^{1/2}\implies m_a-(p^{*2}+m_b^2)^{1/2}=(p^{*2}+m_c^2)^{1/2}
+    \end{equation*}
+    Va be con tanti conti elevando due volte al quadrato (si tiene $(m_b^2-m_c^2)$ come termine unico nella seconda quadratura) si arriva a 
+    \begin{equation*}
+        p^{*2}=\frac{m_a^4-2m_a^2(m_b^2+m_c^2)+(m_b^2-m_c^2)^2}{4m_a^2}=\frac{[m_a^2-(m_b+m_c)^2][m_a^2-(m_b-m_c)^2]}{4m_a^2}
+    \end{equation*}
+    da cui
+    \begin{equation*}
+        \begin{array}{c}
+            E_b^*=\sqrt{p^{2*}+m_b^2}=\frac{m_a^2+(m_b^2-m_c^2)}{2m_a} \\
+            E_c^*=\sqrt{p^{2*}+m_c^2}=\frac{m_a^2-(m_b^2-m_c^2)}{2m_a}
+        \end{array}
+    \end{equation*}
+    belle queste formule, ma quello che ci interessa è che l'energia dei prodotti finali ha dei valori fissi, che dipendono dalle masse coinvolte. Questo spiega matematicamente perché lo spettro è discreto. Se $b=c$ allora l'energia è ripartita a metà equamente tra i due corpi prodotti, infatti $E^*=E^*_b+E^*_c=\frac{m_a}2$. Questo nel riferimento del centro di massa, cioè della particella originale che decade. 
 \end{itemize}
