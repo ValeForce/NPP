@@ -416,3 +416,136 @@ Secondo la prof noi diamo per vero che lo spettro sia discreto senza sapere il p
     \end{equation*}
     belle queste formule, ma quello che ci interessa è che l'energia dei prodotti finali ha dei valori fissi, che dipendono dalle masse coinvolte. Questo spiega matematicamente perché lo spettro è discreto. Se $b=c$ allora l'energia è ripartita a metà equamente tra i due corpi prodotti, infatti $E^*=E^*_b+E^*_c=\frac{m_a}2$. Questo nel riferimento del centro di massa, cioè della particella originale che decade. 
 \end{itemize}
+\subsubsection{Distribuzioni angolari del decadimento a due corpi}
+Consideriamo $a\to b+c$. 
+
+\begin{itemize}
+    \item Nel riferimento del centro di massa si ha
+    \begin{equation*}
+        \begin{cases}
+            m_a=E_b^*+E_c^*\\
+            0=\vec p_b^*+\vec p_c^*
+        \end{cases}    
+    \end{equation*}
+    sappiamo che valgono le formule $\beta=\frac p E$ e $\beta\gamma=\frac p {m_a}$.
+    \item Nel riferimento del laboratorio abbiamo due angoli $\vartheta_{1,2}$ rispetto alla direzione di volo della particella originale, mentre nel centro di massa c'è un solo angolo $\vartheta^*$ (rispetto a direzione iniziale) e le figlie hanno impulso uguale ed opposto. Cerchiamo una relazione tra questi due angoli e quello nel centro di massa, usando le formule di trasformazione di Lorentz.
+    \item Consideriamo il passaggio da laboratorio a centro di massa. Nel piano $xy$ abbiamo 
+    \begin{equation*}
+        \mqty(E\\p_x\\p_y)=
+        \begin{pmatrix}
+            \mqty{\gamma & \beta\gamma&0 \\
+            \beta\gamma & \gamma &0 \\
+            0 & 0 & 1}
+        \end{pmatrix}
+        \mqty(E^*\\p^*_x\\p^*_y)
+            \implies
+            \begin{cases}
+                E_1=\gamma E_1^*+\beta\gamma p^*_x=\gamma E_1^*+\beta\gamma\cos\vartheta^* p^*\\
+                p_{1x}=p_1\cos\vartheta_1=\gamma p_{1x}^*+\beta\gamma E^*_1=\gamma p^*\cos\vartheta^*+\beta\gamma E^*_1\\
+                p_{1y}=p_1\sin\vartheta_1=p_{1y}^*= p^*\sin\vartheta^*
+            \end{cases}
+        \end{equation*}
+        Per la particella due le relazioni sono identiche con l'unica differenza che se $p_1$ è positivo, $p_2$ è negativo. Quindi $\vartheta^*\to\pi+\vartheta^*$ ed il coseno cambia segno ($\cos\qty(x+\pi)=-\cos x)$. Dunque
+        \begin{equation*}
+            \begin{cases}
+                E_2=\gamma E_2^*-\beta\gamma\cos\vartheta^* p^*\\
+                p_{2x}=p_2\cos\vartheta_2=-\gamma p^*\cos\vartheta^*+\beta\gamma E^*_2\\
+                p_{2y}=p_2\sin\vartheta_2=p_{2y}^* = p^*\sin\vartheta^*
+            \end{cases}
+        \end{equation*}
+        Adesso troviamo la tangente facendo al solito la divisione:
+        \begin{equation*}
+            \tan\vartheta_1=\frac{p^*\sin\vartheta^*}{\gamma (p^*\cos\vartheta^*+\beta E_1^*)}=\frac{\sin\vartheta^*}{\gamma(\cos\vartheta^*+\beta\frac{E^*}{p^*})}=\frac{\sin\vartheta^*}{\gamma(\cos\vartheta^*+\frac{\beta}{\beta_1^*})}
+        \end{equation*}
+        e per l'angolo due al solito la stessa espressione cambiando il segno al coseno:
+        \begin{equation*}
+            \tan\vartheta_2=\frac{\sin\vartheta^*}{\gamma(-\cos\vartheta^*+\frac{\beta}{\beta_2^*})}
+        \end{equation*}
+        Come già visto, se $\beta^*<\beta$ le particelle vengono emesse in avanti. Possiamo calcolare anche in questo caso il valore dell'angolo massimo e si ha un risultato analogo.
+        \begin{equation*}
+            \dv{\tan\vartheta_1}{\vartheta^*}=0\implies \cos\vartheta^*=-\frac{\beta_1^*}{\beta}\implies \tan\vartheta\_{1,max}=\frac{\beta_1^*}{\gamma\sqrt{\beta^2-\beta_1^{*,2}}}
+        \end{equation*}
+        \item Indicando con $\vartheta=\vartheta_1+\vartheta_2$ l'angolo tra le due particelle, possiamo scrivere $P^2=m_1^2+m_2^2+2E_1E_2-2p_1p_2\cos\vartheta=M^2$ e da qui ricavo 
+        \begin{equation*}
+            \cos\vartheta=\frac{m_1^2+m_2^2+2E_1E_2-M^2}{2p_1p_2}\underset{E_i\approx p_i}{\approx}\frac{m_1^2+m_2^2+2E_1E_2-M^2}{2E_1E_2}\Rightarrow \sin\frac\vartheta2=\frac{\sqrt{M^2-m_1^2-m_2^2}}{2\sqrt{E_1E_2}}
+        \end{equation*}
+        Si ha il valore di $\vartheta$ minimo quando il denominatore è massimo. Troviamo i valori per cui è massimo:s
+        \begin{equation*}
+            E_0=E_1+E_2\implies E_1E_2=E_1(E_0-E_1)\implies \dv{}{E_1}\qty(E_1E_0-E_1^2)=0\implies E_1=\frac{E_0}2=E_2
+        \end{equation*}
+        dunque abbiamo il valore dell'angolo minimo nel caso in cui l'energia è equipartita tra i due corpi.
+\end{itemize}
+\subsubsection{Decadimento del pione}
+\begin{itemize}
+    \item Ci concentriamo sul decadimento $\pi^0\to\gamma+\gamma$. Questo a differenza del decadimento dei pioni carichi, è un decadimento elettromagnetico infatti ha $\tau\approx10^{-16}$ s, mentre quello debole è $\tau\approx10^{-8}$ s.
+    \item Ci sono principalmente due motivi per cui è utile studiare questo decadimento:
+    \begin{enumerate}
+        \item Perché i pioni sono in generale i mediatori della interazione nucleare.
+        \item Perché da raggi cosmici che penetrano nell'atmosfera vengono prodotti principalmente pioni. Anche in qualunque esperimento a bersaglio fisso. D'altra parte visto che la forza nucleare è indipendente dalla carica, ci sono sempre pioni carichi e neutri in mezzo.
+    \end{enumerate}
+    \item In questo caso abbiamo un nucleo origine che decade in due figli di uguale massa, che in particolare è zero! Quindi i due fotoni nel riferimento del laboratorio avranno un certo impulso con un certo angolo rispetto quello del $\pi^0$ e per rivelarli dovrò rivelare le coppie elettrone-positrone, che se sono in un campo magnetico curveranno con verso opposto. Quindi avremo nel riferimento del laboratorio $\vec p_0=\vec p_1+\vec p_2$ e $
+    \vartheta=\vartheta_1+\vartheta_2$:
+    \begin{equation*}
+        \begin{cases}
+            \vec p_0=\vec p_1+\vec p_2\implies p_0^2=p_1^2+p_2^2+2p_1p_2\cos\vartheta\\
+            \sqrt{m_{\pi^0}^2+p_0^2}=E_1+E_2=p_1+p_2\implies m_{\pi^0}^2+p_0^2=p_1^2+p_2^2+2p_1p_2
+        \end{cases}
+    \end{equation*}
+    \begin{equation*}
+        \implies 2p_1p_2(1-\cos\vartheta)=m_{\pi^0}^2\implies \sin^2\frac\vartheta2=\frac{m_{\pi^0}^2}{4E_1E_2}
+    \end{equation*}
+    che è lo stesso risultato di prima ma generico.
+    \item Ci sarebbero i commenti ad un grafico che se mai avrò le slide metterò. C'è una iperbole nel primo quadrante, ed è $\vartheta\_{min}$ in funzione dell'energia in GeV, per il $\pi^0$ e $\eta$. Si vede che ad energie basse l'angolo minimo è grande, mentre ad energie alte l'angolo minimo diminuisce sempre più. Questo vuol dire che se faccio esperimenti ad alta energia, avrò i due fotoni proiettati in avanti, quindi se vogio essere in grado di distinguerli serve un rivelatore con risoluzione sufficiente.
+    \item Vediamo la distribuzione energetica dei due fotoni nel riferimento del laboratorio, perché nel centro di massa sappiamo che sono più energetici e si ha $E^*=\frac{m_{\pi^0}}2$. Fissiamo assi in modo tale che $x$ è direzione del moto di $\pi^0$ e il moto è nel piano $xy$. 
+    \item Facciamo il conto: 
+    \begin{equation*}
+        \beta=\frac{p_0}{E_0},\quad\gamma=\frac{E_0}{E^*}=\frac{E_0}{m_{\pi^0}},\quad p_y=p_y^*=p^*\sin\vartheta,\quad p_x=\gamma(p^*cos\vartheta+\beta E^*)
+    \end{equation*}
+    \begin{equation*}
+        E_1=\gamma\qty(E_1^*+\beta p_1^*\cos\vartheta^*)=\gamma\frac{m_{\pi^0}}2\qty(1+\beta \cos\vartheta^*)=\frac{E_0}{m_{\pi^0}}\frac{m_{\pi^0}}2\qty(1+\frac{p_0}{E_0} \cos\vartheta^*)=
+    \end{equation*}
+    \begin{equation*}
+        =\frac{E_0}2\qty(1+\frac{p_0}{E_0} \cos\vartheta^*)=\frac{E_0}2\frac{E_0+p_0\cos\vartheta^*}{E_0}=\frac{E_0+p_0\cos\vartheta^*}{2}
+    \end{equation*}
+    Questo è per $E_1$ e ovviamente se guardo $E_2$ ho lo stesso risultato con il segno cambiato del coseno. 
+    \item Dunque la distribuzione energetica è compresa tra un valore massimo e minimo di $E_1$ per i valori limite del coseno. 
+    \begin{equation*}
+        E\_{min}=\frac{E_0-p_0}{2}\;(\vartheta^*=\pi),\quad E\_{max}=\frac{E_0+p_0}{2}\;(\vartheta^*=0)
+    \end{equation*}
+    e chiaramente i valori sono complementari tra fotone 1 e 2, cioè quando uno è al minimo l'altro è al massimo e viceversa.
+    \item Adesso non ci resta che trovare come varia l'energia in questo intervallo. Sappiamo che $\pi^0$ è un mesone a spin zero, quindi i fotoni nel centro di massa sono emessi isotropicamente. Quindi la distribuzione angolare non dipende dall'angolo solido, cioè uniforme su $\cos\vartheta^*$. Sia $f(\cos\vartheta^*)$ la distribuzione angolare, allora avremo
+    \begin{equation*}
+        \int_{-1}^1f(\cos\vartheta^*)\dd{\cos\vartheta^*}=1\implies f(\cos\vartheta^*)=\frac12
+    \end{equation*}
+    differenziando $E_1=\frac{E_0}2+\frac{p_0}2\cos\vartheta^*$ rispetto a $\cos\vartheta^*$ otteniamo
+    \begin{equation*}
+        \dv{E_1}{\cos\vartheta^*}=\frac{p_0}2\qty(=\frac{\beta E_0}2=\frac12\beta\gamma m_{\pi^0})\implies \dd{n}=f(\cos\vartheta^*)\dd{\cos\vartheta^*}=\frac12\dd{\cos\vartheta^*}=\frac{\dd{E_1}}{p_0}
+    \end{equation*}
+    la distribuzione di energia è costante tra i valori massimo e minimo
+    \begin{equation*}
+        \dv{n}{E_1}=\frac{1}{p_0}
+    \end{equation*}
+    Dunque nel riferimento del centro di massa è una $\delta$ centrata nella massa del $\pi^0$; invece nel riferimento del laboratorio è una distribuzione piatta tra i valori massimo e minimo.
+    \item Dimostriamo che la configurazione di decadimento per $\vartheta\_{min}$ è proprio quella più probabile. Partiamo da 
+    \begin{equation*}
+        \sin^2\frac{\vartheta}{2}=\frac{m_{\pi^0}^2}{4E_1E_2}\Rightarrow 4E_1(E_0-E_1)=\frac{m_{\pi^0}^2}{\sin^2\frac{\vartheta}{2}}{\implies}{}
+        \sin^2\frac{\vartheta}{2}=\frac{m_{\pi^0}^2}{4E_1E_2}\implies 4E_1(E_0-E_1)=\frac{m_{\pi^0}^2}{\sin^2\frac{\vartheta}{2}}
+    \end{equation*}
+    \begin{equation*}
+        \implies 4(E_0-2E_1)\dd{E_1}=-2\frac{m_{\pi^0}^2}{\sin^3\frac{\vartheta}{2}}\cos\frac{\vartheta}{2}\frac12\dd{\vartheta}=-m_{\pi^0}^2\frac{\cos\frac{\vartheta}{2}}{\sin^3\frac{\vartheta}{2}}\dd{\vartheta}
+    \end{equation*}
+    Se torniamo alla distribuzione angolare
+    \begin{equation*}
+        \dv{n}{\vartheta}=\dv{n}{E_1}\dv{E_1}{\vartheta}=\frac1{p_0}\frac{m_{\pi^0}^2}{4(E_0-2E_1)}\frac{\cos\frac{\vartheta}{2}}{\sin^3\frac{\vartheta}{2}}
+    \end{equation*}
+    Facciamo un altro passaggio diverso
+    \begin{equation*}
+        E_1(E_0-E_1)=\underbrace{\frac{m_{\pi^0}^2}{4\sin^2\frac{\vartheta}{2}}}_{=A}\implies E_1^2-E_0E_1+A=0\implies E_0-2E_1=\mp\sqrt{E_0^2-4A}=\mp\frac{E_0}{\sin\frac\vartheta2}
+    \end{equation*}
+    da cui sostituendo in $\dv{n}{\vartheta}$ otteniamo
+    \begin{equation*}
+        \dv{n}{\vartheta}=\frac{m_{\pi^0}^2}{p_0E_0}\frac{\cos\frac{\vartheta}{2}}{4\sin^2\frac{\vartheta}{2}\sqrt{\sin^2\frac{\vartheta}{2}-\frac{m_{\pi^0}^2}{E_0^2}}}
+    \end{equation*}
+    e si ha un massimo quando il denominatore è minimo (divergenza) per cui si ottiene proprio la formula di prima di $\vartheta\_{min}$ (ponendo la radice quadrata pari a zero). Questa è proprio la configurazione più probabile, quando i due fotoni hanno minore apertura angolare che corrisponde ad energia iniziale equipartita.
+\end{itemize}
+1:17:15
