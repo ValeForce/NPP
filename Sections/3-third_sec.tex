@@ -14,7 +14,7 @@
     \begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm}}
         Forte & Elettromagnetica & Debole & Gravitazionale \\
         1 & $10^{-2}$    & $10^{-7}$    & $10^{-39}$    \\
-    \end{tabular}
+    \end{tabular}\\
     Secondo Einstein forse è possibile unificare le quattro forze in un'unica teoria, ma non è ancora stato fatto. Finora solo la forza elettromagnetica e debole sono state unificate in una sola teoria. Si pensa che ad alte energie si riescono a unificare tutte le forze, solo che sono troppo elevate per raggiungerle. A $10^{16}$ GeV si uniscono forza elettromagnetica, debole e forte; A $10^{19}$ GeV si unisce anche la gravitazionale. Oggi siamo a 12 ordini di grandezza di distanza da $10^{16}$ GeV. 
     \item L'intensità di una forza è associata ad una costante di accoppiamento.
     \begin{enumerate}
@@ -24,11 +24,36 @@
         \end{equation*}
         \item Quella debole interviene nei $\beta$-decay e in assorbimenti di neutrini (che sarebbe la stessa cosa). Ma interviene anche in altri processi più \textit{strani}. Vediamo i due decadimenti:
         \begin{equation*}
-            \underset{dds}{\Sigma^-}\to \underset{ddu}{n}+\pi^-\qquad \tau\sim10^{-10}s
+            \underset{dds}{\Sigma^-}\to \underset{ddu}{n}+\pi^-\qquad \tau_w\sim10^{-10}s\qquad \text{Forza debole}
         \end{equation*}
         \begin{equation*}
-            \underset{uds}{\Sigma^0}\to \underset{uds}{\Lambda}+\gamma\qquad \tau\sim10^{-19}s
+            \underset{uds}{\Sigma^0}\to \underset{uds}{\Lambda}+\gamma\qquad \tau\_{EM}\sim10^{-19}s\qquad \text{Forza elettromagnetica}
         \end{equation*}
-    \end{enumerate}
-    La prima è effettivamente associata all'interazione debole in quanto viene violata la conservazione di flavour (un quark strange diventa up) ed ha un tempo di $10^{-10}$s, mentre la seonda è elettromagnetica perché, oltre alla presenza di un fotone, viola soltanto la conservazione dell'isospin e il tempo è di $10^{-19}$s. Rapporto non lo so ascolta su sez d'urto addio
+    La prima è effettivamente associata all'interazione debole in quanto viene violata la conservazione di flavour (un quark strange diventa up) ed ha un tempo di $10^{-10}$s, mentre la seonda è elettromagnetica perché, oltre alla presenza di un fotone, viola soltanto la conservazione dell'isospin e il tempo è di $10^{-19}$s. Come già sappiamo, il principio di indeterminazione lega vita media e larghezza del decadimento in modo inversamente proporzionale. Ma anche la larghezza di decadimento $\Gamma$ dipende dalla costante di accoppiamento $\alpha$ che caratterizza l'interazione tra lo stato iniziale e i prodotti finali del decadimento. In generale, il tasso di decadimento (sezione d'urto) è proporzionale al quadrato della costante di accoppiamento, quindi possiamo scrivere che $\Gamma\propto\alpha^2$. Questa dipendenza dal quadrato della costante di accoppiamento è una conseguenza della teoria quantistica dei campi, dove l'ampiezza della transizione dipende linearmente da $\alpha$, mentre la probabilità di transizione (e quindi il tasso di decadimento o sezione d'urto) dipende dal modulo al quadrato di tale ampiezza. Da ciò segue che il tempo di vita medio $\tau$ è inversamente proporzionale al quadrato della costante di accoppiamento $\alpha$: $\tau\propto\alpha^{-2}$ di conseguenza, più è forte l'interazione (cioè, maggiore è la costante di accoppiamento), più breve sarà il tempo di vita della particella, mentre un'interazione più debole (con $\alpha$ più piccolo) darà luogo a un tempo di vita più lungo.
+    \begin{equation*}
+    \frac{\alpha_w}{\alpha}=\sqrt{\frac{\tau\_{EM}}{\tau_w}}\approx 10^{-4}-10^{-5}
+    \end{equation*}
+    Cioè, come già visto nella tabella precedente, la forza debole è 4-5 ordini meno intensa di quella elettromagnetica.
+    \item L'interazione forte invece conserva tutto. Quindi quella elettromagnetica viola al massimo la conservazione di isospin; quella debole viola molte cose tra cui parità, coniugazione di carica, flavour ed isospin; quella forte non viola niente. Vediamo le due reazioni:
+    \begin{equation*}
+        \Sigma^{0*}(1385)\to\Lambda+\pi^0\qquad\tau\sim10^{-23}s\qquad{\text{Forza forte }}\Gamma=36\MeV
+    \end{equation*}
+    \begin{equation*}
+        \Sigma^0(1192)\to\Lambda+\gamma\qquad\tau\sim10^{-19}s\qquad{\text{Forza elettromagnetica}}
+    \end{equation*}
+    In questo caso abbiamo 
+    \begin{equation*}
+    \frac{\alpha_s}\alpha=\sqrt{\frac{\tau\_{EM}}{\tau_s}}=\sqrt{\frac{10^{-19}}{10^{-23}}}\approx10^2
+    \end{equation*}
+    I quanti in questo caso sono i gluoni e ci sono sei cariche. La forza tra i quark è simmetrica per colore ossia non dipende da essa. Vale la cromodinamica quantistica per l'interazione forte, e si hanno i due comportamenti: 
+    \\
+    \begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm}}
+        Libertà asintotica & $V_s\to\alpha_s/r$ & $q^2\to\infty$\\
+        Confinamento & $V_s\to kr$ & $q^2\to0$\\
+    \end{tabular}\\
+    \end{center}
+    Cioè ad alte energie (piccole distanze) il potenziale è coulombiano, mentre a piccole energie (grandi distanze) il potenziale è elastico. La soglia di energia alta/bassa è sui GeV.
+\end{enumerate}
 \end{itemize}
+\subsection{Diagrammi di Feynman}
