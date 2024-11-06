@@ -57,3 +57,52 @@
 \end{enumerate}
 \end{itemize}
 \subsection{Diagrammi di Feynman}
+Introduzione inutile sui diagrammi. Lei però considera tempo da sinistra verso destra. Dice anche la storia dell'interferenza di quando consideri più diagrammi per uno stesso processo (fai il quadrato della somma, non la somma dei quadrati quella storia lì perché i diagrammi sono ampiezze).
+\subsubsection{Variabili di Mandelstam}
+Consideriamo il processo $a+b\to c+d$ (e.g. $p\bar p\to n\bar n$). Le variabili di Mandelstam sono (per processi $2\to2$):
+\begin{enumerate}
+    \item $s=(p_a+p_b)^2=(p_c+p_d)^2$ è il quadrato dell'energia nel centro di massa.
+    \item $t=(p_a-p_c)^2=(p_b-p_d)^2$ è il quadrato del momento trasferito.
+    \item $u=(p_a-p_d)^2=(p_b-p_c)^2$ è il quadrato del momento scambiato.
+\end{enumerate}
+Inoltre vale $s+t+u=(m_a^2+m_b^2+m_c^2+m_d^2)$ è la somma delle masse a riposo.
+\begin{itemize}
+    \item Facciamo un esempio con lo scattering elettrone-positrone, quindi supponendo $E_i\sim p_i$. Nel riferimento del centro di massa avremo:
+    \begin{equation*}
+    \begin{cases}
+        p_a=(E,p,0,0)\\
+        p_b=(E,-p,0,0)\\
+        p_c=(E,p\cos\vartheta,p\sin\vartheta,0)\\
+        p_d=(E,-p\cos\vartheta,-p\sin\vartheta,0)
+    \end{cases}
+    \end{equation*}
+    con $\vartheta$ l'angolo tra la direzione iniziale di collisione e la direzione di scattering (finale). Allora abbiamo:
+    \begin{equation*}
+        \begin{cases}
+            s=4E^2\text{ come nei collider}\\
+            t=-\frac12s(1-\cos\vartheta)=-s\sin^2\frac\vartheta2 \\
+            u=-\frac12s(1+\cos\vartheta)=-s\cos^2\frac\vartheta2
+        \end{cases}
+    \end{equation*}
+        e si ha effettivamente $s+t+u=0$, che vuol dire che solo due variabili sono indipendenti e scegliamo noi quale usare per descrivere il sistema (e.g. $(E,\vartheta)$,$(s,t)$, $(\sqrt s,\vartheta)$). Invece l'angolo azimutale $\varphi$ non compare e c'è simmetria (della sezione d'urto) in esso se la dinamica non lo esplicita, ad esempio con lo spin. Se non posso trascurare la massa $s=m_a^2+m_b^2+2p_ap_b\implies s+t+u=\sum_i m_i^2$.
+        \item Consideriamo adesso masse uguali. Diamo una rappresentazione grafica o qualcosa del genere non è che si capisce a che cosa serva.
+        \begin{equation*}
+            \begin{cases}
+                s=4E^2\geq 4m^2\\
+                t=-4p^2\sin^2\frac\vartheta2 \\
+                u=-4p^2\cos^2\frac\vartheta2
+            \end{cases}
+        \end{equation*}
+        L'equazione $s+t+u=4m^2=M$ oltre a dirci che solo due variabili sono indipendenti, rappresenza l'equazione di un piano nello spazio 3D $stu$. La regione del piano in cui $s,t,u>0$ forma un triangolo equilatero, come in \autoref{fig:mandelstam}.
+        \begin{figure}[h]
+            \centering
+            \includegraphics[width=0.45\textwidth]{immagini/fig_mandelstam.png}
+            \caption{Piano di Mandelstam}%Ragazzi non ne ho idea è più comprensibile il corso di Greco.}
+            \label{fig:mandelstam}
+          \end{figure}
+          I confini di questo triangolo sono dati dalle linee \( s = 0 \), \( t = 0 \) e \( u = 0 \), come mostrato. Il vertice superiore del triangolo corrisponde a \( t = u = 0 \), quindi, dalla equazione precedente, vediamo che l'altezza del triangolo è \( M \). Sebbene siano necessari solo due vettori unitari per specificare una posizione in questo piano, è consuetudine definire tre vettori unitari \( \vec{e}_s \), \( \vec{e}_t \) e \( \vec{e}_u \), ciascuno dei quali è perpendicolare alla rispettiva linea zero, come mostrato in \autoref{fig:mandelstam}. Visto che l'angolo tra due di questi versori è sempre $\frac23\pi$, abbiamo 
+          \begin{equation*}
+          \vec{e}_i\cdot\vec{e}_j=\cos\frac23\pi=-\frac12 \qquad i\neq j
+          \end{equation*}
+          Per qualche motivo oscuro vogliamo esprimere ${\vec e_i}$ in funzione di $\hat x$ e $\hat y$. Notiamo subito che $\vec e_s=\hat y$. Invece $\vec e_u$ ha un angolo pari a $\frac23\pi+\frac\pi2=\frac76\pi$ rispetto all'asse $\hat x$, dunque $\vec e_u=(-\frac{\sqrt3} 2,-\frac12)$. Infine $\vec e_t$ sta a $-\frac\pi6$ rispetto all'asse $\hat x$, quindi $\vec e_t=(\frac{\sqrt3}2,-\frac12)$. Queste relazioni possiamo invertirle e ricavare $\hat x$ e $\hat y$ in funzione di $\vec e_i$. Riprendi appunti e parla di regioni permesse.
+\end{itemize}
