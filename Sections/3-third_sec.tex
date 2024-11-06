@@ -99,10 +99,29 @@ Inoltre vale $s+t+u=(m_a^2+m_b^2+m_c^2+m_d^2)$ è la somma delle masse a riposo.
             \includegraphics[width=0.45\textwidth]{immagini/fig_mandelstam.png}
             \caption{Piano di Mandelstam}%Ragazzi non ne ho idea è più comprensibile il corso di Greco.}
             \label{fig:mandelstam}
-          \end{figure}
-          I confini di questo triangolo sono dati dalle linee \( s = 0 \), \( t = 0 \) e \( u = 0 \), come mostrato. Il vertice superiore del triangolo corrisponde a \( t = u = 0 \), quindi, dalla equazione precedente, vediamo che l'altezza del triangolo è \( M \). Sebbene siano necessari solo due vettori unitari per specificare una posizione in questo piano, è consuetudine definire tre vettori unitari \( \hat{e}_s \), \( \hat{e}_t \) e \( \hat{e}_u \), ciascuno dei quali è perpendicolare alla rispettiva linea zero, come mostrato in \autoref{fig:mandelstam}. Visto che l'angolo tra due di questi versori è sempre $\frac23\pi$, abbiamo 
+        \end{figure}
+        I confini di questo triangolo sono dati dalle linee \( s = 0 \), \( t = 0 \) e \( u = 0 \), come mostrato. Il vertice superiore del triangolo corrisponde a \( t = u = 0 \), quindi, dalla equazione precedente, vediamo che l'altezza del triangolo è \( M \). Sebbene siano necessari solo due vettori unitari per specificare una posizione in questo piano, è consuetudine definire tre vettori unitari \( \hat{e}_s \), \( \hat{e}_t \) e \( \hat{e}_u \), ciascuno dei quali è perpendicolare alla rispettiva linea zero, come mostrato in \autoref{fig:mandelstam}. Visto che l'angolo tra due di questi versori è sempre $\frac23\pi$, abbiamo 
           \begin{equation*}
           \hat{e}_i\cdot\hat{e}_j=\cos\frac23\pi=-\frac12 \qquad i\neq j
           \end{equation*}
-          Per qualche motivo oscuro vogliamo esprimere ${\hat e_i}$ in funzione di $\hat x$ e $\hat y$. Notiamo subito che $\hat e_s=\hat y$. Invece $\hat e_u$ ha un angolo pari a $\frac23\pi+\frac\pi2=\frac76\pi$ rispetto all'asse $\hat x$, dunque $\hat e_u=(-\frac{\sqrt3} 2,-\frac12)$. Infine $\hat e_t$ sta a $-\frac\pi6$ rispetto all'asse $\hat x$, quindi $\hat e_t=(\frac{\sqrt3}2,-\frac12)$. Queste relazioni possiamo invertirle e ricavare $\hat x$ e $\hat y$ in funzione di $\hat e_i$. Sempre per lo stesso oscuro motivo, la prof ci tiene a dire che le regioni fisicamente permesse sono quelle fuori dal triangolo e comprese tra le linee che fuoriescono da ciascun angolo. Per esempio la regione permessa di $s$ sta sopra. IO credo sia dovuto a questo: quando siamo nella retta parallela all'asse $x$ e passante per il vertice in alto, abbiamo  $s=4m^2,t=u=0$. Quindi se andiamo "sopra", $s>4m^2$ e $t,u<0$. Ok però così non ha senso che non si possa stare anche dentro il triangolo ok ci rinuncio.
+        Per qualche motivo oscuro vogliamo esprimere ${\hat e_i}$ in funzione di $\hat x$ e $\hat y$. Notiamo subito che $\hat e_s=\hat y$. Invece $\hat e_u$ ha un angolo pari a $\frac23\pi+\frac\pi2=\frac76\pi$ rispetto all'asse $\hat x$, dunque $\hat e_u=(-\frac{\sqrt3} 2,-\frac12)$. Infine $\hat e_t$ sta a $-\frac\pi6$ rispetto all'asse $\hat x$, quindi $\hat e_t=(\frac{\sqrt3}2,-\frac12)$. Queste relazioni possiamo invertirle e ricavare $\hat x$ e $\hat y$ in funzione di $\hat e_i$. Sempre per lo stesso oscuro motivo, la prof ci tiene a dire che le regioni fisicamente permesse sono quelle fuori dal triangolo e comprese tra le linee che fuoriescono da ciascun angolo. Per esempio la regione permessa di $s$ sta sopra. IO credo sia dovuto a questo: quando siamo nella retta parallela all'asse $x$ e passante per il vertice in alto, abbiamo  $s=4m^2,t=u=0$. Quindi se andiamo "sopra", $s>4m^2$ e $t,u<0$. Ok però così non ha senso che non si possa stare anche dentro il triangolo ok ci rinuncio. 
+        \item c'è una parte poco chiara servirebbero slide.
+        \item A cosa servono? Due sono indipendenti, la terza no e in base al processo che abbiamo esprimiamo le sezioni d'urto in funzione di una variabile piuttosto che di un'altra. Consideriamo un processo $X$ indipendente (forse senza polarizzazione?) da $\varphi$, allora 
+        \begin{equation*}
+        \dv{\sigma_X}{\Omega}=\frac1{2\pi}\dv{\sigma_X}{\dd{\cos\vartheta}}=\frac s{4\pi}\dv{\sigma_X}{t}\qquad \text{perché }t=-\frac s2\qty(1-\cos\vartheta)
+        \end{equation*}
+        Per $m^2\ll s$ la sezione d'urto dipende dal modulo quadro dell'elemento di matrice del processo
+        \begin{equation*}
+        \dv{\sigma_X}{t}=\frac{\abs{M_X}^2}{16\pi s^2}
+        \end{equation*}
+        In base al processo che considero, avrò una espressione diversa.
+        \item Definizione di sezione d'urto, al solito probabilità di interazione quando il proiettile entra in regione unitaria di volume con un target. Considerimo un fascio di $N_b$ particelle contro uno strato $\dd l$ del target con $N_T$ particelle in volume $V$. Indicando con $n_T=\dd N_T/V$ la densità del target, abbiamo che $\dd{N_b}\propto N_b n_t\dd{l}$. 
+        \begin{equation*}
+        \dv{\sigma}{\Omega }=\pdv{\sigma}{\cos\vartheta}{\varphi}\underset{\text{Non dipende da } \varphi}{\Longrightarrow}\frac1{2\pi}\dv{\sigma}{\cos\vartheta}
+        \end{equation*}
+        \begin{equation*}
+        \dv{\sigma}{\vec p}=\frac{\dd[3]{\sigma}}{\dd{p_x}\dd{p_y}\dd{p_z}}=\frac{\dd[3]{\sigma}}{p_T\dd{p_T}\dd{p_L}\dd{\varphi}}\Longrightarrow \text{slide}
+        \end{equation*}
+        Non lo so perchè ho scritto ciò\footnote{Ho chiesto a \href{https://chatgpt.com/share/672ba43f-ff50-800b-bc35-8bc186c6df2a}{ChatGPT} di spiegare i passaggi e sotto c'è lo jacobiano  (ovviamente mi dicono dalla regia, cervello mode: off) da $(x,y,z)\to(p_T,\varphi,p_L)$ con $p_T=\sqrt{p_x^2+p_y^2},\varphi=\tan^{-1}\qty(\frac{p_y}{p_x}),p_L=p_z$}.
+        \item Una cosa da attenzionare è che la sezione d'urto bisogna precisare a cosa è riferita. Consideriamo $ab\to cX$. Se mi interessa solo sapere come è prodotto $c$ e non mi interessa da cosa è accompagnato, è una sezione d'urto \textit{inclusiva} $\sigma(ab\to cX)$ e devo considerare tutti i processi che lo producono. Se invece sono interessato ad un canale ben preciso, avrò la sezione d'urto \textit{esclusiva}. La somma di tutte le sezioni d'urto esclusive darà quella inclusiva. In base al contesto posso esplicitare o meno. dcmgay
 \end{itemize}
