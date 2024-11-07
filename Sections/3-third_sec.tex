@@ -123,5 +123,34 @@ Inoltre vale $s+t+u=(m_a^2+m_b^2+m_c^2+m_d^2)$ è la somma delle masse a riposo.
         \dv{\sigma}{\vec p}=\frac{\dd[3]{\sigma}}{\dd{p_x}\dd{p_y}\dd{p_z}}=\frac{\dd[3]{\sigma}}{p_T\dd{p_T}\dd{p_L}\dd{\varphi}}\Longrightarrow \text{slide}
         \end{equation*}
         Non lo so perchè ho scritto ciò\footnote{Ho chiesto a \href{https://chatgpt.com/share/672ba43f-ff50-800b-bc35-8bc186c6df2a}{ChatGPT} di spiegare i passaggi e sotto c'è lo jacobiano  (ovviamente mi dicono dalla regia, cervello mode: off) da $(x,y,z)\to(p_T,\varphi,p_L)$ con $p_T=\sqrt{p_x^2+p_y^2},\varphi=\tan^{-1}\qty(\frac{p_y}{p_x}),p_L=p_z$}.
-        \item Una cosa da attenzionare è che la sezione d'urto bisogna precisare a cosa è riferita. Consideriamo $ab\to cX$. Se mi interessa solo sapere come è prodotto $c$ e non mi interessa da cosa è accompagnato, è una sezione d'urto \textit{inclusiva} $\sigma(ab\to cX)$ e devo considerare tutti i processi che lo producono. Se invece sono interessato ad un canale ben preciso, avrò la sezione d'urto \textit{esclusiva}. La somma di tutte le sezioni d'urto esclusive darà quella inclusiva. In base al contesto posso esplicitare o meno. dcmgay
+        \item Una cosa da attenzionare è che la sezione d'urto bisogna precisare a cosa è riferita. Consideriamo $ab\to cX$. Se mi interessa solo sapere come è prodotto $c$ e non mi interessa da cosa è accompagnato, è una sezione d'urto \textit{inclusiva} $\sigma(ab\to cX)$ e devo considerare tutti i processi che lo producono. Se invece sono interessato ad un canale ben preciso, avrò la sezione d'urto \textit{esclusiva}. La somma di tutte le sezioni d'urto esclusive darà quella inclusiva. Quindi se $\sigma\_{inc}\ll\sigma\_{tot}$ allora posso esplicitare la probabilità di produrre $c$:
+        \begin{equation*}
+        \probP(c)=\frac{\sigma\_{inc}(ab\to cX)}{\sigma\_{tot}(ab)}
+        \end{equation*} 
+        Se invece $\sigma\_{inc}\approx\sigma\_{tot}$ allora quel rapporto fornisce il numero di $c$ prodotti nello stato finale. 
+        \item In base al contesto posso esplicitare o meno se si tratta di sezione d'urto inclusiva/esclusiva. Ad esempio in LHC si lavora per la produzione di Higgs, quindi è sottointeso che la sezione d' urto sia inclusiva.
+        \begin{equation*}
+        \sigma\_{Higgs}\qty(\text{LHC},8\,\TeV)=\sigma\_{inc}\qty(pp\to Hx,\sqrt s =8\,\TeV)\approx22.3 \text{ pb}
+        \end{equation*}
+        \begin{equation*}
+        \sigma\_{tot}\qty(pp,\sqrt s=8\,\TeV)=101.7\pm2.9\text{ mb}
+        \end{equation*}
+        Quindi ci sono 10 ordini di grandezza di differenza (pico$=10^{-12}$, milli$=10^{-3}$). Il rapporto ci dà la probabilità di produrre il bosone di Higgs:
+        \begin{equation*}
+            \probP(\text{Higgs @ LHC})=2\cdot 10^{-10}
+        \end{equation*}
+        Vediamo un altro esempio.
+        \begin{equation*}
+            \sigma\_{inc}\qty(pp\to\pi^0X,\,p\_{LAB}=24\,\GeV)=53.5\pm3.1\,\text{mb}
+        \end{equation*}
+        \begin{equation*}
+            \sigma\_{to}\qty(pp,\,p\_{LAB}=24\,\GeV)=38.9\,\text{mb}
+        \end{equation*}
+        In questo caso il rapporto dà il numero. La probabilità la abbiamo solo se la frazione è \textit{molto} piccola.
+        \item La sezione d'urto inoltre è legata alla matrice del processo, al fattore di spazio delle fasi $\qty(\frac{2\pi}\hbar\rho(E))$ e al rapporto tra elemento di volume e velocità della particella incidente tramite la seconda regola d'oro di Fermi.
+        \begin{equation*}
+            \sigma=\frac{WV}{v_b}=\frac{2\pi}\hbar\abs{M\_{if}}^2\rho(E)\frac V {v_b}
+        \end{equation*}
+        Con la teoria abbiamo questa espressione della sezione d'urto. Noi con la teoria accediamo a $\abs{M\_{if}}^2$ mentre sperimentalmente abbiamo numero di eventi in un determinato canale e poi si confronta.
+        \item Nel caso di stati 1:11:14
 \end{itemize}
