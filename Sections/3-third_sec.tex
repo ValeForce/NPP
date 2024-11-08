@@ -135,7 +135,7 @@ Inoltre vale $s+t+u=(m_a^2+m_b^2+m_c^2+m_d^2)$ è la somma delle masse a riposo.
         \begin{equation*}
         \sigma\_{tot}\qty(pp,\sqrt s=8\,\TeV)=101.7\pm2.9\text{ mb}
         \end{equation*}
-        Quindi ci sono 10 ordini di grandezza di differenza (pico$=10^{-12}$, milli$=10^{-3}$). Il rapporto ci dà la probabilità di produrre il bosone di Higgs:
+        Quindi ci sono 10 ordini di grandezza di differenza (pico $=10^{-12}$, milli $=10^{-3}$). Il rapporto ci dà la probabilità di produrre il bosone di Higgs:
         \begin{equation*}
             \probP(\text{Higgs @ LHC})=2\cdot 10^{-10}
         \end{equation*}
@@ -152,5 +152,34 @@ Inoltre vale $s+t+u=(m_a^2+m_b^2+m_c^2+m_d^2)$ è la somma delle masse a riposo.
             \sigma=\frac{WV}{v_b}=\frac{2\pi}\hbar\abs{M\_{if}}^2\rho(E)\frac V {v_b}
         \end{equation*}
         Con la teoria abbiamo questa espressione della sezione d'urto. Noi con la teoria accediamo a $\abs{M\_{if}}^2$ mentre sperimentalmente abbiamo numero di eventi in un determinato canale e poi si confronta.
-        \item Nel caso di stati 1:11:14
+        \item Nel caso di stati eccitati il decadimento è esponenziale $N(t)=N_0e^{-t/\tau}$ con $\tau$ tempo di vita medio del processo, con al solito $\Gamma\propto\frac1\tau$. Se $\tau$ è piccolo, l'energia a riposo (o massa) di uno stato non è unica (non è una delta di Dirac) ma varia attorno ad un valore centrale. La funzione che descrive la distribuzione di energia che lo stato può assumere è una lorentziana:
+        \begin{equation*}
+            \abs{\tilde\psi(E)}^2=\frac1{2\pi}\frac{\abs{\psi_0}^2}{(E-E_0)^2+\Gamma^2/4}
+        \end{equation*} 
+        che però in questo contesto fisico chiamiamo formula di Breit-Wigner (la si ricava facendo la trasformata di Fourier di $\psi(t)=\psi_0e^{-i(E_0-i\Gamma/2)t}$). La larghezza a metà altezza della lorentziana è proprio $\Gamma$ ed è la larghezza di decadimento. Questa formula è importante perché la Breit-Wigner appare ogni volta che abbiamo processi con risonanze, e dal picco troviamo la massa e dalla larghezza del picco troviamo la larghezza di decadimento (o tempo di vita medio).
+        \item Consideriamo un processo con step intermedio $ab\to R\to X$. Allora abbiamo la formula ($J_R$ momento angolare totale della risonanza mentre $s_a,s_b$ spin delle particelle iniziali)\footnote{Sto 16 nella formula dopo non lo capisco, dovrebbe essere un 4. Purtroppo la campionessa non passa le slide quindi non posso controllare se è colpa mia.}
+        \begin{equation*}
+            \sigma(ab\to R\to X, E\_{cm}=\sqrt s)=\frac\pi{\abs{p_{ab}}^2}\underbrace{\frac{2J_R+1}{(2s_a+1)(2s_b+1)}}_{\begin{subarray}{c}
+                \text{molteplicità di stati di spin}\\
+                \text{ e momento angolare}
+             \end{subarray}}\underbrace{\frac{\Gamma_{ab}\Gamma_X}{(\sqrt s-M_R)^2+\Gamma_R^2/4}}_{\text{Breit-Wigner}}\approx
+        \end{equation*}
+        \begin{equation*}
+            \underset{\begin{subarray}{c}
+            \text{trascuro masse}\\
+            s\approx \abs{p_{ab}}^2
+         \end{subarray}}{\approx}\frac{16\pi}s \frac{2J_R+1}{(2s_a+1)(2s_b+1)}\frac{\Gamma_{ab}}{\Gamma_R}\frac{\Gamma_X}{\Gamma_R}\frac{\Gamma_R^2/4}{(\sqrt s-M_R)^2+\Gamma_R^2/4}
+        \end{equation*}
+        quindi la si scrive in termini del branching ratio BR con i rapporti delle larghezze di decadimento. Applichiamola ad un caso specifico:
+        \begin{equation*}
+            \sigma(e^+e^-\to J/\psi\to\mu^+\mu^-)=\frac{16\pi}s\frac{3}{4}\frac{\Gamma_{e^+e^-}}{\Gamma_{J/\psi}}\frac{\Gamma_{\mu^+\mu^-}}{\Gamma_{J/\psi}}\frac{\Gamma_{J/\psi}^2/4}{(E-M_{J/\psi})^2+\Gamma_{J/\psi}^2/4}=
+        \end{equation*}
+        \begin{equation*}
+            =\frac{12\pi}s\text{BR}({J/\psi\to e^+e^-})\text{BR}({J/\psi\to\mu^+\mu^-})\frac{\Gamma_{J/\psi}^2/4}{(E-M_{J/\psi})^2+\Gamma_{J/\psi}^2/4}
+        \end{equation*}
+        Da notare che non si conosceva nulla sulla $J/\psi$, né momento angolare né massa. Da fit si ricavarono entrambi. È importante sottolineare che la presenza di questo step intermedio è dovuta al fatto che sperimentalmente si osserva una risonanza, da ciò deduciamo che non sta semplicemente avvenendo $e^+e^-\to\mu^+\mu^-$. 
+        \item Ci sono diverse formule di Breit-Wigner semi-empiriche o \textit{ispirate}. Ne abbiamo già viste due, ma possiamo anche averne una considerando $M_R\gg\Gamma_R$ e nego la dipendenza da $s$ (?); oppure in regime relativistico un'altra formula. 
+        \item In generale quando faccio una misura io \textbf{non} ottengo mai la vera larghezza di decadimento, ma una convoluzione della larghezza intrinseca del decadimento e l'efficienza del rivelatore. 
+        \item Quando abbiamo grandi numeri, consideriamo la distribuzione gaussiana mentre con piccoli numeri può essere binomiale o altro a seconda dei casi. Per scoprire una nuova particella consideriamo la distribuzione di Gauss e quando siamo distanti dal valore atteso: quando ci troviamo tra 3 e 5 deviazioni standard, si conclude che abbiamo \textit{osservato} qualcosa di nuovo. Se siamo oltre 5 deviazioni standard, si conclude che abbiamo \textit{scoperto} qualcosa di nuovo. Ovviamente è una convenzione.
+        \item La forma della curva quando si osserva una risonanza è la \textit{Voigt} che tiene conto di larghezza intrinseca e risoluzione del rivelatore. Non ha una forma analitica ma solo integrale (di gaussiana per lorentziana).
 \end{itemize}

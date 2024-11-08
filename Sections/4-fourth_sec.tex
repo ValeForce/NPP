@@ -1,0 +1,69 @@
+pippo
+\subsection{Simmetrie e leggi di conservazione}
+In generale una legge fisica è simmetrica rispetto ad una trasformazione quando la forma della legge è invariante per questa trasformazione. Sia in meccanica classica che quantistica. 
+\begin{itemize}
+    \item In QM se l'operatore non dipende esplicitamente dal tempo allora commuta con la hamiltoniana del sistema. In generale (non sempre?) i numeri quantici conservati sono associati ad operatori che commutano con l'hamiltoniana.
+    \item Le simmetrie si dividono in continue e discrete. Vediamo ad esempio la traslazione spaziale (continua)
+    \begin{equation*}
+        \psi(r+\delta r)=\psi(r)+\delta r \dv{\psi}{r}=\qty(1+\delta r \pdv{}{r})\psi(r)
+    \end{equation*}
+    L'operatore che descrive una traslazione finita è l'impulso:
+    \begin{equation*}
+        D=1+\frac i\hbar p\delta r\implies D=\lim_n\qty(1+\frac {ip\Delta r}{n\hbar})^n=e^{\frac i\hbar p\Delta r}
+    \end{equation*}
+    Chiamiamo $p$ generatore dell'operatore $D$ di traslazione spaziale. Se l'hamiltoniana è invariante per traslazioni, allora commuta con $D$ e dunque anche con $p$. Questo lo si può esprimere in tre modi equivalenti:
+    \begin{enumerate}
+        \item L'impulso si conserva in un sistema isolato.
+        \item L'hamiltoniana è invariante per traslazioni spaziali.
+        \item L'operatore impulso commuta con l'hamiltoniana.
+    \end{enumerate}
+    \item A simmetrie continue associamo numeri quantici additivi, a simmetrie discrete sono associati numeri quantici moltiplicativi.
+\end{itemize}
+\subsubsection{Parità}
+La trasformazione di parità è l'inversione delle coordiante spaziali. 
+\begin{equation*}
+    P\psi(\vec r)=\psi(-\vec r)
+\end{equation*}
+Chiaramente se applico due volte l'operatore ottengo la funzione iniziale:
+\begin{equation*}
+P^2\psi(\vec r)=\psi(\vec r)\implies P^2=1 \text{ (unitario) }\implies \lambda=\pm 1
+\end{equation*}
+Vediamo degli esempi:
+\begin{itemize}
+    \item Consideriamo le semplici funzioni trigonometriche 
+    \begin{gather*}
+        \psi(x)=\cos x \overset{P}{\longrightarrow}\cos(-x)=\cos(x)=\psi(x)\text{ Pari} \\
+        \psi(x)=\sin x \overset{P}{\longrightarrow}\sin(-x)=\sin(x)=-\psi(x)\text{ Dispari} 
+    \end{gather*}
+    In generale una combinazione lineare $\psi(x)=\cos x+\sin x$ non è detto che sia simmetrica per parità.
+    \item Un altro esempio può essere la funzione d'onda di un elettrone in un atomo di idrogeno. La simmetria della funzione d'onda ha la stessa parità di $l$. Infatti
+    \begin{equation*}
+        \psi(r,\vartheta,\varphi)=\chi(r)\sqrt{\frac{(2l+1)(l-m)!}{4\pi(l+m)!}}P_m^l(\cos\vartheta)e^{im\varphi}
+    \end{equation*}
+    Fare una trasformazione di parità vuol dire 
+    \begin{equation*}
+    \vec r\to-\vec r\implies 
+    \begin{cases}
+        \vartheta\to\pi-\vartheta\\
+        \varphi\to\pi+\varphi
+    \end{cases}\implies 
+    \begin{cases}
+    e^{im\varphi}\to e^{im(\pi+\varphi)}=(-1)^me^{im\varphi}\\
+    P_m^l(\cos\vartheta)\to (-1)^{l+m}P_m^l(\cos\vartheta)
+    \end{cases}\implies 
+    \end{equation*}
+    \begin{equation*}
+    \implies Y_l^m(\vartheta,\varphi)\to (-1)^{l+2m}Y_l^m(\vartheta,\varphi)=(-1)^lY_l^m(\vartheta,\varphi)
+    \end{equation*}
+    Questo risultato vale in generale per le armoniche sferiche, che quindi hanno parità data da $l$. Nelle transizioni di dipolo elettrico la regola di selezione è $\Delta l=\pm 1$, quindi la parità atomica cambia. Però nei processi elettromagnetici la parità si conserva, quindi la parità della radiazione emessa deve essere negativa per compensare la parità. 
+    \item In questo caso il numero quantico è moltiplicativo e non si conserva soltanto nei decadimenti deboli. Inoltre è necessario che per convenzione assegniamo una parità intrinseca a ciascuna particella: a protoni e neutroni assegniamo parità positiva.
+\end{itemize}
+\subsubsection{Parità del pione carico}
+Cosideriamo il decadimento $\pi^-+d\to n+n$
+\begin{itemize}
+    \item Questo è un processo forte perché tutto si conserva. Lo stato iniziale ha $l=0$ (preparato sperimentale) con $s_\pi=0$ e $s_d=1$ allora $j=1$. Allora anche lo stato finale dovrà avere $j=1$. 
+    \item La simmetria dello stato finale è data da 
+    \begin{equation*}
+    K=\underbrace{(-1)^{s+1}}_{\text{spin}}\underbrace{}
+    \end{equation*}
+\end{itemize}
