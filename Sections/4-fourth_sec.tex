@@ -59,11 +59,55 @@ Vediamo degli esempi:
     \item In questo caso il numero quantico è moltiplicativo e non si conserva soltanto nei decadimenti deboli. Inoltre è necessario che per convenzione assegniamo una parità intrinseca a ciascuna particella: a protoni e neutroni assegniamo parità positiva.
 \end{itemize}
 \subsubsection{Parità del pione carico}
-Cosideriamo il decadimento $\pi^-+d\to n+n$
-\begin{itemize}
-    \item Questo è un processo forte perché tutto si conserva. Lo stato iniziale ha $l=0$ (preparato sperimentale) con $s_\pi=0$ e $s_d=1$ allora $j=1$. Allora anche lo stato finale dovrà avere $j=1$. 
-    \item La simmetria dello stato finale è data da 
+Consideriamo il decadimento $\pi^-+d\to n+n$, che è un processo forte perché tutto si conserva.\\
+Canale di ingresso: $\pi^-+d$
+\begin{enumerate}
+    \item Momento angolare totale $j$ iniziale:
+    \begin{itemize}
+        \item Supponiamo che lo stato sia preparato sperimentalmente con $l=0$.
+        \item La particella $\pi^-$ ha spin $s=0$, quindi non contribuisce con il proprio spin. Inoltre ha parità negativa (è un cosiddetto mesone pseudoscalare).
+        \item Il deuterone (d) ha $s=1$ e parità positiva (essendo un sistema di due nucleoni in uno stato legato con parità).
+    \end{itemize}
+    Pertanto il momento angolare iniziale è $j=1$. 
+    \item Parità iniziale:
+    \begin{itemize}
+        \item La parità del sistema $\pi^-+d$ è data dalla parità del prodotto tra il $\pi^-$ e il deuterone:
+        \begin{equation*}
+        P\_{ingresso}=P_{\pi^-}P_d=(-1)\cdot (+1)= -1
+        \end{equation*}
+    \end{itemize}
+\end{enumerate}
+Canale di uscita: $n+n$
+\begin{enumerate}
+    \item Momento angolare totale $j$ finale:
+    \begin{itemize}
+        \item Gli stati possibili dei neutroni sono $s=0$ (singoletto) e $s=1$ (tripletto).
+        \item Il momento angolare orbitale $l$ tra i due neutroni determinerà il valore di $j$ nel canale di uscita:
+        \begin{equation*}
+        j=l\pm s
+        \end{equation*}
+        \item Per i neutroni, che sono fermioni, il sistema complessivo deve essere antisimmetrico. Questo implica che se $s=0$ (singoletto), $l$ deve essere pari; se $s=1$ (tripletto), $l$ deve essere dispari.
+    \end{itemize} 
+    \item Parità finale (canale di uscita):
+    \begin{itemize}
+        \item La parità del sistema $n+n$ è data da:
+        \begin{equation*}
+        P\_{uscita}=(-1)^l
+        \end{equation*}
+        visto che i neutroni hanno parità $+1$.
+    \end{itemize}
+\end{enumerate}
+\comment{Lo stato iniziale ha $l=0$ (preparato sperimentale) con $s_\pi=0$ e $s_d=1$ allora $j=1$. Dunque anche lo stato finale dovrà avere $j=1$. 
+    La parità dello stato finale è data da 
     \begin{equation*}
-    K=\underbrace{(-1)^{s+1}}_{\text{spin}}\underbrace{}
+    K=\underbrace{(-1)^{s+1}}_{\text{spin}}\underbrace{(-1)^l}_{\text{orbitale}}=(-1)^{l+s+1}
     \end{equation*}
-\end{itemize}
+    poiché sono fermioni}%fine commento
+Allora per conservazione di momento angolare e parità, dovrò avere per gli stati finali 
+\begin{gather*}
+j\_i=j\_f\implies 1=l+s\\
+P\_{ingresso}=P\_{uscita}\implies -1=(-1)^l\implies l \text{ dispari}
+\end{gather*}
+Visto che $s=0,1$ e $l$ deve essere dispari, allora $l=1$ e $s=1$ è l'unica combinazione che soddisfa entrambe le condizioni. Quindi il canale di uscita $n+n$ ha $l=1$ e $s=1$ (tripletto).
+\subsubsection{Parità del pione neutro}
+Il pione neutro decade con BR $=99\%$ in $\gamma+\gamma$. Questo decadimento è un processo elettromagnetico, quindi la parità si conserva.
