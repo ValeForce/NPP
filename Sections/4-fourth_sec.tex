@@ -57,6 +57,20 @@ Vediamo degli esempi:
     \end{equation*}
     Questo risultato vale in generale per le armoniche sferiche, che quindi hanno parità data da $l$. Nelle transizioni di dipolo elettrico la regola di selezione è $\Delta l=\pm 1$, quindi la parità atomica cambia. Però nei processi elettromagnetici la parità si conserva, quindi la parità della radiazione emessa deve essere negativa per compensare la parità. 
     \item In questo caso il numero quantico è moltiplicativo e non si conserva soltanto nei decadimenti deboli. Inoltre è necessario che per convenzione assegniamo una parità intrinseca a ciascuna particella: a protoni e neutroni assegniamo parità positiva.
+    \item Assegnare la parità intrinseca serve a distinguere particelle che interagiscono tra di loro (come cariche elettriche). Chiaramente il segno della parità intrinseca è scelto arbitrariamente, quello che conta è la parità relativa tra due particelle. Ad esempio particelle ed antiparticelle hanno parità opposta. Ad esempio nella reazione per la scoperta dell'antiprotone $p+p\to p+p+\bar p+p$ la parità totale nel canale di ingresso è uguale a quella in uscita (l'interazione forte la conserva). Questo discorso però funziona solo per i fermioni! Nel caso di fermioni, particella ed antiparticella hanno la stessa parità. 
+    \item I vettori polari cambiano segno sotto trasformazione di parità e quelli assiali (pseudovettori) no.
+    \begin{equation*}
+    \begin{cases}
+    \vec r\to-\vec r\\
+    \vec p\to-\vec p\\
+    \vec E\to-\vec E\\
+    \end{cases}\text{ Polari}\qquad
+    \begin{cases}
+        \vec \sigma\to\vec \sigma\\
+        \vec L\to\vec L\\
+        \vec B\to\vec B\\
+    \end{cases}\text{ Assiali}
+    \end{equation*}
 \end{itemize}
 \subsubsection{Parità del pione carico}
 Consideriamo il decadimento $\pi^-+d\to n+n$, che è un processo forte perché tutto si conserva.\\
@@ -130,4 +144,41 @@ Per misurare devo studiare il decadimento del $\pi^0\to\gamma\gamma$. Noi ovviam
 \end{equation*}
 detto decadimento \textit{doppio Dalitz} con BR $(3.14\pm0.30)\cdot10^{-5}$. Da un grafico (che metterò mai visto che non passa le slide) vedo distribuzione sperimentale che è in accordo con andamento con parità negativa (funzione d'onda va con $\sin^2\varphi$).
 \end{itemize}
-1:05:36
+\subsubsection{Conservazione della parità}
+Abbiamo detto che la parità è conservata nei processi forti ed elettromagnetici e non nei processi deboli. 
+\begin{itemize}
+    \item Un esempio è il neutrino. Noi li conosciamo solo sinistri (left-handed) e non destri. Infatti un neutrino come lo conosciamo noi ha elicità negativa, cioè impulso e spin antiparalleli. Se facciamo una trasformazione di parità solo l'impulso cambia segno e non lo spin, quindi si avrebbe un \textit{neutrino destro} che in realtà non esiste, o meglio non interagisce con la materia attraverso le forze che conosciamo presenti nel Modello Standard, dunque non è rivelabile. 
+    \item In realtà sperimentalmente è stata misurata una piccola violazione della parità in processi forti ed elettromagnetici. Ciò è dovuto al fatto che la hamiltoniana in realtà è composta da tre pezzi delle tre interazioni, quindi la parità non è conservata in generale perché c'è sempre un piccolo contributo di interazione debole. Ad esempio questo problema non sorge con l'elettrone, che sappiamo esistere sia destro che sinistro in quanto ha comunque la carica elettrica e quindi mal che vada elettromagneticamente lo riveliamo sempre. Il problema sussiste solo con il neutrino.
+    \item Nella corrente carica, cioè scambio di $W^\pm$, la parità è violata al 100\%. Questo perché il $W$ interagisce sempre solo con particella sinistra o antiparticella destra (ignora le altre due tipologie, è razzista, non ci interagisce). Nel caso della corrente neutra, cioè scambio di $Z^0$, la situazione è più complessa. Infatti esso interagisce sia con particelle sinistre che destre, ma con pesi (accoppiamenti) diversi, di meno con particelle destre. Invece interazione forte ed elettromagnetica non distinguono elicità, cioè particelle destre o sinistre, e quindi la parità è conservata. 
+\end{itemize}
+\subsubsection{Particelle ed antiparticelle}
+\begin{itemize}
+    \item Al solito noi ci aspettiamo che esistono antiparticelle anche solo dalla relatività speciale in quanto ci sono soluzioni con energia negativa. 
+    \item In meccanica quantistica rappresentiamo l'ampiezza di un flusso di particelle (e.g. elettroni) come una funzione d'onda piana
+    \begin{equation*}
+        \psi(x)=Ae^{\frac i\hbar(px-E t)}
+    \end{equation*}
+    questa espressione rappresenta anche particelle di energia $-E$ e impulso $-p$ che si muovono in direzione opposta nello spazio e nel tempo (anche in Klein-Gordon, per questo nei diagrammi di Feynman hanno direzione indietro nel tempo).
+\end{itemize}
+\subsubsection{Coniugazione di carica}
+\begin{itemize}
+    \item L'effetto dell'operatore coniugazione di carica $C$ è di invertire carica e il momento magnetico della particella.
+    \item In fisica classica abbiamo che le leggi di Maxwell sono invarianti per esse, che sono 
+    \begin{gather*}
+        q\to-q\\
+        \vec J\to-\vec J\\
+        vec E\to -\vec E\\
+        \vec H\to -\vec H
+    \end{gather*}
+    \item In meccanica quantistica invece\\ 
+    \begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm} >{\centering\arraybackslash}m{3cm}}
+          & Protone & Antiprotone \\
+        Carica & +e & -e \\
+        N. barionico & 1 & -1 \\
+        Momento magnetico & $\frac{e\hbar}{2mc}=2.79$ & -2.79 \\
+        Spin & $\frac12\hbar$ & $-\frac12\hbar$ \\
+    \end{tabular}
+    \end{center}
+    tabella 1:23:36
+\end{itemize}
