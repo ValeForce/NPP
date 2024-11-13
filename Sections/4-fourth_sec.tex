@@ -220,7 +220,52 @@ poiché $\eta\to\gamma\gamma$ è il decadimento principale, si deve avere $C(\et
 \end{equation*}
 \begin{enumerate}
     \item $\varphi(\text{spazio})$. Lo scambio di particelle è equivalente all'inversione spaziale, dunque questo termine introduce solo un fattore $(-1)^L$ dove $L$ è il momento angolare orbitale.
-    \item $\alpha(\text{spin})$. Avendo due fermioni, si possono accoppiare in singoletto ($s=0$) o tripletto ($s=1$). Indicando gli stati con $\ket{s,s_z}$, abbiamo:
-
+    \item $\alpha(\text{spin})$. Avendo due fermioni, si possono accoppiare in singoletto ($s=0$) o tripletto ($s=1$). Indicando gli stati con $\psi(s,s_z)$, abbiamo:
+    \begin{equation*}
+        \begin{cases}
+            \alpha(1,1)=\psi_1(\frac12,\frac12)\psi_2(\frac12,\frac12)\\
+            \alpha(1,0)=\frac1{\sqrt2}\qty(\psi_1(\frac12,\frac12)\psi_2(\frac12,-\frac12)+\psi_1(\frac12,-\frac12)\psi_2(\frac12,\frac12))\\
+            \alpha(1,-1)=\psi_1(\frac12,-\frac12)\psi_2(\frac12,-\frac12)
+        \end{cases}\quad
+        \begin{array}{c}
+            s=1\text{ Tripletto}\\
+            \text{Simmetrico}
+         \end{array} 
+    \end{equation*}
+    \begin{equation*}
+        \alpha(0,0)=\frac1{\sqrt2}\qty(\psi_1\qty(\frac12,\frac12)\psi_2\qty(\frac12,-\frac12)-\psi_1\qty(\frac12,-\frac12)\psi_2\qty(\frac12,\frac12))\quad\begin{array}{c}
+            s=0\text{ Singoletto}\\
+            \text{Antisimmetrico}
+         \end{array}
+    \end{equation*}
+    La simmetria della parte di spin è data da $(-1)^{s+1}$, dunque è pari se $s$ è dispari e viceversa.
+    \item Per la parte carica invece consideriamo un fattore $C$.
 \end{enumerate}
+\item Dunque la simmetria totale della funzione d'onda per scambio di elettroni e positroni è 
+\begin{equation*}
+    K=(-1)^L(-1)^{s+1}C
+\end{equation*}
+siccome abbiamo un sistema di due fermioni, la simmetria totale deve essere antisimmetrica $K=-1$.
+\item Allora con $L=0(\implies J=s)$ sperimentalmente posso avere due diversi decadimenti
+\begin{equation*}
+    e^+e^-\to2\gamma\qquad e^+e^-\to 3\gamma
+\end{equation*}
+e dunque possiamo avere (il vincolo è $K=-1=(-1)^{L+s+1}C$)
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm} >{\centering\arraybackslash}m{2.5cm}>{\centering\arraybackslash}m{2.5cm}>{\centering\arraybackslash}m{2.5cm}}
+          & $J=S$ & $L$ & $C$ & $K$ \\
+        $2\gamma$ & 0 & 0 &+1 &-1  \\
+        $3\gamma$ & 1 & 0 & -1&-1 \\
+    \end{tabular}
+    \end{center}
+perché sappiamo già che $C(n\gamma)=(-1)^n$.
+\item Le larghezze di decadimento si possono confrontare teoricamente dalla QED e sperimentalmente. C'è accordo!
+\begin{center}
+    \begin{tabular}{>{\centering\arraybackslash}m{1cm} >{\centering\arraybackslash}m{4cm} >{\centering\arraybackslash}m{4cm}>{\centering\arraybackslash}m{4cm}}
+          & $\Gamma$ & $\tau$ (teoria) & $\tau$ (esperimenti) \\
+          $2\gamma$ & $\frac12mc^2\alpha^5$ & $1.252\times10^{-10}$ s &$\qty(1.252\pm0.017)\times 10^{-10} $s   \\
+          $3\gamma$ & $\frac2{9\pi}(\pi^2-9)\alpha^6mc^2$ & $1.374\times10^{-7}$ s& $\qty(1.377\pm0.004)\times10^{-7}$ s \\
+    \end{tabular}
+    \end{center}
+    Notiamo che entrambi sono possibili! 24:49 fa roba freestyle.
 \end{itemize}
