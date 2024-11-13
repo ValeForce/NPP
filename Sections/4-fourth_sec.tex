@@ -286,5 +286,62 @@ perché sappiamo già che $C(n\gamma)=(-1)^n$.
 Ha detto due cose in croce. Il legame tra conservazione di carica e gauge invarianza.
 \subsubsection{Teorema CPT}
 \begin{itemize}
-    \item Quando effettuiamo una inversione temporale $t\to-t$ le reazioni sono invarianti. Questo comporta che la sezione d'urto di una reazione è uguale a quella della reazione inversa, a meno di una piccola violazione. 34:30 s
+    \item Quando effettuiamo una inversione temporale $t\to-t$ le reazioni sono invarianti. Questo comporta che la sezione d'urto di una reazione è uguale a quella della reazione inversa, a meno di una piccola violazione. 
+    \item Perché c'è questa violazione? In meccanica quantistica c'è un teorema che afferma che:\textit{ Tutte le interazioni sono invarianti per applicazione dei tre operatori $C$,$P$ e $T$ in qualunque ordine.} Dunque i processi che violano $CP$, violano anche $T$ così che si conservi tutto. Si hanno diverse conseguenze:
+    \begin{enumerate}
+    \item La massa della particella è uguale a quella della antiparticella. $\frac{m_{K^0}-m_{\bar K^0}}{m_{K^0}+m_{\bar K^0}}<10^{-19}$
+    \item Il tempo di vita media è uguale tra particella ed antiparticella.
+    \item Il momento magnetico è uguale ed opposto in segno tra particella ed antiparticella.
+    \end{enumerate}
+    \item La $CP$ è una buona simmetria, per le cose che facciamo è esatta. Nel 1964 studiando decadimenti di $K^0_L$ (long), che normalmente decadono in tre pioni ($CP=-1$), si è osservato che decadono anche in due pioni ($CP=+1$). Questa è una violazione di $CP$. Questa è l'unica fonte di spiegazione, nel Modello Standard, al fatto che nell'universo c'è asimmetria tra materia ed antimateria. 
+    \item Dunque la violazione di $CP$ equivale ad una violazione di $T$ per il teorema $CPT$. I modi di osservare la violazione di $T$ sono due:
+    \begin{enumerate}
+        \item La polarizzazione trasversa $\vec\sigma\cdot(\vec p_1\times \vec p_2)$ nei decadimenti deboli come quello del muone.
+        \item Il momento di dipolo elettrico $\vec\sigma\cdot\vec E$.
+    \end{enumerate}
+\end{itemize}
+\subsubsection{Spin dei pioni carichi $\pi^\pm$\textbf{in realtà è legato a prima forse rendere subsection "time reversal"?}}
+\begin{itemize}
+\item Dalla inversione temporale possiamo avere informazione sullo spin dei pioni carichi.
+\item È stato determinato guardando la reazione $p+p\rightleftharpoons\pi^++d$. La sezione d'urto praticamente ha la stessa formula della larghezza di decadimento, a meno di fattori dello spazio delle fasi. Abbiamo
+\begin{gather*}
+\sigma(pp\to\pi^+d)=\abs{M_{if}}^2\frac{\qty(2s_\pi+1)\qty(2s_d+1)}{v_iv_f}p_\pi^2\\
+\sigma(\pi^+d\to pp)=\frac12\abs{M_{if}}^2\frac{\qty(2s_p+1)^2}{v_fv_i}p_p^2\qquad\text{Il fattore }\frac12\text{ viene dalla integrazione su metà angolo solido, poiché ci sono due fermioni identici nello stato finale}
+\end{gather*}
+\begin{equation*}
+\implies \frac{\sigma(pp\to\pi^+d)}{\sigma(\pi^+d\to pp)}=2 \frac{\qty(2s_\pi+1)\qty(2s_d+1)}{\qty(2s_p+1)^2}\frac{p_\pi^2}{p_p^2}
+\end{equation*}
+Misurando le sezioni d'urto e conoscendo gli impulsi e spin di deuterio e protone, ricavo che $s_\pi=0$. Questo però è il pione carico.
+\item Per lo spin del pione neutrone si guarda il decadimento $\pi^0\to\gamma\gamma$, che ci dice subito che lo spin deve essere intero e diverso da uno. I fotoni hanno $m=0,s=1$ e $s_z=\pm1$. Prendendo come asse di quantizzazione la direzione comune di propagazione dei fotoni nel sistema di riferimento del $\pi^0$, se \( S \) è lo spin totale dei due fotoni possiamo avere: \( S_z = 0 \) oppure \( S_z = 2 \). Se lo spin di $\pi^0$ è 1, allora \( S_z = 0 \). In questo caso l'ampiezza del sistema a due fotoni deve trasformarsi sotto rotazioni spaziali come il polinomio \( P^0_1(\cos \vartheta) \), che è dispari rispetto allo scambio dei due fotoni. Ma la funzione d'onda deve essere simmetrica rispetto allo scambio dei due bosoni identici, quindi lo spin di $\pi^0$ non può essere 1. In conclusione, \( s_\pi = 0 \) o \( s_\pi \geq 2 \). \href{https://chatgpt.com/c/6734e2f4-81d8-800b-8714-8b28ae3b1bc3}{ChatGPT}
+\end{itemize}
+\subsection{Piccolo excursus su numero barionico e leptonico}
+\subsection{Isospin}
+\begin{itemize}
+\item Fu introdotta nel 1932 da Heisenberg notando la similitudine della massa tra protone e neutrone. Suppose che fossero stati di carica differente di una particella chiamata \text{nucleone}. Ad esempio osservando nuclei speculari come $^7Li$ e $^7Be$ si osserva che i livelli energetici hanno lo stesso pattern.
+\item Al nucleone è associato il numero quantico di \textit{isospin}, conservato solo nelle interazioni forti. Il nucleone ha isospin $I=\frac12$, e le due proiezioni corrispondono a protone con $I_3=\frac12$ e neutrone con $I_3=-\frac12$.
+\item Il nucleone ha un grado di libertà interno con due stati consentiti (il protone e il neutrone), che non sono distinti dalla forza nucleare. Scrivendo gli stati del nucleone come $\ket{I,I_3}$, si può scrivere la stessa cosa di prima per un sistema a due nucleoni con tripletto $I=1$ e singoletto $I=0$.
+\item Vale l'importante Gell-Mann Nishijima.
+\begin{equation*}
+Q=I_3+\frac12 Y\qquad\text{con }Y=B\text{ (ipercarica)}
+\end{equation*}
+L'interazione elettromangetica rompe la simmetria di isospin, da cui si ha una differenza in massa tra protone e neutrone (o anche tra pioni carichi e neutri).
+\item Ad esempio per i pioni che sono mesoni quindi $B=0$ abbiamo $Q=I_3$, dunque abbiamo un tripletto di isospin perché $Q=1,0,-1$.
+\end{itemize}
+\subsubsection{Isospin del deuterone}
+\begin{itemize}
+\item Sappiamo che il deuterone è uno stato legato $pn$ in $s$-wave cioè $l=0$. Suddiviamo la funzione d'onda in parte spaziale, di spin e di isospin.
+\begin{equation*}
+\psi=\underbrace{\varphi(\text{spazio})}_{
+\begin{subarray}
+    ((-1)^L=+1\\
+    (L=0)
+\end{subarray}    
+}\times\underbrace{\alpha(\text{spin})}_{
+    \begin{subarray}
+        ((-1)^{S+1}=+1\\
+        (S=1)
+    \end{subarray}    
+    }\times\underbrace{\chi(\text{isospin})}_{(-1)^{I+1}}
+\end{equation*}
+1:06:00 slide 31
 \end{itemize}
