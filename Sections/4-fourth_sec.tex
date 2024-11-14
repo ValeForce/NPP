@@ -315,6 +315,7 @@ Misurando le sezioni d'urto e conoscendo gli impulsi e spin di deuterio e proton
 \item Per lo spin del pione neutrone si guarda il decadimento $\pi^0\to\gamma\gamma$, che ci dice subito che lo spin deve essere intero e diverso da uno. I fotoni hanno $m=0,s=1$ e $s_z=\pm1$. Prendendo come asse di quantizzazione la direzione comune di propagazione dei fotoni nel sistema di riferimento del $\pi^0$, se \( S \) è lo spin totale dei due fotoni possiamo avere: \( S_z = 0 \) oppure \( S_z = 2 \). Se lo spin di $\pi^0$ è 1, allora \( S_z = 0 \). In questo caso l'ampiezza del sistema a due fotoni deve trasformarsi sotto rotazioni spaziali come il polinomio \( P^0_1(\cos \vartheta) \), che è dispari rispetto allo scambio dei due fotoni. Ma la funzione d'onda deve essere simmetrica rispetto allo scambio dei due bosoni identici, quindi lo spin di $\pi^0$ non può essere 1. In conclusione, \( s_\pi = 0 \) o \( s_\pi \geq 2 \). \href{https://chatgpt.com/c/6734e2f4-81d8-800b-8714-8b28ae3b1bc3}{ChatGPT}
 \end{itemize}
 \subsection{Piccolo excursus su numero barionico e leptonico}
+pippo
 \subsection{Isospin}
 \begin{itemize}
 \item Fu introdotta nel 1932 da Heisenberg notando la similitudine della massa tra protone e neutrone. Suppose che fossero stati di carica differente di una particella chiamata \text{nucleone}. Ad esempio osservando nuclei speculari come $^7Li$ e $^7Be$ si osserva che i livelli energetici hanno lo stesso pattern.
@@ -329,7 +330,7 @@ L'interazione elettromangetica rompe la simmetria di isospin, da cui si ha una d
 \end{itemize}
 \subsubsection{Isospin del deuterone}
 \begin{itemize}
-\item Sappiamo che il deuterone è uno stato legato $pn$ in $s$-wave cioè $l=0$. Suddiviamo la funzione d'onda in parte spaziale, di spin e di isospin.
+\item Sappiamo che il deuterone è uno stato legato $pn$ in $s$-wave cioè $l=0$ ed è in tripletto. Suddiviamo la funzione d'onda in parte spaziale, di spin e di isospin.
 \begin{equation*}
 \psi=\underbrace{\varphi(\text{spazio})}_{
 \begin{subarray}
@@ -343,5 +344,59 @@ L'interazione elettromangetica rompe la simmetria di isospin, da cui si ha una d
     \end{subarray}    
     }\times\underbrace{\chi(\text{isospin})}_{(-1)^{I+1}}
 \end{equation*}
-1:06:00 slide 31
+La funzione d'onda per due fermioni identici (nucleoni) deve essere antisimmetrica. Questo implica che il deuterone ha spin nullo
+\begin{equation*}
+    (-1)^{I+1}=-1\implies I_d=0
+\end{equation*}
+\item Dunque il deuterone è uno stato singoletto anche per l'isospin. Infatti se consideriamo in generale due nucleoni, possiamo avere il tripletto simmetrico $I=1$ o il singoletto antisimmetrico $I=0$. Però se avessimo il tripletto, dovremmo osservare anche sistemi legati $pp$ e $nn$, che non esistono.
 \end{itemize}
+\subsubsection{Altri esempi di isospin}
+\begin{itemize}
+\item Consideriamo le due reazioni.
+\begin{gather*}
+p+p\to\pi^++d\\
+p+n\to\pi^0+d
+\end{gather*}
+Poiché $I_\pi=1$ e $I_d=0$, allora gli stati finali hanno entrambi isospin pari ad 1. Gli stati iniziali invece sono:
+\begin{gather*}
+pp=\ket{1,1}\\
+np=\frac1{\sqrt 2}\qty(\ket{1,0}-\ket{0,0})
+\end{gather*}
+La sezione d'urto è proporzionale all'ampiezza al quadrato
+\begin{equation*}
+\sigma\propto\abs{\text{ampiezza}}^2 \approx \sum_I \abs{\bra{I',I'_3}A\ket{I,I_3}}^2
+\end{equation*}
+e da conservazione di isospin (sono processi forti) abbiamo che $I=I'=1$ e $I_3=I'_3$. 
+\item La reazione $np\to\pi^0d$ va come $\qty(\frac1{\sqrt2})^2$ rispetto alla reazione $pp\to\pi^+d$:
+\begin{equation*}
+\frac{\sigma(np\to\pi^0d)}{\sigma(pp\to\pi^+d)}=\frac12
+\end{equation*}
+ed è importante perché al solito misurando una, la più semplice da effettuare sperimentalmente, trovo l'altra.
+\end{itemize}
+\subsubsection{Isospin per sistema nucleone-nucleone}
+\begin{itemize}
+\item Consideriamo i seguenti processi
+    \begin{gather*}
+    \text{a) }p+p\to d+\pi^+\\
+    \text{b) }p+n\to d+\pi^0\\
+    \text{c) }n+n\to d+\pi^-
+    \end{gather*}
+\item Poichè il deuterone ha $I=0$, per gli stati finali abbiamo 
+\begin{gather*}
+    d+\pi^+=\ket{1,1}\\
+    d+\pi^0=\ket{1,0}\\
+    d+\pi^-=\ket{1,-1}
+\end{gather*}
+mentre per quelli iniziali
+\begin{gather*}
+    p+p=\ket{1,1}\\
+    p+n=\frac1{\sqrt2}\qty(\ket{1,0}+\ket{0,0})\\
+    n+n=\ket{1,-1}
+\end{gather*}
+\item Poiché l'isospin totale si deve conservare, solo gli stati con $I=1$ contribuiscono. Dunque per i tre processi le ampiezze di scattering sono nel rapporto:
+\begin{equation*}
+    1:\frac1{\sqrt2}:1\implies\text{per la }\sigma\,\, 2:1:2
+\end{equation*}
+\item I processi a) e b) sono stati misurati e, tenendo conto dell'interazione elettromagnetica, sono nel rapporto previsto.
+\end{itemize}
+\subsubsection{Isospin per sistema nucleone-mesone}
