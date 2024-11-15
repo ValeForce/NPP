@@ -400,3 +400,28 @@ mentre per quelli iniziali
 \item I processi a) e b) sono stati misurati e, tenendo conto dell'interazione elettromagnetica, sono nel rapporto previsto.
 \end{itemize}
 \subsubsection{Isospin per sistema nucleone-mesone}
+\begin{itemize}
+    \item Poichè esistono tre pioni, gli assegniamo $I_\pi=1$, con carica data da $Q=I_3$ perché $B=0$. Dunque abbiamo
+    \begin{equation*}
+        \ket{\pi^+}=\ket{1,1}\quad\ket{\pi^0}=\ket{1,0}\quad\ket{\pi^-}=\ket{1,-1}\quad\ket{p}=\ket{\frac12,\frac12}\quad\ket{n}=\ket{\frac12,-\frac12}
+    \end{equation*}
+    e ricordiamo che le regole sono:
+    \begin{equation*}
+        \abs{I^1-I^2}\leq I\leq I^1+I^2\qquad I_3=I_3^1+I_3^2
+    \end{equation*}
+    \item Nel sistema $\pi$N l'isospin totale può essere $\frac12$ o $\frac32$, perché devo combinare isospin 1 e $\frac12$. Vediamo le diverse possibilità:
+    \begin{gather*}
+        \pi^+p\to\pi^+p\\
+        \pi^-n\to\pi^-n\\
+        \pi^-p\to\pi^-p\\
+        \pi^-p\to\pi^0n\\
+        \pi^+n\to\pi^+n\\
+        \pi^+n\to\pi^0p
+    \end{gather*}
+    \item Le prime due sono degli stati puri di isospin $\frac32$. Questo perché $I_3=1+\frac12=\frac32$, dunque il caso $I=\frac12$ è proibito (cioè NON posso avere $\ket{\frac12,\frac32}$).
+    \item Tutte le altre in generale sono combinazioni lineari dei due casi, con ampiezze date dai coefficienti di Clebsch-Gordan. Consideriamo ad esempio $\pi^+n\to\pi^0p$. Abbiamo 
+    \begin{equation*}
+        \ket{\pi^+n}=\ket{1,1}\times\ket{\frac12,-\frac12}=\alpha\ket{\frac32,\frac12}+\beta\ket{\frac12,\frac12}
+    \end{equation*}
+    perché in questo caso sono consentiti i due valori di isospin dato che $I_3=\frac12$. I valori dei coefficiente $\alpha$ e $\beta$ si ottengono dalla tabella dei coefficienti di Clebsch-Gordan (Guida a mano, in realtà basta leggere come al solito. Il termine che sceglie la tabella è $I^1\times I^2$; poi guardi le componenti di isospin delle due particelle e le cerchi a sinistra selezionando la riga; infine in alto consideri isospin e sua componente dello stato di cui vuoi trovare il coefficiente).
+\end{itemize}
