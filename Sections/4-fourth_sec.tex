@@ -424,4 +424,35 @@ mentre per quelli iniziali
         \ket{\pi^+n}=\ket{1,1}\times\ket{\frac12,-\frac12}=\alpha\ket{\frac32,\frac12}+\beta\ket{\frac12,\frac12}
     \end{equation*}
     perché in questo caso sono consentiti i due valori di isospin dato che $I_3=\frac12$. I valori dei coefficiente $\alpha$ e $\beta$ si ottengono dalla tabella dei coefficienti di Clebsch-Gordan (Guida a mano, in realtà basta leggere come al solito. Il termine che sceglie la tabella è $I^1\times I^2$; poi guardi le componenti di isospin delle due particelle e le cerchi a sinistra selezionando la riga; infine in alto consideri isospin e sua componente dello stato di cui vuoi trovare il coefficiente).
+    \item Consideriamo le tre seguenti reazioni (tanto le altre sono analoghe)
+    \begin{gather*}
+        \pi^+p\to\pi^+p\\
+        \pi^-p\to\pi^-p\\
+        \pi^-p\to\pi^0n
+    \end{gather*}
+    le prime due sono scattering elastico (una pura e una no), l'ultima è una reazione di scambio di carica. La sezione d'urto è data da
+    \begin{equation*}
+        \sigma\propto\abs{\bra{f}H\ket{i}}^2=\abs{M\_{if}}^2
+    \end{equation*}
+    Definiamo
+    \begin{gather*}
+        M_1=\bra{I=\frac12}H_1\ket{I=\frac12}\\
+        M_3=\bra{I=\frac32}H_3\ket{I=\frac32}
+    \end{gather*}
+    \begin{enumerate}
+        \item Per la prima reazione $\ket{i}=\ket{f}$ ed essendo uno stato puro ($I=\frac32$) la sezione d'urto è proporzionale solo a $\abs{M_3}^2$. 
+        \item Anche in questo caso $\ket{i}=\ket{f}$ però non è puro: $\sigma_2\propto \abs{\frac13M_3+\frac23M_1}^2$. Non conosciamo i valori di $M$ ma il loro "rapporto".
+        \item Per la terza reazione $\ket{i}\neq\ket{f}$. Risulta $\sigma_3\propto\abs{\sqrt{\frac29}M_3-\sqrt{\frac29}M_1}^2$
+    \end{enumerate}
+    Dunque conosciamo il rapporto delle sezioni d'urto:
+    \begin{equation*}
+    \sigma_1:\sigma_2:\sigma_3 = \abs{M_3}^2:\frac19\abs{M_3+2M_1}^2:\frac29\abs{M_3-M_1}^2
+    \end{equation*}
+    Nell'ipotesi che la modalità di transizione dominante sia l'una o l'altra, abbiamo 
+    \begin{gather*}
+    M_3\gg M_1 \implies \sigma_1:\sigma_2:\sigma_3=9:1:2\\
+    M_1\gg M_3 \implies \sigma_1:\sigma_2:\sigma_3=0:2:1
+    \end{gather*}
+    quindi misuriamo sperimentalmente le sezioni d'urto e calcoliamo teoricamente queste ampiezze di transizioni, anche se sono molto difficili perché ci sono in mezzo gli adroni e avviene adronizzazione (?).
+    \item Dunque abbiamo le seguenti formule per le sezioni d'urto slide 40, 1:06:54
 \end{itemize}
