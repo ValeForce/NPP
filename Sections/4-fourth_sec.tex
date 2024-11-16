@@ -393,10 +393,10 @@ mentre per quelli iniziali
     p+n=\frac1{\sqrt2}\qty(\ket{1,0}+\ket{0,0})\\
     n+n=\ket{1,-1}
 \end{gather*}
-\item Poiché l'isospin totale si deve conservare, solo gli stati con $I=1$ contribuiscono. Dunque per i tre processi le ampiezze di scattering sono nel rapporto:
-\begin{equation*}
+\item Poiché l'isospin totale si deve conservare, solo gli stati con $I=1$ contribuiscono. Dunque per i tre processi le ampiezze di scattering sono nel rapporto:\textbf{windows deve esplodere, commentato}
+\comment{\begin{equation*}
     1:\frac1{\sqrt2}:1\implies\text{per la }\sigma\,\, 2:1:2
-\end{equation*}
+\end{equation*}}
 \item I processi a) e b) sono stati misurati e, tenendo conto dell'interazione elettromagnetica, sono nel rapporto previsto.
 \end{itemize}
 \subsubsection{Isospin per sistema nucleone-mesone}
@@ -444,23 +444,26 @@ mentre per quelli iniziali
         \item Anche in questo caso $\ket{i}=\ket{f}$ però non è puro: $\sigma_2\propto \abs{\frac13M_3+\frac23M_1}^2$. Non conosciamo i valori di $M$ ma il loro "rapporto".
         \item Per la terza reazione $\ket{i}\neq\ket{f}$. Risulta $\sigma_3\propto\abs{\sqrt{\frac29}M_3-\sqrt{\frac29}M_1}^2$
     \end{enumerate}
-    Dunque conosciamo il rapporto delle sezioni d'urto:
-    \begin{equation*}
+    Dunque conosciamo il rapporto delle sezioni d'urto::\textbf{windows deve esplodere, commentato}
+    \comment{\begin{equation*}
     \sigma_1:\sigma_2:\sigma_3 = \abs{M_3}^2:\frac19\abs{M_3+2M_1}^2:\frac29\abs{M_3-M_1}^2
-    \end{equation*}
-    Nell'ipotesi che la modalità di transizione dominante sia l'una o l'altra, abbiamo 
-    \begin{gather*}
+    \end{equation*}}
+    Nell'ipotesi che la modalità di transizione dominante sia l'una o l'altra, abbiamo \textbf{windows deve esplodere, commentato}
+    \comment{\begin{gather*}
     M_3\gg M_1 \implies \sigma_1:\sigma_2:\sigma_3=9:1:2\\
     M_1\gg M_3 \implies \sigma_1:\sigma_2:\sigma_3=0:2:1
-    \end{gather*}
+    \end{gather*}}
     quindi misuriamo sperimentalmente le sezioni d'urto e calcoliamo teoricamente queste ampiezze di transizioni, anche se sono molto difficili perché ci sono in mezzo gli adroni e avviene adronizzazione (?).
     \item Dunque abbiamo le seguenti formule per le sezioni d'urto 
-    \begin{align*}
-    \sigma(\pi^++p\to\pi^++p)&=K\abs{A_{\frac32}}^2\\
-    \sigma(\pi^-+p\to\pi^0+n)&=K\abs{\frac{\sqrt2}3 A_{\frac32}-\frac{\sqrt2}3A_{\frac12}}^2\\
-    \sigma(\pi^-+p\to\pi^-+p)&=K\abs{\frac13 A_{\frac32}+\frac23A_{\frac12}}^2\\
-    \sigma(\pi^-+n\to\pi^-+n)&=K\abs{A_{\frac32}}^2
-    \end{align*}
+    \begin{equation}\label{eq:sez_urto_pion_nucleon}
+        \begin{aligned}
+            \sigma(\pi^++p\to\pi^++p)&=K\abs{A_{\frac32}}^2\\
+            \sigma(\pi^-+p\to\pi^0+n)&=K\abs{\frac{\sqrt2}3 A_{\frac32}-\frac{\sqrt2}3A_{\frac12}}^2\\
+            \sigma(\pi^-+p\to\pi^-+p)&=K\abs{\frac13 A_{\frac32}+\frac23A_{\frac12}}^2\\
+            \sigma(\pi^-+n\to\pi^-+n)&=K\abs{A_{\frac32}}^2
+            \end{aligned}
+    \end{equation}
+    
     con 
     \begin{equation*}
     A_{\frac32}=\bra{\frac32,I_3}H\ket{\frac32,I_3}\qquad A_{\frac32}=\bra{\frac12,I_3}H\ket{\frac12,I_3}
@@ -483,10 +486,34 @@ con $p\_{cm}$ impulso nel sistema del centro di massa, $J$ spin della risonanza,
 \end{itemize}
 \subsubsection{Risonanze $\Delta$}
 \begin{itemize}
-\item I barioni $\Delta$ sono barioni relativamente leggeri ($m = 1236$ MeV) composti da soli quark up e down che hanno spin e isospin $\frac32$, questo li distingue dai nucleoni (protoni e neutroni che hanno spin e isospin $\frac {1}{2}$. 
+\item I barioni $\Delta$ sono barioni relativamente leggeri ($m = 1236$ MeV) composti da soli quark up e down che hanno spin e isospin $\frac32$, questo li distingue dai nucleoni (protoni e neutroni che hanno spin e isospin $\frac {1}{2}$). 
 \item Tutte le varietà di barioni $\Delta$ decadono tramite l'interazione forte in un nucleone e un pione con carica appropriata. Le ampiezze dei vari stati di carica finale sono date dalle loro rispettive coppie di isospin. Più raramente e più lentamente, il $\Delta^+$ può decadere in un protone e un fotone e il $\Delta^0$ in un neutrone e un fotone. 
 \item Lo spin $\frac32$ precisa che tutti e tre i quark dentro una particella $\Delta$ hanno il loro asse di spin indicante la stessa direzione, a differenza del quasi identico nucleone in cui lo spin intrinseco di uno dei tre quark costituenti è sempre opposto allo spin degli altri due. Questo allineamento di spin è integrato da un numero quantico di isospin di $\frac32$ il quale differenzia i barioni $\Delta^+$ e $\Delta^0$ e i nucleoni ordinari, che hanno spin e isospin di $\frac12$.
 \item La famiglia $\Delta$ è costituita da quattro particelle diverse distinte dalla loro carica elettrica, che è la somma delle cariche della mescolanza di quark up (u) e down (d) che compongono le particelle barioniche $\Delta$. Ci sono inoltre quattro antiparticelle con carica opposta, costituite di antiquark corrispondenti. L'esistenza del $\Delta^{++}$, con la sua inusuale carica $+2$, fu un indizio fondamentale per lo sviluppo del modello a quark. 
 \item La larghezza è circa $120\MeV$ che è abbastanza grande, circa il 10\% della massa. È un processo forte infatti la sezone d'urto è grande sui 10-100 mb e il tempo di vita medio è sui $10^{-24}$ s. 
-\item Studiando la distribuione angolare dei prodotti di decadimenti si trova che lo spin del $\Delta$ è $3/2$. Per $\sqrt s<1.4$ GeV le sezioni d'urto elastica e totale coincidono.
+\item Studiando la distribuzione angolare dei prodotti di decadimenti si trova che lo spin del $\Delta$ è $3/2$. Infatti ci sono quattro particelle nella sua famiglia: $\Delta^{++},\Delta^+,\Delta^{0},\Delta^{-}$. Per $\sqrt s<1.4$ GeV le sezioni d'urto elastica e totale coincidono. 
+\begin{align*}
+    \pi^+p&\to\Delta^{++}\\
+    \pi^+n&\to\Delta^+\\
+    \pi^-p&\to\Delta^0\\
+    \pi^-n&\to\Delta^-
+\end{align*}
+\item Dunque guardando la sezione d'urto in funzione dell'impulso si vede che il sistema pione nucleone ha risonanze: questa è la prova che esiste $\Delta$. 
+\item Se confrontiamo sperimentalmente le sezioni d'urto di scattering elastico e totale ad esempio di $\pi^-p$, c'è accordo con la teoria. Infatti abbiamo
+\begin{gather*}
+    \sigma(\pi^-p\to\pi^-p)=22\text{ mb}\\
+    \sigma(\pi^-p\to\pi^0n)=45\text{ mb}
+\end{gather*}
+cioè sono in rapporto circa 2:1, come previsto. Questo è dovuto al fatto che la risonanza $\Delta$ ha isospin $\frac32$ quindi i processi che coinvolgono l'apparizione della $\Delta$ come risonanza posso avvenire solo attraverso canali con $I=3/2$. Dunque da \eqref{eq:sez_urto_pion_nucleon} abbiamo:
+    \begin{align*}
+        \sigma(\pi^++p\to\pi^++p)&=K\abs{A_{\frac32}}^2\\
+        \sigma(\pi^-+p\to\pi^0+n)&=K\abs{\frac{\sqrt2}3 A_{\frac32}}^2=K\frac29\abs{A_{\frac32}}^2\\
+        \sigma(\pi^-+p\to\pi^-+p)&=K\abs{\frac13 A_{\frac32}}^2=K\frac19\abs{A_{\frac32}}^2\\
+        \sigma(\pi^-+n\to\pi^-+n)&=K\abs{A_{\frac32}}^2
+        \end{align*}
+        dunque
+        \begin{equation*}
+            \frac{\sigma(\pi^++p\to\pi^++p)}{\sigma(\pi^-+p\to\pi^-+p)}=9\qquad\frac{\sigma(\pi^-+p\to\pi^0+n)}{\sigma(\pi^-+p\to\pi^-+p)}=2
+        \end{equation*}
+        e vediamo proprio il rapporto 2:1 tra le sezioni d'urto inelastica ed elastica, questo perché c'è il contributo da uno stato finale aggiuntivo $I=\frac12$ che invece non abbiamo negli stati puri\footnote{Questa affermazione non so se è giusta, non mi sembra chiara.}.
 \end{itemize}
