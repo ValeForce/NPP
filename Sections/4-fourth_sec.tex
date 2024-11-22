@@ -620,7 +620,67 @@ Consideriamo ad esempio il gruppo di rotazione.
     \end{equation*}
     e poiché la probabilità deve restare la stessa:
     \begin{equation*}
-        \abs{\braket{\phi}{\psi}}^2=\abs{\braket{\phi'}{\psi'}}^2=\abs{HELP}^2
+        \abs{\braket{\phi}{\psi}}^2=\abs{\braket{\phi'}{\psi'}}^2=\abs{\mel{\varphi}{U^\dag U}{\psi}}^2\implies U^\dag U=1
     \end{equation*}
+    cioè $U$ deve essere unitario. Gli operatori $U(R)$ formano un gruppo, in particolare una \textit{rappresentazione unitaria} del gruppo delle rotazioni.
+    \item Poiché la hamiltoniana è invariante per operazioni di simmetria $R$ del sistema, gli elementi di matrice si conservano:
+    \begin{equation*}
+        \mel{\phi'}{H}{\psi'}=\mel{\phi}{U^\dag H U}{\psi}=\mel{\phi}{H}{\psi}\implies U^\dag H U=H\implies\comm{U}{H}=0
+    \end{equation*}
+    \item La trasformazione $U$ non ha dipendenza esplicita dal tempo e l'equazione del moto 
+    \begin{equation*}
+        i\dv{\ket{\psi(t)}}{t}=H\ket{\psi(t)}
+    \end{equation*}
+    è invariante per trasformazioni di simmetria. Dunque il valore di aspettazione di $U$ è una costante del moto.
+    \item Tutte le proprietà di gruppo seguono dal considerare rotazioni infinitesime attorno all'identità. Un esempio di rotazione attorno al terzo asse:
+    \begin{equation*}
+        U=1-i\epsilon J_3
+    \end{equation*}
+    con $J_3$ generatore delle rotazioni attorno al terzo asse.
+    \begin{equation*}
+        1=U^\dag U=(1+i\varepsilon J_3^\dag)(1-i\varepsilon J_3)=1+i\varepsilon(J_3^\dag-J_3)+\order{\varepsilon^2}
+    \end{equation*}
+    dunque $J_3^\dag=J_3$ è hermitiano ed è un osservabile.
+    \item Effettuiamo una rotazione $R$ sulla funzione d'onda. Poiché la fisica è invariante per rotazione, abbiamo:
+    \begin{gather*}
+        \psi'(\vec r)=\psi(R^{-1}\vec r)=U\psi(\vec r)\implies\\ 
+        U\psi(x,y,z)=\psi(x+\varepsilon y,y-\varepsilon x,z)=\psi(x,y,z)+\varepsilon\qty(y\pdv{\psi}{x}-x\pdv{\psi}{y})=\psi\qty[1-i\varepsilon\qty(xp_y-yp_x)]
+    \end{gather*}
+    da cui ne segue che $J_3=xp_y-yp_x$ è il generatore delle rotazioni attorno all'asse $z$, ossia la componente del momento angolare. L'invarianza per rotazioni implica la conservazione del momento angolare.
+    \item Per una rotazione finita di $\vartheta$:
+    \begin{equation*}
+        U(\vartheta)=\qty[U(\varepsilon)]^n=\qty(1-i\frac\vartheta n J_3)^n\to e^{-i\vartheta J_3}
+    \end{equation*}
+    al solito l'algebra dei generatori è di Lie in quanto vale la relazione
+    \begin{equation*}
+        \comm{J_i}{J_j}=i\epsilon_{ijk}J_k
+    \end{equation*}
+    Le funzioni non lineari dei generatori che comutano con tutti i generatori sono dette invarianti o \textit{operatori Casimir}. Per il gruppo di rotazione l'unico operatore Casimir è:
+    \begin{equation*}
+        J^2=J_1^2+J_2^2+J_3^2\text{ infatti }\comm{J^2}{J_i}=0
+    \end{equation*}
+    e ne segue che\footnote{Mi ricorda i famosi tre puntini di Marano.} possiamo costruire gli autostati simultanei di $J^2$ e $J_3$:
+    \begin{gather*}
+        J^2\ket{j,m}=\hbar^2j(j+1)\ket{j,m}\\
+        J_3\ket{j,m}=\hbar m\ket{j,m}
+    \end{gather*}
+\end{itemize}
+\subsubsection{Gruppo $SU(2)$}
+\begin{itemize}
+\item Nella dimensione minore non banale del gruppo delle rotazioni, $j=\frac12$, i generatori sono le matrici di Pauli:
+\begin{equation*}
+    J_k=\frac12\sigma_k
+\end{equation*}
+che descrivono particelle con spin $\frac12$.
+La matrice di trasformazione è $U(\vartheta_i)=e^{-i\vartheta_i\frac{\sigma_i}2}$. Queste matrici sono unitarie cioè appartengono a $U(2)$. Tuttavia, le matrici di Pauli sono tutte a traccia nulla, dunque in particolare appartengono a $SU(2)$. Si dimostra che ogni matrice hermitiana a traccia nulla $\sigma$ vale:
+\begin{equation*}
+    \text{det}\,e^{i\sigma}=e^{i\text{Tr}\sigma}=1
+\end{equation*}
+\item Per un sistema composto valgono le usuali regole del momento angolare. Si ha $J=J_A+J_B$ che soddisfa l'algebra di Lie e gli autovalori $J(J+1)$ ed $M$ di $J^2$ e $J_3$ sono numeri quantici conservati. Dunque abbiamo il prodotto di due rappresentazioni irriducibili $2J_A+1$ e $2J_B+1$ che diventa $2J+1$ nella base $\ket{J_A,J_B,J,M}$, con 
+\begin{equation*}
+    \abs{J_A-J_B}\leq J\leq J_A+J_B\qquad M=m_A+m_B
+\end{equation*}
+e per trovare gli autostati su usano i coefficienti di Clebsch-Gordan.
+\item Chiaramente è uguale il discorso per l'isospin e le matrici sono le stesse di Pauli. 
 \end{itemize}
 
