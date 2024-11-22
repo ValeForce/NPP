@@ -590,3 +590,37 @@ m_K=\sqrt{\qty(E_1+E_2)^2-\qty(\vec p_1+\vec p_2)^2}
 \item Una prima simmetria era associata all'isospin; particelle con stesso isospin sono identiche davanti alla forza forte, mentre la forza elettromagnetica (e debole )rompe la simmetria causando una differenza in massa di qualche \% tra le particelle dello stesso multipletto.
 \end{itemize}
 \subsubsection{Gli adroni sono particelle elementari?}
+\begin{itemize}
+    \item Col tempo la nozione di particella \textit{elementare} entrò in crisi. L'esistenza di troppi adroni fu vista come una contraddizione rispetto alla natura elementare della componente fondamentale della materia.
+    \item Era naturale interpretare gli adroni come risonanze di componenti elementari. Il problema principale divenne quindi misurare le proprietà di queste componenti ed eventualmente osservarle.
+    \item Troppi stati adronici, sono allora risonanze? La \autoref{fig:discovery} mostra le scoperte delle particelle dal 1898 agli anni '60; la loro abbondanza e regolarità, in funzione di numeri quantici come carica e stranezza, suggerivano una possibile sequenza, simile alla tavola di Mendeleev.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\textwidth]{immagini/fig_discovery.png}
+        %\caption{}
+        \label{fig:discovery}
+    \end{figure}
+    \item Per estendere la simmetria, si è tentato di raggruppare diversi multipletti di isospin in un gruppo più grande con lo stesso spin e parità, ma con diversa stranezza (o ipercarica).
+    \item Esistono altre possibili scelte a priori, come mantenere la stessa stranezza ma con spin e parità diversi, ma queste opzioni non funzionano.
+    \item Nel 1949 Fermi e Yang proposero una strategia per classificare tutte le particelle. Tutte sono descritte da stati legati di protone e neutrone, ed in particolare sono risonanze di questo sistema. Con la scoperta delle particelle strane questo fu scartato (fino a risonanze $\Delta$ funzionava).
+    \item Nel 1956 Sakata estese questo modello includendo il $\Lambda$ per tenere conto della stranezza: tutti gli stati adronici erano composti da protone, neutrone e $\Lambda$ e rispettive antiparticelle.
+    \item Nel 1961 Gell-Mann e Ne'eman proposero una classificazione delle particelle basata sulla simmetria matematica $SU(3)$, detta \textit{Eightfold Way} (via dell'ottetto). La classificazione non menziona esplicitamente la presenza di una struttura interna. Il nome fu inventato da Gell-Mann e viene dagli otto comadamenti del buddismo.
+\end{itemize}
+\subsubsection{Simmetrie e gruppi}
+Consideriamo ad esempio il gruppo di rotazione.
+\begin{itemize}
+    \item Due rotazioni successive $R_1$ seguita da $R_2$ sono equivalenti ad una singola rotazione $R=R_2R_1$. Il gruppo in questo caso è \textit{chiuso} rispetto alla moltiplicazione.
+    \item Esiste l'elemento identità (no rotazione) e ogni rotazione ha una inversa $R^{-1}$.
+    \item Il prodotto non è necessariamente commutativo $R_1R_2\neq R_2R_1$ (dunque non è abeliano), ma vale sempre la proprietà associativa $(R_1R_2)R_3=R_1(R_2R_3)$. Invece nelle rotazioni nel piano vale la proprietà commutativa.
+    \item Il gruppo è \textit{continuo}: ogni rotazione può essere descritta da un insieme di parametri che variano continuamente $(\alpha_1,\alpha_2,\alpha_3)$, i quali possono essere considerati come le componenti di un vettore $\vec \alpha$ diretto lungo l'asse di rotazione, con una intensità data dall'angolo di rotazione.
+    \item Il gruppo delle rotazioni è un gruppo di Lie: ogni rotazione può essere espressa come il prodotto di una successione di rotazioni infinitesime (arbitrariamente vicine all'identità). Il gruppo è quindi completamente definito dalla “vicinanza all'identità”.
+    \item Le rotazioni sono un sottoinsieme delle trasformazioni di Lorentz e formano un gruppo di simmetria di un sistema fisico: la fisica è invariante rispetto alle rotazioni. Infatti consideriamo
+    \begin{equation*}
+        \ket{\psi}\overset{R}{\longrightarrow}\ket{\psi'}=U\ket{\psi}
+    \end{equation*}
+    e poiché la probabilità deve restare la stessa:
+    \begin{equation*}
+        \abs{\braket{\phi}{\psi}}^2=\abs{\braket{\phi'}{\psi'}}^2=\abs{HELP}^2
+    \end{equation*}
+\end{itemize}
+
