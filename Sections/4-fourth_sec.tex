@@ -683,4 +683,54 @@ La matrice di trasformazione è $U(\vartheta_i)=e^{-i\vartheta_i\frac{\sigma_i}2
 e per trovare gli autostati su usano i coefficienti di Clebsch-Gordan.
 \item Chiaramente è uguale il discorso per l'isospin e le matrici sono le stesse di Pauli. 
 \end{itemize}
-
+\subsubsection{slide misteriosa Isospin for antiparticles}
+\begin{gather*}
+\mqty(p'\\n')=e^{-i\pi \frac{\tau_2}2}=-i\tau_2\mqty(p\\n)=\mqty(0 & -1 \\ 1 & 0)\mqty(p\\n) \\
+\mqty(\bar p'\\\bar n')=\mqty(0 & -1 \\ 1 & 0)\mqty(\bar p\\\bar n) 
+\end{gather*}
+Affinché l'anti doppietto si trasformi come il doppietto, dobbiamo riordinare il doppietto ed introdurre un segno meno:
+\begin{equation*}
+\mqty(-\bar n'\\\bar p')=\mqty(0 & -1\\1 & 0 )\mqty(\bar p\\\bar n)
+\end{equation*}
+da cui per nucleone-antinucleone:
+\begin{equation*}
+    \begin{cases}
+        \ket{1,1}=-p\bar n\\
+        \ket{1,0}=\sqrt{\frac12}\qty(p\bar p-n\bar n)\\
+        \ket{1,-1}=n\bar p
+    \end{cases}
+\end{equation*}
+\begin{equation*}
+\ket{0,0}=\sqrt{\frac12}\qty(p\bar p+n\bar n)
+\end{equation*}
+\subsubsection{Gruppo $SU(3)$}
+\begin{itemize}
+    \item È il gruppo delle matrici unitarie $3\times3$ con determinante unitario. I generatori sono $3^2-1=8$ matrici hermitiane a traccia nulla e linearmente indipendenti. Due di esse sono diagonali. Otto è il numero massimo di generatori che commutano mutualmente (questo vuol dire essere indipendenti), che è dunque il rango del gruppo.
+    \item Si può dimostrare che il rango del gruppo è uguale al numero di operatori Casimir.
+    \item La rappresentazione fondamentale di $SU(3)$ è un tripletto (e.g. i tre colori di un quark). I generatori sono matrici $3\times3$ indicante con $\lambda_i$, dette \textit{matrici di Gell-Mann}.
+    \begin{equation*}
+    \lambda_3=\mqty(\dmat{1,-1,0})\qquad \lambda_8=\mqty(\dmat{1,1,-2})
+    \end{equation*}
+    \item È necessario passare a $SU(3)$ a causa della introduzione di un secondo numero quantico additivo, la stranezza, che assieme ad $I_3$ rende necessario aumentare il gruppo di simmetria. Fu proposto nel 1961. L'assegnazione delle particelle al multipletto $SU(3)$ non è ovvia a causa della elevata differenza in massa tra le varie particelle strane e non strane. 
+    \item Ad esempio l'ottetto barionico contiene particelle con differenza di massa fino a 400 MeV, con in media una massa di 1100 MeV.
+    \item La simmetria in $SU(3)$ è molto più approssimata rispetto a $SU(2)$ che è solo per l'isospin. Questo è dovuto al fatto che il quark $s$ è molto più pesante di $u$ e $d$. La simmetria $SU(3)$ è alla base del modello a quark ed è utile anche per classificare gli adroni e capire le loro proprietà. 
+    \item Invece i colori in $SU(3)$ sono una simmetria esatta.
+\end{itemize}
+\subsubsection{La via dell'ottetto (1961-1964)}
+\begin{itemize}
+\item Tutti gli adroni noti negli anni 60 sono classificati nel piano $I_3-Y$.
+\item La stranezza, che contribuisce a $Y$, ha l'effetto di allargare la simmetria di isospin dal gruppo $SU(2)$ al gruppo $SU(3)$.
+\item Questa simmetria la chiamiamo \textit{flavour} $SU(3)_F$ per distinguerla dalla \textit{color} $SU(3)_C$ che è invece esatta per le interazioni forti in QCD.
+\item Le particelle formano multipletti di $SU(3)_F$. Ciascun multipletto contiene particelle che hanno stesso spin e parità intrinseca. La molteplicità base per i mesoni è nove ($3\times\bar3$), che si suddivide in dui multipletti: ottetto + singoletto. Per i barioni invece ci sono ottetti + decupletti.
+\item La nascita di $SU(3)$ fu lunga e complicata. Spiegò sia i multipletti di particelle/risonanze note, sia predisse l'esistenza di nuove particelle prima ancora che furono scoperte.
+\item Tuttavia, la differenza in massa tra protone e neutrone (o tra i pioni carichi e neutri) è inferiore a qualche MeV, mentre tra pioni e kaoni o protoni e lambda è molto maggiore. Dunque la simmetria di isospin $SU(2)$ è \textit{quasi esatta}, mentre la simmetria di $SU(3)$, che raggruppa particelle strane e non-strane, è sostanzialmente violata.
+\item In principio, la scoperta di flavour più pesanti può essere interpretata con gruppi di rango maggiore, ad esempio con $SU(4)$ includiamo il quark charm e così via. Tuttavia, queste simmetrie maggiori sono ancora più rotte, come dimostrato dai valori di massa. Dunque poi non si usa.
+\end{itemize}
+\subsubsection{Mesoni $J^P=0^-$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_mesoni_0_meno.png}
+    %\caption{}
+    %\label{}
+  \end{figure}
+Nel piano $I_3-Y$ i mesoni $J^P=0^-$ formano un ottetto e un singoletto. help
