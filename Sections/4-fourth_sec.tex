@@ -703,6 +703,10 @@ da cui per nucleone-antinucleone:
 \begin{equation*}
 \ket{0,0}=\sqrt{\frac12}\qty(p\bar p+n\bar n)
 \end{equation*}
+Non lo so. So solo che 
+\begin{equation*}
+    \mqty(p\\n)\longrightarrow\mqty(-\bar n\\\bar p)
+\end{equation*}
 \subsubsection{Gruppo $SU(3)$}
 \begin{itemize}
     \item È il gruppo delle matrici unitarie $3\times3$ con determinante unitario. I generatori sono $3^2-1=8$ matrici hermitiane a traccia nulla e linearmente indipendenti. Due di esse sono diagonali. Otto è il numero massimo di generatori che commutano mutualmente (questo vuol dire essere indipendenti), che è dunque il rango del gruppo.
@@ -786,10 +790,107 @@ dunque deve decadere violando la conservazione della stranezza, cioè per intera
   \end{figure}
   Dunque si parte da stranezza -3 e si sempre a diminuire a scatti di 1 decadendo debolmente.
 \end{itemize}
-\subsubsection{Il modello statico a quark}
+\subsection{Il modello statico a quark}
 \begin{itemize}
 \item Dunque nel 1964 Gell-man e Zweig indipendentemente proposore che tutti gli adroni fossero composti da tre particelle, dette quark (da un romanzo di Joyce).
 \item Ancora non era chiaro se questa ipotesi fosse soltanto una convenienza matematica o realtà. Oggi invece sappiamo che i quark sono reali, così come tutte le particelle quantistiche, ma non possono essere osservati come oggetti singoli isolati.
 \item Questo modello, che fu poi arricchito con altri altri quark ed interazioni (elettrodebole e QCD), è ancora alla base della nostra comprensione delle particelle elementari: il Modello Standard.
 \item Noi considereremo solo le proprietà \textit{statiche} dei tre quark originali.
+\item I quark devono essere fermioni in quanto devono essere in grado di formare fermioni e bosoni. In analogia con l'idea di Fermi e Yang, i mesoni sono coppie quark ed antiquark in generale diversi; i barioni (antibarioni) sono stati con tre quark (antiquark).
+\item Per formare particelle non strane di carica $0,\pm1$ servono almeno due quarks. Questi devono formare un doppietto di isospin, così che hanno sia $I=0$ che $I=1$.
+\item Per formare particelle strane serve un terzo quark, a cui è assegnato per convenzione $s=-1$. \textit{Il numero minimo di costituenti è dunque tre}.
+\item Ai quark viene assegnato $B=\frac13$ per sistemare il numero barionico. Inoltre hanno parità $J^P=\frac12^+$.
+\item Dalla formula di Gell-Mann e Nishijima ne segue che 
+\begin{equation*}
+Q(u)=+\frac23\qquad Q(d)=Q(s)=-\frac13
+\end{equation*}
+dunque i quark hanno carica elettrica frazionaria.
+\item I quark formano un tripletto, che è una rappresentazione base del gruppo $SU(3)$. Possono essere rappresentati in forma vettoriale nel piano $I_3-Y$; le loro combinazioni, cioè gli adroni, sono somme di tali vettori.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{immagini/fig_quark_vector.png}
+    %\caption{}
+    %\label{}
+  \end{figure}
 \end{itemize}
+\subsubsection{I mesoni}
+\begin{itemize}
+    \item Consideriamo per ora solo i quark $u$ e $d$.
+    \begin{equation*}
+    \mqty(u\\d)\,\mqty(-\bar d\\ \bar u)\implies 
+    \begin{cases}
+    \ket{1,1}=-u\bar d\\
+    \ket{1,0}=\frac1{\sqrt2}\qty(u\bar u-d\bar d)\\
+    \ket{1,-1}=\bar ud
+    \end{cases}\\
+    \ket{0,0}=\frac1{\sqrt2}\qty(u\bar u+d\bar d)
+    \end{equation*}
+    \item Se aggiungiamo il terzo quark $s$ ci sono 9 possibili combinazioni: un ottetto e un singoletto. Sotto trasformazioni in $SU(3)$ gli otto stati si trasformano tra di loro, ma non si mischiano mai col singoletto.
+    \item Dunque costruiamo i mesoni $q\bar q$ con queste regole:
+    \begin{enumerate}
+    \item Nello spazio $I_3-Y$ sommi i vettori (quark/antiquark) per produrre coppie $q\bar q$, cioè i mesoni.
+    \item Tutte le combinazioni sono permesse.
+    \end{enumerate}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_mix_meson.png}
+        \caption{I mesoni pseudoscalari ($J^P=0^-$) sono gli stati $q\bar q$ in $s$-wave con spin opposti.}
+        %\label{}
+      \end{figure}
+      \item Abbiamo dunque tre mesoni con ipercarica ed isospin nullo. 
+\end{itemize}
+\subsubsection{Mesoni $J^{PC}=0^{-+}$}
+Specificatamente con $s$-wave otteniamo il nonetto pseudoscalare:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{immagini/fig_pseudoscalar_mesons.png}
+    %\caption{}
+    %\label{}
+  \end{figure}
+  Notiamo che $\pi^0,\eta,\eta'$ sono tutte combinazioni (mixing) di tre possibili stati $q\bar q$, come già detto.
+  \begin{itemize}
+  \item I tre stati con $I_3=Y=0$ sono ortogonali e combinazioni lineari di $u\bar u,d\bar d,s\bar s$.
+  \item Indichiamo gli stati con $\{n,\ket{I,I_3}\}$ dove $n$ è la dimensione della rappresentazione (singoletto, doppietto, etc\dots).
+  \item Il singoletto di $SU(3)$ deve contenere, per motivi di simmetria, tutti e tre gli stati con stesso peso (una rotazione in $SU(3)$ non cambia lo stato), cioè è puro:
+  \begin{equation*}
+  \eta_1=\{1,\ket{0,0}\}=\frac1{\sqrt3}\qty(u\bar u+d\bar d+s \bar s)
+  \end{equation*}
+  \item Ne restano altri due che appartengono all'ottetto. Uno di essi deve appartenere al tripletto con $I=1$, dunque lo possiamo ricavare con gli operatori scala di isospin. 
+  \item Così come $p$ ed $n$ formano un doppietto, allo stesso modo $u$ e $d$ e lo stesso per antiparticelle. Poiché $s$ è un singoletto, quando lo aggiungiamo ad un doppietto di isospin non cambia le proprietà del doppietto (cioè considerare $u\bar s$ è come $u$, nel contesto di doppietto).
+  \item Le proprietà dell'operatore scala sono le solite:
+  \begin{equation*}
+  I_\pm\ket{I,I_3}=\sqrt{I(I+1)-I_3(I_3\pm1)\ket{I,I_3\pm}}
+  \end{equation*}
+  Possiamo vedere varie applicazioni.
+  \begin{equation*}
+  \begin{cases}
+  I_+\ket{d}=\ket{u}\\
+  I_+\ket{\bar u}=\ket{-\bar d}\\
+  I_+\ket{u}=I_+\ket{\bar d}=0
+  \end{cases}
+  \begin{cases}
+  I_-\ket{1,1}=I_+\ket{1,-1}=\sqrt2\ket{1,0}\\
+  I_+\ket{1,0}=\sqrt2\ket{1,1}\\
+  I_-\ket{1,0}=\sqrt2\ket{1,-1}\\
+  I_+\ket{1,1}=I_-\ket{1,-1}=0
+  \end{cases}
+  \end{equation*}
+  Possiamo applicarlo ad esempio a $\pi^-=-d\bar u$, così da trovare la particella del tripletto $I=1$ con $I_3=0$:
+  \begin{equation*}
+  I_+\ket{\pi^-}=I_+\ket{-d\bar u}=\ket{-\qty[\qty(I_+d)\bar u+ d\qty(I_+\bar u)]}=\ket{-u\bar u + d\bar d}=\sqrt2\qty(\frac1{\sqrt2}\ket{-u\bar u+d\bar d})=\sqrt2\ket{\pi^0}
+  \end{equation*}
+  Dunque si definisce
+  \begin{equation*}
+  \{8,\ket{0,0} \}=\pi^0=\frac1{\sqrt2}\qty(d\bar d-u\bar u)\implies I_+\ket{\pi^0}=\sqrt2\ket{\pi^+}
+  \end{equation*}
+  \item Resta da trovare l'ultimo. Poiché $s$ ed $\bar s$ sono singoletti, non possono accoppiarsi per dare stati con $I=1$. Possono tuttavia accoppiarsi ad uno stato $I=0$, dunque in generale quest'ultimo stato sarà una combinazione lineare dei tre quark/antiquark. Per trovarlo basta dunque calcolarlo dal generico autostato $au\bar u+ b d\bar d + cs\bar s$ ed imporre l'ortogonalità con i due già trovati. Risulta
+  \begin{equation*}
+  \eta_8=\{8,{0,0}\}=\frac1{\sqrt6}\qty(u\bar u+d\bar d-2s\bar s)\qquad I_\pm\eta_8=0
+  \end{equation*}
+  \item In realtà gli stati fisici sono combinazioni di questi due termini con $s\bar s$, tuttavia siccome l'angolo di mescolamento è piccolo ($\approx11^\circ$), li possiamo identificare in essi stessi.
+  \begin{gather*}
+  \eta_8:=\eta\qquad m_\eta=548\MeV\\
+  \eta_1:=\eta'\qquad m_{\eta'}=958\MeV
+  \end{gather*}
+  \end{itemize}
+  1:12:00
