@@ -883,7 +883,7 @@ Sono i mesoni in stati di energia più bassa. Specificatamente con $s$-wave otte
   \begin{equation*}
   \{8,\ket{0,0} \}=\pi^0=\frac1{\sqrt2}\qty(d\bar d-u\bar u)\implies I_+\ket{\pi^0}=\sqrt2\ket{\pi^+}
   \end{equation*}
-  \item Resta da trovare l'ultimo. Poiché $s$ ed $\bar s$ sono singoletti, non possono accoppiarsi per dare stati con $I=1$. Possono tuttavia accoppiarsi ad uno stato $I=0$, dunque in generale quest'ultimo stato sarà una combinazione lineare dei tre quark/antiquark. Per trovarlo basta dunque calcolarlo dal generico autostato $au\bar u+ b d\bar d + cs\bar s$ ed imporre l'ortogonalità con i due già trovati. Risulta
+  \item Resta da trovare l'ultimo. Poiché $s$ ed $\bar s$ sono singoletti, non possono accoppiarsi per dare stati con $I=1$. Possono tuttavia accoppiarsi ad uno stato $I=0$, dunque in generale quest'ultimo stato sarà una combinazione lineare dei tre quark/antiquark. Per trovarlo basta dunque calcolarlo dal generico autostato $a\,u\bar u+ b\, d\bar d + c\,s\bar s$ ed imporre l'ortogonalità con i due già trovati. Risulta
   \begin{equation*}
   \eta_8=\{8,{0,0}\}=\frac1{\sqrt6}\qty(u\bar u+d\bar d-2s\bar s)\qquad I_\pm\eta_8=0
   \end{equation*}
@@ -901,6 +901,38 @@ Questi invece sono in un certo senso gli stati eccitati dei precedenti mesoni, i
     \includegraphics[width=0.7\textwidth]{immagini/fig_vector_mesons.png}
     \caption{Nonetto.}
     %\label{}
-  \end{figure}
-  Anche in questo caso $\rho^0,\omega,\phi$ sono combinazioni lineari di $u\bar u,d\bar d$ e $s\bar s$. Però cambiano i pesi rispetto ai mesoni non eccitati.
-  \subsubsection{Numeri quantici dei mesoni}
+\end{figure}
+Il contenuto di $K^{0*}$ è lo stesso di $K^0$, e lo stesso per $\rho^-$ con $\pi^-$ e così via. Notiamo che anche $\rho^0$ corrisponde a $\pi^0$, mentre $\omega=\frac1{\sqrt2}(u\bar u+d\bar d)$ e $\phi=s\bar s$ non sono "corrispondenti" a $\eta$ ed $\eta'$.
+\subsubsection{Numeri quantici dei mesoni}
+\begin{itemize}
+    \item Il primo set di mesoni abbiamo detto che hanno $J^{PC}=0^{-+}$, dunque sono $s$-wave cioè hanno $L=0$. 
+    \item I quark ed antiquark hanno parità opposta, quindi per i mesoni
+    \begin{equation*}
+    P(q\bar q)=P(q)P({\bar q})(-1)^L=(-1)(-1)^L=(-1)^{L+1}
+    \end{equation*}
+    \item Invece riguardo la coniugazione di carica, abbiamo $C=PS$, cioè parità e scambio di spin.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_charge_conj_mesons.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+    Burcham-Jobes pagina 269: \textit{Ovviamente tante particelle isolate non sono autostati di $C$, ma molti sistemi di particelle possono esserlo se hanno $Q=B=L= S = 0$. Ad esempio un sistema protone-antiprotone system in uno stato di momento angolare definito $l$ (ruotano) e spin $s$ è un autostato di $C$, come adesso mostriamo. Assumiamo che inizialmente l'antiprotone ha coordinate spaziali $x_1$, e si trovi in uno stato di spin $\sigma_1$,mentre il protone è in $x_2$, in uno stato di spin $\sigma_2$. Abbiamo}
+    \begin{equation*}
+    C\ket{\bar px_1\sigma_1,px_2\sigma_2}=\ket{px_1\sigma_1,\bar px_2\sigma_2}
+    \end{equation*}
+    \textit{che non è un'equazione agli autovalori ma possiamo renderla tale scambiando spin e posizione. Il protone e l'antriprotone hanno entrambi spin $\frac12$ e quindi possono formare stato di singoletto e tripletto. Il tripletto è simmetrico rispetto allo scambio di spin mentre il singoletto è antisimmetrico. Dunque in scambio di spin appare un fattore $(-1)^{s+1}$. Lo scambio di coordinate è semplicemente una trasformazione di parità che, per il sistema in cosiderazione, dà un fattore $(-1)^l$ dal moto orbitale ed un fattore $(-1)$ dalle parità intrinseche opposte di protone ed antiprotone. Dunque nello scambio abbiamo }
+    \begin{equation*}
+    C\ket{\bar px_1\sigma_1,px_2\sigma_2}=(-1)^{s+1}(-1)^{l+1}\ket{\bar px_1\sigma_1,px_2\sigma_2}
+    \end{equation*}
+    \textit{che è una equazione agli autovalori, con autovalori pari a }$(-1)^{l+s}$.
+    \item Lo spin intrinseco di un mesone, visto nella sua interezza come particella unica elementare, è $J$ del sistema $q\bar q$.
+    \item Ci sono dunque tanti mesoni oltre quelli visti $\pi$ e $\rho$, ed il modo generale per trovarli è con una reazione $p\bar p$ in camera a bolle. Si cercano risonanze (picchi) negli stati finali rispetto a certe masse. Dunque otteniamo una visione molto generale e consistente. Fu un successo.
+    \item Ad esempio possiamo guardare la reazione $\pi^+p\to X$ (con $p_\pi=2.3-2.9\,\GeV$) si hanno le seguenti risonanze:
+    \begin{enumerate}
+    \item $X=\pi^+\pi^0p$
+    \item $X=\pi^+\pi^+\pi^-p$
+    \item $X=\pi^+\pi^+\pi^-\pi^0p$
+    \end{enumerate}
+    La prima è una risonanza $\rho^+(770)\to\pi^+\pi^0$. La seconda è una risonanza $\rho^0(770)\to\pi^+\pi^-$, e la terza è una risonanza $\eta(548)\to\pi^+\pi^-\pi^0$ e $\omega(782)$. Come mai quest'ultimo è una risonanza $\omega$ e non $\rho^0$? 7:49
+\end{itemize}
