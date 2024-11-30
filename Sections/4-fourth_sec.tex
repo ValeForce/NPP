@@ -981,13 +981,105 @@ Dunque abbiamo tre motivi per cui non può avvenire $\rho^0\to\pi^0\pi^0$, anche
 \item Gli stati $\pi^+=u\bar d,\pi^-=d\bar u, K^+=u\bar s, K^-=s\bar u, K^0=d\bar s, \bar K^0=s\bar d$ non hanno ambiguità di quark.
 \item Ma $u\bar u, d\bar d, s\bar s$ hanno gli stessi numeri quantici dunque i tre stati $\psi_{8,0},\psi_{8,1},\psi_{1}$ si mescolano come già visto (due angoli per nonetto).
 \item Le particelle fisiche sono $\pi^0,\eta,\eta'$ per $0^-$, mentre sono $\rho^0,\omega,\phi$ per $1^-$ e sono tutte combinazioni lineari di $q\bar q$.
-\item Gli angoli di mescolamento per pseudoscalari e vettori si calcolano\dots argomento per curriculum NPP. Lo metto tra un po' prima dei barioni. Rompiamo la quarta parete? Ok la ho appena abbattuta totalmente.
-\item Le ampiezze di decadimento dei canali elettromagnetici si possono calcolare e confrontare con l'esperimento. Cerchiamo stati finali con coppie elettrone-positrone, prodotti da $\gamma$-decay.
-\item Ci sono alcuni problemi:
+\item Gli angoli di mescolamento per pseudoscalari e vettori si calcolano\dots argomento per curriculum NPP. Lo metto tra un po' prima dei barioni. Rompiamo la quarta parete? Ok la ho appena demolita.
+\item Le ampiezze di decadimento dei canali elettromagnetici si possono calcolare e confrontare con l'esperimento. Cerchiamo stati finali con coppie elettrone-positrone, prodotti dal $\gamma$.
+\item Ci sono alcuni problemi al riguardo:
 \begin{enumerate}
-\item I valori sono molti piccoli, e.g. $BR(\rho^0\to e^+e^-)\approx4.7\times10^{-5}$. Ovviamente i decadimenti dominanti di $\rho^0,\omega$ e $\phi$ sono forti; tuttavia alcuni decadimenti elettromagnetici, con bassa sezione d'urto, sono rivelabili, dunque la larghezza elettromagnetica è misurabile e si confrontano le cariche dei quark.
+\item I valori sono molti piccoli, e.g. $BR(\rho^0\to e^+e^-)\approx4.7\times10^{-5}$. Ovviamente i decadimenti dominanti di $\rho^0,\omega$ e $\phi$ sono forti; tuttavia alcuni decadimenti elettromagnetici, con bassa sezione d'urto, sono rivelabili. Dunque si misurano le larghezze elettromagnetiche e si confrontano le cariche dei quark.
 \item Il fattore di fase è importante, soprattutto per $\phi$, che è molto vicino alla soglia $s\bar s$ ($m_\phi-2m_K=$ pochi MeV).
 \end{enumerate}
-\item Se questi processi sono elettromagnetici, la sezione d'urto (o larghezza) è proporzionale al quadrato della carica della particella coinvolta. 
-\item finire slide meson mixing (36:00). Poi tornare indietro e fare OZI e calcolo mixing
+\item Se questi processi sono elettromagnetici, la sezione d'urto (o larghezza) è proporzionale al quadrato della carica della particella coinvolta. Cioè
+\begin{equation*}
+M\_{fi}(\rho^0\omega\phi\to e^+e^-)\propto \alpha \sum_i Q_q^i
+\end{equation*}
+dunque le larghezze saranno:
+\begin{gather*}
+\Gamma(\rho^0\to e^+e^-)\propto \qty[\frac1{\sqrt2}\qty(\frac23-\frac{-1}3)]^2=\frac12\\
+\Gamma(\omega\to e^+e^-)\propto \qty[\frac1{\sqrt2}\qty(\frac23+\frac{-1}3)]^2=\frac1{18}\\
+\Gamma(\phi\to e^+e^-)\propto \qty[\frac13]^2=\frac19
+\end{gather*}
+da cui 
+\begin{equation*}
+\Gamma(\rho):\Gamma(\omega):\Gamma(\phi)=
+\begin{cases}
+    \begin{aligned}
+        9&:1:2 &\text{teorico}\\
+        8.8\pm2.6&:1:1.7\pm0.4 &\text{sperimentale}
+    \end{aligned}
+\end{cases}
+\end{equation*}
+dato che lo stato finale è uguale, il rapporto dipende solo dallo stato iniziali. La situazione in generale è motlo chiara: la teoria spiega bene i dati!
 \end{itemize}
+\subsubsection{SLide 47-50 (WIP)}
+\subsubsection{OZI rule (Okubo, Zweig, Iizuka)}
+\begin{itemize}
+\item Per $\phi$ e per $\omega$ si hanno principalmente tre possibili decadimenti:
+\begin{equation*}
+\phi\to
+    \begin{aligned}
+        \begin{cases}
+            K^+K^-\qquad &49.1\%\\
+            K^0_L K^0_S\qquad &34.4\%\\
+            \pi^+\pi^-\pi^0\qquad &15.3\%
+        \end{cases}
+    \end{aligned}
+\qquad\qquad
+\omega\to
+    \begin{aligned}
+        \begin{cases}
+            \pi^+\pi^-\pi^0\qquad &88.8\%\\
+            \pi^0\gamma\qquad &8.5\%\\
+            \pi^+\pi^-\qquad &2.2\%
+        \end{cases}
+    \end{aligned}
+\end{equation*} 
+\item Tuttavia, se guardiamo la cinematica (o termine di spazio delle fasi) di $\phi$, il decadimento a $3\pi$ è favorito rispetto ai $2K$.
+\begin{gather*}
+Q_{3\pi}=m_\phi-2m_{\pi^\pm}-m_{\pi^0}\approx600\,\MeV\\
+Q_{2K^0}=m_\phi-2m_{K^0}\approx24\,\MeV\\
+Q_{2K^+}\approx32\,\MeV
+\end{gather*}
+\item A cosa è dovuto questo disaccordo? Alla regola di Zweig (swayig). Il diagramma per il decadimento a $3\pi$ è soppresso perché contiene \textit{linee di quark sconnesse}.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.8\textwidth]{immagini/fig_ozi_rule.png}
+    \caption{Regola di Zweig (OZI).}
+    %\label{}
+  \end{figure}
+\subsubsection{Barioni}
+\begin{itemize}
+\item I barioni sono semplici da costruire. Basta considerare tre quark. 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/fig_baryon_quarks.png}
+    \caption{Piano $Y-I_3$ in termini di quark. Ai vertici abbiamo $ddd,uuu,sss$; poi spostandoci nel grafico si scambia un quark con un altro.}
+    %\label{}
+\end{figure}
+\item Quando accoppiamo i tre quark $uds$ otteniamo un decupletto, due ottetti e un singoletto. In realtà il secondo ottetto (e il singoletto) non li vediamo in quanto sono proibiti da conservazione di numeri quantici "che vedremo prossimamente". I tre quark dei barioni hanno sempre $L=0$.
+\item "Dimostrazione":
+\begin{gather*}
+(3\otimes3)\otimes3=(6\oplus\bar3)\otimes3\implies\\
+1)\,6\otimes3=10\oplus8\\
+2)\,\bar3\otimes3=8\oplus1
+\end{gather*}
+\end{itemize}
+\subsubsection{Barioni: ottetto con $J^P=\frac12^+$}
+\begin{itemize}
+\item Il multipletto a massa inferiore è un ottetto, che contiene protone e neutrone, un tripletto con $S=-1$ (le $\Sigma$), un singoletto con $S=-1$ (il $\Lambda$), e un doppietto con $S=-2$ (i $\Xi$ detti anche \textit{cascade}).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/fig_baryon_12_quarks.png}
+    \caption{I tre quark hanno $l=0$ e spin $\uparrow\uparrow\downarrow$, i.e. spin totale $\frac12$.}
+    %\label{}
+  \end{figure}
+  \item Le masse sono
+  \begin{gather*}
+  \approx940\,\MeV\text{ per protone e neutrone}\\
+  \approx1115\,\MeV\text{ per il }\Lambda\\
+  \approx1190\,\MeV\text{ per le }\Sigma\\
+  \approx1320\,\MeV\text{ per le }\Xi
+  \end{gather*}
+  \item La differenza è inferiore a qualche MeV in ciascun multipletto di isospin, a causa della interazione elettromagnetica. 
+\end{itemize}
+\subsubsection{Barioni: decupletto con $J^P=\frac32^+$}
