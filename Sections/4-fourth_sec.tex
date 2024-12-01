@@ -1108,6 +1108,40 @@ J^=\frac12^+\qquad
 \end{gather*}
 L'ordine di grandezza è corretto, ma ci sono comunque discrepanze significative! Per capire meglio le masse degli adroni bisogno tenere in considerazione effetti di \textit{splitting iperfine} nelle interazioni tra quark. D'altra parte $\Delta^+$ e $p$ hanno esattamente gli stessi quark yet hanno masse diverse, hanno $J$ diverse dunque il momento totale gioca un ruolo fondamentale, come ci aspettiamo perché ad esempio nell'atomo di idrogeno il livello fondamentale ha $l=0$ e i livelli superiori hanno $l$ maggiore. (ricordiamo inoltre che la interazione elettromagnetica è il motivo per cui $SU(3)$ non è esatta e nello stesso multipletto si hanno masse diverse)
 \subsubsection{Slide saltate su massa degli adroni 61-70}
-\subsubsection{Mesoni SU(4)}
-\subsubsection{Barioni SU(4)}
+\subsubsection{Mesoni e barioni con il quark charm}
+\begin{itemize}
+\item Se consideriamo il quark $c$, abbiamo 4 flavour e bisogna passare a $SU(4)$.
+\item Adesso dunque $s$ non è più singoletto bensì forma un doppietto con $c$. 
+\item Bisogna considerare i mesoni $D$ che contengono il quark $c$ e uno degli altri tre già noti.
+\item Il discorso vale anche per i barioni.
+\item LHCb si occupa della scoperta di questi quark pesanti, in particolare come dice il nome di $b$. Ha scoperto tanti nuovi barioni con $c$. Ad esempio $\Xi_{cc}^{++}\to\Lambda_c^+K^-\pi^+\pi^+$ che era predetto dal modello a quark. La tecnica è la stessa di $\rho,\omega,\phi$: cambia solo lo stato finale. Si vede la massa invariante dei prodotti ricercati (o comunque quelli possibili), ad esempio per $\rho$ si vede pioni e protoni. Se c'è risonanza vediamo un picco, altrimenti l'andamento è piatto. 
+\end{itemize}
 \subsubsection{Altra matematica su SU(3)}
+\begin{itemize}
+    \item Per la simmetria $SU(2)$ i generatori sono le matrici di Pauli. Per $SU(3)$ i generatori sono le matrici di Gell-Mann.
+    \item Le due matrici diagonali sono associate alla terza componente dell'isospin $T_3$ e la ipercarica $T_8$. Gli autovettori sono i quark $u,d,s$.
+    \item Ricordiamo quali sono le $\lambda_3$ e $\lambda_8$:
+    \begin{equation*}
+        \lambda_3=\mqty(1&0&0\\0&-1&0\\0&0&0)\qquad \lambda_8=\frac1{\sqrt3}\mqty(1&0&0\\0&1&0\\0&0&-2)
+    \end{equation*}
+    e abbiamo che 
+    \begin{equation*}
+        \hat T_3=\frac12\lambda_3=\frac12\mqty(\dmat[0]{1,-1,0})\qquad \hat Y=\frac1{\sqrt3}\lambda_8=\frac13\mqty(\dmat[0]{1,1,-2})
+    \end{equation*}
+    dunque quando applichiamo questi operatori agli autostati $\ket{u},\ket{d},\ket{s}$ (sono la solita base canonica di $\mathbb{R}^3$) otteniamo i valori di componente di isospin o ipercarica.
+    \item Ad esempio 
+    \begin{equation*}
+        \hat T_3\ket{u}=\frac12\ket{u}\quad \hat Y\ket{\bar d}=-\frac13\ket{\bar d}
+    \end{equation*}
+    \item Si hanno inoltre gli operatori scala
+    \begin{equation*}
+        T_\pm = T_1\pm iT_2;\quad U_\pm=T_6\pm iT_7;\quad V_\pm=T_4\pm iT_5
+    \end{equation*}
+    ed agiscono nel seguente modo:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.5\textwidth]{immagini/fig_ladder_operator.png}
+        \caption{Operatori scala $T_\pm,U_\pm,V_\pm$.}
+        %\label{}
+      \end{figure}
+\end{itemize}
