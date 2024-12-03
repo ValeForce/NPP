@@ -1145,3 +1145,104 @@ L'ordine di grandezza è corretto, ma ci sono comunque discrepanze significative
         %\label{}
       \end{figure}
 \end{itemize}
+\subsubsection{Colore: nuovo numero quantico}
+\begin{itemize}
+    \item Consideriamo la risonana $\ket{\Delta^{++}}=\ket{\frac32,\frac32}$, con spin dei tre quark $u$ allineati in modo da avere $J=\frac32$ ($l=0$). 
+    \item La funzione d'onda sarebbe del tipo
+    \begin{equation*}
+    \psi(\Delta^{++})=\psi\_{space}\times\psi\_{flavour}\times\psi_{spin}
+    \end{equation*}
+    che è falso! Perchè?
+    \begin{enumerate}
+        \item $\Delta^{++}$ è lo stato più leggero di $uuu$ dunque $l=0$. Da cui $\psi\_{space}$ è simmetrica.
+        \item $\psi\_{flavour}$ e $\psi_{spin}$ sono simmetriche.
+    \end{enumerate}
+    ne segue che la funzione d'onda totale è simmetrica, ma $\Delta^{++}$ è un fermione!
+    \item Dunque c'è una anomalia: la particella $\Delta^{++}$ è un fermione a spin $\frac32$ e la sua funzione d'onda deve essere antisimmetrica per il principio di Pauli. Tuttavia, è data dal prodotto di funzioni d'onda simmetriche, dunque è totalmente simmetrica.
+    \item La soluzione fu proposta da Greenberg nel 1964, con la introduzione di un nuovo numero quantico per le particelle che interagiscono forte, composte da quark: \textit{il colore}.
+\end{itemize}
+L'idea dei colori:
+\begin{itemize}
+    \item I quark esistono in tre colori, che chiamiamo $r,g,b$. 
+    \item La loro somma è bianco, cioè uno stato neutro $r+g+b=0$.
+    \item L'anticolore è tale che un colore + il suo anticolore danno il bianco, e.g. $\bar R=g+b$. Gli antiquark possiedono anticolore.
+    \item Mesoni e barioni, fatti da quark, non hanno colore (sono neutri) e per questo sono detti singoletti di colore.
+    \item Dunque dobbiamo includere il colore nella funzione d'onda totale:
+    \begin{gather*}
+    \psi(\Delta^{++})=\psi\_{space}\times\psi\_{flavour}\times\psi_{spin}\times\psi\_{colour}\\
+    \psi\_{colour}=\frac1{\sqrt6}\qty(u_r^1u_g^2u_b^3+u_g^1u_b^2u_r^3+u_b^1u_r^2u_g^3-u_g^1u_r^2u_b^3-u_r^1u_b^2u_g^3-u_b^1u_g^2u_r^3)
+    \end{gather*}
+    \item Dunque la $\psi\_{colour}$ è antisimmetrica per scambio di due quark e così sarà la funzione d'onda totale.
+    \item La introduzione del colore ha molte altre evidenze sperimentali ed implicazioni teoriche.
+\end{itemize}
+\subsubsection{Simmetrie e multipletti. Riassunto}
+\begin{itemize}
+\item Poiché le interazioni forti conservano l'isospin $I$, gli adroni si raggruppano in multipletti di I. All'interno di ciascun multipletto, gli stati sono identificati dal valore di \( I_3 \).  
+\item Se nessun effetto rompe la simmetria, i membri di ciascun multipletto sarebbero degeneri in massa. Le interazioni elettromagnetiche, che non rispettano la simmetria di \( I \), rompono questa degenerazione di massa (per pochi \%) nei multipletti di \( I \).  
+\item Poiché le interazioni forti conservano \( I \), gli operatori di \( I \) devono commutare con l'Hamiltoniana delle interazioni forti $H_s$ e con tutti gli operatori che a loro volta commutano con $H_s$.  
+\item Tra questi operatori ci sono il momento angolare \( J \) e la parità \( P \). Di conseguenza, tutti i membri di un multipletto di isospin devono avere lo stesso spin e la stessa parità.  
+\item $H_s$ è anche invariante rispetto alle rappresentazioni unitarie di $SU(2)$. I numeri quantici che identificano i componenti dei multipletti sono tanti quanti i generatori che possono essere diagonalizzati simultaneamente, poiché commutano tra loro. Questo numero è il rango del gruppo. Nel caso di SU(2), il rango è 1 e l'operatore è \( I_3 \).  
+\item Poiché \([I_j, I_k] = i\varepsilon_{jkm}I_m\), ciascuno dei generatori commuta con \( I^2 \):  
+\( I^2 = I_1^2 + I_2^2 + I_3^2 \).  
+Pertanto \( I^2 \), essendo ovviamente hermitiano, può essere diagonalizzato insieme a \( I_3 \).  
+\item Gli autovalori di \( I \) e \( I_3 \) possono "etichettare" gli autovettori e le particelle.  
+\item Questo permette di raggruppare gli stati in multipletti con un dato valore di \( I \).  
+\item Questo meccanismo si può generalizzare per ogni operatore: se si può dimostrare che \( H \) è invariante per un dato tipo di trasformazioni, allora:
+\begin{enumerate}
+    \item Cercare un gruppo di simmetria appropriato;
+    \item Identificare le sue rappresentazioni irriducibili e derivare i multipletti possibili;  
+    \item Verificare che essi descrivano stati fisici che esistono realmente.  
+\end{enumerate}
+\item Questo approccio ha suggerito l'idea che barioni e mesoni siano raggruppati in due ottetti, composti da multipletti di isospin.
+\item In realtà, poiché le differenze di massa tra i membri dello stesso multipletti sono ~20\%, la simmetria è "rotta" (cioè approssimata).  
+\item Poiché gli ottetti sono caratterizzati da due numeri quantici (\( I_3 \) e \( Y \)), il gruppo di simmetria ha rango = 2, cioè due generatori commutano tra loro.  
+\item Siamo interessati alle "rappresentazioni irriducibili" del gruppo, tali che si possa ottenere ogni membro di un multipletto partendo da un altro, usando le trasformazioni.
+\item La rappresentazione non banale (non banale = diversa dal singoletto) di dimensione minore è chiamata "rappresentazione fondamentale".  
+\item In $SU(3)$ ci sono otto generatori di simmetria. Due di essi sono diagonali e associati a \( I_3 \) e \( Y \).  
+\item Le rappresentazioni fondamentali sono tripletti (quark), da cui si derivano multipletti superiori (adroni):  
+\begin{enumerate}
+    \item mesoni: \( 3 \otimes \bar{3} = 1 \oplus 8 \);   
+    \item barioni: \( 3 \otimes 3 \otimes 3 = 1 \oplus 8 \oplus 8 \oplus 10 \).  
+\end{enumerate}
+\item Questo schema puramente matematico ha due applicazioni rilevanti:  
+\begin{enumerate}
+    \item "$SU(3)$ di sapore", \( SU(3)_F \) con \( Y_F \) e \( I_{3F} \) per i quark $uds$. Questa simmetria è approssimata (cioè "rotta");
+    \item "$SU(3)$ di colore", \( SU(3)_C \) con \( Y_C \) e \( I_{3C} \) per i colori $rgb$; questa simmetria è esatta.
+\end{enumerate}  
+\end{itemize}
+subsection{Sapori pesanti}
+La maggior parte degli studi per i quark pesanti sono stati effettuati con collisioni $e^+e^-$.
+\subsubsection{Collisione $e^+e^-$}
+\begin{itemize}
+\item A basse energia, i processi principali avvengono tramite un fotone virtuale.
+\item Con basse energie intendiamo $m_f\ll\sqrt s=E\_{CM}=2E=m_{\gamma^*}\ll m_Z$, dove $m_f$ è la massa dei fermioni iniziali + finali. Quando $E\_{CM}\approx m_Z$, si può formare un $Z^*$; il processo $e^+e^-\to Z$ è risonante a $\sqrt s=m_Z$ e diventa dominante.
+\item Lo stato iniziale ha carica nulla, numero leptonico, barionico (e gli altri additivi) nulli, e spin pari ad 1 (dal fotone).
+\item Vediamo la cinematica nel centro di massa:
+\begin{gather*}
+e^+\,\, \qty[E,p,0,0]\\
+e^-\,\,\qty[E,-p,0,0]\\
+\gamma^*\,\,\qty[2E,0,0,0]\\
+m(\gamma^*)=\sqrt{s}=2E\quad\text{fotone virtuale, vita breve}
+\end{gather*}
+\item Ad energie basse (no $Z$) possiamo avere dunque diversi processi:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.5\textwidth]{immagini/fig_qed_sez_urto.png}
+    %\caption{}
+    %\label{}
+  \end{figure}
+  \item A noi serve una di queste sezioni d'urto, quella simmetrica $e^+e^-\to \mu^+\mu^-$ e la confrontiamo con quella che ha come prodotti $q\bar q$.
+  \item Il processo è analogo a quello con $f\bar f$ come prodotti, solo che i quark liberi non esistono e si formano jet di adroni.
+  \item Per studiare la collisione tra elettrone e positrone ho la classica catena di rivelatori: un tracker interno (e.g. silicio) con campo magnetico, poi un calorimetro elettromagnetico, un calorimetro adronico ed infine rivelatori per muoni. Si mettono assieme i segnali di tracker e l'altro rivelatore a seconda che sia elettroni (ecal) o muoni (rivelatore esterno). Per i quark invece è diverso e non vedo solo due tracce ma jet di nucleoni e soprattutto pioni.
+  \item Le sezioni d'urto sono diverse:
+  \begin{gather*}
+  \sigma_{\mu\mu}=\frac{21.7\text{ nb}}{E^2\_{beam}[\GeV]}=\frac{4\pi\alpha^2}{3s}\\
+  \sigma_{q\bar q} =\frac{4\pi\alpha^2}{3s}c_fq_f^2
+\end{gather*}
+dove $c_f$ è il colore (per i quark 3, per i leptoni 1) e $q_f$ è la somma delle cariche.
+\item Consideriamo il rapporto tra le sezioni d'urto con prodotti adroni e con muoni:
+\begin{equation*}
+R=\frac{\sigma(e^+e^-\to\text{hadrons})}{\sigma(e^+e^-\to\mu^+\mu^-)}=N_c\frac{\sum\_{quarks}q_i^2}{\sum\_{muons}q_i^2}=N_c\sum\_{quarks}q_i^2
+\end{equation*}
+avendo la stessa cinematica (sono processi elettromagnetici), nel rapporto elimino tutti i fattori e resta la carica. Abbiamo i seguenti valori per diversi $\sqrt s$ 57:32
+\end{itemize}
