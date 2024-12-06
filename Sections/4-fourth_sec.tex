@@ -1265,20 +1265,38 @@ Ma la realtà è più complicata. Il passaggio a $\sqrt s=2m_q$ è arrotondato e
 \begin{itemize}
     \item Il gruppo di Ting all'AGS (Alternating Gradient Synchrotron) con un esperimento a target fisso, misurarono la produzione inclusiva (non interessa con che altro sono prodotti) di coppie elettrone-positrone tramite la reazione $p+\,^9Be\to e^+e^-X$ con energia pari a 30 GeV.
     \item Il rivelatore era fatto per cercare risonanze a massa elevata con $J^p=1^- (=\gamma)$, che decadono in coppie $e^+e^-$.
-    \item Si impegnarono a ridurre il multiple scattering, che è un problema in quanto modifica la traiettoria e la traccia è più difficile da riprodurre perdendo la direzione iniziale. La risoluzione per la massa invariante era buona:
+    \item Si impegnarono a ridurre il multiple scattering. È un problema in quanto modifica la traiettoria e la traccia è più difficile da riprodurre perdendo la direzione iniziale. La risoluzione per la massa invariante era buona:
     \begin{equation*}
         \Delta m(e^+e^-)\approx20\,\MeV
     \end{equation*} 
-    \item La risoluzione permise di ottenere una maggiore sensibilità rispetto ad altri esperimenti, come quello di Lederman. Lui studio le coppie di muoni nello stesso range. I muoni sono più facili da studiare in quanto sono altamente penetranti rispetto alle altre particelle, tuttavia aveva a disposizione una risoluzione scarsa, quindi riuscì ad osservare solo una piccola spalletta piuttosto che una vera e propria risonanza. 
+    \item Tale risoluzione permise di ottenere una maggiore sensibilità rispetto ad altri esperimenti, come quello di Lederman che tentò prima di Ting. Lui studiò le coppie di muoni nello stesso range. I muoni sono più facili da studiare in quanto sono altamente penetranti rispetto alle altre particelle, tuttavia aveva a disposizione una risoluzione scarsa, quindi riuscì ad osservare solo una piccola spalletta piuttosto che una vera e propria risonanza. 
     \item Ting invece riuscì chiaramente a vedere la nuova particella e la chiamò $J$ per la corrente elettromagnetica. Le caratteristiche erano:
     \begin{enumerate}
     \item $m\approx3.1$ GeV
-    \item Larghezza $<$5 MeV, che sarebbe di $\sigma\_{mis}$, non la $\Gamma$.
+    \item Larghezza $<\,$5 MeV, che sarebbe di $\sigma\_{mis}$, non la $\Gamma$.
     \item $q=0$
     \item $J^P=1^-$
     \item Nessuna misura di isospin, $\Gamma$ o altri modi di decadere.
     \end{enumerate}
-    \item Sia Ting che Lederman misurarono i cosiddetti processi Drell-Yan\footnote{Wikipedia: Avviene durante le collisioni ad alta energia tra adroni. Si verifica quando un quark di un adrone e un antiquark di un altro adrone si annichilano, creando un fotone virtuale o un bosone Z, che poi decadono in una coppia di leptoni con cariche opposte. È importante notare che l'energia della coppia quark-antiquark in collisione può essere quasi interamente trasformata nella massa di nuove particelle.}. L'esperimento di Ting (e Lederman) utilizza uno spettrometro magnetico a due braccia, usato per misurare separatamente elettrone e positrone. Il vantaggio di usare leptoni è che i canali sono puliti e ben identificati con efficienza del 90\%. Lo svantaggio è che la $BR$ è piccola. 
-    \item Dunque poiché gli eventi leptonici sono rari, utilizzarono dei fasci molto intensi di $2\times10^{12}$ ppp\footnote{\textit{ppp}=\textit{particles (protons) per pulse}, cioè uno per ciclo di acceleratore ogni pochi secondi. Tipicamente è il modo di etichettare un fascio da un acceleratore.}.
-    \item Nel caso di muoni c'era il chiaro vantaggio dovuto al fatto che sono le particelle più penetranti che conosciamo. Dunque identificare il muone, rispetto alla reiezione degli adroni del fondo
+    \item Sia Ting che Lederman misurarono i cosiddetti processi Drell-Yan\footnote{Wikipedia: Avviene durante le collisioni ad alta energia tra adroni. Si verifica quando un quark di un adrone e un antiquark di un altro adrone si annichilano, creando un fotone virtuale o un bosone Z, che poi decadono in una coppia di leptoni con cariche opposte. È importante notare che l'energia della coppia quark-antiquark in collisione può essere quasi interamente trasformata nella massa di nuove particelle.}. L'esperimento di Ting (e Lederman) utilizza uno spettrometro magnetico a due braccia, usato per misurare separatamente elettrone e positrone. Il vantaggio di usare leptoni è che i canali sono puliti e ben identificati con efficienza del 90\%. Lo svantaggio è che il $BR$ è piccola. 
+    \item Dunque poiché gli eventi leptonici sono rari, utilizzarono dei fasci di protoni molto intensi con $2\times10^{12}$ ppp\footnote{\textit{ppp}=\textit{particles (protons) per pulse}, cioè uno per ciclo di acceleratore ogni pochi secondi. Tipicamente è il modo di etichettare un fascio da un acceleratore.}, con un alto potere di reiezione\footnote{Penso che voglia dire che si scartano e.g. $10^8$ eventi prima di averne uno buono.} ($\approx10^8$) per scartare gli adroni che possono fingersi coppie elettrone-positrone o muoni-antimuone.
+    \item Nel caso di muoni c'era il chiaro vantaggio dovuto al fatto che sono molto penetranti e quindi possiamo selezionarli dagli adroni con un assorbitore spesso in un grande angolo solido, dunque grandeza accettanza e maggiore rate di conteggi. Tuttavia, con un assorbitore molto spesso si ha più multiple scattering che peggiora la risoluzione in massa (questo era Lederman).
+    \item Ci sono dei benefici con elettroni-positroni (Ting). Si sfrutta, oltre allo spettrometro, una serie di contatori Cherenkov in alternanza con calorimetri elettromagnetici. I Cherenkov sono migliori per particelle leggere, inoltre avendoli accoppiati a dei calorimetri si possono correlare la traccia (Cherenkov) e la energia (calorimetri). Cioè se si rivelano effettivamente elettroni, l'impulso dal tracciatore e l'energia dal calorimetro devono essere compatibili. Lo svantaggio è immediato, ossia copertura in angolo solido molto piccola dunque la resa sarà inferiore. 
+    \item Mostriamo tre distribuzioni sperimentali provenienti dai tre esperimenti alla ricerca di $J$:
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{immagini/fig_J_exp.png}
+        \caption{In ordine il grafico dei dati di Lederman (1968), di Ting (1974) e di Michelini (1979). Lederman usò un target di Uranio e riuscì solo a notare qualcosa di anomalo, una spalla... questo perché la risoluzione è troppo bassa. Invece Ting rispetto a Lederman ha un grande zoom in massa, cioè una ottima risoluzione e si riesce a vedere la risonanza. Nell'esperimento di Michelini è ancora meglio con un fascio di pioni positivi su platino, guardando muoni. La risonanza della $J/\psi$ è particolarmente stretta e vedono anche un'altra a 9.5 GeV che sarebbe la risonanza $b\bar b$.}
+        %\label{}
+      \end{figure}
+      La dinamica è simile ossia c'è un continuo che decade esponenzialmente (anche in quello di Ting) a cui si sovrappongono le risonanze. Le differenze sono la risoluzione in massa dei leptoni e le scale orizzontali (intervalli di massa) e verticali (larghezza di risonanza). 
+\end{itemize}
+\subsubsection{La particella $\psi$}
+Vediamo l'approccio di Richter.
+\begin{itemize}
+\item Il suo approccio è completamente diverso da quello di Ting. L'esperimento era il Mark I con un collider $e^+e^-$ SPEAR (Stanford Positron Electron Accelerating Ring) con collisioni a $\sqrt s=2.5-7.5$ GeV. 
+\item La geometria del rivelatore è completamente diversa, in quanto siamo in un collider. È un cilindro a cipolla attorno all'asse del fascio. Partendo dalla linea del fascio abbiamo:
+\begin{enumerate}
+\item 
+\end{enumerate} 
 \end{itemize}
