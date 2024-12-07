@@ -1297,6 +1297,73 @@ Vediamo l'approccio di Richter.
 \item Il suo approccio è completamente diverso da quello di Ting. L'esperimento era il Mark I con un collider $e^+e^-$ SPEAR (Stanford Positron Electron Accelerating Ring) con collisioni a $\sqrt s=2.5-7.5$ GeV. 
 \item La geometria del rivelatore è completamente diversa, in quanto siamo in un collider. È un cilindro a cipolla attorno all'asse del fascio. Partendo dalla linea del fascio abbiamo:
 \begin{enumerate}
-\item 
+\item Camera a ionizzazione (magnetostrittiva) per il tracking.
+\item Contatori tempo di volo per la misura della velocità delle particelle e per il trigger.
+\item Bobine per il campo magnetico di $\approx4.6$ kG.
+\item Calorimetro elettromagnetico per la misura dell'energia e l'identificazione di $\gamma$ e $e^\pm$.
+\item Camere proporzionali interposte tra piatti di ferro per l'identificazione dei muoni.
 \end{enumerate} 
+\item Possiamo notare che c'è una forte similitudine  tra tutti i rivelatori per collider: anche il CMS — 40 anni dopo — ha la stessa struttura a cipolla, ma con un fattore $>$ 10, i.e. un volume $\sim 1000$ volte più grande. Tuttavia ATLAS è diverso. 
+\item Nel 1974 con le massime energie disponibili si raggiunge
+\begin{equation*}
+R=\frac{\sigma(e^+e^-\to\text{hadrons})}{\sigma(e^+e^-\to\mu^+\mu^-)}\approx 2 \quad(=N_c\times\frac23)
+\end{equation*}
+\item Da misure al CEA (Cambridge Electron Accelerator) nelle regioni di energia di SPEAR si trovò $R\approx6$ (miscela di continuo e risonanze). Anche ad ADONE agli LNF.
+\item Al collider SPEAR l'energia di scan cambiava a passi di 200 MeV. La sezione d'urto misurata appariva costante invece che $\propto\frac1s$, come ci si aspetterebbe per un processo elettromagnetico.
+\item Quando si ebbe una drastica riduzione dello step ($200\to2.5$ MeV) aumentando il potere risolvente, apparì una risonanza con larghezza compatibile alla dispersione del fascio (compatibile direttamente con la $\delta$ di Dirac).
+\item Tale risonanza fu chiamata $\psi$ perché appariva dall'alto come una "$\psi$" greca.
+\end{itemize}
+\subsubsection{Charmonio: proprietà di $J/\psi$}
+\begin{itemize}
+    \item Dopo un po' di discussioni, arrivò l'interpretazione corretta: la risonanza, chiamata $J/\psi$, è uno stato legato di un nuovo quark, chiamato \textit{charm} ($c$), e del suo antiquark. 
+    \item Il $c$ fu proposto nel 1970 per escludere le \textit{flavour-changing neutral currents} (FCNCs) legate al meccanismo GIM. \textbf{Mi chiedevo perché c dovesse avere un nuovo numero quantico (rispetto agli altri). Penso che la risposta sia in questo bullet che vedremo nell'ultimo capitolo di questo fantastico corso.}
+    \item La $J/\psi$ ha $J^P=1^-$ e il nome charmonio fu dato in analogia al positronio, cioè con "onio" indichiamo stato legato di particella-antiparticella.
+    \item La sezione d'urto (Breit-Wigner) per la formazione di uno stato ($J_R=1$) da $e^+e^-$ ($S_a=S_b=\frac12$), seguita da un decadimento in uno stato finale, mostra che
+    \begin{gather*}
+    \sigma(ab\to J/\psi\to f\bar f,\sqrt s)=\frac{16\pi}s\frac{2J_R+1}{(2S_a+1)(2S_b+1)}\qty[\frac{\Gamma_{ab}}{\Gamma_R}]\qty[\frac{\Gamma_{f\bar f}}{\Gamma_R}]\qty[\frac{\Gamma_R^2/4}{(\sqrt s-M_R)^2+\Gamma_R^2/4}]\implies\\
+    \sigma(e^+e^-\to J/\psi\to f\bar f,\sqrt s)=\frac{12\pi}s\qty[\frac{\Gamma_{e}}{\Gamma\_{tot}}]\qty[\frac{\Gamma_f}{\Gamma\_{tot}}]\qty[\frac{\Gamma\_{tot}^2/4}{(\sqrt s-m_{J/\psi})^2+\Gamma\_{tot}^2/4}]
+    \end{gather*}
+    con $\Gamma_f=$ larghezza per l'accoppiamento $J/\psi\to f\bar f$ e $\Gamma_{tot}=\Gamma_e+\Gamma_\mu+\Gamma\_{had}$ cioè la larghezza totale di $J/\psi$. Dunque il rapporto è la branching ratio.
+    \item Dopo il 1974 molti decadimenti esclusivi sono stati misurati con precisione, e tutti hanno confermato l'idea sulla $J/\psi$. Oggi la misura più precisa è 
+    \begin{equation*}
+        m(J/\psi)=3097\,\MeV,\,\Gamma(J/\psi)=93\,\keV
+    \end{equation*}
+    \item Presso SPEAR sono riusciti a misurare molti dei numeri quantici del $J/\psi$: 
+    \begin{enumerate}
+        \item La risonanza è asimmetrica (la spalla destra è più alta); questo indica un'interferenza tra la formazione del $J/\psi$ e il consueto scambio di $\gamma^*$ nel canale $s$. Di conseguenza, la $J/\psi$ e il $\gamma$ hanno gli stessi numeri quantici di spin-parità $J^P=1^-$.
+        \item Dalla sezione d'urto, misurando $\sigma\_{had}$, $\sigma_\mu$, $\sigma_e$, hanno tre equazioni più un vincolo (le tre sezioni d'urto più $\Gamma\_{tot}$ come vincolo) per quattro incognite (le tre larghezze più quella totale). Hanno quindi potuto determinare tutto, ottenendo un $\Gamma\_{tot}$ molto piccolo ($\sim$90 keV, un risultato sorprendente.
+        \item L'uguaglianza dei BR ($J/\psi\to \rho^0\pi^0$ e $J/\psi \to \rho^\pm\pi^\mp$) implica che l'isospin $I=0$.
+        \item Il $J/\psi$ decade in un numero dispari (3, 5) di $\pi$, e non in un numero pari (2, 4). Questo fatto ha due conseguenze importanti: la $G$-parità si conserva nel decadimento (dunque è un decadimento forte); la $G$-parità è $-1$ ($(-1)^I+l+s=-1$).
+    \end{enumerate}
+    \item Dunque la sezione d'urto
+    \begin{equation*}
+        \sigma(e^+e^-\to J/\psi\to f\bar f)=\frac{3\pi}s\frac{\Gamma_e\Gamma_f}{(m_{q\bar q}-\sqrt s)^2+\Gamma\_{tot}^2/4}=\sigma_f(\Gamma_e,\Gamma_f,\Gamma\_{tot},\sqrt s)
+    \end{equation*} 
+    si misurano le tre sezioni d'urto con vincolo $\Gamma\_{tot}=\Gamma_e+\Gamma_\mu+\Gamma\_{had}$. Quattro equazioni (lo stato finale può essere fatto da adroni, muoni o elettroni e in più c'è l'equazione di $\Gamma\_{tot}$), in quattro incognite. Non serve una misura diretta della "larghezza" ($\Gamma$), ma si assume che tutti i decadimenti siano rivelati (e.g. no $\nu$).
+\end{itemize}
+\subsubsection{Flash sull'effetto GIM}
+\begin{itemize}
+    \item I processi di corrente neutra debole tra quark di sapore diverso (FCNC, "Flavor Changing Neutral Current") sono fortemente soppressi [e.g., \(\Gamma(K^0_L \to \mu^+\mu^-) \ll \Gamma(K^\pm \to \mu^\pm\nu)\)].
+    \item Questo fatto fu spiegato nel 1970 da S. Glashow, J. Iliopoulos e L. Maiani introducendo il quark charm (\textit{Phys. Rev. D2, 1285}).
+    \item Loro predirono:
+    \begin{enumerate}
+        \item L'esistenza di un quarto quark $c$, identico al quark $u$ (ma con $m_c \gg m_u$), dotato di un nuovo numero quantico $C$, detto "charm".
+        \item Come per la stranezza, il numero quantico $C$ è conservato nelle interazioni forti ed elettromagnetiche, ma è violato nelle interazioni deboli.
+        \item I mesoni più leggeri con charm sono coppie \(c\bar q\) o \(\bar cq\) (con \(q = u, d, s\)) e hanno una massa compresa tra 1500 e 2000 MeV, con \(J^P = 0^-\).
+        \item Questi mesoni decadono debolmente. A causa della loro grande massa, le vite medie sono $\Otimes$(ps), cioè un ordine di grandezza più brevi rispetto ai mesoni \(K\).
+        \item Il mesone positivo con charm aperto (\(cd̄\), ora chiamato \(D^+\)) decade preferibilmente in stati finali con stranezza negativa (\(c \to sf\bar ƒ\), con \(\Delta S = \Delta C\)). 
+    \end{enumerate}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_flash_gim.png}
+    %\caption{}
+    %\label{}
+\end{figure}
+\subsubsection{QCD Decay}
+\subsubsection{Regola di Zweig (OZI) per charmonio}
+\begin{itemize}
+    \item La regola di Zweig fu scoperta qualitativamente prima dell'avvento della QCD.
+    \item Nel decadimento di stati legati di quark pesanti Q, gli stati finali senza Q (diagrammi con linee sconnesse) sono soppressi rispetto a quelli con linee connesse.
+    \item Se sono permessi cinematicamente soltanto i decadimenti con linee sconnesse, la larghezza totale è piccola e lo stato legato è "stretto".
 \end{itemize}
