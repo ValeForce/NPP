@@ -3,7 +3,7 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
 \begin{itemize}
     \item Vogliamo sapere se il bersaglio è un semplice oggetto puntiforme, e se non lo è dobbiamo capire come sondare la sua struttura. 
     \item Per fare ciò ci serviamo di esperimenti di scattering. Potremmo fare scattering di Rutherford (1911) ma utilizzò particelle $\alpha$ e non riusci neanche a vedere la dimensione del nucleo (di oro). Infatti successivamente tra 1950-1960 Hofstadter arrivò alla struttura nucleare con elettroni in nuclei di $H/D/He$ e infine tra 1965-1980 (SLAC/CERN) con elettroni siamo arrivati alla materia adronica cioè i quark.
-    \item Usiamo come sonda una particella elementare, normalmente un elettrone, perché oltre ad essere semplici da produrre, vogliamo essere in grado di scegliere noi la energia della sonda e soprattutto perché così siamo "sicuri" che il proiettile sia elementare e tutti gli effetti di non-elementarietà sono dovuti esclusivamente al bersaglio.
+    \item Preferiamo usare come sonda una particella elementare, normalmente un elettrone, perché, oltre ad essere semplici da produrre, vogliamo scegliere noi la energia della sonda e soprattutto perché così siamo "sicuri" che il proiettile sia elementare e tutti gli effetti di non-elementarietà sono dovuti esclusivamente al bersaglio.
     \item Dunque in ordine:
     \begin{enumerate}
         \item Si sceglie una sonda (e.g. elettrone)
@@ -54,13 +54,15 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
     \item Come modelliamo lo scattering? Rutherford provo con una diffusione a due corpi. Chiaramente solo contributo elettrostatico non relativostico e senza meccanica quantistica. Fu un successo.
     \item Un punto chiave è che il nucleo è abbastanza piccolo da essere visto puntiforme (e con tutta la sua carica) dalla particella $\alpha$ (teorema di Gauss, primo capitolo).
     \item Tuttavia la materia è neutra, ma il fatto è che gli elettroni sono molto leggeri e non possono fermare o deflettere le particelle $\alpha$ perché $m_\alpha\approx8000m_e$.
-    \item Vediamo i conti per la sezione d'urto\footnote{Stavo per trascriverli ma non sono io quello col nickname \textit{Il flagellante}}.
+\end{itemize}
+    \subsubsection{Calcolo della sezione d'urto}
     \begin{figure}[H]
         \centering
         \includegraphics[width=\textwidth]{immagini/fig_rutherford_math.png}
         \caption{$\beta$ è l'angolo tra la particella e l'asse di simmetria (che passa per il punto di minimo approccio).}
         %\label{}
     \end{figure}
+    \begin{itemize}
     \item Se la forza è attrattiva la sezione d'urto è uguale perché cambia solo
         \begin{equation*}
     \vec F\to -\vec F\implies\vartheta\to-\vartheta
@@ -77,6 +79,53 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
         \end{cases}\implies\qty(\frac bd)^2=\qty(\frac{v_0}v)^2=1-\frac{d_0}d\implies 
     \end{equation*}
     \begin{equation*}
-        \implies d^2-dd_0-b^2=0\implies d=\dots=\frac{d_0}2\qty(1+\frac1{\sin(\frac\vartheta2)})\implies \dv{\sigma}{\Omega}= 
+        \implies d^2-dd_0-b^2=0\implies d=\dots=\frac{d_0}2\qty(1+\frac1{\sin(\frac\vartheta2)})\implies \dv{\sigma}{\Omega}= \frac{d_0^2}{16\sin^4\qty(\frac\vartheta2)}\overset{\vartheta\to0}{\longrightarrow}\frac{d_0^4}{\vartheta^4}
     \end{equation*}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_ruth_b_nullo.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+    \item Questi calcoli non sono difficili da fare matematicamente, la vera difficoltà è affermare se la materia è omogenea o granulare e vuota.
+    \item A grandi $b$ corrispondono piccoli $\vartheta$ a cui corrisponde una divergenza della sezione d'urto, poi comunque non diverge perché c'è un limite dato dalla presenza di altri nuclei di oro. 
+    \item Nel 1909 trovarono eventi di backscattering che misero in crisi il modello di Thomson. Era comunque inconsistente perché elettroni che accelerano emettono radiazione elettromagnetica e dovrebbero collassare nel nucleo. Dopo la nascita della MQ comunque la sezione d'urto rimase la stessa\footnote{la prof dice "per caso", Greco dice perché la $\alpha$ ha spin nullo}.
+\end{itemize}
+\subsubsection{Raggio nucleare}    
+Quanto è grande il nucleo? Se la particella $\alpha$ ha una traiettoria esterna, essa non può sondare la sua \textit{ipotetica} struttura interna. Rutherford arrivò a $r\approx10^{-14}$ m. Per andare oltre servono sonde con $E\_{kin}\approx30$ MeV.
+\begin{itemize}
+    \item $b$ ed $r\_{min}$ non possono essere misurati direttamente per ciascun evento, ma la legge puntiforme di Rutherford (rpl) lega $b\leftrightarrow\vartheta$ infatti a piccoli parametri d'urto corrispondono grandi angoli.
+    \item Il teorema di Gauss predice una deviazione da rpl quando l'energia cinetica delle $\alpha$ è grande. Avendo un $r\_{min}<R\_N$ si avrà schermaggio dunque degli angoli $\vartheta$ più piccoli.
+    \item nel 1961 fecero una misura di scattering $\alpha$ contro piombo mettendosi a $\vartheta=60^\circ$ ed osservarono una deviazione da rpl per energie superiori a 25 MeV (dunque nucleo non è puntiforme).
+    \item Ad angoli grandi, se il bersaglio è puntiforme la sezione d'urto è grande, se invece è esteso la sezione d'urto è minore. Non è proprio chiaro scritto così ma è legato ai precedenti punti. 
+\end{itemize}
+\subsection{Cinematica}
+Come già detto la nostra sonda è una particella elementare e il nostro bersaglio è in generale un complesso sistema adronico. Nello stato finale si avrà la sonda invariata mentre il nucleo in generale cambia:
+\begin{enumerate}
+    \item Scattering elastico: il nucleo rimane nello stato fondamentale.
+    \item Eccitazione: il nucleo nello stato finale si trova in uno stato eccitato.
+    \item Nuovo sistema adronico, con $n$ particelle.
+\end{enumerate}
+L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
+\subsubsection{Scattering elastico}
+\begin{itemize}
+    \item Consideriamo $e^-N\to e^-N$, con nucleo inizialmente a riposo. Allora avremo che l'energia finale dell'elettrone è (da consevazione di quadrimpulso)
+    \begin{equation*}
+        E'=\frac E{1+\frac EM\qty(1-\cos\vartheta)}=\frac E{1+\frac{2E}{M}\sin^2\frac\vartheta2}\approx \abs{\vec p'}
+    \end{equation*}
+    \item Dunque nota l'energia iniziale e fissata la massa $M$ del nucleo, lo stato finale è definito da \textit{una variabile indipendente} $E'$ o $\vartheta$.
+    \item Per il calcolo esplicito bisogna considerare la conservazione del quadrimpulso prima e dopo lo scattering, e poi fare il quadrato e sottrarre le due equazioni isolando l'energia del nucleo post-scattering (una per conservazione di energia e l'altra per l'impulso).
+    \item Consideriamo l'impulso trasferito $\vec q = \vec p - \vec p'$. Se $E/M$ è piccolo, allora $p'=p\implies \abs{\vec q}=2\abs{\vec p}\sin\frac\vartheta2$. 
+    \item C'è anche la controparte relativistica, ossia il quadrivettore $q=(E-E',\vec p-\vec p')$. 
+    \begin{equation*}
+    -q^2=-(2m_e^2-2EE'+2\abs{\vec p}\abs{\vec p'}\cos\vartheta)\approx4EE'\sin^2\frac\vartheta2=Q^2>0
+    \end{equation*}
+    Possiamo ricavare una relazione per $Q^2$ nel seguente modo:
+    \begin{equation*}
+        E'=\frac{EM}{M+2E\sin^2\frac\vartheta2}=\frac{EM}{M+\frac{Q^2}{2E'}}=\frac{2EE'M}{2E'M+Q^2}\implies 2EM=E'M+Q^2\implies
+    \end{equation*}
+    \begin{equation*}
+        \implies Q^2=2M(E-E')\qquad E'=E-\frac{Q^2}{2M}
+    \end{equation*}
+    \item Vediamo i casi limite cinematici:
 \end{itemize}
