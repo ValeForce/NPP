@@ -53,12 +53,30 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
     \item Dunque si mandarono queste particelle $\alpha$ su un foglio di oro con energia cinetica di qualche MeV. Qualche volta l'angolo di scattering era maggiore di 90$^\circ$ che nella pratica è un evento molto raro ma impossibile se la materia fosse effettivamente omogenea come nel modello di Thompson. L'unica possibile spiegazione è che la materia in realtà è concentrata in piccoli corpi pesanti, i nuclei. Dunque la materia è essenzialmente vuota.
     \item Come modelliamo lo scattering? Rutherford provo con una diffusione a due corpi. Chiaramente solo contributo elettrostatico non relativostico e senza meccanica quantistica. Fu un successo.
     \item Un punto chiave è che il nucleo è abbastanza piccolo da essere visto puntiforme (e con tutta la sua carica) dalla particella $\alpha$ (teorema di Gauss, primo capitolo).
-    \item Tuttavia la materia è neutra, ma il fatto è che gli elettroni sono molto leggeri e non possono fermare o deflettere le particelle $\alpha$ perché $m_\alpha\approx8000m_e$. 
+    \item Tuttavia la materia è neutra, ma il fatto è che gli elettroni sono molto leggeri e non possono fermare o deflettere le particelle $\alpha$ perché $m_\alpha\approx8000m_e$.
     \item Vediamo i conti per la sezione d'urto\footnote{Stavo per trascriverli ma non sono io quello col nickname \textit{Il flagellante}}.
     \begin{figure}[H]
         \centering
         \includegraphics[width=\textwidth]{immagini/fig_rutherford_math.png}
-        %\caption{}
+        \caption{$\beta$ è l'angolo tra la particella e l'asse di simmetria (che passa per il punto di minimo approccio).}
         %\label{}
     \end{figure}
+    \item Se la forza è attrattiva la sezione d'urto è uguale perché cambia solo
+        \begin{equation*}
+    \vec F\to -\vec F\implies\vartheta\to-\vartheta
+    \end{equation*}
+    \item Adesso troviamo espressione esplicita per la $r\_{min}$. Cominciamo una particella con $b=0\implies \vartheta=\pi$. Avremo $d_0=r\_{min}(b=0)$ dato da
+    \begin{equation*}
+    \frac12mv^2=\frac{zZe^2}{4\pi\varepsilon_0d_0}\implies d_0=\frac{zZe^2}{2\pi\varepsilon_0mv^2}\implies \tan\qty(\frac\vartheta2)=\frac{d_0}{2b}
+    \end{equation*}
+    Per trovare $d$ ($b\neq0$) usiamo conservazione di $\vec L$ ed $E$ (dove $v_0$ è la velocità in $d$)
+    \begin{equation*}
+        \begin{cases}
+        mbv=mdv_0\to \frac{v_0}v=\frac bd\\
+        \frac12mv^2=\frac12mv_0^2+\frac{zZe^2}{4\pi\varepsilon_0d}=\frac12mv_0^2+\frac12mv^2\frac{d_0}d
+        \end{cases}\implies\qty(\frac bd)^2=\qty(\frac{v_0}v)^2=1-\frac{d_0}d\implies 
+    \end{equation*}
+    \begin{equation*}
+        \implies d^2-dd_0-b^2=0\implies d=\dots=\frac{d_0}2\qty(1+\frac1{\sin(\frac\vartheta2)})\implies \dv{\sigma}{\Omega}= 
+    \end{equation*}
 \end{itemize}
