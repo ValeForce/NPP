@@ -113,6 +113,12 @@ L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
     \begin{equation*}
         E'=\frac E{1+\frac EM\qty(1-\cos\vartheta)}=\frac E{1+\frac{2E}{M}\sin^2\frac\vartheta2}\approx \abs{\vec p'}
     \end{equation*}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_frac_energy_scatt.png}
+        \caption{Grafico della frazione di energia portata via dall'elettrone. Quando l'energia iniziale è alta e il nucleo è piccolo (A=1) viene trasferita molta energia al nucleo a grandi angoli. Se $\frac EM$ è piccolo, allora $E'\approx E\implies p\_H\approx0$ cioè non rincula ed è indipendente da $\vartheta$.}
+        %\label{}
+    \end{figure}
     \item Dunque nota l'energia iniziale e fissata la massa $M$ del nucleo, lo stato finale è definito da \textit{una variabile indipendente} $E'$ o $\vartheta$.
     \item Per il calcolo esplicito bisogna considerare la conservazione del quadrimpulso prima e dopo lo scattering, e poi fare il quadrato e sottrarre le due equazioni isolando l'energia del nucleo post-scattering (una per conservazione di energia e l'altra per l'impulso).
     \item Consideriamo l'impulso trasferito $\vec q = \vec p - \vec p'$. Se $E/M$ è piccolo, allora $p'=p\implies \abs{\vec q}=2\abs{\vec p}\sin\frac\vartheta2$. 
@@ -127,5 +133,136 @@ L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
     \begin{equation*}
         \implies Q^2=2M(E-E')\qquad E'=E-\frac{Q^2}{2M}
     \end{equation*}
-    \item Vediamo i casi limite cinematici:
+    \item Vediamo i casi cinematici limite:
+    \begin{enumerate}
+        \item $\vartheta=0$: $E'=E$, $Q^2=0$.
+        \item $\vartheta=\pi$: $E-E'=E\frac{M+2E}{M+2E}-\frac{EM}{M+2E}=\frac{2E^2}{M+2E}$, quindi se $E\ll M$ allora $E-E'\approx E\implies E'\approx0$ 
+    \end{enumerate}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_q_2_elastic.png}
+        \caption{Grafico di $Q^2$ in funzione di $2M(E-E')$: solo un segmento è permesso.}
+        %\label{}
+    \end{figure}
 \end{itemize}
+\subsubsection{Perché usare $\abs{\vec q}$ o $Q^2$?}
+La variabile $\vec q$ (o $Q^2$ in regime relativistico) è molto importante
+\begin{itemize}
+    \item È legata alla lunghezza d'onda di De Broglie della sonda $\slashed\lambda=\frac\hbar{\abs{\vec q}}$. Rappresenta la scala dello scattering, ossia strutture più piccole di $\slashed\lambda\sim\frac1{\abs{\vec q}}$ non possono essere viste dalla sonda.
+    \item Questo viene dal principio di indeterminazione $\Delta p\Delta x\geq \frac\hbar2$.
+    \item A grandi $\abs{\vec q}$ corrispondono grandi energie, ma l'opposto in generale non è vero: esistono processi ad alta energia e grandi distanze.
+    \item La ricerca di scale inferiori porta inevitabilmente a maggiori $Q^2$ e dunque a grandi energie (soldi e risorse). 
+\end{itemize}
+\subsubsection{Scattering inelastico}
+Consideriamo il caso $lN\to l'H$. Sia $p$ il quadrimpulso dell'elettrone, $P$ il quadrimpulso del nucleo, $p'$ il quadrimpulso dell'elettrone dopo lo scattering e $p_H$ il quadrimpulso del nucleo dopo lo scattering. Definiamo/riscriviamo delle variabili Lorentz-invarianti:
+\begin{itemize}
+    \item $\nu=q\frac PM=E-E'$ è l'energia persa dall'elettrone.
+    \item $Q^2=-q^2=2(EE'-pp'\cos\vartheta)-2m^2\approx4EE'\sin^2(\frac\vartheta2)$ 
+    \item $x=\frac{Q^2}{2M\nu}$ è la "x di Bjorken" e corrisponde alla frazione di quadrimpulso dell'adrone portata dal partone interagente.
+    \item $y=\frac{q\cdot P}{p\cdot P}=\frac\nu E$ è la frazione di energia persa dal leptone nel riferimento del bersaglio.
+    \item $W^2=(p\_H)^2=(p+q)^2=M^2-Q^2+2M\nu$ è il quadrato della massa del sistema adronico finale. Se $W=M$ allora si ha scattering elastico.
+    \item $s=(q+P)^2=(p'+p\_H)^2\approx M(M+2E)$ è il quadrato dell'energia nel centro di massa.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_conti_kinem.png}
+    %\caption{}
+    %\label{}
+\end{figure}
+\begin{itemize}
+    \item Nel caso elastico $eN\to eN$, $\nu$ e $Q^2$ NON sono indipendenti:
+    \begin{equation*}
+    W^2=M^2=(P+q)^2=M^2-Q^2+2M\nu\implies Q^2=2M\nu\implies\frac{Q^2}{2M\nu}=x=1
+    \end{equation*}
+    \item Dunque ovviamente nel caso elastico c'è solo una variabile indipendente ($E'$ o $\vartheta$), mentre nel caso inelastico ce ne sono due:
+    \begin{equation*}
+        Q^2=M^2+2M\nu-W^2=2M\nu-(W^2-M^2)\leq2M\nu\implies x\leq1
+    \end{equation*}
+    se $W$ non è fissato, $Q^2$ e $\nu$ sono indipendenti.
+    \item Si scelgono per convenienza le due variabili indipendenti da analizzare, e.g. $(E',\vartheta)$, $(Q^2,\nu)$, $(x,y)$.
+\end{itemize}
+\subsubsection{Deep inelastic scattering (DIS)}
+Torniamo al piano $Q^2,\nu$.
+\begin{itemize}
+    \item Entrambi sono Lorentz-invarianti.
+    \item $Q^2=4EE'\sin^2\frac\vartheta2\geq0$ dunque stiamo nel primo quadrante.
+    \item $\nu=E-E'\implies0\leq\nu\leq E$ dunque solo una banda è permessa.
+    \item $x=\frac{Q^2}{2M\nu}\leq1\implies 0\leq x\leq1$ dunque solo il "triangolo basso" è permesso.
+    \item $y=\frac\nu E\implies0\leq y\leq1$.
+    \item $W^2=M^2-Q^2+2M\nu$ la bisettrice $x=1$ definisce lo scattering elastico dove $W=M$. Lungo la bisettrice solo $\vartheta$ varia: $\vartheta=0\implies Q^2=\nu=0$.
+    \item Il luogo dei punti $W'^2=$cost sono linee parallele alla bisettrice, alcune di loro definiscono gli stati eccitati.
+    \item A distanze maggiori dalla bisettrice abbiamo DIS e potenzialmente nuova fisica.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_dis.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+\end{itemize}
+\subsubsection{Riassunto cinematica}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_kin_summary_hadron.png}
+    %\caption{}
+    %\label{}
+\end{figure}
+\subsection{Scattering elastico $eN$: Rutherford + MQ}
+Negli anni 20 entrò in gioco la meccanica quantistica. 
+\begin{itemize}
+    \item La formula di Rutherford funziona anche in questo caso, considerando il caso non relativistico e la approssimazione di Born.
+    \item Il potenziale è comunque coloumbiano.
+    \item Gli stati iniziali e finali delle particelle sono onde piane.
+    \item Trascuriamo il rinculo.
+    \item Il potenziale all'infinito non contribuisce a causa degli altri nuclei.
+    \item Vediamo il calcolo:
+    \begin{gather*}
+        V(r)=-\frac{zZ\alpha}r;\;\vec q=\Delta p=\vec p-\vec p';\;q=\abs{\vec q}=2p\sin\frac\vartheta2\\
+        \psi_i=\frac1\Phi e^{i\vec p\cdot \vec r};\;\psi_f=\frac1\Phi e^{i\vec p'\cdot \vec r};\; \dv{n}{E'}=\frac{4\pi p'^2\Phi}{(2\pi)^3v'}\\
+        M\_{fi}=\braket{\psi_f}{V}{\psi_i}=\frac1\Phi\int e^{-i\vec p'\cdot\vec r}V(r)e^{i\vec p\cdot\vec r}\dd^3r=\\
+        =-\frac1\Phi\iiint \frac{zZ\alpha}re^{i\vec q\cdot\vec r}r^2\dd r\dd\Omega=-\frac{4\pi}\Phi\frac{zZ\alpha}{q^2}\\
+        \implies \dv{\sigma}{\Omega}=\frac1{4\pi}\qty[2\pi\abs{M\_{fi}}^2\dv{n}{E'}\frac\Phi{v'}]\underset{\begin{subarray}{c}
+            v'\to c=1\\
+            p'=E'
+         \end{subarray}}{\longrightarrow}\frac12\abs{\frac{4\pi}\Phi\frac{zZ\alpha}{q^2}}^2\frac{\Phi E'^2}{2\pi^2}\Phi=\frac{4z^2Z^2\alpha^2E'^2}{q^4}
+    \end{gather*}
+    stesso risultato!
+    \item Tuttavia lo scattering $\alpha-$Nucleo ha luogo due particelle non elementari, dunque sostituiamo $\alpha$ con elettrone. 
+    \item La dinamica dello scattering $eN$ può essere descritta dalla formula di Rutherford con un aggiustamento dovuto a Mott\footnote{L'asterisco indica che stiamo approssimando trascurando il rinculo del nucleo.}:
+    \begin{equation*}
+    \dv{\sigma}{\Omega}\_{Mott*}=\dv{\sigma}{\Omega}\_{Ruth}\times\qty(1-\beta^2\sin^2\frac\vartheta2)\underset{\beta=\frac{\abs {\vec p}}{E}\to1}{\longrightarrow}\dv{\sigma}{\Omega}\_{Ruth}\cos^2\frac\vartheta2=\frac{4Z^2\alpha^2E'^2}{q^4}\cos^2\frac\vartheta2
+    \end{equation*}
+    \item Come la formula di Rutherford, la sezione d'urto di Mott trascura le dimensioni del nucleo, se ci sono (e anche il rinculo quando mettiamo *).
+    \item Al contrario della formula di Rutherford, qui si tiene conto dello spin ($\frac12$) degli elettroni.
+\end{itemize}
+\subsubsection{Elicità}
+\begin{itemize}
+    \item Il fattore $\cos^2\frac\vartheta2$ nella sezione d'urto di Mott viene dalla equazione di Dirac. Lo si capisce considerando il caso estremo $\vartheta\sim\pi$.
+    \item Per particelle relativistiche ($\beta\to1$) l'elicità $h$ (proiezione di spin su impulso) è conservata:
+    \begin{equation*}
+    h=\frac{\vec s\cdot \vec p}{\abs{\vec s}\abs{\vec p}}
+    \end{equation*}
+    \item La conservazione richiede uno spin flip dell'elettrone tra stato iniziale e finale, perché anche l'impulso flippa a 180$^\circ$.
+    \item Però in questa condizione, il momento angolare NON si conserva se il nucleo non assorbe la variazione di spin (e.g. perché è a spin nullo). Dunque lo scattering a $\vartheta\approx\pi$ è proibito.
+    \item Il fattore $\cos^2\frac\vartheta2$ nella formula di Mott è connesso allo spin e descrive la parte magnetica della interazione. Quindi questo termine serve ad annullare la sezione d'urto altrimenti non si conserverebbe il momento angolare.
+    \item Se invece il target ha spin, la proiezione dello spin dell'elettrone può cambiare perché la conservazione del momento angolare può essere compensata dal cambio nella direzione dello spin del bersaglio. In questo caso lo scattering a 180$^\circ$ è possibile.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.8\textwidth]{immagini/fig_elic_mott.png}
+        \caption{L'elicità si conserva nel limite $\beta\to1$. Questo significa che la proiezione dello spin lungo $z$ deve cambiare di segno nello scattering a 180$^\circ$. Questo è impossibile se il bersaglio è a spin nullo per conservazione del momento angolare.}
+        %\label{}
+    \end{figure}
+\end{itemize}
+\subsubsection{L'esperimento}
+L'esperimento è consistente con la cinematica dello scattering elastico? Abbiamo i dati $e+\,^{12}C$.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_plot_eN_scatt.png}
+    %\caption{}
+    %\label{}
+\end{figure}
+Il plot dei numeri di eventi con $E\_{in}$ e $\vartheta$ fissato, mostra vari picchi:
+\begin{enumerate}
+    \item Il più grande è il picco elastico come ci aspettiamo ($E'\approx p'=482$ MeV)
+    \item Si ha una struttura "ricca" a causa dello scattering anelastico in cui si porta il carbonio a stati eccitati.
+\end{enumerate}
+ 
