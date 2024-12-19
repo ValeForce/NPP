@@ -65,13 +65,13 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
     \begin{itemize}
     \item Se la forza è attrattiva la sezione d'urto è uguale perché cambia solo
         \begin{equation*}
-    \vec F\to -\vec F\implies\vartheta\to-\vartheta
+    \va F\to -\va F\implies\vartheta\to-\vartheta
     \end{equation*}
     \item Adesso troviamo espressione esplicita per la $r\_{min}$. Cominciamo una particella con $b=0\implies \vartheta=\pi$. Avremo $d_0=r\_{min}(b=0)$ dato da
     \begin{equation*}
     \frac12mv^2=\frac{zZe^2}{4\pi\varepsilon_0d_0}\implies d_0=\frac{zZe^2}{2\pi\varepsilon_0mv^2}\implies \tan\qty(\frac\vartheta2)=\frac{d_0}{2b}
     \end{equation*}
-    Per trovare $d$ ($b\neq0$) usiamo conservazione di $\vec L$ ed $E$ (dove $v_0$ è la velocità in $d$)
+    Per trovare $d$ ($b\neq0$) usiamo conservazione di $\va L$ ed $E$ (dove $v_0$ è la velocità in $d$)
     \begin{equation*}
         \begin{cases}
         mbv=mdv_0\to \frac{v_0}v=\frac bd\\
@@ -111,7 +111,7 @@ L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
 \begin{itemize}
     \item Consideriamo $e^-N\to e^-N$, con nucleo inizialmente a riposo. Allora avremo che l'energia finale dell'elettrone è (da consevazione di quadrimpulso)
     \begin{equation*}
-        E'=\frac E{1+\frac EM\qty(1-\cos\vartheta)}=\frac E{1+\frac{2E}{M}\sin^2\frac\vartheta2}\approx \abs{\vec p'}
+        E'=\frac E{1+\frac EM\qty(1-\cos\vartheta)}=\frac E{1+\frac{2E}{M}\sin^2\frac\vartheta2}\approx \abs{\va p'}
     \end{equation*}
     \begin{figure}[H]
         \centering
@@ -121,10 +121,10 @@ L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
     \end{figure}
     \item Dunque nota l'energia iniziale e fissata la massa $M$ del nucleo, lo stato finale è definito da \textit{una variabile indipendente} $E'$ o $\vartheta$.
     \item Per il calcolo esplicito bisogna considerare la conservazione del quadrimpulso prima e dopo lo scattering, e poi fare il quadrato e sottrarre le due equazioni isolando l'energia del nucleo post-scattering (una per conservazione di energia e l'altra per l'impulso).
-    \item Consideriamo l'impulso trasferito $\vec q = \vec p - \vec p'$. Se $E/M$ è piccolo, allora $p'=p\implies \abs{\vec q}=2\abs{\vec p}\sin\frac\vartheta2$. 
-    \item C'è anche la controparte relativistica, ossia il quadrivettore $q=(E-E',\vec p-\vec p')$. 
+    \item Consideriamo l'impulso trasferito $\va q = \va p - \va p'$. Se $E/M$ è piccolo, allora $p'=p\implies \abs{\va q}=2\abs{\va p}\sin\frac\vartheta2$. 
+    \item C'è anche la controparte relativistica, ossia il quadrivettore $q=(E-E',\va p-\va p')$. 
     \begin{equation*}
-    -q^2=-(2m_e^2-2EE'+2\abs{\vec p}\abs{\vec p'}\cos\vartheta)\approx4EE'\sin^2\frac\vartheta2=Q^2>0
+    -q^2=-(2m_e^2-2EE'+2\abs{\va p}\abs{\va p'}\cos\vartheta)\approx4EE'\sin^2\frac\vartheta2=Q^2>0
     \end{equation*}
     Possiamo ricavare una relazione per $Q^2$ nel seguente modo:
     \begin{equation*}
@@ -145,12 +145,12 @@ L'idea è capire/studiare la struttura degli adroni osservando lo scattering.
         %\label{}
     \end{figure}
 \end{itemize}
-\subsubsection{Perché usare $\abs{\vec q}$ o $Q^2$?}
-La variabile $\vec q$ (o $Q^2$ in regime relativistico) è molto importante
+\subsubsection{Perché usare $\abs{\va q}$ o $Q^2$?}
+La variabile $\va q$ (o $Q^2$ in regime relativistico) è molto importante
 \begin{itemize}
-    \item È legata alla lunghezza d'onda di De Broglie della sonda $\slashed\lambda=\frac\hbar{\abs{\vec q}}$. Rappresenta la scala dello scattering, ossia strutture più piccole di $\slashed\lambda\sim\frac1{\abs{\vec q}}$ non possono essere viste dalla sonda.
+    \item È legata alla lunghezza d'onda di De Broglie della sonda $\slashed\lambda=\frac\hbar{\abs{\va q}}$. Rappresenta la scala dello scattering, ossia strutture più piccole di $\slashed\lambda\sim\frac1{\abs{\va q}}$ non possono essere viste dalla sonda.
     \item Questo viene dal principio di indeterminazione $\Delta p\Delta x\geq \frac\hbar2$.
-    \item A grandi $\abs{\vec q}$ corrispondono grandi energie, ma l'opposto in generale non è vero: esistono processi ad alta energia e grandi distanze.
+    \item A grandi $\abs{\va q}$ corrispondono grandi energie, ma l'opposto in generale non è vero: esistono processi ad alta energia e grandi distanze.
     \item La ricerca di scale inferiori porta inevitabilmente a maggiori $Q^2$ e dunque a grandi energie (soldi e risorse). 
 \end{itemize}
 \subsubsection{Scattering inelastico}
@@ -159,7 +159,7 @@ Consideriamo il caso $lN\to l'H$. Sia $p$ il quadrimpulso dell'elettrone, $P$ il
     \item $\nu=q\frac PM=E-E'$ è l'energia persa dall'elettrone.
     \item $Q^2=-q^2=2(EE'-pp'\cos\vartheta)-2m^2\approx4EE'\sin^2(\frac\vartheta2)$ 
     \item $x=\frac{Q^2}{2M\nu}$ è la "x di Bjorken" e corrisponde alla frazione di quadrimpulso dell'adrone portata dal partone interagente.
-    \item $y=\frac{q\cdot P}{p\cdot P}=\frac\nu E$ è la frazione di energia persa dal leptone nel riferimento del bersaglio.
+    \item $y=\frac{q\vdot P}{p\vdot P}=\frac\nu E$ è la frazione di energia persa dal leptone nel riferimento del bersaglio.
     \item $W^2=(p\_H)^2=(p+q)^2=M^2-Q^2+2M\nu$ è il quadrato della massa del sistema adronico finale. Se $W=M$ allora si ha scattering elastico.
     \item $s=(q+P)^2=(p'+p\_H)^2\approx M(M+2E)$ è il quadrato dell'energia nel centro di massa.
 \end{itemize}
@@ -206,7 +206,7 @@ Torniamo al piano $Q^2,\nu$.
     %\caption{}
     %\label{}
 \end{figure}
-\subsection{Scattering elastico $eN$: Rutherford + MQ}
+\subsection{Scattering elastico elettrone-adrone: Rutherford + MQ}
 Negli anni 20 entrò in gioco la meccanica quantistica. 
 \begin{itemize}
     \item La formula di Rutherford funziona anche in questo caso, considerando il caso non relativistico e la approssimazione di Born.
@@ -216,10 +216,10 @@ Negli anni 20 entrò in gioco la meccanica quantistica.
     \item Il potenziale all'infinito non contribuisce a causa degli altri nuclei.
     \item Vediamo il calcolo:
     \begin{gather*}
-        V(r)=-\frac{zZ\alpha}r;\;\vec q=\Delta p=\vec p-\vec p';\;q=\abs{\vec q}=2p\sin\frac\vartheta2\\
-        \psi_i=\frac1\Phi e^{i\vec p\cdot \vec r};\;\psi_f=\frac1\Phi e^{i\vec p'\cdot \vec r};\; \dv{n}{E'}=\frac{4\pi p'^2\Phi}{(2\pi)^3v'}\\
-        M\_{fi}=\braket{\psi_f}{V}{\psi_i}=\frac1\Phi\int e^{-i\vec p'\cdot\vec r}V(r)e^{i\vec p\cdot\vec r}\dd^3r=\\
-        =-\frac1\Phi\iiint \frac{zZ\alpha}re^{i\vec q\cdot\vec r}r^2\dd r\dd\Omega=-\frac{4\pi}\Phi\frac{zZ\alpha}{q^2}\\
+        V(r)=-\frac{zZ\alpha}r;\;\va q=\Delta p=\va p-\va p';\;q=\abs{\va q}=2p\sin\frac\vartheta2\\
+        \psi_i=\frac1\Phi e^{i\va p\vdot \va r};\;\psi_f=\frac1\Phi e^{i\va p'\vdot \va r};\; \dv{n}{E'}=\frac{4\pi p'^2\Phi}{(2\pi)^3v'}\\
+        M\_{fi}=\braket{\psi_f}{V}{\psi_i}=\frac1\Phi\int e^{-i\va p'\vdot\va r}V(r)e^{i\va p\vdot\va r}\dd^3r=\\
+        =-\frac1\Phi\iiint \frac{zZ\alpha}re^{i\va q\vdot\va r}r^2\dd r\dd\Omega=-\frac{4\pi}\Phi\frac{zZ\alpha}{q^2}\\
         \implies \dv{\sigma}{\Omega}=\frac1{4\pi}\qty[2\pi\abs{M\_{fi}}^2\dv{n}{E'}\frac\Phi{v'}]\underset{\begin{subarray}{c}
             v'\to c=1\\
             p'=E'
@@ -229,7 +229,7 @@ Negli anni 20 entrò in gioco la meccanica quantistica.
     \item Tuttavia lo scattering $\alpha-$Nucleo ha luogo due particelle non elementari, dunque sostituiamo $\alpha$ con elettrone. 
     \item La dinamica dello scattering $eN$ può essere descritta dalla formula di Rutherford con un aggiustamento dovuto a Mott\footnote{L'asterisco indica che stiamo approssimando trascurando il rinculo del nucleo.}:
     \begin{equation*}
-    \dv{\sigma}{\Omega}\_{Mott*}=\dv{\sigma}{\Omega}\_{Ruth}\times\qty(1-\beta^2\sin^2\frac\vartheta2)\underset{\beta=\frac{\abs {\vec p}}{E}\to1}{\longrightarrow}\dv{\sigma}{\Omega}\_{Ruth}\cos^2\frac\vartheta2=\frac{4Z^2\alpha^2E'^2}{q^4}\cos^2\frac\vartheta2
+    \dv{\sigma}{\Omega}\_{Mott*}=\dv{\sigma}{\Omega}\_{Ruth}\times\qty(1-\beta^2\sin^2\frac\vartheta2)\underset{\beta=\frac{\abs {\va p}}{E}\to1}{\longrightarrow}\dv{\sigma}{\Omega}\_{Ruth}\cos^2\frac\vartheta2=\frac{4Z^2\alpha^2E'^2}{q^4}\cos^2\frac\vartheta2
     \end{equation*}
     \item Come la formula di Rutherford, la sezione d'urto di Mott trascura le dimensioni del nucleo, se ci sono (e anche il rinculo quando mettiamo *).
     \item Al contrario della formula di Rutherford, qui si tiene conto dello spin ($\frac12$) degli elettroni.
@@ -239,7 +239,7 @@ Negli anni 20 entrò in gioco la meccanica quantistica.
     \item Il fattore $\cos^2\frac\vartheta2$ nella sezione d'urto di Mott viene dalla equazione di Dirac. Lo si capisce considerando il caso estremo $\vartheta\sim\pi$.
     \item Per particelle relativistiche ($\beta\to1$) l'elicità $h$ (proiezione di spin su impulso) è conservata:
     \begin{equation*}
-    h=\frac{\vec s\cdot \vec p}{\abs{\vec s}\abs{\vec p}}
+    h=\frac{\va s\vdot \va p}{\abs{\va s}\abs{\va p}}
     \end{equation*}
     \item La conservazione richiede uno spin flip dell'elettrone tra stato iniziale e finale, perché anche l'impulso flippa a 180$^\circ$.
     \item Però in questa condizione, il momento angolare NON si conserva se il nucleo non assorbe la variazione di spin (e.g. perché è a spin nullo). Dunque lo scattering a $\vartheta\approx\pi$ è proibito.
@@ -264,5 +264,253 @@ Il plot dei numeri di eventi con $E\_{in}$ e $\vartheta$ fissato, mostra vari pi
 \begin{enumerate}
     \item Il più grande è il picco elastico come ci aspettiamo ($E'\approx p'=482$ MeV)
     \item Si ha una struttura "ricca" a causa dello scattering anelastico in cui si porta il carbonio a stati eccitati.
+    \item Quindi ok la cinematica, tutto torna ed è spiegabile. Ma la dinamica? Dobbiamo misurare $\dv{\sigma}{\Omega}$ in funzione di $\vartheta$.
 \end{enumerate}
- 
+\subsection{Fattore di forma}
+\begin{itemize}
+    \item La sezione d'urto sperimentale è in accordo con quella di Mott solo per bassi angoli, cioè per bassi $\abs{\va q}$. 
+    \item Ad un certo punto l'andamento devia da $\vartheta^{-4}$, probabilmente la ragione è la struttura del nucleo, che risulta in una carica effettiva minore vista dal proiettile (teorema di Gauss).
+    \item Consideriamo la densità di carica:
+    \begin{equation*}
+    \rho(\va x)=Zef(\va x),\quad \int f(\va x)\dd^3x=1
+    \end{equation*}
+    allora definiamo \textit{fattore di forma} $F(\va q)$ la trasformata di Fourier della distribuzione di carica:
+    \begin{equation*}
+        F(\va q)=\int e^{i\frac{\va q\vdot\va x}\hbar}f(\va x)\dd^3{x};\quad \va q=\va p-\va p'
+    \end{equation*}
+    se è puntuale allora $f(\va x)=\delta(\va x)\implies F(\va q)=1$.
+    \item Se $\rho(\va x)$ dipende solo dal modulo $\abs{vec x}$ allora
+    \begin{equation*}
+        \dv{\sigma}{\Omega}\_{sperimentale}=\dv{\sigma}{\Omega}\_{Mott}\times\abs{F(q^2)}^2
+    \end{equation*}
+    e i fattori di forma sono misurabili, almeno in principio.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_sigma_theta_en.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+    \item Vediamo il calcolo quantistico ($\va{R} = \va{r} - \va{r}'$):
+    \[
+    V(\va{r}) = -\int d^3r' \frac{Z \alpha f(\va{r}')}{4 \pi |\va{r} - \va{r}'|}
+    \]
+
+    \[
+    \psi_i = \frac{e^{i \va{p} \vdot \va{x} - E t}}{\sqrt{\Phi}}; \quad \psi_f = \frac{e^{i \va{p}' \vdot \va{x} - E t}}{\sqrt{\Phi}}
+    \]
+
+    \[
+    M_{fi} = \langle \psi_f | V(\va{r}) | \psi_i \rangle = \frac{1}{\Phi} \int e^{-i \va{p}' \vdot \va{r}} V(\va{r}) e^{i \va{p} \vdot \va{r}} d^3r =
+    \]
+
+    \[
+    = -\frac{1}{\Phi} \int \int e^{i \va{q} \vdot \va{r}} \frac{Z \alpha f(\va{r}')}{4 \pi |\va{r} - \va{r}'|} d^3r' d^3r =
+    \]
+
+    \[
+    = -\frac{1}{\Phi} \int \int e^{i \va{q} \vdot (\va{r}-\va r')}e^{i\va q\vdot \va r'} \frac{Z \alpha f(\va{r}')}{4 \pi |\va{r} -\va r'|} \dd^3r' \dd^3r =
+    \]
+
+    \[
+    = \left[-\frac{1}{\Phi} \int e^{i \va{q} \vdot \va{R}} \frac{Z \alpha}{4 \pi |\va{R}|} d^3R \right] \times \left[ \int f(\va{r}') e^{i \va{q} \vdot \va{r}'} d^3r' \right]
+    \]
+
+    \[
+    = M_{fi}^{\text{point}} \times F(q^2)
+    \]
+
+    \[
+    \left(\frac{d\sigma}{d\Omega}\right)_{\text{non-point}} = \left(\frac{d\sigma}{d\Omega}\right)_{\text{point}} \times |F(q^2)|^2
+    \]
+\end{itemize}
+\subsubsection{Simmetria radiale}
+\begin{itemize}
+    \item La funzione $\rho(r)$ potrebbe essere calcolata misurando $F(q^2)$ e poi numericamente faccio integrale
+    \begin{equation*}
+    \rho(r)=\frac{Ze}{\qty(2\pi)^3}\int F(q^2)e^{-i\va q\vdot\va r}\dd^3q
+    \end{equation*}
+    \item Tuttavia, il range di valori di $q$ accessibili dagli esperimenti è limitato. Dunque il comportamento di $F(q^2)$ per grandi $q^2$ (i.e. piccole distanze, la regione di interesse) deve essere estrapolata sotto ragionevoli assunzioni. 
+    \item Si può calcolare per il caso simmetrico trascurando il rinculo nucleare.
+    \begin{equation*}
+    F(q^2)=\int e^{i\va q\vdot\va r}f(r)\dd^3r=2\pi\int_0^\infty r^2f(r)\dd r\int_{-1}^1e^{iqr\cos\theta}\dd(\cos\theta)=\dots=4\pi\int_0^\infty r^2f(r)\frac{\sin(qr)}{qr}\dd r
+    \end{equation*} 
+\end{itemize}
+\subsubsection{Esempi di fattori di forma}
+Avendo
+\begin{equation*}
+f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^2f(r)\frac{\sin(qr)}{qr}\dd r
+\end{equation*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_factor_form_example.png}
+    %\caption{}
+    %\label{}
+\end{figure}
+\subsubsection{Sfera omogenea}
+\begin{itemize}
+    \item Consideriamo una densità
+    \begin{equation*}
+        \rho(r)=f(r)=
+        \begin{cases}
+            \rho_0=\frac3{4\pi R^3} & r\leq R\\
+            0 & r>R
+        \end{cases}
+    \end{equation*}
+    Avremo
+    \begin{equation*}
+    F(q^2)=4\pi\int_0^\infty f(r)r^2\frac{\sin(qr)}{qr}\dd r=\dots=\frac 3{q^3R^3}\qty(\sin(qR)-qR\cos(qR))
+    \end{equation*}
+    \item Il primo minimo si ha per $qR=\tan(qR)\implies qR\approx4.5$ e confrontandolo con l'esperimento di $^{12}$C con $q\approx1.8\,$ fm$^{-1}$ otteniamo:
+    \[ 
+    R\approx4.5\, \text{r}\_{min}=\frac{4.5}{1.8}\approx2.5\, \text{fm}
+    \] 
+    cioè $^{12}$C è approssimativamente una sfera di raggio 2.5 fm.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.4\textwidth]{immagini/fig_min_F_q.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+    \item Si può studiare il comportamento per $q\to0$ sviluppando in serie il termine $e^{iqr\cos\vartheta}$ dentro l'integrale ottenendo
+    \begin{equation*}
+    F(q^2)=\iiint e^{iqr\cos\vartheta}f(r)r^2\dd r\dd{\cos\vartheta}\dd\phi =\dots=1-\frac16q^2\expval{r^2}+\dots\implies r\_{RMS}=\sqrt{\expval{r^2}}=\sqrt{-6\dv{F(q^2)}{q^2}\Big|_{q^2=0}}
+    \end{equation*}
+    il parametro $\expval{r^2}$ è una misura della dimensione al quadrato della  (carica della) particella. Per una sfera omogenea $\expval{r^2}=\frac35R^2$.
+\end{itemize}
+\subsubsection{Casi limite $q\to0$ e $q\to\infty$}
+\begin{itemize}
+    \item $q$ è approssimativamente la variabile coniugata di $b$, il parametro d'impatto. Quindi per $q$ molto bassi ($b$ molto grandi) il bersaglio è come se fosse puntiforme; per $q$ meno bassi ($b$ meno grandi) il bersaglio si comporta come una sfera omogenea; per $q$ molto alti si può sondare il nucleo a piccole distanze.
+    \item La "nuova fisica" (cioè nuove nuove sub-strutture) richiede $q$ molto alti, che è possibile solo se il proiettile ha energia molto elevata. 
+    \item La storia si ripete più volte, da Rutherford al LHC, ma con $b$ inferiori (i.e. $q$ più alti). Per questo servono acceleratori sempre più potenti.
+\end{itemize}
+\subsubsection{Riepilogo fattore di forma}
+\begin{itemize}
+    \item I nuclei pesanti non sono sfere omogenee con bordo netto, ma piuttosto con un bordo leggero. 
+    \item La distribuzione di carica è ben riprodotta dalla Wood-Saxon
+    \begin{equation*}
+    \rho\_{carica}(r)=\frac{\rho_0}{1+e^{\frac{r-c}a}}\qquad c\approx1.07\,\text{ fm}\times A^{\frac13}\text{ (raggio)}\;a\approx0.54\text{ fm (pelle)}
+    \end{equation*}
+    \item Per i nuclei leggeri l'andamento è più gaussiano.
+    \item Tutti i nuclei hanno simmetria sferica, solo i lantanidi (terre rare) sono più ellissoidali.
+\end{itemize}
+\subsection{Scattering e-N: energie superiori}
+
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{itemize}
+        \item Sondare scale spaziali più piccole richiede energie maggiori, sia nello stato iniziale che finale (gli esperimenti odierni operano alla scala del TeV cioè  
+        $\sim10^{-18}$ m = 10$^{-3}$ fm). 
+        \item Correzioni di alta energia + meccanica quantistica alla formula di Rutherford consistono in:
+        \begin{enumerate}
+            \item Considerare lo spin dell'elettrone, perché Rutherford aveva solo bosoni (già discussa)
+            \item Includere il rinculo del bersaglio nella sezione d'urto di Mott.
+            \item utilizzare i quadrivettori $p$ e $p'$ per descrivere lo scattering, invece dei vettori tradizionali.
+            \begin{equation*}
+            Q^2=4EE'\sin^2\frac\vartheta2
+            \end{equation*}
+            \item Per lo scattering $eN$, considerare il momento magnetico dei nucleoni, introducendo il parametro $\tau =\frac{ Q^2}{4M^2}$.
+        \end{enumerate}
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_sez_urto_varie.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+\end{minipage}
+\subsubsection{Momenti magnetici}
+\begin{itemize}
+    \item Per particelle di massa $m$, carica $e$, puntiformi e $s=\frac12$, l'equazione di Dirac assegna loro un momento di dipolo magnetico
+    \begin{gather*}
+    \mu_C=\frac{ge\hbar}{4m}\\
+    g=\text{ rapporto giromagnetico }=2
+    \end{gather*}
+    \item Una particella idea di Dirac ha momento di dipolo magnetico pari a 
+    \[
+    \mu_e=\frac{e\hbar}{2m_e}\approx 5.79\times10^{-5}\frac{eV}T
+    \]
+    \item La prima misurò confermo questo valore.
+    \item Per particelle neutre $\mu_N=0$.
+    \item Questo effetto aggiunge alla sezione d'urto un termine, corrispondente alla probabilità di spin flip, proporzionale a: 
+    \begin{enumerate}
+    \item $\sin^2\frac\vartheta2$
+    \item $\frac1{\cos^2\frac\vartheta2}$ per rimuovere la dipendenza da non-flip.
+    \item $\mu_N^2\propto\frac1 {M^2}$
+    \item $Q^2$ (quadrato de campo magnetico indotto dall'elettrone)
+    \end{enumerate}
+    \begin{equation*}
+        (\dv{\sigma}{\Omega})_{\begin{subarray}{c}
+            \text{puntiforme}\\
+            \text{spin }\frac12
+         \end{subarray}}=(\dv{\sigma}{\Omega})\_{Mott}\times\qty(1+2\frac{Q^2}{4M^2}\tan^2\frac\vartheta2)
+    \end{equation*}
+    \item Dunque lo spin-flip è particolarmente rilevante a grandi $Q^2$ e grandi $\vartheta$.
+\end{itemize}
+\subsubsection{Momenti magnetici anomali}
+\begin{itemize}
+    \item Il magnetismo nucleare è una combinazione dei momenti magnetici intrinseci dei nucleoni e dei loro moti orbitali relativi.
+    \item Tutti i nuclei con $Z$ pari e $N$ pari hanno $\mu_{\text{nuclei}} = 0$.
+    \item Si definisce per i nucleoni (protone e neutrone) il valore di Dirac:
+    \[
+    \mu_N = \frac{e\hbar}{4m_N} \approx 3.1525 \times 10^{-14} \, \text{MeV/T}.
+    \]
+    \item Se $p$ e $n$ fossero particelle di Dirac ideali, avrebbero:
+    \[
+    \mu_p = 2\mu_N, \quad \mu_n = 0
+    \]
+    cioè, nella notazione convenzionale:
+    \[
+    \frac{g_p}{2} = \frac{\mu_p}{\mu_N} = 1, \quad \frac{g_n}{2} = 0
+    \]
+    \item Tuttavia, gli esperimenti hanno rilevato anomalie:
+    \[
+    \frac{g_p}{2} = +(2.7928473508 \pm 0.0000000085), \quad 
+    \frac{g_n}{2} = -(1.91304273 \pm 0.00000045).
+    \]
+    \item Pertanto, esistono altri effetti che contribuiscono ai momenti magnetici, ovvero $p$ e $n$ \textbf{non sono} particelle puntiformi ideali di spin $\frac{1}{2}$ di Dirac. 
+    \item Forse non sono nemmeno puntiformi.
+    \item In tal caso, il loro $g$ è dovuto alla loro struttura interna (potenzialmente complessa), in analogia con il caso nucleare.
+\end{itemize}
+\subsubsection{Sezione d'urto di Rosenbluth}
+\begin{itemize}
+    \item Nello scattering $eN$, il contributo principale è dato dallo scambio di un singolo fotone.
+    \item Il vertice $ee\gamma^*$ è ben compreso, con tre particelle puntiformi e ben studiate.
+    \item Al contrario, il vertice $NN'\gamma^*$ è la parte sconosciuta, a causa della struttura interna del protone.
+    \item Strategia:
+    \begin{itemize}
+        \item assumere un processo più semplice ($N =$ fermione di Dirac),
+        \item confrontarlo con gli esperimenti,
+        \item quindi modificare la teoria, inserendo parametri che modellano la struttura del nucleone.
+    \end{itemize}
+    \item Si tiene anche conto dello spin e del momento magnetico, sia dell'elettrone che del nucleone.
+    \item Si "generalizza" la sezione d'urto definendo la \textbf{sezione d'urto di Rosenbluth}, funzione di \textbf{due fattori di forma}, entrambi dipendenti da $Q^2$:
+    \begin{itemize}
+        \item $G_E(Q^2)$ per la parte elettrica (senza flip dello spin);
+        \item $G_M(Q^2)$ per la parte magnetica (con flip dello spin).
+    \end{itemize}
+    [In precedenza: $G_E(Q^2) = F(Q^2)$, nessun $G_M$].
+    \item Per un fermione di Dirac carico $f_D$, protone, neutrone:
+    \begin{itemize}
+        \item $f_D$: $G_E^f(Q^2) = 1$, $G_M^f(Q^2) = 1$;
+        \item protone ($p$): $G_E^p(Q^2 = 0) = 1$, $G_M^p(Q^2 = 0) \approx 2.79$;
+        \item neutrone ($n$): $G_E^n(Q^2 = 0) = 0$, $G_M^n(Q^2 = 0) \approx -1.91$.
+    \end{itemize}
+\end{itemize}
+\begin{gather*}
+    (\dv\sigma\Omega)\_{Rosenbluth}=(\dv\sigma\Omega)\_{Mott}\times\qty(\frac{G_E^2+\tau G_M^2}{1+\tau}+2\tau G_M^2\tan^2\frac\vartheta2)\\
+    \tau=\frac{Q^2}{4M^2}\qquad G_E=G_E(Q^2)\qquad G_M=G_M(Q^2)
+\end{gather*}
+\begin{itemize}
+    \item La formula di Rosenbluth è un particolare tipo di relazione matematico-logica:
+    \begin{itemize}
+        \item È un modello che include alcuni vincoli (ad esempio, la dipendenza da $\vartheta$ non può essere modificata);
+        \item Ma è "aperta" (ad esempio, $G_E$ e $G_M$ dipendono dalla sconosciuta struttura del nucleone);
+        \item Non contiene in sé un pieno potere predittivo;
+        \item Tuttavia è un potente strumento di lavoro per studiare i fenomeni e incorporare nuove conoscenze in una teoria (quasi-)formale.
+    \end{itemize}
+    \item È un approccio di "frontiera", piuttosto comune nella ricerca moderna, che richiede attenzione da parte di chi lo utilizza (studenti e ricercatori).
+\end{itemize}
+
