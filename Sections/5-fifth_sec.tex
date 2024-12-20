@@ -513,4 +513,140 @@ f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^
     \end{itemize}
     \item È un approccio di "frontiera", piuttosto comune nella ricerca moderna, che richiede attenzione da parte di chi lo utilizza (studenti e ricercatori).
 \end{itemize}
-
+\subsection{Struttura del protone}
+\subsubsection{Apparati sperimentali}
+Ero assente (slide senza testo)
+\subsubsection{Controlli di qualità}
+Nel 1956 lo spettrometro di Hofstadter misurò la collisione elastica $ep\to ep$. Misurò $\vartheta$ nel range $35^\circ-138^\circ$ e dunque $Q^2$ tramite le solite relazioni
+\begin{gather*}
+    E'=\frac E{1+\frac EM(1-\cos\vartheta)}\\
+    Q^2=2EE'(1-\cos\vartheta)
+\end{gather*}
+I controlli di qualità furono fatti verificando questa relazione. Delle misure di $E'$ con $E$ e $\vartheta$ fissate (vari angoli) erano in accordo con le previsioni. Dunque la cinematica in $ep\to ep$ è sotto controllo e possiamo studiare la dinamica.
+\subsubsection{Risultati $\dv\sigma\Omega$}
+Studiamo la sezione d'urto nel laboratorio.\newline
+% Colonne con minipage
+\noindent
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{itemize}
+        \item A piccoli angoli, (cioè piccoli $Q^2$ che vuol dire che $\dv\sigma\Omega$ è indipendente da $G_M$) tutte le formule sono d'accordo, dunque $G_E(Q^2=0)\approx1$
+        \item A grandi angoli (grandi $Q^2$, piccole distanze e $\dv\sigma\Omega$ dipende da $G_M$) si ha un disaccordo con ogni predizione teorica. Abbiamo valori sbagliati di $G_E$ e $G_M$?
+        \item Il disaccordo con (a) e (b) fu previsto (perché protone $g_p\neq2$)
+        \item Il disaccordo con (c) mostra una dipendenza da $Q^2$ che significa che il protone non è puntuale.
+        \item Hofstadter misurò raggio medio di protone e $\alpha$.  
+    \end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_proton_structure_result.png}
+        \caption{\textit{Rev. Mod Phys., 28, 214.}}
+    \end{figure}
+\end{minipage}
+\begin{center}
+    \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        & \textbf{(a) Mott} & \textbf{(b) Dirac} & \textbf{(c) A-Dirac} & \textbf{(d) Exp.} \\
+        \hline
+        $G_E$ & 1 & 1 & 1 fix & $G_E(Q^2) \approx 1$ \\
+        \hline
+        $G_M$ & no & 1 & 2.79 fix & $G_M(Q^2)$? \\
+        \hline
+        \textbf{point-like p?} & yes & yes & "yes"? & no \\
+        \hline
+        \textbf{fit low $Q^2$?} & yes & yes & no & def. \\
+        \hline
+        \textbf{fit high $Q^2$?} & no & no & no & def. \\
+        \hline
+    \end{tabular}
+    \end{center}
+\subsubsection{$G_{E,M}^{p,n}$ vs $Q^2$}
+Ricordiamo la formula di Rosenbluth, a $Q^2$ fissato:
+\begin{equation*}
+    \frac {(\dv{\sigma}{\Omega})\_{Rosenbluth}}{(\dv{\sigma}{\Omega})\_{Mott}}=\qty(\frac{G_E^2+\tau G_M^2}{1+\tau}+2\tau G_M^2\tan^2\frac\vartheta2)
+\end{equation*}
+\begin{itemize}
+    \item Rapporto in funzione di $E,\vartheta,Q^2$ fissato è dunque del tipo $A+B\tan^2\frac\vartheta2$.
+    \item Misura $A$ e $B$ per diversi $Q^2$ in funzione di $\tan^2\frac\vartheta2$. 
+    \item Estraiamo $G_E^p, G_M^p$ e $G_E^n, G_M^n$ per $Q^2$ fissato. 
+    \item I fattori di forma elettrici e magnetici tendono a una funzione universale di $Q^2$ con forma dipolare:
+    \begin{equation*}
+    G_E^p(Q^2)\approx \frac{G_M^p}{2.79}\approx \frac{G_M^n}{-1.91}\approx G(Q^2)=\frac1{(1+\frac{Q^2}{A^2})^2}\qquad A^2\approx0.71\GeV^2
+    \end{equation*} 
+    \item Dalla curva è possibile derivare la funzione $\rho(r)$ a piccoli $Q^2$. Risulta
+    \begin{equation*}
+    \rho(r)\approx\rho_0e^{-\alpha r},\quad a\approx4.27\,\text{fm}^{-1}
+    \end{equation*}
+    \item I nucleoni NON sembrano puntiformi o sfere omegenee, ma un sistema non omogeneo diffuso.
+    \item Dai valori per $Q^2=0$ abbiamo
+    \begin{equation*}
+    \expval{r^2}\_{dipole}=-6\hbar^2\dv{G(q^2)}{q^2}\Big|_{q^2=0}=\frac{12}{a^2}\approx0.66\,\text{fm}^2\implies \sqrt{\expval{r^2}\_{dipole}}\approx0.81\,\text{fm}
+    \end{equation*}
+    \item Notiamo che 
+    \begin{gather*}
+        \frac {(\dv{\sigma}{\Omega})\_{Rosenbluth}}{(\dv{\sigma}{\Omega})\_{Mott}}=\qty(\frac{G_E^2+\tau G_M^2}{1+\tau}+2\tau G_M^2\tan^2\frac\vartheta2);\quad \tau=\frac{Q^2}{4M^2}\\
+        \text{dunque }\lim_{Q^2\to0} {\qty(\dv{\sigma}{\Omega})\_{Rosenbluth}}= \qty(\dv{\sigma}{\Omega})\_{Mott}
+    \end{gather*}
+    \item Il fattore di forma dei nucleoni mostrano tre differenti intervalli:
+    \begin{itemize}
+        \item $Q^2\ll m_p^2$: $\tau$ piccolo, $G_E$ domina la sezione d'urto. In questo range misuriamo il raggio medio della carica elettrica $\expval{r\_E}=0.85\pm0.02$ fm.
+        \item $0.02\leq Q^2\leq3$ GeV$^2$: $G_E$ e $G_M$ sono entrambi importanti. 
+        \item $Q^2>3$ GeV$^2$: $G_M$ domina la sezione d'urto. 
+    \end{itemize}
+    \item Notiamo che se il protone fosse puntuale, si avrebbe
+    \begin{equation*}
+    G_E^p(Q^2)=G_M^p(Q^2)=1, \text{ indipendente da }Q^2
+    \end{equation*}
+    e non si spiega perché "2.79".
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_G.png}
+        %\caption{}
+        %\label{}
+    \end{figure}
+\end{itemize}
+Differenze tra nuclei e nucleoni:
+\begin{itemize}
+    \item I nuclei esibiscono minimi e massimi di diffrazione. Questo fatto corrisponde ad una distribuzione di carica simile alla sfera omogenea con pelle sottile.
+    \item I nucleoni hanno fattori di forma diffusi e con distribuzione dipolare: la carica scende esponenzialmente col raggio.
+    \item A questo livello, non è chiaro se i nucleoni hanno sottostrutture. Dunque servono esperimenti a piccoli valori di distanza (grandi $Q^2$).
+    \item Forse la struttura del nucleone nello scattering elastico, descritta dalla formula di Rosenbluth, è una media con risoluzione insufficiente
+    \item A $Q^2$ maggiori ci aspettiamo una varietà di fenomeni:
+    \begin{itemize}
+        \item Scattering elastico: $ep\to ep$
+        \item Eccitazione: $ep\to ep^*$ (e.g. $ep\to e\Delta^+,\,\Delta^+\to p\pi^0$)
+        \item Nuovi stati: $ep\to eX^+$ (con $X^+$ sistema di molte particelle)
+    \end{itemize}
+\end{itemize}
+\subsubsection{Maggiore $Q^2$: $H_2=O$}
+Si mandano elettroni a 246 MeV contro del vapore acqueo. Lo scattering mostra una distribuzione complessa, con diversi fenomeni nello stesso plot. Ad un certo angolo fissato di elettroni nello stato finale, aumentando $E'$:
+\begin{itemize}
+    \item $ep\to e\Delta^+$ Eccitazione del protone dell'idrogeno.
+    \item $ep/n\to ep/n$ elastico sui nucleoni dell'ossigeno.
+    \item $ep\to ep$ elastico sull'idrogeno, con $E'\approx160$ MeV.
+    \item $ep\to eX^+$ eccitazioni nucleari.
+    \item $e\,^{16}O\to e\,^{16}O$ eccitazioni nucleari o scattering elastico.
+\end{itemize}
+La distribuzione dipende anche dall'energia dell'elettrone $E$ e dall'angolo dello stato finale $\vartheta$.
+\begin{equation*}
+    E'=\frac{M^2+2ME-W^2}{2\qty[M+2E\sin^2\frac\vartheta2]}
+\end{equation*}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_higher_q2_water.png}
+    %\caption{Distribuzione complessa dello scattering $e$-$H_2O$ a 246 MeV.}
+    %\label{}
+\end{figure}
+\subsubsection{Maggiore $Q^2$: $^4$He, $\vartheta=45^\circ$}
+Hofstadter nel 1956 fece un altro di questi esperimenti.
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_higher_q2_helium.png}
+    %\caption{Distribuzione complessa dello scattering $e$-$^4$He$ a 246 MeV.}
+    %\label{}
+\end{figure}
+\begin{itemize}
+    \item [A.] Il picco elastico $e\,^4$He è ok come previsto. 
+    \item [BCDEF.] Lo scattering elastico $ep/en$, con $p/n$ considerati liberi nell'elio (forse inaspettato ma comprensibile); notiamo la larghezza del picco dovuta al moto di fermi dei nucleoni dentro al nucleo. 
+\end{itemize}
