@@ -711,3 +711,40 @@ Con DESY (1968) si studiò lo scattering $ep\to eX$.
     \item Ma allora i quark esistono? Sono confinati? Perché? Qui venne proposto il colore senza averlo compreso del tutto, la QCD ancora non esisteva.
 \end{itemize}
 \subsection{Deep inelastic scattering}
+Abbiamo la solita parametrizzazione della sezione d'urto nella regione di DIS con la formula:
+\begin{gather*}
+\qty(\pdv{\sigma}{\Omega}{E'})\_{DIS}=\qty(\dv{\sigma}{\Omega})\_{Mott}\qty[W_2(Q^2,\nu)+2W_1(Q^2,\nu)\tan^2\frac\vartheta2]=\\
+=\frac{4Z^2\alpha^2(\hbar c)^2E'^2}{\abs{qc}^4}\cos\frac\vartheta2\qty[W_2(Q^2,\nu)+2W_1(Q^2,\nu)\tan^2\frac\vartheta2]=\\
+=\frac{4\alpha^2E'^2}{Q^4}\times\qty[W_2(Q^2,\nu)\cos^2\frac\vartheta2+2W_1(Q^2,\nu)\sin^2\frac\vartheta2]
+\end{gather*}
+\begin{itemize}
+    \item La sezione d'urto inelastica richiede due variabili per lo stato finale; poiché $Q^2$ e $\nu$ sono lorentz-invarianti, sono convenienti da usare.
+    \item $W_1$ e $W_2$ sono combinazioni di $G_E$ e $G_M$ per DIS; qualche volta si usa una normalizzazione diversa:
+    \begin{gather*}
+    F_1(x,Q^2)=MW_1(Q^2,\nu)\\
+    F_2(x,Q^2)=\nu W_2(Q^2,\nu)
+    \end{gather*}
+    \item La dinamica dello scattering dipende dalla struttura del bersaglio. $W_{1,2}(F_{1,2})$ sono i contenitori della informazione. 
+    \item Sono note come \textit{funzioni di struttura} e devono essere misurate (o calcolate con teorie particolarmente profonde).
+    \item Non c'è particolare differenza tra $W_{1,2}$ e $F_{1,2}$, quindi si usano le più convenienti. Oggi nei paper ad alti $\sqrt s$ si usano solo $F_{1,2}$.
+\end{itemize}
+\subsubsection{Riassunto formule}
+Riassunto delle formule della sezione d'urto dei nucleoni: sezioni d'urto di Mott e Rosenbluth, e relazioni tra $G_{E,M}$ e $W_{1,2}/F_{1,2}$.
+\begin{align*}
+    &\qty(\dv{\sigma}{\Omega})\_{Mott} = \qty(\frac{4 \alpha^2 E'^2}{Q^4})\_{Ruth} \qty(\cos^2 \frac{\vartheta}{2})_{\to\text{Mott}^*} \qty(\frac{E'}E)_{\to\text{Mott}}=\frac{4\alpha^2 E'^3}{E Q^4} \cos^2 \frac{\vartheta}{2};\\
+    &\qty(\dv{\sigma}{\Omega})\_{Rosenbluth}= \qty(\frac{4 \alpha^2 E'^3}{E Q^4}\cos^2\frac\vartheta2)\_{Mott} \qty( \frac{G_E^2 + \tau G_M^2}{1+\tau} + 2 \tau G_M^2 \tan^2 \frac{\vartheta}{2})_{\to\text{Rosenbluth}};\\
+    &\qty(\pdv{\sigma}{\Omega}{E'})\_{Rosenbluth}= \frac{12 \alpha^2 E'^2}{E Q^4} \left( \frac{G_E^2 + \tau G_M^2}{1+\tau} \cos^2 \frac{\vartheta}{2} + 2 \tau G_M^2 \sin^2 \frac{\vartheta}{2} \right);\\
+    &\qty(\pdv{\sigma}{\Omega}{E'})\_{DIS}= \frac{4 \alpha^2 E'^2}{Q^4}\times \left[ W_2(Q^2, \nu) \cos^2 \frac{\vartheta}{2} + 2 W_1(Q^2, \nu) \sin^2 \frac{\vartheta}{2} \right];\\
+    &W_1(Q^2, \nu) = \frac{F_1(x, y)}{M} = \frac{3}{E} \tau G_M^2 = \frac{3 Q^2}{4 E M_p^2} G_M^2;\\
+    &W_2(Q^2, \nu) = \frac{F_2(x, y)}{\nu} = \frac{3}{E} \left( \frac{G_E^2 + \tau G_M^2}{1 + \tau} \right) = \frac{3}{E} \left( \frac{4 M_p^2 G_E^2 + Q^2 G_M^2}{4 M_p^2 + Q^2} \right).
+\end{align*}
+Notiamo che 
+\begin{align*}
+&(Q,\nu,M)\sim E^1\\
+&(\tau,G_{E,M},F_{1,2})\sim E^0\\
+&W_{1,2}\sim E^{-1}\\
+&\sigma,\dv{\sigma}{\Omega}\sim E^{-2}\\
+&G_{E,M},F_{1,2},W_{1,2}=f(Q^2)
+\end{align*}
+Notiamo che le sezioni d'urto di Rutherford, di Mott e di Mott* non dipendono dalla massa del protone. Invece la sezione d'urto di Rosenbluth dipende da $\tau$ (=$\frac{Q^2}{4M^2}$) più qualunque dipendenza nascosta in $G_{E,M}$. Le $F_{1,2}$ neanche dipendono da essa.
+RIASCOLTA DA NPP29 31:30
