@@ -754,5 +754,104 @@ Notiamo che le sezioni d'urto di Rutherford, di Mott e di Mott* non dipendono da
     \item Nel setup di SLAC ci sono tre diversi spettrometri ruotabili, per 1.6 Gev, 8 Gev e 20 GeV (simultaneamente).
     \item Ci sono dipoli magnetici che deflettono, ci sono quadrupoli e poi vari rivelatori. Contatori Cherenkov, scintillatori per la traccia, calorimetri per le cascate per discriminare $e-\pi$ e contatori per la perdita di energia.
 \end{itemize}
-\subsubsection{$\pdv{\sigma}{\Omega}{E'}$}
-pippo
+\subsubsection{Deep inelastic scattering: $\pdv{\sigma}{\Omega}{E'}$}
+\begin{minipage}[t]{0.48\textwidth}
+Vediamo grafici di $ep\to eX$ a $\vartheta=4^\circ$ di $\pdv{\sigma}{\Omega}{E'}$ in funzione di $W$ (massa dell'adrone). Notiamo che:
+\begin{itemize}
+    \item Gli intervalli in $W$ e $Q^2$, dovuti ai valori di $E$ e $\vartheta$ fissati;
+    \item Lo scattering elastico $W=M$ è fuori scala;
+    \item La sezione d'urto diminuisce (scala verticale) all'aumentare di $E$;
+    \item Sono presenti stati eccitati dei nucleoni, cioè risonanze/picchi, e.g. $\Delta^+$(1232);
+    \item Le risonanze vanno a svanire quando $W$ aumenta per $E$ e $\vartheta$ fissati;
+    \item È presente un continuo ad alta $W$, con sezione d'urto quasi costante indipendente da $E$ e $Q^2$.
+\end{itemize}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_dis_sez_urto.png}
+        %\caption{Sezione d'urto in funzione di $x=\frac{Q^2}{2M\nu}$.}
+        %\label{}
+    \end{figure}
+\end{minipage}
+\subsubsection{Deep inelastic scattering: $\dv{\sigma}{\vartheta}$ vs $\dv{\sigma}{\vartheta}\_{Mott}$}
+Consideriamo il rapporto
+\begin{equation*}
+    R=\frac{\text{sperimentale}}{\text{Mott}}=W_2+2W_1\tan^2\frac{\vartheta}{2}=R(Q^2)
+\end{equation*}
+\begin{itemize}
+    \item Notiamo che le funzioni di struttura appaiono quasi indipendenti da $Q^2$. Invece, lo scattering elastico per una particella non elementare ha una forte dipendenza da $Q^2$.
+    \item Per DIS il bersaglio si comporta come una particella puntiforme ($F(Q^2)=$cost.). Costante ma molto minore di 1, che significa che la carica è minore di 1.
+    \item Questa indipendenza da $Q^2$ è un'altra conferma che la DIS rompe il protone: lo scattering avviene con uno dei suoi costituenti. I costituenti sono quasi-liberi e quasi-puntiformi, almeno in questa scala di $Q^2$.
+    \begin{equation*}
+    \lambda\approx\frac{2\pi}{\abs {q}}\approx\frac{4\pi Mx}{Q^2}
+    \end{equation*}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_dis_rapporto.png}
+    \caption{Rapporto tra la sezione d'urto sperimentale e quella di Mott in funzione di $Q^2$ a $\vartheta=10^\circ$. Il fattore di forma per scattering elastico è dipolare: $R(Q^2)\propto Q^{-8}$ e $R(0)=1$.}
+    %\label{}
+\end{figure}
+\subsection{Scaling di Bjorken}
+Vediamo un grafico con i dati delle funzioni di struttura $F_1$ e $F_2$ in funzione di $x$ e $Q^2$. Ricordiamo che 
+\begin{equation*}
+F_1(x,Q^2)=MW_1(Q^2,\nu);\qquad F_2(x,Q^2)=\nu W_2(Q^2,\nu)
+\end{equation*}
+\begin{itemize}
+    \item $F_2$ dipende da $x$, ma non da $Q^2$.
+    \item $F_1$ e $F_2$ sono correlate? Se i nucleoni sono elementari con spin $\frac{1}{2}$, dalla formula DIS si ricava la \textit{relazione di Callan-Gross}:
+    \begin{equation*}
+    2xF_1(x)=F_2(x)
+    \end{equation*}
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_bjorken_struct_fun.png}
+    \caption{Funzioni di struttura $F_1$ e $F_2$ in funzione di $x$ e $Q^2$. Si nota come non c'è dipendenza reale da $Q^2$ in un grande intervallo.}
+    %\label{}
+\end{figure}
+\subsubsection{Formula di Callan-Gross}
+\section*{a) The cross sections of point-like spin $\frac{1}{2}$ particle of mass $m$ (à la Rosenbluth with $G_E = G_M = 1$):}
+
+\begin{equation*}
+\frac{d^2 \sigma}{d\Omega dE'} = \frac{12\alpha^2 E'^2}{Q^4} 
+\left[ W_2 \cos^2 \frac{\theta}{2} + 2 \tau \sin^2 \frac{\theta}{2} \right],
+\end{equation*}
+
+\begin{equation*}
+\frac{d^2 \sigma}{d\Omega dE'} = \frac{4\alpha^2 E'^2}{Q^4} 
+\left[ W_2 \cos^2 \frac{\theta}{2} + 2 W_1 \sin^2 \frac{\theta}{2} \right],
+\end{equation*}
+
+\begin{equation*}
+W_2 \cos^2 \frac{\theta}{2} + 2 W_1 \sin^2 \frac{\theta}{2} = 
+\frac{3}{E} \; \rightarrow \; W_1 = \frac{3}{\tau}; \quad W_2 = \frac{3}{E}.
+\end{equation*}
+
+\section*{b) From the kinematics of elastic scattering of point-like constituents of mass $m$:}
+
+\begin{equation*}
+Q^2 = 2m\nu = 2Mv x \; \rightarrow \; m = xM;
+\end{equation*}
+
+\begin{equation*}
+F_1(x) = \frac{Q^2}{4m^2} \nu = \frac{2m \nu}{4m^2} \nu = \frac{M}{2m} \frac{1}{2x};
+\end{equation*}
+
+\begin{equation*}
+2x F_1(x) = F_2(x) \quad \text{Callan-Gross.}
+\end{equation*}
+
+\subsection*{Notes}
+
+Assume the nucleon (mass $M$, spin $\frac{1}{2}$) to be made of point-like constituents $q$ (mass $m$, spin $\frac{1}{2}$).
+
+\textbf{Warnings:}
+\begin{itemize}
+    \item Don't confuse the inelastic scattering equation with the elastic scattering equation;
+    \item $x$ refers to the inelastic case;
+    \item A hypothetical (nobody uses it) variable $\xi$, analogous to $x$ but for the constituent scattering; in this case, $Q^2 = 2m\nu \xi$, $\xi = 1$;
+    \item We learn that $x = m/M$ \textbf{[REMEMBER]}.
+\end{itemize}
