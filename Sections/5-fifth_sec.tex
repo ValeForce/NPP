@@ -809,49 +809,41 @@ F_1(x,Q^2)=MW_1(Q^2,\nu);\qquad F_2(x,Q^2)=\nu W_2(Q^2,\nu)
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{immagini/fig_bjorken_struct_fun.png}
-    \caption{Funzioni di struttura $F_1$ e $F_2$ in funzione di $x$ e $Q^2$. Si nota come non c'è dipendenza reale da $Q^2$ in un grande intervallo.}
+    \caption{Funzione di struttura $F_2$ in funzione di $x$ e $Q^2$. Si nota come non c'è dipendenza reale da $Q^2$ in un grande intervallo.}
     %\label{}
 \end{figure}
 \subsubsection{Formula di Callan-Gross}
-\section*{a) The cross sections of point-like spin $\frac{1}{2}$ particle of mass $m$ (à la Rosenbluth with $G_E = G_M = 1$):}
-
-\begin{equation*}
-\frac{d^2 \sigma}{d\Omega dE'} = \frac{12\alpha^2 E'^2}{Q^4} 
-\left[ W_2 \cos^2 \frac{\theta}{2} + 2 \tau \sin^2 \frac{\theta}{2} \right],
-\end{equation*}
-
-\begin{equation*}
-\frac{d^2 \sigma}{d\Omega dE'} = \frac{4\alpha^2 E'^2}{Q^4} 
-\left[ W_2 \cos^2 \frac{\theta}{2} + 2 W_1 \sin^2 \frac{\theta}{2} \right],
-\end{equation*}
-
-\begin{equation*}
-W_2 \cos^2 \frac{\theta}{2} + 2 W_1 \sin^2 \frac{\theta}{2} = 
-\frac{3}{E} \; \rightarrow \; W_1 = \frac{3}{\tau}; \quad W_2 = \frac{3}{E}.
-\end{equation*}
-
-\section*{b) From the kinematics of elastic scattering of point-like constituents of mass $m$:}
-
-\begin{equation*}
-Q^2 = 2m\nu = 2Mv x \; \rightarrow \; m = xM;
-\end{equation*}
-
-\begin{equation*}
-F_1(x) = \frac{Q^2}{4m^2} \nu = \frac{2m \nu}{4m^2} \nu = \frac{M}{2m} \frac{1}{2x};
-\end{equation*}
-
-\begin{equation*}
-2x F_1(x) = F_2(x) \quad \text{Callan-Gross.}
-\end{equation*}
-
-\subsection*{Notes}
-
-Assume the nucleon (mass $M$, spin $\frac{1}{2}$) to be made of point-like constituents $q$ (mass $m$, spin $\frac{1}{2}$).
-
-\textbf{Warnings:}
 \begin{itemize}
-    \item Don't confuse the inelastic scattering equation with the elastic scattering equation;
-    \item $x$ refers to the inelastic case;
-    \item A hypothetical (nobody uses it) variable $\xi$, analogous to $x$ but for the constituent scattering; in this case, $Q^2 = 2m\nu \xi$, $\xi = 1$;
-    \item We learn that $x = m/M$ \textbf{[REMEMBER]}.
+    \item La sezione d'urto di una particella puntiforme a spin $\frac{1}{2}$ di massa $m$ alla Rosenbluth ($G_E=G_M=1$) vale
+    \begin{align*}
+        &\qty(\pdv{\sigma}{\Omega}{E'})_{\textnormal{point},s=\frac12}= \frac{12\alpha^2 E'^2}{EQ^4} 
+        \left[ \cos^2 \frac{\vartheta}{2} + 2 \tau \sin^2 \frac{\vartheta}{2} \right],\\
+        &\qty(\pdv{\sigma}{\Omega}{E'})\_{DIS}=\frac{4\alpha^2E'^2}{Q^4}\qty(W_2\cos^2\frac{\vartheta}{2}+2W_1\sin^2\frac{\vartheta}{2});\\
+        &W_2\cos^2\frac{\vartheta}{2}+2W_1\sin^2\frac{\vartheta}{2}=\frac{3}{E}\qty[\cos^2\frac{\vartheta}{2}+2\tau\sin^2\frac{\vartheta}{2}];\\
+        &W_1=\frac{3\tau}{E};\quad W_2=\frac{3}{E};\quad \frac{W_1}{W_2}=\frac{F_1(x)}{F_2(x)}\frac{\nu}{M}=\tau=\frac{Q^2}{4m^2}
+        \end{align*}
+        \item Dalla cinematica dello scattering elastico di particelle puntiformi di massa $m$ abbiamo:
+        \begin{align*}
+            &Q^2 = 2m\nu = 2Mv x \; \rightarrow \; m = xM;\\
+            &\frac{F_1(x)}{F_2(x)}=\frac{Q^2}{4m^2}\frac{M}{\nu}=\frac{2m\nu}{4m^2}\frac{M}{\nu}=\frac{M}{2m}=\frac{1}{2x}\implies 2xF_1(x)=F_2(x)\quad\textnormal{Callan-Gross}
+        \end{align*}
+        \item Abbiamo assunto che il nucleone (massa $M$ e spin $\frac{1}{2}$ sia costituito da q (massa $m$ e spin $\frac{1}{2}$)). Attenzione
+        \begin{itemize}
+            \item Bisogna fare attenzione a non confondere lo scattering $ep$ con $eq$;
+            \item $x$ si riferisce al caso inelastico;
+            \item Abbiamo scoperto che $x=\frac{m}{M}$ \textbf{importante}!
+        \end{itemize} 
+\end{itemize}
+\subsubsection{Modello a partoni}
+\begin{itemize}
+    \item Assumiamo che il nucleone sia fatto di \textit{partoni} (elementari, spin $\frac{1}{2}$, massa $m_i$), che diffondono elasticamente nel processo $ep$.
+    \item Allora la sezione d'urto di DIS
+    \begin{equation*}
+    \pdv{\sigma}{\Omega}{E'}=\frac{4\alpha^2E'^2}{Q^4}\qty(W_2\cos^2\frac{\vartheta}{2}+2W_1\sin^2\frac{\vartheta}{2})
+    \end{equation*}
+    si riduce ad una \textit{somma incoerente delle sezioni d'urto dei costituenti}, con $q\_{electron}e_i$ carica di ciascuno di essi:
+    \begin{equation*}
+    \pdv{\sigma}{\Omega}{E'}\Big|_{m_i}=\frac{4\alpha^2E'^2}{Q^4}\sum_ie_i^2\qty(\cos^2\frac{\vartheta}{2}+\frac{Q^2}{2m_i^2}\sin^2\frac{\vartheta}{2})\delta\qty(\nu-\frac{Q^2}{2m_i})
+    \end{equation*}ù
+    dove la $\delta$ significa che, al livello dei costituenti, lo scattering è elastico, i.e. $Q^2=2m_i\nu$
 \end{itemize}
