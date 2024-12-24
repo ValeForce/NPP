@@ -844,6 +844,40 @@ F_1(x,Q^2)=MW_1(Q^2,\nu);\qquad F_2(x,Q^2)=\nu W_2(Q^2,\nu)
     si riduce ad una \textit{somma incoerente delle sezioni d'urto dei costituenti}, con $q\_{electron}e_i$ carica di ciascuno di essi:
     \begin{equation*}
     \pdv{\sigma}{\Omega}{E'}\Big|_{m_i}=\frac{4\alpha^2E'^2}{Q^4}\sum_ie_i^2\qty(\cos^2\frac{\vartheta}{2}+\frac{Q^2}{2m_i^2}\sin^2\frac{\vartheta}{2})\delta\qty(\nu-\frac{Q^2}{2m_i})
-    \end{equation*}ù
-    dove la $\delta$ significa che, al livello dei costituenti, lo scattering è elastico, i.e. $Q^2=2m_i\nu$
+    \end{equation*}
+    dove la $\delta$ significa che, al livello dei costituenti, lo scattering è elastico, i.e. $Q^2=2m_i\nu$.
+    \item Per tali partoni vale
+    \begin{equation*}
+	    \begin{cases}
+        F_1\qty(x=\frac{Q^2}{2m\nu})=MW_1(Q^2,\nu)=\frac12\sum_je^2_jf_j(x)\\
+        F_2\qty(x=\frac{Q^2}{2m\nu})=\nu W_2(Q^2,\nu)=x\sum_je^2_jf_j(x)\\
+        \end{cases}
+    \end{equation*}
+    cioè $F_1$ ed $F_2$ non dipendono da $Q^2$ e $\nu$ \textit{separatamente}, ma solo dal loro rapporto. $F_1$ ed $F_2$ sono anche legate dalla equazione di Callan-Gross.
+    \item Questo meccanismo, detto \textit{Bjorken scaling} fu interpretato da Feynman nel 1969 come la dominanza dei partoni nella dinamica dei nucleoni (il \textit{modello a partoni}).
+\end{itemize}
+\subsubsection{Conti}
+\begin{itemize}
+	\item La formula del deep inelastic scattering $ep$, per $p$ non elementare con massa $M$:
+    \begin{equation*}
+    \qty(\pdv{\sigma}{\Omega}{E'})\_{DIS}= \frac{4 \alpha^2 E'^2}{Q^4}\times \left[ W_2(Q^2, \nu) \cos^2 \frac{\vartheta}{2} + 2 W_1(Q^2, \nu) \sin^2 \frac{\vartheta}{2} \right] 
+    \end{equation*}
+    \item Lo scattering elastico $eq$, elementare, spin $\frac{1}{2}$, carica $e$, massa $m=Mx$ ($q$ è un singolo partone)
+    \begin{equation*}
+        \qty(\pdv{\sigma}{\Omega}{E'})_{eq}= \frac{4 \alpha^2 E'^2}{Q^4}\times \left[ e^2\cos^2\frac{\vartheta}{2}+e^2\frac{Q^2}{2m^2}\sin^2\frac{\vartheta}{2}\right]\delta\qty(\nu-\frac{Q^2}{2m})
+    \end{equation*}
+    \item Vediamo ad esempio $W_1$ (con $x$ fissato)\footnote{Nota che $\int A(x)\delta\qty(B(x))\dd x=\frac{A(x_0)}{\abs{B'(x_0)}}$ con $B(x)=\nu-\frac{Q^2}{2Mx}\implies B'(x_0)=\frac{2M\nu^2}{Q^2}$}:
+    \begin{equation*}
+    W_1\Big|_x=\frac{e^2Q^2}{4m^2}\delta\qty(\nu-\frac{Q^2}{2m})=\frac{e^2Q^2}{4M^2x^2}\delta\qty(\nu-\frac{Q^2}{2Mx})
+    \end{equation*}
+    sia $f(x)$ la distribuzione in $x$ di una singola sottostruttura,
+    \begin{gather*}
+    W_1=\int \frac{e^2Q^2}{4M^2x^2}\delta\qty(\nu-\frac{Q^2}{2Mx})f(x)\dd x=\frac{e^2Q^2}{4M^2}\int\frac{f(x)}{x^2}\dd x\,\delta\qty(\nu-\frac{Q^2}{2Mx})=\\
+    =\frac{e^2Q^2}{4M^2}f(x)\Big|_{x=\frac{Q^2}{2M\nu}}\qty(\frac{Q^2}{2M\nu})^{-2}\frac{Q^2}{2M\nu^2}=\frac{e^2f(x)}{2M}
+    \end{gather*}
+    \item Allo stesso modo $W_2$:
+    \begin{gather*}
+    W_2\Big|_x=e^2\,\delta\qty(\nu-\frac{Q^2}{2Mx})\implies W_2=\int e^2\,\delta\qty(\nu-\frac{Q^2}{2Mx})f(x)\dd x=\\
+    =e^2f(x)\Big|_{x=\frac{Q^2}{2M\nu}}\frac{Q^2}{2M\nu^2}=\frac{e^2xf(x)}{\nu}
+    \end{gather*}
 \end{itemize}
