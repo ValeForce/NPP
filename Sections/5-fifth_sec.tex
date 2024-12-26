@@ -903,3 +903,68 @@ I nucleoni sono fatti da partoni, successivamente identificati con i quark. I pa
             \item $x\_B$ viene dalla parte leptonica, infatti è l'impulso trasferito e l'energia del leptone. 
         \end{itemize}
     \end{itemize} 
+\subsubsection{Dimostrazione di $x\_F=x\_B$}
+Nel riferimento ad impulso infinito (IMF) dove tutte le masse sono trascurabili abbiamo:
+\begin{itemize}
+    \item $p\_{nucleone}^{\textnormal{iniz}}\Big|\_{IMF}=(p,p,0,0)$;
+    \item $p\_{partone}^{\textnormal{iniz}}\Big|\_{IMF}=x\_F p\_{nucleone}^{\textnormal{iniz}}=(x\_Fp,x\_Fp,\sim0,\sim0)$;
+    \item $p\_{partone}^{fin}\Big|\_{IMF}=p\_{partone}^{\textnormal{iniz}}+q\_{trasf}$;
+    \item $\qty(p\_{partone}^{fin})^2=0=(p\_{partone}^{\textnormal{iniz}}+q\_{trasf})^2=0+q\_{trasf}^2+2\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})$
+    \item Notiamo che $\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})$ è Lorentz-invariante; calcolato nel riferimento del laboratorio da:
+    \begin{gather*}
+        p\_{protone}^{\textnormal{iniz}}\Big|\_{LAB}=(M,\va{0});\quad p\_{partone}^{\textnormal{iniz}}\Big|\_{LAB}(Mx\_F,\va{0})\\
+        q\_{trasf}\Big|\_{LAB}=(E-E'=\nu,\va{q})\implies -q\_{trasf}^2=Q^2=2\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})=2Mx\_F\nu\implies\\
+        \implies x\_F=\frac{Q^2}{2M\nu}=x\_B
+        \end{gather*}
+    \item Attenzione! L'uguaglianza vale solo nel IMF. È anche una ragionevole approssimazione nel caso ultra relativistico, quando le masse sono trascurabili rispetto l'impulso. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_x_proton_parton_e.png}
+        \caption{In questa figura e anche nelle future pagine $x\_F=x\_B=x$. Inoltre $x$ alla Feynman è interpretata come frazione del quadrimpulso portata dal partone.}
+        %\label{}
+    \end{figure}
+\end{itemize}
+\subsubsection{Regola della somma}
+\begin{itemize}
+    \item Sperimentalmente è sufficiente controllare lo stato iniziale $E_{e},M$ e la misura dello stato leptonico finale $E',\vartheta$;
+    \item Il modello implica che $\sum_i x_i=1$ se la somma va su \textit{tutti} i partoni
+    \item A quei tempi non c'era alcuna idea sulla natura dei partoni o se fossero carichi o neutri (non interagiscono con gli elettroni), dunque
+    \begin{equation*}
+    \sum_i'x_i\leq1
+    \end{equation*}
+    cioè la somma è solo sui partoni interagenti con gli elettroni.
+    \item Data la struttura intrinseca quantomeccanica del nucleone, i valori di $x_i$ non sono fissi ma descritti da una distribuzione $f_j^p(x)$ per i partoni di tipo "$j$" nel protone:
+    \begin{equation*}
+    \sum_j\int\dd{x}\qty[xf_j^p(x)]=\sum_j'\frac{\ev{\abs{\va{p}_j}}}{\abs{\va{p}_p}}\leq1
+    \end{equation*}
+    con discorsi analoghi sulla sommatoria.
+    \item Se i partoni sono a spin $\frac12$ la relazione di Callan-Gross è valida $2xF_1(x)=F_2(x)$;
+    \item Invece per spin nullo si ha $\tau=0\implies F_1(x)=0$.
+    \item Ma possiamo misurarla? Sì! E risulta tutto.
+\end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_callan_gross_experimental.png}
+    %\caption{Experimental verification of the Callan-Gross relation.}
+    %\label{}
+\end{figure}
+\subsubsection{Riassuntino}
+\begin{itemize}
+    \item Ad alto $Q^2$, un adrone ($p/n$) si comporta come miscela di piccole componenti: i partoni;
+    \item I partoni sono elementari con spin $\frac{1}{2}$;
+    \item Ciascun partone in ogni interazione è descritto dalla sua frazione di quadrimpulso dell'adrone, i.e. $x_i=\frac{\abs{\va{p}_i^{\textnormal{partone}}}}{\abs{\va{p}_i^{\textnormal{adrone}}}}$;
+    \item Le $x_i$ sono variabile quantomeccaniche, descritte dalla loro funzione di distribuzione $f_i^p(x)$ dette \textit{PDF};
+    \item In principio le PDF sono diverse per ciascun partone ed adrone;
+    \item $\sum_j \int\dd{x}xf_j^p(x)\leq1$
+    \item Per i partoni con spin $\frac{1}{2}$ vale la relazione di Callan-Gross $2xF_1(x)=F_2(x)$.
+    \item Inoltre ricordiamo le relazioni
+    \begin{align*}
+    &\pdv{\sigma}{\Omega}{E'}=\frac{4\alpha^2E'^2}{Q^4}\qty[W_2(Q^2,\nu)\cos^2\frac{\vartheta}{2}+2W_1(Q^2,\nu)\sin^2\frac{\vartheta}{2}]\\
+    &\pdv{\sigma}{x}{y}=\frac{4\pi \alpha^2s}{Q^4}\qty[xy^2F_1(x,Q^2)+(1-y)F_2(x,Q^2)]\\
+    &F_1(x,Q^2)=MW_1(Q^2,\nu)=\frac{1}{2}\sum_je^2_jf_j(x)\\
+    &F_2(x,Q^2)=\nu W_2(Q^2,\nu)=x\sum_je^2_jf_j(x)
+    \end{align*}
+\end{itemize}
+\subsubsection{Ricaviamo $\pdv{\sigma}{x}{y}$}
+pippo baudo un grande (conti)
+\subsection{Modello quark-partoni}
