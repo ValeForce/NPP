@@ -988,4 +988,225 @@ Da cui la sezione d'urto risulta:
     =\frac{s\pi y4\alpha^2E(1-y)}{Q^4}\qty[\frac{F_2(x,y)}{Ey}+2F_1(x,y)\frac{xy}{2E(1-y)}]=\frac{4\pi \alpha^2}{Q^4}s[(1-y)F_2(x,y)+xy^2F_1(x,y)]
 \end{gather*}
 \subsection{Modello quark-partoni}
-I partoni sono la stessa cosa dei quark? Nel Modello Standard sì! Abbiamo il modello quark-partoni. Quale è il sig
+I partoni sono la stessa cosa dei quark? Nel Modello Standard sì! Abbiamo il modello quark-partoni. Quale è il significato dinamico di $F_{1,2}$? Possiamo misurarle? (certo che possiamo)
+\begin{itemize}
+    \item inizialmente abbiamo protone e neutrone con differenti funzioni di struttura;
+    \item la struttura può risultare differente in base al tipo di processo, ad esempio un elettrone può vedere $F_{1,2}$ diversa da quella che vedrebbe un neutrino;
+    \item dunque indichiamo ad esempio con $F_1^{ep}(x)$ la $F_1(x)$ del protone quando è sondato da un elettrone (in DIS);
+    \item tutte queste funzioni però non sono indipendenti: se parametrizzano davvero la struttura del nucleone, devono essere correlate.
+\end{itemize}
+Assumiamo che i nucleoni siano composti da tre quark, che chiamiamo \textit{quark di valenza}. Ciascuno di essi ha una certa distribuzione in $x$, identificata da $f_j^p(x)$ (ad esempio $u^p(x)$ è la distribuzione in $x$ del quark up all'interno del protone). Invece $u^p(x)\dd x$ è il numero di quark $u$ nel protone nell'intervallo $x$ e $x+\dd x$. \textbf{In generale $q^N(x)$ ($q=u,d,\bar u,\dots;\, N=p,n$) sono le PDF (parton distribution functions) e ci dicono quale è la struttura dei nucleoni ad alto $Q^2$}.
+\subsubsection{Proprietà varie}
+Valgono alcune relazioni ovvie (quelle con (*) sono provvisorie, vanno sistemate):
+\begin{itemize}
+    \item simmetra particella-antiparticella: $u^p(x)=\bar u^{\bar p}(x)$
+    \item invarianza dell'isospin e modello a quark:
+    \begin{align*}
+    &u^p(x)\approx d^n(x)\\
+    &u^p(x)\approx 2u^n(x)\\
+    &d^n(x)\approx 2d^p(x)
+    \end{align*}
+    \item (*) per i quark di valenza, $\bar u^p(x)$=0;
+    \item (*) per i quark di valenza, $\bar s^p(x)$=0;
+    \item (*) dunque
+    \begin{equation*}
+    F_2^{ep}(x)=x\sum_j f_j(x)=x\qty(\frac{4u^p(x)+d^p(x)}{9}   )
+    \end{equation*}
+    \item e diverse altre formule intuitive.
+\end{itemize}
+\subsubsection{Valenza e mare}
+Secondo il principio di indeterminazione, per piccoli intervalli la meccanica quantistica permette la creazione di quark-antiquark all'interno dei nucleoni. Negli adroni esistono anche particelle neutre, dette \textit{gluoni}. Dunque dobbiamo sistemare lo schema. Nei nucleoni ci sono tre tipi di particelle:
+\begin{itemize}
+    \item \textbf{i quark di valenza} con distribuzione $q_v(x)$, indicando che sono di valenza (tutti quelli indicati finora lo sono in realtà);
+    \item \textbf{i quark del mare} cioè le coppie quark-antiquark descritte dalle distribuzioni $q_s(x)$;
+    \item \textbf{i gluoni}, descritti dalle distribuzioni $g^{p,n}(x)$.
+\end{itemize}
+Chiaramente possiamo misurare solo le somme delle distribuzioni, ad esempio 
+\begin{align*}
+&u^p(x)=u^p_v(x)+u^p_s(x)\\
+&d^p(x)=d^p_v(x)+d^p_s(x)\\
+&\bar u^p(x)=\bar u^p_v(x)+\bar u^p_s(x)=\bar u^p_s(x)\\
+&s^p(x)=s^p_v(x)+s^p_s(x)=s^p_s(x)\\
+\end{align*}
+perché la valeza non è un osservabile, cioè il quark $u$ non sa se è di valenza o di mare.\\
+Le relazioni finali sono dunque:
+\begin{itemize}
+    \item vincolo particella-antiparticella: $u^p(x)=\bar u^{\bar p}(x)$
+    \item modello a quark e invarianza di isospin:
+    \begin{align*}
+    &u^p_v(x)\approx d^n_v(x)=u_v(x)\\
+    &d^p_v(x)\approx u^n_v(x)=d_v(x)
+    \end{align*}
+    \item dal modello a quark
+    \begin{align*}
+        &u^p_v(x)\approx 2u^n_v(x)\\
+        &d^n_v(x)\approx 2d^p_v(x)
+    \end{align*}
+    \item da meccanica quantisitca ed invarianza di isospin (trascurando masse dei quark)
+    \begin{equation*}
+    u^p_s(x)=\bar u^p_s(x)\approx d^p_s(x)=\bar d^p_s(x)\approx s_s^p(x)=\bar s^p_s(x)=q^p_s(x)\approx q_s^n(x)
+    \end{equation*}
+    \item e diverse altre intuitive.
+\end{itemize}
+\subsubsection{Struttura del protone e del neutrone}
+Mettendo tutto insieme e trascurando i quark più pesanti, ritroviamo:
+\begin{equation*}
+	\begin{split}
+    F_2^{ep}&=x\left\{\frac{4}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}=\\
+    &=x\left\{\frac{4}{9}\qty[u_v(x)+2q_s(x)]+\frac{1}{9}\qty[d_v(x)+2q_s(x)]+\frac{1}{9}\qty[q_s(x)] \right\}=\\
+    &=x\left\{\frac{4}{9}u_V(x)+\frac{1}{9}d_V(x)+\frac{4}{3}q_s(x)\right\}
+\end{split}
+\end{equation*}
+\begin{equation*}
+F_2^{en}(x)=x\left\{\frac{1}{9}u_V(x)+\frac{4}{9}d_V(x)+\frac{4}{3}q_s(x) \right\}\qq{perché da isospin} u_V=u_V^p\approx d^n_V
+\end{equation*}
+dunque
+\begin{equation*}
+\frac{F_2^{en}}{F_2^{ep}}=R_{np}=\begin{cases}
+1 &(a)\\
+\frac{4d_V(x)+u_V(x)}{4u_V(x)+d_V(x)} &(b)
+\end{cases}
+\end{equation*}
+$(a)$ se il mare domina, $(b)$ se la valenza domina (inoltre se$u_V\gg d_V\implies R_{np}\approx\frac{1}{4}$).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_bodek_rapp_F.png}
+    \caption{Da \textit{A.Bodek et al., PL 51B (1974) 417.} Rapporto $F_2^{en}/F_2^{ep}$ in funzione di $x$.}
+    %\label{}
+\end{figure}
+Le misure mostrano che il caso $(a)$ si ha a bassi $x$, mentre $(b)$ domina ad alti $x$. In altre parole ci sono molte coppie $q\bar q$ a basso impulso, mentre la valenza è più importante ad alti $x$.
+\subsubsection{Modello sempificato per $F_2(x)$}
+\begin{equation*}
+	\begin{cases}
+\sum\_{partoni}\int_{0}^{1}xf_j(x)\dd{x}<1\\
+\sum\_{partoni}\int_{0}^{1}f_j(x)\dd{x}=\text{non definita (ma larga)}
+\end{cases}
+\end{equation*}
+Abbiamo le regole della somma da conservazione di impulso:
+\begin{align*}
+&\int_{0}^{1}\dd{x}\qty[u^p(x)-\bar u^p(x)]=\int_{0}^{1}\dd {x}u^p_V(x)=2 \\
+&\int_{0}^{1}\dd{x}\qty[d^p(x)-\bar d^p(x)]=\int_{0}^{1}\dd{x}d^p_V(x)=1\\
+&\int_{0}^{1}\dd{x}\qty[s^p(x)-\bar s^p(x)]=0
+\end{align*}
+Queste sono le forme di $F_2(x)$ \textit{ipotetiche, non corrette}:
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.4\textwidth]{immagini/fig_F_2_forme.png}
+    \caption{Forme ipotetiche di $F_2(x)$.}
+    %\label{}
+\end{figure}
+\subsubsection{$F_2^{ep}-F_2^{en}(x)$}
+Dalle formule
+\begin{equation*}
+	\begin{cases}
+&F_2^{ep}=x\frac{\qty[4u_V(x)+d_V(x)+12q_s(x)]}9\\
+&F_2^{en}=x\frac{\qty[u_V(x)+4d_V(x)+12q_s(x)]}9
+\end{cases}
+\implies F_2^{ep}-F_2^{en}=x\frac{\qty[u_V(x)-d_V(x)]}3
+\end{equation*}
+inoltre se consideriamo dal modello a quark semplice $u_V(x)\approx2d_V(x)$ abbiamo
+\begin{equation*}
+    F_2^{ep}-F_2^{en}=x\frac{d_V(x)}3
+\end{equation*}
+cioè la differenza, che è un'osservabile, corrisponde approssimaivamente a circa $\frac{1}{3}x$ per la distribuzione in $x$ del singolo quakr di valenza ($u^p_V$ oppure $u^n_V$).
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\textwidth]{immagini/fig_diff_F_p_n.png}
+    \caption{\textit{Friedman, Kendall - Ann.Rev.Nucl.Sci. 22, 203 (1972)}. Differenza tra $F_2^{ep}$ e $F_2^{en}$ in funzione di $x$. Non si ha valenza per $x=0$.}
+    %\label{}
+\end{figure}
+\subsubsection{I gluoni}
+Gli integrali di $F_2(x)$ sono sia calcolabili che misurabili. Trascurando il piccolo contributo di $s\bar s$:
+\begin{gather*}
+    \int_{0}^{1}F_2^{ep}(x)=\frac{4}{9}\int_{0}^{1}x\qty[u^p(x)+\bar u^p(x)]\dd{x}+\frac{1}{9}\int_{0}^{1}x\qty[d^p(x)+\bar d^p(x)]\dd{x}=\frac{4}{9}f_u+\frac{1}{9}f_d\\
+    \int_{0}^{1}\dd{x}F_2^{en}(x)=\frac{4}{9}\int_{0}^{1}x\qty[d^p(x)+\bar d^p(x)]\dd{x}+\frac{1}{9}\int_{0}^{1}x\qty[u^p(x)+\bar u^p(x)]\dd{x}=\frac{4}{9}f_d+\frac{1}{9}f_u
+\end{gather*}
+dove $f_{u,d}$ sono le frazioni di impulso del protone portato dai quark $u$ e $d$ (e le loro antiparticelle).\\
+Da misure dirette otteniamo:
+\begin{equation*}
+    \begin{cases}
+        \int_{0}^{1}\dd{x}F_2^{ep}(x)=\frac{4}{9}f_u+\frac{1}{9}f_d\approx0.18\\
+        \int_{0}^{1}\dd{x}F_2^{en}(x)=\frac{4}{9}f_d+\frac{1}{9}f_u\approx0.12
+    \end{cases}\implies
+    \begin{cases}
+        f_u\approx0.36\\
+        f_d\approx0.18\\
+        f_u+f_d\approx0.54
+    \end{cases}
+\end{equation*}
+Questo risultato è molto importante! Abbiamo che $f_u+f_d\approx50\%$. Solo metà dell'impulso dei nucleoni è portato dai quark ed antiquark. Il resto è invisibile nella DIS da un leptone carico.\\
+Questa fu una delle prime (e \textit{molto} convincente) prove dell'esistenza dei \textbf{gluoni}, portatori della forza adronica. I gluoni sono neutri e non vedono l'interazione elettromagnetica.
+\subsubsection{Differenza tra $e^-p$ e $\nu p$ deep inelastic scattering}
+Calcoliamo $F_2^{eN}(x)$ per un bersaglio isoscalare\footnote{Serve isoscalare perché, specialmente nello scattering di $\nu$, il bersaglio debe essere pesante, cioè fatto da nuclei pesanti, ben riprodotti dalla approssimazione.}, cioè un bersaglio con $N=Z$, con protoni e neutroni quasi liberi (approssimazione a gas di Fermi):
+\begin{align*}
+&F_2^{ep}=x\left\{\frac{4}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}\\
+&F_2^{en}=x\left\{\frac{4}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}\\
+&\implies F_2^{eN}(x)=\frac{F_2^{ep}(x)+F_2^{en}(x)}2=x\left\{\frac{5}{18}\qty[u^p(x)+\bar u^p(x)+d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}\\
+&F_2^{eN}(x)\underset{\textnormal{trascuro }s}{\longrightarrow}\frac{5x}{18}\qty[u^p(x)+\bar u^p(x)+d^p(x)+\bar d^p(x)]
+\end{align*}
+Notiamo che nel deep inelastic scattering del neutrino la dinamica è diversa, ma la funzione di struttura effettiva per un bersaglio isoscalare risulta molto simile al caso elettromagnetico, a meno di un fattore:
+\begin{equation*}
+F_2^{\nu N}=x\qty[u^p(x)+\bar u^p(x)+d^p(x)+\bar d^p(x)]=\frac{F_2^{eN}}{5/18}
+\end{equation*}
+Il valore sperimentale è $\frac{F_2^{eN}}{F_2^{\nu N}}=0.29\pm0.02$, molto in accordo con la predizione $\frac{5}{18}=0.278$. Questo vuol dire che le funzioni di struttura dipendono dalle reali proprietà della struttura del nucleone e sono indipendenti dalla natura della interazione.
+\subsubsection{Adroni nello stato finale}
+\begin{itemize}
+    \item I quark liberi non esistono
+    \item Si osservano solo adroni $qqq$, $\bar q\bar q\bar q$ e $q\bar q$. Dunque è possibile avere qualche ricombinazione.
+    \item Questi effetti sono chiamati "interazioni di stato finale" (f.s.i).
+    \item Solitamente f.s.i. sono fattorizzate, cioè sono trattate come processi di "fase 2", che non interferiscono con la fase 1 ossia la DIS.
+    \item Ad energie maggiori e $Q^2$ maggiori, i quark nello stato finale si frammentano in jet adronici.
+\end{itemize}
+\subsubsection{Scaling violations}
+\begin{minipage}[t]{0.48\textwidth}
+    Gli esperimenti moderni hanno sondato il nucleone a valori molto alti di $Q^2$. Adesso gli elettroni sono spesso rimpiazzati dai muoni, che hanno il vantaggio di ottenere fasci intensi di impulso maggiore. Oppure c'è anche l'esperimento collider $e^-p$ di HERA.\\
+    Ci sono dati fino a $Q^2\approx10^5$ GeV$^2$: facendo il grafico di $F_2$ in funzione di $Q^2$ con $x$ fissato, appare qualche dipendenza da $Q^2$ incompatibile con lo scaling di Bjorken.
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_scal_viol_sketch.png}
+        %\caption{Violazioni dello scaling di Bjorken.}
+        %\label{}
+    \end{figure}
+\end{minipage}
+\hfill
+\begin{minipage}[t]{0.48\textwidth}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_scaling_viol.png}
+    %\caption{Violazioni dello scaling di Bjorken.}
+    %\label{}
+\end{figure}
+\end{minipage}
+Tuttavia questo effetto di scaling violation \textit{non} è dovuto a sottostrutture o nuova fisica, ma ad un cambio dinamico in $F_2$, ben comprenso in QCD. In QCD abbiamo 
+\begin{equation*}
+    \textnormal{alto }Q^2\implies
+    \begin{cases}
+        \textnormal{Possibilità di sondare dimensioni più piccole}\\
+        \textnormal{Più gluoni e }q\bar q\textnormal{ (anche heavy flavours forse)}\\
+        \textnormal{Meno quark di valenza}
+    \end{cases}
+\end{equation*}
+\subsubsection{Funzione di distribuzione dei partoni}
+Per gli esperimenti moderni con adronila conoscenza di $F_2^{p,n}$ è necessario per l'analisi dei dati.
+\begin{itemize}
+    \item Le funzioni di struttura sono un effetto delle forze adroniche. Tuttavia, essendo il risultato complicato di un numero non ben definito di corpi in un regime non perturbativo, non possono essere calcolate in modo affidabile con la tecnologia odierna (la QCD su reticolo è ancora una speranza).
+    \item È simile alla chimica di molecole complesse, che è un argomento difficile, sebbene le interazioni fondamentali siano [supposte essere] ben comprese.
+    \item Studiando le interazioni adroniche a grandi $Q^2$, lo stato iniziale è parametrizzato dalla sua funzione di struttura, come somma incoerente di tutti le PDF, incluso il gluone.
+    \item In pratica, tutti i calcoli (ad esempio la produzione del bosone di Higgs) devono utilizzare una parametrizzazione numerica delle PDF e tener conto delle loro \textit{incertezze}.
+    \item Le PDF sono probabilistiche, cioè il valore di $x$ è diverso per ogni evento!
+    \item Conseguenza: la conservazione del quadrimpulso a livello di partoni è un vincolo difficile nel calcolo!
+\end{itemize}
+\subsubsection{Piccolo excursus freestyle by Trick Homy}
+Al LHC studiano le collisioni $pp$, che sono particelle non elementari. Dunque ci aspettiamo che nelle collisioni ci siano anche gluoni ed antiquark, oltre ad i quark di valenza. Infatti il protone lo dobbiamo vedere come una miscela:
+$$
+p=uud+u\bar u+d\bar d+s\bar s+\dots+gg
+$$
+quindi possiamo avere collisioni di vario tipo $uu,u\bar u,u\bar d, gg\dots$ Dunque l'incertezza nel risultato deve tenere conto di queste cose.\\
+Scegliamo l'energia del fascio, ma non sappiamo la vera energia (nel centro di massa) a disposizione nei processi elementari. Dunque in realtà i 14 TeV @LHC non sono tutti "usati" per produrre nuove particelle. Considerando solo i quark di valenza già diventa mediamente $\frac{1}{6}$ la vera energia disponibile. Nella realtà non è neanche così in quanto c'è una distribuzione. Invece in collisione $e^+e^-$ tutta l'energia è disponibile. In collisioni adroniche l'energia disponibile è sempre inferiore dell'energia del fascio.
+\subsubsection{Riassunto sezioni d'urto}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_summ_cross_sec.png}
+    \caption{Riassunto delle sezioni d'urto.}
+    %\label{}
+\end{figure}
