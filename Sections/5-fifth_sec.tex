@@ -966,5 +966,26 @@ Nel riferimento ad impulso infinito (IMF) dove tutte le masse sono trascurabili 
     \end{align*}
 \end{itemize}
 \subsubsection{Ricaviamo $\pdv{\sigma}{x}{y}$}
-pippo baudo un grande (conti)
+Ricordiamo le formule di partenza ($s,M,\nu,x,y,Q^2$ sono Lorentz invarianti, mentre $E,E',\vartheta,\Omega$ sono nel riferimento del laboratorio):
+\begin{align*}
+&s=2EM;\quad\nu=E-E';\quad y=\frac{\nu}{E}=1-\frac{E'}{E};\quad E'=E(1-y);\\
+&Q^2=4EE'\sin^2\frac{\vartheta}{2}=4E^2(1-y)\sin^2\frac{\vartheta}{2};\\
+&x=\frac{Q^2}{2M\nu}=4E^2(1-y)\sin^2\frac{\vartheta}{2}\frac{1}{2MEy}=\frac{2E(1-y)}{My}\sin^2\frac{\vartheta}{2};\\
+&\sin^2\frac{\vartheta}{2}=\frac{Mxy}{2E(1-y)};\quad\cos^2\frac{\vartheta}{2}=1-\sin^2\frac{\vartheta}{2}\approx1 \\
+&\pdv{\sigma}{\Omega}{E'}=\frac{4\alpha^2E'^2}{Q^4}\qty(W_2\cos^2\frac{\vartheta}{2}+2W_1\sin^2\frac{\vartheta}{2})&&
+\end{align*}
+A questo punto ricaviamo lo jacobiano per la trasformazione $(\cos\vartheta,E')\to(x,y)$
+\begin{align*}
+&\pdv{}{\cos\vartheta}\qty(\sin^2\frac{\vartheta}{2})=\pdv{}{\cos\vartheta}\qty(\frac{1-\cos\vartheta}{2})=-\frac{1}{2}\implies\\
+& \implies \pdv{x}{\cos\vartheta}=\pdv{x}{\sin^2\frac{\vartheta}{2}}\pdv{\sin^2\frac{\vartheta}{2}}{\cos\vartheta}=\frac{2E}{-2M}\frac{1-y}{y}=-\frac{E}{M}\frac{1-y}{y};\qq{} \pdv{y}{E'}=-\frac{1}{E};\;\pdv{y}{\cos\vartheta}=\pdv{x}{E'}=0
+\end{align*}
+\begin{equation*}
+    J=\mdet{ \pdv{x}{\cos\vartheta}& \pdv{x}{E'} \\ \pdv{y}{\cos\vartheta} & \pdv{y}{E'}}=\frac{1-y}{My}
+\end{equation*}
+Da cui la sezione d'urto risulta:
+\begin{gather*}
+    \pdv{\sigma}{x}{y}=\frac{2\pi}{\abs{J}}\pdv{\sigma}{\cos\vartheta}{E'}=\frac{2\pi My}{1-y}\frac{4\alpha^2E^2(1-y)^2}{Q^4}\times\qty[\frac{F_2(x,y)}{\nu}\cos^2\frac{\vartheta}{2}+\frac{2F_1(x,y)}{M}\frac{Mxy}{2E(1-y)}]=\\
+    =\frac{s\pi y4\alpha^2E(1-y)}{Q^4}\qty[\frac{F_2(x,y)}{Ey}+2F_1(x,y)\frac{xy}{2E(1-y)}]=\frac{4\pi \alpha^2}{Q^4}s[(1-y)F_2(x,y)+xy^2F_1(x,y)]
+\end{gather*}
 \subsection{Modello quark-partoni}
+I partoni sono la stessa cosa dei quark? Nel Modello Standard sì! Abbiamo il modello quark-partoni. Quale è il sig
