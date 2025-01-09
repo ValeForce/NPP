@@ -281,3 +281,100 @@ Nel decadimento $\beta$ normalmente $E_0\approx1$ MeV. L'energia cinetica del pr
     \end{equation*}
     che è leggermente diversa da quella ottenuta dal $\mu$ dalla PDG. Vedremo più avanti il motivo di questa discrepanza (angoli di Cabibbo).
 \end{itemize}
+\subsubsection{Effetti di $m_W$ sull'accoppiamento}
+\begin{itemize}
+\item La costante di accoppiamento elettromagnetico $\alpha$ è proporzionale al quadrato della carica elettrica $e$:
+\begin{equation*}
+\alpha=\frac{e^2}{4\pi\varepsilon_0\hbar c}\approx\frac{1}{137}
+\end{equation*}
+\item Allo stesso modo l'intensità della corrente carica è $G_F$ (costante di Fermi), proporzionale al quadrato della carica debole $g$.
+\item Gli elementi di matrice delle transizioni sono proporzionali al quadrato della carica debole $g$ e al propagatore:
+\begin{equation*}
+M\_{fi}\propto g\frac{1}{Q^2+m_W^2}g\underset{Q^2\ll m_W^2}{\longrightarrow}\frac{g^2}{m_W^2}=G_F
+\end{equation*}
+\item La differenza rispetto al caso elettromagnetico sta nella massa del mediatore: mentre il $\gamma$ è privo di massa, il mediatore della corrente carica è il $W^\pm$ che ha massa e spin 1. Dunque il range delle correnti cariche è piccolo ($\frac{1}{m_W^2}$). 
+\item Al contrario del caso del fotone senza massa, per $Q^2$ piccoli il termine propagatore resta costante.
+\item Dunque la costante di Fermi $G_F$ ha dimensioni di $E^{-2}$. 
+\item Ed ha un piccolo valore a causa di $m_W$:
+\begin{equation*}
+\frac{G_F}{(\hbar c)^3}=\mathcal{O}(10^{-5})\textnormal{ GeV}^{-2}=\mathcal{O}(10^{-3})\textnormal{ fm}^2
+\end{equation*}
+\item Questo effetto oscura la somiglianza tra carica debole e carica elettromagnetica, che invece sono dello stesso ordine.
+\item Il valore più preciso di $G_F$ si è misurato a partire dal decadimento del $\mu\to \nu_\mu e^-\bar\nu_e$:
+    \begin{itemize}
+        \item Processo a bassa energia $\sqrt{Q^2}\approx m_\mu\ll m_W$
+        \item Si può approssimare come un processo puntuale a quattro fermioni, determinato dalla costante di Fermi $\approx \frac{g^2}{m_W^2}$
+        \item Ci sono di mezzo solo leptoni, dunque non c'è alcuna interazione adronica che porti ad altri processi, e.g. decadimento $\beta$.
+    \end{itemize}
+    \item Se $m_e\approx0$, allora $m_\mu$ è l'unica scala del decadimento e da analisi dimensionale abbiamo:
+    \begin{equation*}
+    \Gamma(\mu^- \to e^- \nu_\mu \bar\nu_e)=\frac{1}{\tau_\mu}\propto G_F^2m_\mu^5
+    \end{equation*}
+    \item Un calcolo corretto invece darebbe 
+    \begin{equation*}
+        \Gamma(\mu^- \to e^- \nu_\mu \bar\nu_e)=\frac{G_F^2m_\mu^5}{192\pi^3}(1+\varepsilon)
+    \end{equation*}
+    con $\varepsilon$ piccolo che tiene conto della massa dell'elettrone e correzioni radiative.
+    \item La massa del muone e la sua vita media sono note con molta precisione:
+    \begin{align*}
+    &m_\mu=105.658389\pm 0.000034\textnormal{ MeV} \\
+    &\tau_\mu=(2.197035\pm 0.0000040)\times10^{-6}\textnormal{ s}
+    \end{align*}
+    \item Da cui otteniamo $G_F=(1.16637\pm0.00001)\times10^{-5}\textnormal{ GeV}^{-2}$
+\end{itemize}
+\subsection{Universalità dei leptoni}
+L'interazione debole di corrente carica è la stessa per tutti i leptoni e quark? Condividono la stessa costante di accoppiamento $G_F$ per tutti i processi?\\
+L'universalità di CC è stata ampiamente studiata, è assolutamente vera per i leptoni, mentre per i quark serve qualche aggiustamento. 
+\subsubsection{Universalità elettrone-muone}
+\begin{itemize}
+    \item L'universalità per elettroni e muoni è stata studiata analizzando il decadimento leptonico del tauone.
+    \begin{equation*}
+    \Gamma(\tau\to l^- \bar\nu_l \nu_\tau)=\Gamma_l^\tau=\frac{g_\tau^2g_l^2}{m_W^2m_W^2}m_\tau^5\rho_l
+    \end{equation*}
+    dove $\rho_l$ è il fattore di spazio delle fasi.
+    \begin{equation*}
+    \textnormal{BR}(\tau\to l^- \bar\nu_l \nu_\tau)=\textnormal{BR}_l^\tau=\frac{\Gamma_l^\tau}{\Gamma\_{tot}^\tau}
+    \end{equation*}
+    Ne segue che 
+    \begin{equation*}
+    \frac{\Gamma_\mu^\tau}{\Gamma_e^\tau}=\frac{g_\mu^2\rho_\mu}{g_e^2\rho_e}\implies \frac{\textnormal{BR}_\mu^\tau}{\textnormal{BR}_e^\tau}\Big|_{\textnormal{misurato}}=\frac{17.36\pm0.05\%}{17.84\pm0.05\%}=0.974\pm0.004
+    \end{equation*}
+    e, tenendo conto di $\rho_\mu$ e $\rho_e$, otteniamo
+    \begin{equation*}
+    \frac{g_\mu}{g_e}=1.001\pm0.002
+    \end{equation*} 
+\end{itemize}
+\subsubsection{Universalità muone-tauone}
+Le misure per l'universalità di  $\mu-\tau$ sono simili $\left[\text{BR}_x = \Gamma_x / \Gamma_\text{tot} = \tau \Gamma_x \right]$:
+
+\[
+\text{BR}(\mu^- \to e^- \overline{\nu}_e \nu_\mu) \approx 100\% \, (\text{sperimentalmente});
+\]
+
+\[
+\frac{\Gamma(\mu^- \to e^- \overline{\nu}_e \nu_\mu)}{\Gamma(\tau^- \to e^- \overline{\nu}_e \nu_\tau)} =
+\frac{\tau_\tau}{\tau_\mu} 
+\frac{\text{BR}(\mu^- \to e^- \overline{\nu}_e \nu_\mu)}{\text{BR}(\tau^- \to e^- \overline{\nu}_e \nu_\tau)};
+\]
+
+La predizione è:
+
+\[
+\frac{\Gamma(\mu^- \to e^- \overline{\nu}_e \nu_\mu)}{\Gamma(\tau^- \to e^- \overline{\nu}_e \nu_\tau)} =\frac{g_e^2}{g_e^2}\frac{g_\mu^2}{g_\tau^2}\frac{m_\mu^5}{m_\tau^5}\frac{\rho_\mu}{\rho_\tau} =
+\frac{g_\mu^2}{g_\tau^2}
+\frac{m_\mu^5 \rho_\mu}{m_\tau^5 \rho_\tau},
+\]
+
+\[
+\frac{g_\mu^2}{g_\tau^2} =
+\frac{\tau_\tau}{\tau_\mu}
+\frac{1}{\text{BR}(\tau^- \to e^- \overline{\nu}_e \nu_\tau)}
+\frac{m_\tau^5 \rho_\tau}{m_\mu^5 \rho_\mu};
+\]
+
+Dalle misure e dai calcoli otteniamo infine:
+
+\[
+\frac{g_\mu}{g_\tau} \Big|_\text{misurato} = 1.001 \pm 0.003.
+\]
+\subsubsection{Decadimento del $\tau$}
