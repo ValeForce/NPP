@@ -154,3 +154,130 @@ Per ristabilire le varie leggi di conservazione, Pauli nel 1930 ipotizzò l'esis
     \item Abbiamo tre tipi di neutrini. Recentemente si sono scoperte le oscillazioni in flavour del neutrino che implicano che la loro massa è non nulla, sebbene sia molto piccola e ancora non misurata.
     \item Quello di Pauli era un tentativo disperato di spiegare lo spettro continuo delle emissioni $\beta$. Pauli lo chiamò "neutrone", ma poi questo nome fu dato alla particella scoperta da Chadwick nel 1932 un anno dopo. Come tutti a quell'epoca, Pauli credette che se un nucleo radioattivo emette particelle, queste devono esistere nel nucleo prima dell'emissione.
 \end{itemize}
+\subsubsection{Approccio di Fermi per la sua teoria}
+Per formulare la sua teoria, Fermi prese come modello quello che già si sapeva ossia la QED (interazione elettromagnetica). \\
+Consideriamo lo scattering elettrone-protone:\\
+\begin{minipage}{0.3\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_electron_proton_scattering.png}
+        %\caption{Scattering elettrone-protone.}
+        %\label{fig:electron_proton_scattering}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.65\textwidth}
+    Dal diagramma di Feynman, l'elemento di matrice sarà
+    \begin{equation*}
+    M\_{fi}\approx-\frac{1}{q^2}J_\mu(e)J^\mu(p)
+    \end{equation*} 
+    dove $q$ è il propagatore. In generale si scrive 
+    \begin{equation*}
+    M\_{fi}\approx\qty(\bar u_e\sqrt\alpha\gamma^\mu u_e)\frac{g_{\mu\nu}}{q^2}\qty(\bar u_p\sqrt\alpha\gamma^\nu u_p)
+    \end{equation*} 
+\end{minipage}
+Dunque a partire da ciò, Fermi ipotizzo che l'interazione debole fosse puntiforme: $n+\nu\to p+e^-$\\
+\begin{minipage}{0.3\textwidth}
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=\textwidth]{immagini/fig_diag_weak_int_fermi.png}
+        %\caption{Interazione debole puntiforme.}
+        %\label{fig:weak_interaction}
+    \end{figure}
+\end{minipage}
+\begin{minipage}{0.65\textwidth}
+    Dunque stavolta non c'è propagatore!\\
+    \begin{equation*}
+    M\_{fi}\approx G\qty(\bar u_p\gamma^\mu u_n)\qty(\bar{u}_e\gamma_\mu u_\nu)
+    \end{equation*}
+    ed è una interazione vettore-vettore perché "$\gamma^\mu$ è di dimensione 4". \\
+    La costante $G$ è nota come costante di Fermi ed è legata al quadrato della \textit{carica debole}.
+\end{minipage}
+Si ha interazione tra due correnti cariche: si possono avere correnti adroniche e correnti leptoniche. Al solito $u_p$ distrugge la particella $p$ mentre $\bar{u}_p$ crea la particella $p$. Ad alte energie la teoria di Fermi non funziona più.
+\subsubsection{Decadimento nucleare $\beta$}
+La probabilità di transizione su unità di tempo si può ricavare con la regola d'oro di Fermi:
+\begin{equation*}
+W=\frac{2\pi}{\hbar}G^2\abs{M}^2\dv{N}{E_0}\qq{}\dv{N}{E_0}:\textnormal{ fattore dello spazio delle fasi}
+\end{equation*}
+Il termine $\abs{M}^2$ è il quadrato dell'elemento di matrice. Si determina integrando su tutti gli angoli delle particelle finali, sommando su tutti i possibili stati di spin finali e mediando sugli stati di spin iniziali. Il valore risultante è una costante dell'ordine di uno.\\
+Con $E_0$ indichiamo l'energia disponibile nello stato finale, uguale al $Q$ della reazione. Lo spread energetico $\dd{E_0}$ è presente perché l'energia dello stato iniziale è indeterminata dal fatto che ha vita media finita (principio di indeterminazione).\\
+Nel decadimento $\beta$ normalmente $E_0\approx1$ MeV. L'energia cinetica del protone è dell'ordine di $10^{-3}$ MeV e può essere trascurata. Il protone serve solo ad assicurarci che ci sia la conservzione dell'impulso. Dunque possiamo considerare suppore che l'energia finale sia suddivisa tra neutrino ed elettrone $E_0=E_e+q_\nu$.
+\subsubsection{Spazio delle fasi}
+\begin{itemize}
+    \item Il numero di stati disponibili per un elettrone di impulso tra $p$ e $p+\dd{p}$ confinato nel volume $V$ entro un angolo solido $\dd{\Omega}$ è:
+    \begin{equation*}
+    \dd{N}=\frac{V\Omega}{\qty(2\pi)^3\hbar^3}p^2\dd{p}
+    \end{equation*}
+    \item Normalizziamo la funzione d'onda con $V=1$, e sommiamo su tutto l'angolo solido ignorando lo spin. Otteniamo
+    \begin{equation*}
+    \dd{N_e}=\frac{4\pi p^2\dd{p}}{\qty(2\pi)^3\hbar^3}\qq{}\dd{N_\nu}=\frac{4\pi q_\nu^2\dd{q_\nu}}{\qty(2\pi)^3\hbar^3} 
+    \end{equation*}
+    \item I due fattori di spazio delle fasi sono indipendenti in quanto non c'è correlazione tra $q$ e $p$, visto che nel decadimento a tre corpi il protone assorbirà la differenza di impulso. Il protone ha impulso fissato, dato da $q$ e $p$, così che il protone non ha fattore di spazio delle fasi.
+    \item Il numero di stati finale è 
+    \begin{equation*}
+    \dd{N}=\dd{N_e}\dd{N_\nu}=\frac{\qty(4\pi)^2}{\qty(2\pi)^6\hbar^6}p^2q_\nu^2\dd{p}\dd{q_\nu}
+    \end{equation*}
+    \item Per un dato valore di energia dell'elettrone $E$, l'energia del neutrino $E_\nu$ p fissata, così come il suo impulso:
+    \begin{equation*}
+    q_\nu=E_\nu=E_0-E\implies\dd{q_\nu}=\dd{E_0}\implies\dv{N}{E_0}=\dv{N}{q_\nu}=\frac{1}{4\pi^4\hbar^6}p^2(E_0-E)^2\dd{p}
+    \end{equation*}
+    \item Una volta che abbiamo integrato la probabilità di transizione $W$ su tutto l'angolo solido, $\abs{M}^2$ è uguale ad una costante, dunque lo spettro energetico dell'elettrone dipende soltanto dal fattore di spazio delle fasi:
+    \begin{equation*}
+    N(p)\dd{p}\propto p^2(E_0-E)^2\dd{p}
+    \end{equation*}
+\end{itemize}
+\subsubsection{Kurie plot}
+\begin{itemize}
+    \item Se facciamo il grafico di $\qty(\frac{N(p)}{p^2})^{\frac{1}{2}}$ in funzione dell'energia dell'elettrone, otteniamo una retta che interseca l'asse $x$ in $E=E_0$. Questo plot fu sviluppato da Kurie.
+    \item Sperimentalmente dobbiamo includere un fattore correttivo $F(Z,p)$ per tenere conto dell'interazione coulombiana tra elettrone e nuclei.
+    \item Se il neutrino avesse massa, i suoi effetti modificherebbero la distribuzione:
+    \begin{equation*}
+    N(p)\dd{p}\propto p^2(E-E_0)^2\sqrt{1-\qty(\frac{m_\nu}{E_0-E})^2}\dd{p}
+    \end{equation*}
+    \item Il plot di Kurie è modificato in modo che la curva intersechi l'asse $x$ in $E=E_0-m_\nu$. Questo è un tentativo di misurare la massa del neutrino elettronico... Sfortunatamente in questa regione ci sono pochi eventi per difficoltà sperimentali/tecniche. Al momento abbiamo solo un limite superiore
+    \begin{equation*}
+    m_\nu\leq2.2 \eV
+    \end{equation*}
+\end{itemize}
+\subsubsection{La regola di Sargent}
+\begin{itemize}
+    \item Il rate totale di decadimento si ottiene integrando lo spettro $N(p)\dd{p}$. Si può fare analiticamente, tuttavia considerando l'elettrone relativisticamente (cioè quasi sempre) possiamo approssimare $p\approx E$ ed ottenere una formula semplice:
+    \begin{equation*}
+    N\propto\int_{0}^{E_0}E^2(E_0-E)^2\dd{E}\propto E_0^5
+    \end{equation*}
+    \item Il rate di decadimento è proporzionale alla quinta potenza dell'energia disponibile nel processo. Questa è la regola di Sargent. 
+    \item Considerando tutti i fattori numerici nel processo, otteniamo 
+    \begin{equation*}
+        W=\frac{G^2\abs{M}^2E_0^5}{60\pi^3(\hbar c)^6\hbar}\qq{Per }E_0\gg m_e
+    \end{equation*}
+    \item La costante di Fermi $G$ si può ricavare da misure di tempo di vita media di decadimenti $\beta$ (e qualche speculazione teorica, vedi angoli di Cabibbo) o in modo più preciso dalla vita media del $\mu$.
+    \item Dalla PDG otteniamo $\frac{G}{(\hbar c)^3}=1.16637(1)\cdot10^{-5}\textnormal{ GeV}^{-2}$
+    \item Sostituendo valori numerici otteniamo $\frac{1}{\tau}=W=\frac{1.11}{10^4}\abs{M}^2E_0^5s^{-1}$\qq{($E_0$ in MeV)}
+    \item Per esempio se $E_0\approx100$ MeV come nel decadimento del muone e $\abs{M}^2=1$, otteniamo
+    \begin{equation*}
+    \tau_\mu=\frac{1}{W}\approx10^{-6}s\qq{$\tau_\mu=2.2\mu$s}
+    \end{equation*}
+    \item La dipendenza da $E_0^5$ spiega il grande range di tempi di vita media dei decadimenti deboli.
+\end{itemize}
+\subsubsection{Decadimento nucleare $\beta$}
+\begin{itemize}
+    \item Il decadimento $\beta$ si distingue in transizioni permesse e proibite.
+    \item Quelle permesse sono le più comuni e caratterizzate da lfatto che l'elettrone ed il neutrino emessi non portano al cun momento angolare spaziale, cioè siamo in uno stato $s$ ($L=0$). Questo è giustificato da lfatto che i due leptoni hanno energie di circa un MeV.
+    \item La transizione con $L=1$ è detta \textit{prima proibita}, con $L=2$ \textit{seconda proibita}, etc. Hanno vite medie molto più lunghe di quella permessa.
+    \item Poiché $e$ e $\nu$ hanno spin 1/2, la variazione di spin del nucleo può essere 0 o 1. Le transizioni con $\Delta J=0$ sono dette di Fermi, con $\Delta J=1$ di Gamow-Teller.
+    \item Poiché elettrone e neutrino hanno $L=0$, non c'è alcun cambio nel momento angolare del nucleo, dunque la parità non varia. Il nucleo esegue uno spin flip per transizioni di Gamow-Teller.
+\end{itemize}
+\subsubsection{La costante di Fermi}
+\begin{itemize}
+    \item Il rate di decadimento può essere scritto in modo differente rispetto alla regola di Sargent. Scriviamo esplicitamente la massa del protone, includiamo il fattore dello spazio delle fasi e la correzione coulombiana $F(Z,p)$ in una funzione adimensionata $f(\pm Z,E_0/m_e)$ che può essere calcolata analiticamente.
+    \begin{align*}
+    &\frac{1}{\tau}=W=\frac{(mc^2)^5}{2\pi^3\hbar(\hbar c)^6}G^2\abs{M}^2f(\pm Z,E_0)\\
+    & G^2\abs{M}^2=\frac{\textnormal{cost.}}{f\tau}\qq{(cost.=)}\frac{2\pi^3}{m^5}
+    \end{align*}
+    \item Al contrario delle grandi variazioni di vita medie a causa della forte dipendenza di $f$ da $p_e^{\textnormal{max}}$, il prodotto $G^2\abs{M}^2$ è circa uguale in tutti i decadimenti.
+    \item Tuttavia si osserva una piccola differenza nel tipo di transizione nucleare: Fermi, Gamow-Teller o miste.
+    \item Se consideriamo una transizione di Fermi pura, otteniamo
+    \begin{equation*}
+    \frac{G}{(\hbar c)^3}=1.140(2)\cdot10^{-5}\textnormal{ GeV}^{-2}
+    \end{equation*}
+    che è leggermente diversa da quella ottenuta dal $\mu$ dalla PDG. Vedremo più avanti il motivo di questa discrepanza (angoli di Cabibbo).
+\end{itemize}
