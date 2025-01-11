@@ -451,5 +451,57 @@ L'esperimento di Madame Wu scoprò la violazione di parità col decadimento del 
 \begin{itemize}
     \item Si allineano gli spin nucleari con un campo magnetico esterno. 
     \item Per una certa temperatura, l'energia cinetica vale $E_T=k_bT$; il campo magnetico agisce come $E_B=\va{\mu}\vdot\va{B}$. Si ha un buon allineamento se $E_B\geq E_T$ (e.g. $T\approx0.01$ K, $B\approx20$ T).
-    \item Perché serve un campo magnetico così elevato?
+    \item Perché il campo magnetico è così elevato? loro usarono un campo magnetico esterno di qualche centesimo di Tesla. Questo polarizza gli elettroni del materiale e poiché
+    \begin{equation*}
+        \frac{\mu_e}{\mu_N}=\frac{m_N}{m_e}\approx2000
+    \end{equation*}
+    ne risulta un forse campo magnetico di qualche Tesla.
+    \item Perché una temperatura così bassa? Perché tutto è all'interno di un criostato che produce $T\approx0.01$ K mediante la depolarizzazione adiabatica.
+    \item Per operare si spegne il campo magnetico in un certo istante $t_0$, si inizia a contare in funzione del tempo e col passare di esso la polarizzazione cessa di esserci (qualche minuto) e l'effetto scompare.
+    \item Si ha una catena di decadimenti a partire dal cobalto 60:
+    \begin{alignat*}{3}
+    &^{60}_{27}\mathrm{Co}(J^P=5^+)   &\;\to\;&   ^{60}_{28}\mathrm{Ni}^{**}(J^P=4^+)+e^-+\bar{\nu}_e \\
+    &^{60}_{28}\mathrm{Ni}^{**}(J^P=4^+)   &\;\to\;&   ^{60}_{28}\mathrm{Ni}^{*}(J^P=2^+)+\gamma\,(1.173\,\mathrm{MeV}) \\
+    &^{60}_{28}\mathrm{Ni}^{*}(J^P=2^+)    &\;\to\;&   ^{60}_{28}\mathrm{Ni}(J^P=0^+)+\gamma\,(1.332\,\mathrm{MeV})
+    \end{alignat*}
+    \item Il primo decadimento è debole, mentre gli altri due sono elettromagnetici (dunque conservano la parità); tutti e tre conservano il momento angolare. 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.6\textwidth]{immagini/fig_plot_wu.png}
+        \caption{In A vediamo i due fotoni se sono perpendicolari a $\va{B}$; in B se sono paralleli o antiparalleli; in C vediamo gli elettroni se sono paralleli (o antiparalleli) a $\va{B}$.}
+        %\label{fig:plot_wu}
+    \end{figure}
+    \item L'asimmetria in $t=t_0$ poi scompare; $A>B$ a causa della polarizzazione iniziale (la si misura per usarla successivamente). $A$ e $B$ non dipendono dalla direzione di $\va{B}$ (l'interazione elettromagnetica conserva la parità).
+    \item $C$ dipende dalla direzione $\va{B}$, con un rate uguale a quello della polarizzazione: la parità è violata. 
+\end{itemize}
+Si può reinterpretare l'esperimento con il fatto che esistono solo particelle sinistre.
+\begin{itemize}
+    \item La conservazione del momento angolare e la polarizzazione forzano la direzione dello spin degli elettroni.
+    \item Se lo spin è parallelo all'impulso abbiamo elicità positiva che è proibita ($\propto 1-\beta_e$) con $\beta\approx0.6$.
+    \item Se lo spin è antiparallelo all'impulso abbiamo elicità negativa che è permessa.
+    \item Ne concludiamo che la direzione opposta a $\va{B}$ è preferita e che il rate $W$ degli elettroni dipende dal $\cos\vartheta$, l'angolo tra il campo magnetico e la velocità dell'elettrone:
+    \begin{equation*}
+    W(\cos\vartheta)\propto1-P\beta_e\cos\vartheta
+    \end{equation*}
+\end{itemize}
+\subsubsection{Commento di Feynman}
+Immagina di parlare con un marziano, o con qualcuno molto lontano, tramite telefono. Non ci è permesso inviargli alcun campione concreto da esaminare; per esempio, se potessimo inviare luce, potremmo mandargli luce polarizzata circolarmente destrorsa. [...] Ma non possiamo dargli niente, possiamo solo parlargli.  
+[Feynman spiega come comunicare: matematica, fisica classica, chimica e biologia sono semplici.]  
+[...] "Ora metti il cuore sul lato sinistro." Lui dice: "Ehm... il lato sinistro?" [...] Possiamo spiegare a un marziano dove mettere il cuore dicendo: "Ascolta, costruisci un magnete, [... ripeti l'esperimento di Wu ...]; poi, la direzione in cui la corrente scorre attraverso le bobine è quella che noi chiamiamo destra."  
+[...] Tuttavia, la materia destrorsa si comporta allo stesso modo dell'antimateria destrorsa? O la materia destrorsa si comporta come l'antimateria sinistrorsa? Gli esperimenti sul decadimento beta, usando il decadimento del positrone invece di quello dell'elettrone, indicano che questa è l'interconnessione: la materia destrorsa funziona nello stesso modo dell'antimateria sinistrorsa.  
+[...] Formuliamo una nuova regola che dice che la materia destrorsa è simmetrica all'antimateria sinistrorsa. \\ 
+Quindi, se il nostro marziano è fatto di antimateria e gli diamo istruzioni per costruire questo modello destrorso come noi, ovviamente il risultato sarà invertito. Cosa accadrebbe se, dopo molte conversazioni avanti e indietro, insegnassimo l'uno all'altro a costruire astronavi e ci incontrassimo a metà strada nello spazio vuoto? [...]  
+Beh, se lui tende la sua mano sinistra... attenzione!  \\
+Dalle "\textit{Lectures on Physics}" di Feynman, Volume 1, Capitolo 52: "\textit{Symmetry in Physical Laws}".\\ 
+
+Osservazioni:
+- La simmetria di cui parla è "CP" e NON semplicemente "P" o "C".  
+- Tuttavia, anche CP è violata (vedi il caso del \(K^0\)).
+\subsection{Elicità del neutrino elettronico}
+Nel 1958 Goldhaber, Grodzins e Sunyar misurarono l'elicità del neutrino elettronico.
+\begin{itemize}
+    \item Una cruciale conferma della teoria particella-antiparticella sinistra-destra, ma l'elicità di neutrino ed antineutrino non erano ancora state misurate.
+    \item L'europio metastabile decade per cattura $K$ in stato eccitato di Samario più un neutrino elettronico, la cui elicità è misurata da questo esperimento.
+    \item Il samario eccitato decade nel suo stato fondamentale con emissione di un fotone.
+    \item Affinché tale $\gamma$ 
 \end{itemize}
