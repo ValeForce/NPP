@@ -498,10 +498,145 @@ Osservazioni:
 - La simmetria di cui parla è "CP" e NON semplicemente "P" o "C".  
 - Tuttavia, anche CP è violata (vedi il caso del \(K^0\)).
 \subsection{Elicità del neutrino elettronico}
-Nel 1958 Goldhaber, Grodzins e Sunyar misurarono l'elicità del neutrino elettronico.
+Nel 1958 Goldhaber, Grodzins e Sunyar misurarono l'elicità del neutrino elettronico \(\nu_e\).
 \begin{itemize}
     \item Una cruciale conferma della teoria particella-antiparticella sinistra-destra, ma l'elicità di neutrino ed antineutrino non erano ancora state misurate.
-    \item L'europio metastabile decade per cattura $K$ in stato eccitato di Samario più un neutrino elettronico, la cui elicità è misurata da questo esperimento.
-    \item Il samario eccitato decade nel suo stato fondamentale con emissione di un fotone.
-    \item Affinché tale $\gamma$ 
+    \item L'europio metastabile decade per cattura $K$ in stato eccitato di Samario più un neutrino elettronico, la cui elicità è misurata in questo esperimento.
+    \item Il samario eccitato decade nel suo stato fondamentale con emissione di un $\gamma$ ($\gamma_1$ in figura).
+    \item Per tale \(\gamma\), la trasmissione nella materia dipende dagli spin degli elettroni; quindi viene applicato un forte campo magnetico (\(\va{B}\)) per polarizzare il ferro.  
+    \item I fotoni \(\gamma\) vengono utilizzati per eccitare un altro nucleo di \(\text{Sm}\); solo i fotoni \(\gamma\) della catena precedente possono farlo, producendo un altro \(\gamma\) ($\gamma_2$ in figura).
+    \item I fotoni risultanti vengono rivelati.
+    \item Alla fine si ottiene 
+    \begin{equation*}
+    h(\nu_e)=-1.0\pm0.3
+    \end{equation*}
+    consistente con la teoria particella sinistra e antiparticella destra.
 \end{itemize}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_exp_nu_hel.png}
+\end{figure}
+\subsubsection{Da europio a samario a $\gamma$}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{immagini/fig_schema_eu_sm_gamma.png}
+    \caption{}
+    \label{fig:schema_eu_sm_gamma}
+\end{figure}
+\begin{itemize}
+    \item Il neutrino è monocromatico con energia di circa 900 keV.
+    \item La vita media del samario eccitato è di $10^{-14}$ s, abbastanza breve da trascurre ogni altra interazione.
+    \item L'energia di eccitazione del samario è di 961 keV, vicina all'energia del neutrino.
+    \item \textit{Solo} per i $\gamma$ nella direzione di rinculo del samario eccitato, la conservazione del momento angolare implica che l'elicità del samario eccitato sia uguale a quella del neutrino che è uguale a quella del $\gamma$ che è $\pm1$ (vedi \autoref{fig:schema_eu_sm_gamma}).
+    \item Dunque il metodo consiste in:
+    \begin{itemize}
+        \item Non puoi misurare direttamente lo spin del neutrino.
+        \item Selezioni e misuri i $\gamma$ emessi antiparallelamente al neutrino, cioè nella stessa direzione del samario eccitato
+        \item Misuri il loro spin
+        \item Ricostruisci l'elicità del neutrino.
+    \end{itemize}
+\end{itemize}
+\subsubsection{Scattering risonante}
+\begin{itemize}
+    \item Per i fotoni di 961 keV, l'interazione dominante con la materia è l'effetto Compton; la sezione d'urto Compton dipende dallo spin: la trasmissione è maggiore quando lo spin di \(\gamma\) ed \(e^-\) sono paralleli.  
+    \item Pertanto, un forte e reversibile campo magnetico (\(\va{B}\)) (ferro saturo) seleziona i \(\gamma\) polarizzati, producendo un'asimmetria tra le due orientazioni di \(\va{B}\).
+    \item  È necessario selezionare solo i \(\gamma\) polarizzati in accordo con lo spin del \(\nu_e\), cioè quelli prodotti in direzione opposta al \(\nu_e\). Per fare ciò si utilizza il metodo della diffusione risonante nell'anello di \(Sm_2O_3\) (ossido di samario):  
+    \[
+    \gamma_1 + {}^{152}\text{Sm} \to {}^{152}\text{Sm}^* \to {}^{152}\text{Sm} + \gamma_2.
+    \]  
+    \item Un nucleo a riposo, eccitato con un'energia \(E_0\), decade emettendo un \(\gamma\); l'energia del \(\gamma\) nel laboratorio è ridotta di un fattore \(\frac{E_0}{2M}\).
+    \item In generale, l'energia di \(\gamma_1\) è degradata e \textbf{non sufficiente} per eccitare il Sm (cioè per produrre \(\gamma_2\)).  
+    \item Tuttavia, se \(\gamma_1\) è antiparallelo al \(\nu_e\), il nucleo \({}^{152}\text{Sm}^*\) subisce un rinculo opposto al \(\nu_e\). L'effetto Doppler risultante nella direzione corretta fornisce a \(\gamma_1\) l'energia aggiuntiva necessaria (\(E_\nu \approx E_\gamma\)).  
+    \item In conclusione, vengono rivelati solo i \(\gamma\) antiparalleli ai \(\nu_e\), ma questi \(\gamma\) trasportano l'informazione sull'elicità del \(\nu_e\).
+\end{itemize}
+\subsubsection{Cinematica (conti)}
+Consideriamo un decadimento $M\to m+\gamma$ con $E_0=M-m$. Nel riferimento del centro di massa ($M$):
+\[
+\begin{cases}
+    M      &= (M,\;0,\;0,\;0)\\
+    \gamma &= (E_\gamma,\;E_\gamma,\;0,\;0)\\
+    m      &= (M-E_\gamma,\;-E_\gamma,\;0,\;0)
+\end{cases}
+\]
+\begin{align*}
+&m^2=(M-E_\gamma)^2-E_\gamma^2=M^2-2ME_\gamma\implies\\
+&\implies E_\gamma=\frac{M^2-m^2}{2M}=\frac{M+m}{2M}E_0=\frac{M+M-E_0}{2M}E_0=E_0\qty(1-\frac{E_0}{2M})
+\end{align*}
+Ne segue che se il nucleo eccitato $M$ è a riposo, l'energia del fotone nel laboratorio è minore dell'energia di eccitazione $E_0$. Dunque non basta per eccitare un altro nucleo a riposo. Affinché questo avvenga, il nucleo si deve muovere nella direzione giusta e con l'energia appropriata.
+\subsection{Decadimento debole: i \texorpdfstring{$\pi$}{π}}
+\begin{itemize}
+    \item Il \(\pi^\pm\) è l'adrone più leggero, quindi può decadere solo tramite processi deboli carichi semileptonici (\(CC\)), come (considerando solo \(\pi^+\); per \(\pi^-\), applicare \(C\)):  
+    \[
+    \pi^+ \to \mu^+ \nu_\mu, \quad \pi^+ \to e^+ \nu_e
+    \]
+    \item In realtà, il decadimento avviene quasi esclusivamente in \(\mu\): il decadimento elettronico è soppresso da un fattore \(\approx 8000\), non comprensibile, anche perché il decadimento \((\pi \to e)\) è favorito dallo spazio delle fasi.  
+    \item La ragione risiede nell'elicità:
+    \begin{itemize}
+        \item nel sistema di riferimento del \(\pi^+\), gli \textit{impulsi} di \(\ell^+\) e \(\nu_\ell\) devono essere \textit{opposti};
+        \item poiché il \(\pi^+\) ha \textit{spin} \(0\), gli spin di \(\ell^+\) e \(\nu\) devono essere anch'essi \textit{opposti};
+        \item quindi, le due particelle devono avere la \textit{stessa elicità};
+        \item poiché il \(\nu\) (una particella quasi priva di massa) deve avere elicità negativa, il \(\ell^+\) (un'antiparticella con massa) è costretto anch'esso ad avere elicità negativa;
+        \item di conseguenza, la transizione è soppressa da un fattore \((1 - \beta_\ell)\);
+        \item il \(e^+\) è ultrarelativistico (\(p_e \approx m_\pi / 2 \gg m_e\)), mentre il \(\mu^+\) ha un \(\beta\) più piccolo;
+        \item quindi, il decadimento \(\pi \to e\) è \textit{fortemente soppresso} rispetto a \(\pi \to \mu\).
+    \end{itemize}
+\end{itemize}
+\subsubsection{Cinematica (conti) più generale}
+Decadimento \( M \to a + b \). Calcola \( p = |\vec{p}_a| = |\vec{p}_b| \) nel riferimento del centro di massa ($M$):  
+
+\[
+\text{CM:} \quad
+\begin{cases}
+(M, 0, 0, 0) \\
+\left(\sqrt{m_a^2 + p^2}, p, 0, 0 \right) \\
+\left(\sqrt{m_b^2 + p^2}, -p, 0, 0 \right)
+\end{cases}
+\]
+Da conservazione di energia  abbiamo 
+\[
+M = \sqrt{m_a^2 + p^2} + \sqrt{m_b^2 + p^2};
+\]
+
+\[
+2 \sqrt{m_a^2 + p^2} \sqrt{m_b^2 + p^2} = M^2 - m_a^2 - m_b^2 - 2p^2;
+\]
+
+\[
+4 \left[ m_a^2 m_b^2 + p^2 \left( m_a^2 + m_b^2 \right) + p^4 \right] 
+= \left( M^2 - m_a^2 - m_b^2 \right)^2 + 4 p^4 - 4p^2 \left( M^2 - m_a^2 - m_b^2 \right);
+\]
+
+\[
+4p^2 \left[ \left( m_a^2 + m_b^2 \right) + \left( M^2 - m_a^2 - m_b^2 \right) \right] 
+= -4m_a^2 m_b^2 + \left( M^2 - m_a^2 - m_b^2 \right)^2;
+\]
+
+\[
+4p^2 M^2 = \left( M^2 - m_a^2 - m_b^2 \right)^2 - 2m_a^2 m_b^2 
+\implies
+\]
+
+\[
+p^2 = \frac{\left[ M^2 - (m_a - m_b)^2 \right] \left[ M^2 - (m_a + m_b)^2 \right]}{4M^2}.
+\]
+
+\begin{enumerate}
+    \item[\textbf{a)}] \( m_a = m_b = m \):  
+    \[
+    p^2 = \frac{M^2 - 4m^2}{4}, \quad p = \frac{(M + 2m)(M - 2m)}{4};
+    \]  
+    e.g. \( K^0 \to \pi^0 \pi^0 \).
+
+    \item[\textbf{b)}] \( m_a=m_b = 0 \):  
+    \[
+    p^2 = \frac{M^2}{4}, \quad p = \frac{M}{2};
+    \]  
+    e.g. \( \pi^0 \to \gamma \gamma, \; H \to \gamma \gamma \).
+
+    \item[\textbf{c)}] \( m_a = m, \; m_b = 0 \):  
+    \[
+    p = \frac{M^2 - m^2}{2M} = \frac{M}{2} \left[ 1 - \left( \frac{m}{M} \right)^2 \right];
+    \]  
+    e.g. \( \pi^+ \to \mu^+ \nu_\mu, \; W^* \to W \gamma \).
+\end{enumerate}
+
