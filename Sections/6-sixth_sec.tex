@@ -639,4 +639,38 @@ p^2 = \frac{\left[ M^2 - (m_a - m_b)^2 \right] \left[ M^2 - (m_a + m_b)^2 \right
     \]  
     e.g. \( \pi^+ \to \mu^+ \nu_\mu, \; W^* \to W \gamma \).
 \end{enumerate}
-
+\subsubsection{Decadimento $\pi^\pm\to e^\pm/\mu^\pm$}
+Calcoliamo il fattore nel decadimento dei pioni tra elettroni e muoni.\\
+Consideriamo le seguenti variabili per il decadimento $\pi\to\ell$:
+\begin{itemize}
+    \item $p$ = impulso del prodotto di decadimento;
+    \item $p_\ell=\dv{N}{E\_{tot}}$ = fattore spazio delle fasi;
+    \item $\dd{N}=\frac{1}{(2\pi)^3}Vp^2\dd{p}\dd{\Omega}$;
+    \item $1-\beta_\ell$ = soppressione di elicità;
+    \item $BR_\ell = \frac{\Gamma_\ell}{\Gamma\_{tot}} \propto \rho_\ell\times(1-\beta_\ell)$.
+\end{itemize}
+In qesto caso il decadimento è isotropo, quindi
+\begin{equation*}
+    \rho_\ell \propto p^2\dv{p}{E\_{tot}}
+\end{equation*}
+Da conservazione del quadrimpulso (usa sottosezione precedente)
+\begin{align*}
+&p_\ell=p_\nu=E_\nu=p;\qq{}E\_{tot}=m_\pi;\qq{}E_\ell=m_\pi-E_\nu=m_\pi-p\\
+&p=\qty(\frac{m_\pi^2-m_\ell^2}{2m_\pi})^2=\frac{E\_{tot}}{2}-\frac{m_\ell^2}{2E\_{tot}}\;\;\dv{p}{E\_{tot}}=\frac{1}{2}+\frac{m_\ell^2}{2m_\pi^2}=\frac{m_\pi^2+m_\ell^2}{2m_\pi^2};\\
+&p_\ell\propto\qty(\frac{m_\pi^2-m_\ell^2}{2m_\pi})^2\frac{m_\pi^2+m_\ell^2}{2m_\pi^2}=\frac{(m_\pi^2+m_\ell^2)(m_\pi^2-m_\ell^2)^2}{8m_\pi^4}
+\end{align*}
+Il termine al denominatore $8m_\pi^4$ è irrilevante, invece sappiamo che $\rho_e>\rho_\mu$.\\
+\begin{equation*}
+1-\beta_\ell=1-\frac{p_\ell}{E_\ell}=1-\frac{p}{m_\pi-p}=\dots=\frac{2m_\ell^2}{m_\pi^2+m_\ell^2}\implies 1-\beta_e\lll1-\beta_\mu
+\end{equation*}
+\begin{equation*}
+    BR_\ell\propto(m_\pi^2+m_\ell^2)(m_\pi^2-m_\ell^2)^2\frac{2m_\ell^2}{m_\pi^2+m_\ell^2}\propto m_\ell^2(m_\pi^2-m_\ell^2)^2
+\end{equation*}
+Per gli elettroni, visto che $m_e\ll m_\pi$, abbiamo:
+\begin{equation*}
+    \frac{\textnormal{BR}(\pi^+\to e^+\nu_e)}{\textnormal{BR}(\pi^+\to \mu^+\nu_\mu)}=\qty(\frac{m_e}{m_\mu}\frac{m_\pi^2-m_e^2}{m_\pi^2-m_\mu^2})^2\approx1.28\times10^{-4}
+\end{equation*}
+Sperimentalmente si misura:
+\begin{equation*}
+    \frac{\textnormal{BR}(\pi^+\to e^+\nu_e)}{\textnormal{BR}(\pi^+\to \mu^+\nu_\mu)}=1.23\times10^{-4}
+\end{equation*}
