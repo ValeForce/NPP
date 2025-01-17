@@ -87,7 +87,7 @@ Non approfondiremo l'apparato sperimentale più di tanto, ma ci concentreremo su
 Vediamo l'apparato sperimentale. \textbf{METTI IMMAGINE SLIDE}
 \begin{itemize}
     \item Se mandiamo un fascio di protoni contro un bersaglio, essi vengono rallentati e non penetrano più di tanto. Al contrario i neutroni è possibile che passino indisturbati (sono molto penetranti). Se i neutroni collidono con un nucleo, normalmente avviene una reazione di knock-out, ossia esce una particella, tipicamente il protone.
-    \item Quindi serve il vuoto nella camera dei neutroni, si mette polvere di polonio per generare particelle $\alpha$ e si mette un bersaglio di berillio.  Il neutrone penetra il bersaglio di berillio e arriva fino alla camera di ionizzazione. Inoltre si mette della paraffina tra bersaglio e camera a ionizzazione. La paraffina è ricca di protoni, faccio questo per massimizzare la sezione d'urto protone-neutrone, che è elevata perché hanno masse simili. Chiaramente nella camera a ionizzazione rivelo protoni e non neutroni.
+    \item Quindi serve il vuoto nella camera iniziale, si mette polvere di polonio che emette particelle $\alpha$ e si mette un bersaglio di berillio. Da questo emerge una radiazione neutra che colpendo un secondo bersaglio, produce particelle cariche (seconda camera, stavolta di ionizzazione) Il neutrone penetra il bersaglio di berillio e arriva fino alla camera di ionizzazione. Inoltre si mette della paraffina tra bersaglio e camera a ionizzazione. La paraffina è ricca di protoni, faccio questo per massimizzare la sezione d'urto protone-neutrone, che è elevata perché hanno masse simili. Chiaramente nella camera a ionizzazione rivelo protoni e non neutroni.
 \end{itemize}
 Vediamo perché quella reazione è sbagliata.
 \begin{itemize}
@@ -99,7 +99,7 @@ Vediamo perché quella reazione è sbagliata.
     %    \caption{Effetto Compton.}
     %    \label{fig:Compton}
     %\end{figure}[H]
-    \item Si ha dalla conservazione dell'impulso lungo le due direzioni
+    \item Si ha dalla conservazione dell'impulso lungo le due direzioni (1 e $\vartheta$ si riferiscono al fotone diffuso)
 \end{itemize}
 \begin{flalign*}
     & \begin{aligned} & \begin{cases}
@@ -117,20 +117,15 @@ Vediamo perché quella reazione è sbagliata.
       %\MoveEqLeft[-1]\text{si pentru legea a II-a}
     \end{aligned}
     & &
-    \begin{aligned}
-        & \begin{cases}
-        p^2=p_0^2+p_1^2-2p_0p_1\cos\vartheta\\
-        p_1^2\sin^2\vartheta=p^2\sin^2\varphi
-      \end{cases} \\
-      %\MoveEqLeft[-1]\text{si pentru legea a II-a}
-    \end{aligned}
+    \hspace{-1cm}\Rightarrow 
+    p^2=p_0^2+p_1^2-2p_0p_1\cos\vartheta
   \end{flalign*}
   \begin{itemize}
   \item Invece dalla conservazione dell'energia
   \begin{equation*}
-      E_0+m_ec^2=E_1+T+m_ec^2\Rightarrow E_0-E_1=T\Rightarrow c(p_0-p_1)=T
+      E_0+m_ec^2=E_1+T+m_ec^2\implies E_0-E_1=T\implies c(p_0-p_1)=T
   \end{equation*}
-  \item Vogliamo l'energia dell'elettrone: $E_{\text{TOT}}^{\text{elettrone}}=m_ec^2+T=(m_e^2+c^4+c^2p^2)^{\frac12}$ (usando la relazione di mass-shell) ed elevando al quadrato troviamo $\frac{T^2}{c^2}+2m_eT=p_0^2+p_1^2-2p_0p_1\cos\vartheta$ da cui usando la conservazione dell'energia troviamo
+  \item Vogliamo l'energia dell'elettrone: $E_{\text{TOT}}^{\text{elettrone}}=m_ec^2+T=(m_e^2c^4+c^2p^2)^{\frac12}$ (usando la relazione di mass-shell) ed elevando al quadrato troviamo $\frac{T^2}{c^2}+2m_eT=p_0^2+p_1^2-2p_0p_1\cos\vartheta$ da cui usando la conservazione dell'energia troviamo
   \begin{equation*}
     \frac{p_0-p_1}{p_0p_1}=\frac1{m_ec}(1-\cos\vartheta)\Rightarrow \frac{E_0-E_1}{E_0E_1}=\frac1{m_ec^2}(1-\cos\vartheta)
   \end{equation*}
@@ -142,12 +137,12 @@ Adesso possiamo trovare l'energia dell'elettrone da $E=E_0-E_1$. Otteniamo
 \begin{equation*}
     E=\frac{\frac{E_0^2}{m_ec^2}(1-\cos\vartheta)}{1+\frac{E_0}{m_ec^2}(1-\cos\vartheta)}\Rightarrow E_{\text{MAX}}^{\text{elettrone}}=\frac{\frac{2E_0^2}{m_ec^2}}{1+2\frac{E_0}{m_ec^2}}=\frac{2E_0^2}{m_ec^2+2E_0}
 \end{equation*}
-    \item Tornando a Curie, al posto della massa dell'elettrone mettiamo la massa del protone. Dall'ultima relazione otteniamo l'equazione di secondo grado in $E_0$
+    \item Tornando a Curie, al posto della massa dell'elettrone mettiamo la massa del protone. Dall'ultima relazione otteniamo un'equazione di secondo grado in $E_0$
     \begin{equation*}
         2E_0^2-2E_0E_p^{\text{MAX}}-m_pc^2E_p^{\text{MAX}}=0
     \end{equation*}
-    Avendo misurato $E_p^{\text{MAX}}\approx 5.3$ MeV, si ottiene $E_0\approx 52.6$ MeV. Finora negli esperimenti erano abituati a qualche MeV di energia per i fotoni, quindi era una novità. Tuttavia, il problema non era questo. Con l'interpretazione di Curie avrebbero $E_\gamma=m(\alpha)+m\qty(^9_4Be)-m\qty(^{13}C)\approx 11$ MeV. Invece con Chadwick si ha $T_n=m(\alpha)+m\qty(^9_4Be)-m\qty(^{12}C)- m(n)=945.3 MeV - m(n)$.
-\item Dunque con Curie\footnote{Majorana nel frattempo li perculava dicendo che non sapevano di aver già scoperto il neutrone.} servirebbe un fotone di energia di circa $50$ MeV che è incompatibile con l'energia a disposizione di soli $11$ MeV. Invece se ho il neutrone, la sua energia cinetica sarà pari a $T_n\approx 945.3 MeV - m(n)$.
+    Avendo misurato $E_p^{\text{MAX}}\approx 5.3$ MeV, si ottiene $E_0\approx 52.6$ MeV. Finora negli esperimenti erano abituati a qualche MeV di energia per i fotoni, quindi era una novità. Tuttavia, il problema non era questo. Con l'interpretazione di Curie avrebbero $E_\gamma=m(\alpha)+m\qty(^9_4Be)-m\qty(^{13}C)\approx 11$ MeV. Invece con Chadwick si ha $T_n=m(\alpha)+m\qty(^9_4Be)-m\qty(^{12}C)- m(n)=945.3 \,\MeV - m(n)$.
+\item Dunque con Curie\footnote{Majorana nel frattempo li perculava dicendo che non sapevano di aver già scoperto il neutrone.} servirebbe un fotone di energia di circa $50$ MeV che è incompatibile con l'energia a disposizione di soli $11$ MeV. Invece se ho il neutrone, la sua energia cinetica sarà pari a $T_n\approx 945.3 \,\MeV - m(n)$.
 \end{itemize}
 Ricaviamo la relazione che lega dati sperimentali con la massa del neutrone.
 \begin{itemize}
@@ -267,9 +262,9 @@ Poi arrivo l'equazione di Dirac $(i\gamma^\mu\partial_\mu-\frac{mc}{\hbar})\psi=
     \item Al contrario dell'equazione di Schrödinger, questa è relativistica e del primo ordine. Le $\gamma^\mu$ sono le matrici di Dirac e sono $4\times 4$, quindi $\psi$ non è uno scalare bensì uno spinore a quattro componenti, in cui le prime due sono per la particella e le altre due per antiparticella. Sono due per tenere conto dello spin up e down. Quindi ci sono quattro soluzioni.
     \item All'energia negativa quindi associò l'esistenza di una antiparticella. Ma questo doveva essere verificato. La verifica avvenne con la scoperta del positrone da parte di Anderson nel 1932.
     \item Come già detto, a quei tempi le uniche sonde disponibili per gli esperimenti in laboratorio erano le sorgenti radioattive naturali e i raggi cosmici. Per scoprire il positrone usarono raggi cosmici. Nella camera a nebbia arrivavano queste particelle e mettendo un campo magnetico avevano differente raggio di curvatura. 
-    \item Se ho un elettrone o un positrone la curvatura sarà la stessa, quindi solo con camera a nebbia e campo magnetico non posso distinguerli. Allora si mette un blocco di materiale per dare un ordine temporale, perché ogni particella che attraversa un blocco materiale esce con energia minore. Si misura quindi il raggio di curvatura prima e dopo il blocco e si ricava l'impulso dalla relazione $r=\frac{mv}{qB}=\frac{p}{qB}\implies p(GeV)=0.3 B(T)Rr(m)$. 
-    \item Una volta che siamo stati in grado di determinare la carica di tale particella (conoscendo $B$), resta ancora il dubbio se fosse il protone (o a questo punto qualunque altra particella nuova positiva). Per risolvere il problema si valuta $\frac P E$. Avendo misurato impulso iniziale di $63$ MeV (dalla curvatura), Risulta $E_p\approx 1.13$ GeV $\implies \frac p {E_p} \sim 0.05c$ e a questo valore, dalla formula di Bethe-Bloch si osserva un range $R\sim5mm$. Il punto è che si osservava un range di $50mm$, quindi c'è una forte discrepanza. Se invece ripetiamo il calcolo con il positrone, avendo massa trascurabile risulta $E_{e^+}\approx 63$ MeV stessi, e a questi corrispondono un range compatibile con quello sperimentale.
-    \item Riepilogando, mettendo il blocco facciamo cambiare la curvatura alla traiettoria della particella e da ciò capiamo il segno della carica. Infine capisco che si tratta del positrone e non di altre particelle positive perché calcolando l'energia e vedendo poi la perdita di energia tramite Bethe-Bloch (ricorda che nelle ascisse c'è proprio $\beta\gamma$), risulta un range compatibile con quello misurato. 
+    \item Se ho un elettrone o un positrone la curvatura sarà la stessa, quindi solo con camera a nebbia e campo magnetico non posso distinguerli. Allora si mette un blocco di materiale per dare un ordine temporale, perché ogni particella che attraversa un blocco materiale esce con energia minore. Si misura quindi il raggio di curvatura prima e dopo il blocco e si ricava l'impulso dalla relazione $r=\frac{mv}{qB}=\frac{p}{qB}\implies p(GeV)=0.3 B(T)r(m)$. 
+    \item Una volta che siamo stati in grado di determinare la carica di tale particella (conoscendo $B$), resta ancora il dubbio se fosse il protone (o a questo punto qualunque altra particella nuova positiva). Per risolvere il problema si valuta $\frac P E$. Avendo misurato impulso iniziale di $63$ MeV (dalla curvatura), Risulta $E_p\approx 1.13$ GeV $\implies \frac p {E_p} \sim 0.05c$ e a questo valore, dalla formula di Bethe-Bloch si osserva un range $R\sim5$ mm. Il punto è che si osservava un range di $50$ mm, quindi c'è una forte discrepanza. Se invece ripetiamo il calcolo con il positrone, avendo massa trascurabile risulta $E_{e^+}\approx 63$ MeV stessi, e a questi corrispondono un range compatibile con quello sperimentale.
+    \item Riepilogando, mettendo il blocco variamo il raggio di curvatura della traiettoria della particella e da ciò capiamo il segno della carica. Infine capisco che si tratta del positrone e non di altre particelle positive perché calcolando l'energia e vedendo poi la perdita di energia tramite Bethe-Bloch (ricorda che nelle ascisse c'è proprio $\beta\gamma$), risulta un range compatibile con quello misurato. 
 \end{itemize}
 \subsection[\texorpdfstring{$\beta$}{\textbeta}-decay ed esistenza del neutrino]
 {$\boldsymbol{\beta}$-decay ed esistenza del neutrino}
@@ -301,7 +296,7 @@ Che conoscenze si avevano nel 1935?
         \right.
         \end{array}
     \]
-    \item I baroni sono costituiti da tre quark, quindi sono per forza fermioni con spin $\frac12$ o $\frac32$. Invece i mesoni sono costituiti da quark e antiquark e quindi sono bosoni con spin $0$ o $1$. In generale col termine adroni si indicano particelle soggette a interazione forte.
+    \item I barioni sono costituiti da tre quark, quindi sono per forza fermioni con spin $\frac12$ o $\frac32$. Invece i mesoni sono costituiti da quark e antiquark e quindi sono bosoni con spin $0$ o $1$. In generale col termine adroni si indicano particelle soggette a interazione forte.
     \item \textbf{[...] slide} Per due particelle identiche vale $\abs{\psi(1,2)}^2=\abs{\psi(2,1)}^2$, cioè se le scambio di posto la probabilità è la stessa. Per i bosoni vale la simmetria, per i fermioni l'antisimmetria $\psi(1,2)=-\psi(2,1)$ da cui ne segue il principio di Pauli cioè che fermioni identici non possono stare nello stesso stato quantistico.
     \item La materia è fatta da fermioni e sappiamo che ci sono tre generazioni di leptoni e quark, ma solo le prime generazioni compongono la materia. Ribadiamo che i leptoni subiscono sempre forza debole e quella carica solo se carichi, mentre i quark subiscono \textit{tutti i tipi di forza}, anche quella forte.
     \item I bosoni vettori (o di Gauge) sono gluone, fotone, $W^\pm$, $Z^0$ e il gravitone. Hanno tutti $J^\pi=1^-$ (eccetto $W^+$ per cui vale $1^+$).
