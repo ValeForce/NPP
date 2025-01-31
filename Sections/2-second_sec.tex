@@ -169,7 +169,7 @@ Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
 \end{itemize}
 \subsection{Scoperta dell'antiprotone}
 \begin{itemize}
-    \item Gli antiprotoni sono più difficili da rivelare rispetto ai positroni perché avranno una massa pari a quella del protone e quindi sono più difficile da produrre. Ovviamente ce li aspettiamo con massa negativa.
+    \item Gli antiprotoni sono più difficili da rivelare rispetto ai positroni perché avranno una massa pari a quella del protone e quindi sono più difficile da produrre. Ovviamente ce li aspettiamo con carica negativa.
     \item Quindi come possiamo crearli? Da raggi cosmici non è possibile vederli. Serve un acceleratore e non deve essere collider. A quanta energia deve arrivare? Consideriamo la reazione $p+p\to p+p+\bar p+p$ e troviamo la energia di soglia.
     \item Calcoliamo l'energia di soglia nel caso in cui abbiamo inizialmente un proiettile $i$ contro un target $T$ fermo e si hanno $N$ particelle finali.
     \comment{\begin{equation*}
@@ -222,9 +222,9 @@ Il modello di Yukawa serve anche a spiegare lo scattering $p-n$.
     \item Come prima cosa distinguiamo il segno delle cariche usando un campo magnetico. Adesso serve distinguere i $\pi^-$ da i $\bar p$.  I pioni veloci si possono tagliare tramite un rivelatore Cherenkov che dà un trigger solo se si ha una certa velocità e si scartano le particelle che lo attivano. Resta il problema dei pioni lenti. Per risolvere questo problema si misura il tempo di volo. \textbf{Appunti di albergo non capisco} e conoscendo tempo di volo e massa si può identificare l'antiprotone.
 \end{itemize}
 \subsection{Differenza target fisso e collider}
-Bisogna fare attenzione a non confondere acceleratori circolari, in cui i ltarget è comunque fisso, con collider.
+Bisogna fare attenzione a non confondere acceleratori circolari, in cui il target è comunque fisso, con collider.
 \begin{itemize}
-    \item Nei collider di solito c'è particella contro antiparticella oppure particelle uguali. È Più efficiente produrre particelle in questo modo perché non spendo energia per spostare il centro di massa.
+    \item Nei collider di solito c'è particella contro antiparticella oppure particelle uguali. È più efficiente produrre particelle in questo modo perché non spendo energia per spostare il centro di massa.
     \item Consideriamo target fisso. Abbiamo $P^\mu_1=(E_1,\vec p_1)$ e $P^\mu_2=(m_2,0)$. Calcoliamo la massa invariante (sommando i quadri-impulsi)
     \begin{equation*}
         s^2=P^\mu P_\mu=\qty(E_1+m_2)^2-p_1^2=\dots=m_1^2+m_2^2+2E_1m_2 \underset{m_{1,2}\ll E_1}{\implies} \sqrt s=\sqrt{2E_1m_2}
@@ -332,7 +332,7 @@ Normalmente nei collider si usano rivelatori a simmetria cilindrica o sferica. V
     \end{equation*}
     Dalla seconda e terza equazione otteniamo $\tan\varphi=\tan\varphi^*$ cioè che l'angolo azimutale $\varphi$ è invariante per trasformazioni di Lorentz. Invece dalla terza e quarta otteniamo
     \begin{equation*}
-    \tan \vartheta=\frac{\sin\vartheta^*}{\gamma\frac\beta{\beta^*}+\cos\vartheta^*}
+    \tan \vartheta=\frac{\sin\vartheta^*}{\gamma\qty(\frac\beta{\beta^*}+\cos\vartheta^*)}
     \end{equation*}
     con $\beta^*=p^*/E^*$.
     \item L'impulso trasverso. È definito come $p_\perp=p\sin\vartheta$. Dalla seconda e terza equazione (facendo il quadrato e sommando) otteniamo che $p_\perp=p_\perp^*$, cioè l'impulso trasverso è invariante per trasformazioni di Lorentz. 
@@ -390,7 +390,7 @@ Secondo la prof noi diamo per vero che lo spettro sia discreto senza sapere il p
 \begin{itemize}
     \item Se abbiamo un decadimento ad $n$ corpi, si ha
     \begin{equation*}
-        m=\sum_{i=1}^n=\sum_i\sqrt{p_i^2+m_i^2}\geq\sum_i m_i\implies m\geq\sum_i m_i
+        m=\sum_{i=1}^nE_i^*=\sum_i\sqrt{p_i^2+m_i^2}\geq\sum_i m_i\implies m\geq\sum_i m_i
     \end{equation*}
     cioè la massa del nucleo originale è sempre maggiore o uguale alla somma di tutti i prodotti.
     \item Se consideriamo un decadimento a due corpi, abbiamo nel riferimento del centro di massa
