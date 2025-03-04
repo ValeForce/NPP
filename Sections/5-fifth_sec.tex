@@ -30,7 +30,7 @@ Adesso vediamo le proprietà dei quark e dei gluoni da un altro punto di vista.
     \item I nuclei sono stati legati di protoni e neutroni. Il gas di Fermi è un semplice modello.
     \item I protoni e i neutroni sono identici a meno della carica: sono delle sfere con una certa massa; sono fermioni; sono legati all'interno del nucleo, altrimenti sono liberi di muoversi. 
     \item Non consideriamo interazione elettromagnetica, solo nucleare dunque $N=Z=\frac A2$ ed impulso ed energia di Fermi sono uguali per protoni e neutroni (in approssimazione migliore sono differenti gli impulsi). 
-    \item Per il principio di indeterminazione ogni $p$ ed $n$ occupano un volume $V=(2\pi\hbar)3$ nello spazio delle fasi.
+    \item Per il principio di indeterminazione ogni $p$ ed $n$ occupano un volume $V=(2\pi\hbar)^3$ nello spazio delle fasi.
     \item Dunque abbiamo una buca ben definita identica per protoni e neutroni, e viene rispettata la statistica di Fermi dunque due $p/n$ per livello di energia (con spin opposto).
     \item Da queste approssimazioni possiamo fare dei calcoli semplici:
     \begin{gather*}
@@ -160,8 +160,8 @@ Consideriamo il caso $lN\to l'H$. Sia $p$ il quadrimpulso dell'elettrone, $P$ il
     \item $Q^2=-q^2=2(EE'-pp'\cos\vartheta)-2m^2\approx4EE'\sin^2(\frac\vartheta2)$ 
     \item $x=\frac{Q^2}{2M\nu}$ è la "x di Bjorken" e corrisponde alla frazione di quadrimpulso dell'adrone portata dal partone interagente.
     \item $y=\frac{q\vdot P}{p\vdot P}=\frac\nu E$ è la frazione di energia persa dal leptone nel riferimento del bersaglio.
-    \item $W^2=(p\_H)^2=(p+q)^2=M^2-Q^2+2M\nu$ è il quadrato della massa del sistema adronico finale. Se $W=M$ allora si ha scattering elastico.
-    \item $s=(q+P)^2=(p'+p\_H)^2\approx M(M+2E)$ è il quadrato dell'energia nel centro di massa.
+    \item $W^2=(p\_H)^2=(P+q)^2=M^2-Q^2+2M\nu$ è il quadrato della massa del sistema adronico finale. Se $W=M$ allora si ha scattering elastico.
+    \item $s=(p+P)^2=(p'+p\_H)^2\approx M(M+2E)$ è il quadrato dell'energia nel centro di massa.
 \end{itemize}
 \begin{figure}[H]
     \centering
@@ -218,7 +218,7 @@ Negli anni 20 entrò in gioco la meccanica quantistica.
     \begin{gather*}
         V(r)=-\frac{zZ\alpha}r;\;\va q=\Delta p=\va p-\va p';\;q=\abs{\va q}=2p\sin\frac\vartheta2\\
         \psi_i=\frac1\Phi e^{i\va p\vdot \va r};\;\psi_f=\frac1\Phi e^{i\va p'\vdot \va r};\; \dv{n}{E'}=\frac{4\pi p'^2\Phi}{(2\pi)^3v'}\\
-        M\_{fi}=\braket{\psi_f}{V}{\psi_i}=\frac1\Phi\int e^{-i\va p'\vdot\va r}V(r)e^{i\va p\vdot\va r}\dd^3r=\\
+        M\_{fi}=\mel{\psi_f}{V}{\psi_i}=\frac1\Phi\int e^{-i\va p'\vdot\va r}V(r)e^{i\va p\vdot\va r}\dd^3r=\\
         =-\frac1\Phi\iiint \frac{zZ\alpha}re^{i\va q\vdot\va r}r^2\dd r\dd\Omega=-\frac{4\pi}\Phi\frac{zZ\alpha}{q^2}\\
         \implies \dv{\sigma}{\Omega}=\frac1{4\pi}\qty[2\pi\abs{M\_{fi}}^2\dv{n}{E'}\frac\Phi{v'}]\underset{\begin{subarray}{c}
             v'\to c=1\\
@@ -279,7 +279,7 @@ Il plot dei numeri di eventi con $E\_{in}$ e $\vartheta$ fissato, mostra vari pi
         F(\va q)=\int e^{i\frac{\va q\vdot\va x}\hbar}f(\va x)\dd^3{x};\quad \va q=\va p-\va p'
     \end{equation*}
     se è puntuale allora $f(\va x)=\delta(\va x)\implies F(\va q)=1$.
-    \item Se $\rho(\va x)$ dipende solo dal modulo $\abs{vec x}$ allora
+    \item Se $\rho(\va x)$ dipende solo dal modulo $\abs{\va x}$ allora
     \begin{equation*}
         \dv{\sigma}{\Omega}\_{sperimentale}=\dv{\sigma}{\Omega}\_{Mott}\times\abs{F(q^2)}^2
     \end{equation*}
@@ -372,9 +372,9 @@ f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^
         %\label{}
     \end{figure}
     \item Si può studiare il comportamento per $q\to0$ sviluppando in serie il termine $e^{iqr\cos\vartheta}$ dentro l'integrale ottenendo
-    \begin{equation*}
-    F(q^2)=\iiint e^{iqr\cos\vartheta}f(r)r^2\dd r\dd{\cos\vartheta}\dd\phi =\dots=1-\frac16q^2\expval{r^2}+\dots\implies r\_{RMS}=\sqrt{\expval{r^2}}=\sqrt{-6\dv{F(q^2)}{q^2}\Big|_{q^2=0}}
-    \end{equation*}
+    \begin{gather*}
+    F(q^2)=\iiint e^{iqr\cos\vartheta}f(r)r^2\dd r\dd{\cos\vartheta}\dd\phi =\dots=1-\frac16q^2\expval{r^2}+\dots\implies \\\implies r\_{RMS}=\sqrt{\expval{r^2}}=\sqrt{-6\dv{F(q^2)}{q^2}\Big|_{q^2=0}}
+    \end{gather*}
     il parametro $\expval{r^2}$ è una misura della dimensione al quadrato della  (carica della) particella. Per una sfera omogenea $\expval{r^2}=\frac35R^2$.
 \end{itemize}
 \subsubsection{Casi limite $q\to0$ e $q\to\infty$}
@@ -428,7 +428,7 @@ f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^
     \mu_C=\frac{ge\hbar}{4m}\\
     g=\text{ rapporto giromagnetico }=2
     \end{gather*}
-    \item Una particella idea di Dirac ha momento di dipolo magnetico pari a 
+    \item Una particella ideale di Dirac ha momento di dipolo magnetico pari a 
     \[
     \mu_e=\frac{e\hbar}{2m_e}\approx 5.79\times10^{-5}\frac{eV}T
     \]
@@ -439,13 +439,13 @@ f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^
     \item $\sin^2\frac\vartheta2$
     \item $\frac1{\cos^2\frac\vartheta2}$ per rimuovere la dipendenza da non-flip.
     \item $\mu_N^2\propto\frac1 {M^2}$
-    \item $Q^2$ (quadrato de campo magnetico indotto dall'elettrone)
+    \item $Q^2$ (quadrato del campo magnetico indotto dall'elettrone)
     \end{enumerate}
     \begin{equation*}
-        (\dv{\sigma}{\Omega})_{\begin{subarray}{c}
+        \qty(\dv{\sigma}{\Omega})_{\begin{subarray}{c}
             \text{puntiforme}\\
             \text{spin }\frac12
-         \end{subarray}}=(\dv{\sigma}{\Omega})\_{Mott}\times\qty(1+2\frac{Q^2}{4M^2}\tan^2\frac\vartheta2)
+         \end{subarray}}=\qty(\dv{\sigma}{\Omega})\_{Mott}\times\qty(1+2\frac{Q^2}{4M^2}\tan^2\frac\vartheta2)
     \end{equation*}
     \item Dunque lo spin-flip è particolarmente rilevante a grandi $Q^2$ e grandi $\vartheta$.
 \end{itemize}
@@ -500,7 +500,7 @@ f(r)=\frac1{(2\pi)^3}\int F(q^2)e^{-iqr}\dd^3q\qquad F(q^2)=4\pi\int_0^\infty r^
     \end{itemize}
 \end{itemize}
 \begin{gather*}
-    (\dv\sigma\Omega)\_{Rosenbluth}=(\dv\sigma\Omega)\_{Mott}\times\qty(\frac{G_E^2+\tau G_M^2}{1+\tau}+2\tau G_M^2\tan^2\frac\vartheta2)\\
+    \qty(\dv{\sigma}{\Omega})\_{Rosenbluth}=\qty(\dv{\sigma}{\Omega})\_{Mott}\times\qty(\frac{G_E^2+\tau G_M^2}{1+\tau}+2\tau G_M^2\tan^2\frac\vartheta2)\\
     \tau=\frac{Q^2}{4M^2}\qquad G_E=G_E(Q^2)\qquad G_M=G_M(Q^2)
 \end{gather*}
 \begin{itemize}
@@ -523,14 +523,14 @@ Nel 1956 lo spettrometro di Hofstadter misurò la collisione elastica $ep\to ep$
     Q^2=2EE'(1-\cos\vartheta)
 \end{gather*}
 I controlli di qualità furono fatti verificando questa relazione. Delle misure di $E'$ con $E$ e $\vartheta$ fissate (vari angoli) erano in accordo con le previsioni. Dunque la cinematica in $ep\to ep$ è sotto controllo e possiamo studiare la dinamica.
-\subsubsection{Risultati $\dv\sigma\Omega$}
+\subsubsection{Risultati $\dv{\sigma}{\Omega}$}
 Studiamo la sezione d'urto nel laboratorio.\newline
 % Colonne con minipage
 \noindent
 \begin{minipage}[t]{0.48\textwidth}
     \begin{itemize}
-        \item A piccoli angoli, (cioè piccoli $Q^2$ che vuol dire che $\dv\sigma\Omega$ è indipendente da $G_M$) tutte le formule sono d'accordo, dunque $G_E(Q^2=0)\approx1$
-        \item A grandi angoli (grandi $Q^2$, piccole distanze e $\dv\sigma\Omega$ dipende da $G_M$) si ha un disaccordo con ogni predizione teorica. Abbiamo valori sbagliati di $G_E$ e $G_M$?
+        \item A piccoli angoli, (cioè piccoli $Q^2$ che vuol dire che $\dv{\sigma}{\Omega}$ è indipendente da $G_M$) tutte le formule sono d'accordo, dunque $G_E(Q^2=0)\approx1$
+        \item A grandi angoli (grandi $Q^2$, piccole distanze e $\dv{\sigma}{\Omega}$ dipende da $G_M$) si ha un disaccordo con ogni predizione teorica. Abbiamo valori sbagliati di $G_E$ e $G_M$?
         \item Il disaccordo con (a) e (b) fu previsto (perché protone $g_p\neq2$)
         \item Il disaccordo con (c) mostra una dipendenza da $Q^2$ che significa che il protone non è puntuale.
         \item Hofstadter misurò raggio medio di protone e $\alpha$.  
@@ -619,7 +619,7 @@ Differenze tra nuclei e nucleoni:
         \item Nuovi stati: $ep\to eX^+$ (con $X^+$ sistema di molte particelle)
     \end{itemize}
 \end{itemize}
-\subsubsection{Maggiore $Q^2$: $H_2=O$}
+\subsubsection{Maggiore $Q^2$: H$_2$O}
 Si mandano elettroni a 246 MeV contro del vapore acqueo. Lo scattering mostra una distribuzione complessa, con diversi fenomeni nello stesso plot. Ad un certo angolo fissato di elettroni nello stato finale, aumentando $E'$:
 \begin{itemize}
     \item $ep\to e\Delta^+$ Eccitazione del protone dell'idrogeno.
@@ -824,7 +824,7 @@ F_1(x,Q^2)=MW_1(Q^2,\nu);\qquad F_2(x,Q^2)=\nu W_2(Q^2,\nu)
         \end{align*}
         \item Dalla cinematica dello scattering elastico di particelle puntiformi di massa $m$ abbiamo:
         \begin{align*}
-            &Q^2 = 2m\nu = 2Mv x \; \rightarrow \; m = xM;\\
+            &Q^2 = 2m\nu = 2M\nu x \; \rightarrow \; m = xM;\\
             &\frac{F_1(x)}{F_2(x)}=\frac{Q^2}{4m^2}\frac{M}{\nu}=\frac{2m\nu}{4m^2}\frac{M}{\nu}=\frac{M}{2m}=\frac{1}{2x}\implies 2xF_1(x)=F_2(x)\quad\textnormal{Callan-Gross}
         \end{align*}
         \item Abbiamo assunto che il nucleone (massa $M$ e spin $\frac{1}{2}$ sia costituito da q (massa $m$ e spin $\frac{1}{2}$)). Attenzione
@@ -895,7 +895,7 @@ I nucleoni sono fatti da partoni, successivamente identificati con i quark. I pa
         \item $x\_{Feynman}=x\_F=\frac{\va p\_{partone}}{\va p\_{nucleone}}$ diversa da $x\_{Bjorken}=x\_B=\frac{Q^2}{2M\nu}=\frac{m}{M}$;
         \item L'interazione elettrone-partone è talmente veloce e violenta, che si comportano come particelle libere... simile alle collisioni "approssimate" in meccanica classica;
         \item Gli altri partoni, almeno in prima approssimazione, non prendono parte alla interazione, sono \textit{spettatori}.
-        \item Ne segue che $x\_F=x\_B=$.
+        \item Ne segue che $x\_F=x\_B=x$.
         \item Il deep inelastic scattering è una somma incoerente di processi sui partoni; ad alto $Q^2$ i nucleoni sono soltanto dei contenitori, senza alcun ruolo ($F_{1,2}=\sum\dots$).
         \item Nonostante la differenza formale tra $x\_F$ e $x\_B$, hanno una origine dinamica differente:
         \begin{itemize}
@@ -908,8 +908,8 @@ Nel riferimento ad impulso infinito (IMF) dove tutte le masse sono trascurabili 
 \begin{itemize}
     \item $p\_{nucleone}^{\textnormal{iniz}}\Big|\_{IMF}=(p,p,0,0)$;
     \item $p\_{partone}^{\textnormal{iniz}}\Big|\_{IMF}=x\_F p\_{nucleone}^{\textnormal{iniz}}=(x\_Fp,x\_Fp,\sim0,\sim0)$;
-    \item $p\_{partone}^{fin}\Big|\_{IMF}=p\_{partone}^{\textnormal{iniz}}+q\_{trasf}$;
-    \item $\qty(p\_{partone}^{fin})^2=0=(p\_{partone}^{\textnormal{iniz}}+q\_{trasf})^2=0+q\_{trasf}^2+2\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})$
+    \item $p\_{partone}^{\textnormal{fin}}\Big|\_{IMF}=p\_{partone}^{\textnormal{iniz}}+q\_{trasf}$;
+    \item $\qty(p\_{partone}^{\textnormal{fin}})^2=0=(p\_{partone}^{\textnormal{iniz}}+q\_{trasf})^2=0+q\_{trasf}^2+2\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})$
     \item Notiamo che $\qty(p\_{partone}^{\textnormal{iniz}}\cdot q\_{trasf})$ è Lorentz-invariante; calcolato nel riferimento del laboratorio da:
     \begin{gather*}
         p\_{protone}^{\textnormal{iniz}}\Big|\_{LAB}=(M,\va{0});\quad p\_{partone}^{\textnormal{iniz}}\Big|\_{LAB}(Mx\_F,\va{0})\\
@@ -1053,7 +1053,7 @@ Mettendo tutto insieme e trascurando i quark più pesanti, ritroviamo:
 \begin{equation*}
 	\begin{split}
     F_2^{ep}&=x\left\{\frac{4}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}=\\
-    &=x\left\{\frac{4}{9}\qty[u_v(x)+2q_s(x)]+\frac{1}{9}\qty[d_v(x)+2q_s(x)]+\frac{1}{9}\qty[q_s(x)] \right\}=\\
+    &=x\left\{\frac{4}{9}\qty[u_v(x)+2q_s(x)]+\frac{1}{9}\qty[d_v(x)+2q_s(x)]+\frac{1}{9}\qty[2q_s(x)] \right\}=\\
     &=x\left\{\frac{4}{9}u_V(x)+\frac{1}{9}d_V(x)+\frac{4}{3}q_s(x)\right\}
 \end{split}
 \end{equation*}
@@ -1067,7 +1067,7 @@ dunque
 \frac{4d_V(x)+u_V(x)}{4u_V(x)+d_V(x)} &(b)
 \end{cases}
 \end{equation*}
-$(a)$ se il mare domina, $(b)$ se la valenza domina (inoltre se$u_V\gg d_V\implies R_{np}\approx\frac{1}{4}$).
+$(a)$ se il mare domina, $(b)$ se la valenza domina (inoltre se $u_V\gg d_V\implies R_{np}\approx\frac{1}{4}$).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{immagini/fig_bodek_rapp_F.png}
@@ -1108,7 +1108,7 @@ inoltre se consideriamo dal modello a quark semplice $u_V(x)\approx2d_V(x)$ abbi
 \begin{equation*}
     F_2^{ep}-F_2^{en}=x\frac{d_V(x)}3
 \end{equation*}
-cioè la differenza, che è un'osservabile, corrisponde approssimaivamente a circa $\frac{1}{3}x$ per la distribuzione in $x$ del singolo quakr di valenza ($u^p_V$ oppure $u^n_V$).
+cioè la differenza, che è un'osservabile, corrisponde approssimativamente a circa $\frac{1}{3}x$ per la distribuzione in $x$ del singolo quark di valenza ($d^p_V$ oppure $u^n_V$).
 \begin{figure}[H]
     \centering
     \includegraphics[width=0.6\textwidth]{immagini/fig_diff_F_p_n.png}
@@ -1118,7 +1118,7 @@ cioè la differenza, che è un'osservabile, corrisponde approssimaivamente a cir
 \subsubsection{I gluoni}
 Gli integrali di $F_2(x)$ sono sia calcolabili che misurabili. Trascurando il piccolo contributo di $s\bar s$:
 \begin{gather*}
-    \int_{0}^{1}F_2^{ep}(x)=\frac{4}{9}\int_{0}^{1}x\qty[u^p(x)+\bar u^p(x)]\dd{x}+\frac{1}{9}\int_{0}^{1}x\qty[d^p(x)+\bar d^p(x)]\dd{x}=\frac{4}{9}f_u+\frac{1}{9}f_d\\
+    \int_{0}^{1}F_2^{ep}(x)\dd{x}=\frac{4}{9}\int_{0}^{1}x\qty[u^p(x)+\bar u^p(x)]\dd{x}+\frac{1}{9}\int_{0}^{1}x\qty[d^p(x)+\bar d^p(x)]\dd{x}=\frac{4}{9}f_u+\frac{1}{9}f_d\\
     \int_{0}^{1}\dd{x}F_2^{en}(x)=\frac{4}{9}\int_{0}^{1}x\qty[d^p(x)+\bar d^p(x)]\dd{x}+\frac{1}{9}\int_{0}^{1}x\qty[u^p(x)+\bar u^p(x)]\dd{x}=\frac{4}{9}f_d+\frac{1}{9}f_u
 \end{gather*}
 dove $f_{u,d}$ sono le frazioni di impulso del protone portato dai quark $u$ e $d$ (e le loro antiparticelle).\\
@@ -1137,7 +1137,7 @@ Da misure dirette otteniamo:
 Questo risultato è molto importante! Abbiamo che $f_u+f_d\approx50\%$. Solo metà dell'impulso dei nucleoni è portato dai quark ed antiquark. Il resto è invisibile nella DIS da un leptone carico.\\
 Questa fu una delle prime (e \textit{molto} convincente) prove dell'esistenza dei \textbf{gluoni}, portatori della forza adronica. I gluoni sono neutri e non vedono l'interazione elettromagnetica.
 \subsubsection{Differenza tra $e^-p$ e $\nu p$ deep inelastic scattering}
-Calcoliamo $F_2^{eN}(x)$ per un bersaglio isoscalare\footnote{Serve isoscalare perché, specialmente nello scattering di $\nu$, il bersaglio debe essere pesante, cioè fatto da nuclei pesanti, ben riprodotti dalla approssimazione.}, cioè un bersaglio con $N=Z$, con protoni e neutroni quasi liberi (approssimazione a gas di Fermi):
+Calcoliamo $F_2^{eN}(x)$ per un bersaglio isoscalare\footnote{Serve isoscalare perché, specialmente nello scattering di $\nu$, il bersaglio deve essere pesante, cioè fatto da nuclei pesanti, ben riprodotti dalla approssimazione.}, cioè un bersaglio con $N=Z$, con protoni e neutroni quasi liberi (approssimazione a gas di Fermi):
 \begin{align*}
 &F_2^{ep}=x\left\{\frac{4}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}\\
 &F_2^{en}=x\left\{\frac{4}{9}\qty[d^p(x)+\bar d^p(x)]+\frac{1}{9}\qty[u^p(x)+\bar u^p(x)]+\frac{1}{9}\qty[s^p(x)+\bar s^p(x)] \right\}\\
@@ -1177,7 +1177,7 @@ Il valore sperimentale è $\frac{F_2^{eN}}{F_2^{\nu N}}=0.29\pm0.02$, molto in a
     %\label{}
 \end{figure}
 \end{minipage}
-Tuttavia questo effetto di scaling violation \textit{non} è dovuto a sottostrutture o nuova fisica, ma ad un cambio dinamico in $F_2$, ben comprenso in QCD. In QCD abbiamo 
+Tuttavia questo effetto di scaling violation \textit{non} è dovuto a sottostrutture o nuova fisica, ma ad un cambio dinamico in $F_2$, ben compreso in QCD. In QCD abbiamo 
 \begin{equation*}
     \textnormal{alto }Q^2\implies
     \begin{cases}
@@ -1187,7 +1187,7 @@ Tuttavia questo effetto di scaling violation \textit{non} è dovuto a sottostrut
     \end{cases}
 \end{equation*}
 \subsubsection{Funzione di distribuzione dei partoni}
-Per gli esperimenti moderni con adronila conoscenza di $F_2^{p,n}$ è necessario per l'analisi dei dati.
+Per gli esperimenti moderni con adroni la conoscenza di $F_2^{p,n}$ è necessario per l'analisi dei dati.
 \begin{itemize}
     \item Le funzioni di struttura sono un effetto delle forze adroniche. Tuttavia, essendo il risultato complicato di un numero non ben definito di corpi in un regime non perturbativo, non possono essere calcolate in modo affidabile con la tecnologia odierna (la QCD su reticolo è ancora una speranza).
     \item È simile alla chimica di molecole complesse, che è un argomento difficile, sebbene le interazioni fondamentali siano [supposte essere] ben comprese.
